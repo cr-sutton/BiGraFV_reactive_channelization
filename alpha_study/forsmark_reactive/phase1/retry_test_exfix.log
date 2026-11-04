@@ -1,0 +1,9 @@
+Tue 03:58 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg0.0_seed4 graph_raw gyponly phase1exfix 0.57 - --k-gypsum-mult 21.95 --gypsum-vf0 0.9 --material-porosity 0.1 --perm-power 1 --c-cap 16.5 --log-vtk --dissolved-fractions 0.005 0.02 0.1 0.5 1.0 2.0 5.0
+Tue 03:58 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg0.0_seed1 graph_raw gyponly phase1exfix 0.57 - --k-gypsum-mult 21.95 --gypsum-vf0 0.9 --material-porosity 0.1 --perm-power 1 --c-cap 16.5 --log-vtk --dissolved-fractions 0.005 0.02 0.1 0.5 1.0 2.0 5.0
+gypsum__uncorrected_graph__phase1exfix: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase1exfix: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase1exfix: steady start, dynamic pressure at manifold 5485 Pa
+gypsum__uncorrected_graph__phase1exfix: steady start, dynamic pressure at manifold 5288 Pa
+L2_r15_p4.0_sg0.0_seed1 gypsum__uncorrected_graph__phase1exfix seconds=1681 rate=51.88455286542448 dt=0.57
+L2_r15_p6.0_sg0.0_seed4 gypsum__uncorrected_graph__phase1exfix seconds=4682 rate=69.49708432813462 dt=0.57
+Tue 05:18 queue done

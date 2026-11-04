@@ -1,0 +1,7 @@
+{
+ "run": "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/km_scale_graph_only/../forsmark_reactive/phase1/L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1",
+ "n_flowing": 1557,
+ "Da_p10": 678452502.1948799,
+ "Da_median": 1830468838.8969114,
+ "Da_p90": 5459529658.289889
+}

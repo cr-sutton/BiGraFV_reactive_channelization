@@ -1,0 +1,1 @@
+On the pore-volume clock the two chemistries sit ~30× apart (inventory capacity reached at ~7,300 vs ~230 PV); scaling by what each pore volume can remove (t_cap = PV·c_cap/C_inv) lands both at t_cap = 1, with channels peaking at t_cap 0.4–0.6 in both.

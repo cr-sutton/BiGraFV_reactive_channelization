@@ -1,0 +1,1 @@
+The deepest a channel gets depends on how much more permeable a dissolved fracture can become than a filled one (the ceiling): ×5.5, ×10 and ×20 give PR_V at the channel peak of ≈0.78, 0.67 and 0.61 of the start, and chemistries with the same ceiling give the same depth.

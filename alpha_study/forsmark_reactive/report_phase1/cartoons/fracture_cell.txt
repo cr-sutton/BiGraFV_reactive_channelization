@@ -1,0 +1,1 @@
+One BiGraFV cell is a whole fracture, well mixed, with fixed walls: it starts 90 % gypsum (φ0 = 0.1). Under k/k0 = φ/φ0 (n = 1) full dissolution gives ×10, while replacement by calcite (Γ = V_cal/V_gyp = 0.494) leaves φ ≈ 0.56 and caps the gain at ×5.5. Orange arrows: flow under the same head.

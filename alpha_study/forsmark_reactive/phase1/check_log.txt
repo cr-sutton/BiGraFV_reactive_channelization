@@ -1,0 +1,357 @@
+Mon 16:55 done 11 running 4 flags 0
+Mon 17:03 done 12 running 6 flags 0
+Mon 17:28 done 12 running 6 flags 0
+Mon 18:03 done 12 running 6 flags 0
+Mon 18:28 done 13 running 6 flags 0
+Mon 19:03 done 20 running 5 flags 0
+Mon 19:29 done 24 running 6 flags 0
+Mon 20:03 done 26 running 6 flags 0
+Mon 20:29 done 29 running 6 flags 0
+Mon 21:03 done 30 running 6 flags 0
+Mon 21:28 done 30 running 6 flags 0
+Mon 22:03 done 34 running 6 flags 0
+Mon 22:28 done 40 running 6 flags 1
+    ERROR   L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1: NAN at t=3.275e+04 y step 57520
+Mon 22:30 done 40 running 6 flags 0
+Mon 23:03 done 42 running 8 flags 4
+    ERROR   L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=2.546e+04 y step 44728
+    SLOW    L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1direct: projected 14.1 h > 6.0 h (t=1407 of 3.651e+04 y)
+    ERROR   L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=3.439e+04 y step 60397
+    SLOW    L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1direct: projected 13.0 h > 6.0 h (t=1525 of 3.651e+04 y)
+Mon 23:04 done 42 running 7 flags 0
+Mon 23:28 done 43 running 7 flags 0
+Tue 00:03 done 48 running 6 flags 1
+    ERROR   L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1dt0285: Time step cut criteria exceeded at t=2.665e+04 y step 95237
+Tue 00:03 done 48 running 6 flags 0
+Tue 00:28 done 49 running 6 flags 0
+Tue 01:03 done 49 running 6 flags 0
+Tue 01:29 done 50 running 6 flags 0
+Tue 02:03 done 55 running 6 flags 0
+Tue 02:29 done 64 running 4 flags 17
+    DIED    L2_r15_p4.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=2.728e+04 of 3.651e+04 y, step 47970
+    ERROR   L2_r15_p4.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: error at t=1.756e+04 y step 30894
+    DIED    L2_r15_p4.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=1.756e+04 of 3.651e+04 y, step 30894
+    ERROR   L2_r15_p4.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: error at t=2.31e+04 y step 40643
+    DIED    L2_r15_p4.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=2.31e+04 of 3.651e+04 y, step 40643
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: error at t=3515 y step 6215
+    DIED    L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=3515 of 3.651e+04 y, step 6215
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: error at t=1200 y step 2200
+    DIED    L2_r15_p6.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=1200 of 3.651e+04 y, step 2200
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: error at t=730.3 y step 1348
+    DIED    L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=730.3 of 3.651e+04 y, step 1348
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=333.7 y step 637
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=336 y step 678
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=466.5 y step 908
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1372 y step 2452
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=516 y step 996
+Tue 02:33 done 64 running 10 flags 8
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: error at t=730.3 y step 1348
+    DIED    L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=730.3 of 3.651e+04 y, step 1348
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=333.7 y step 637
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=336 y step 678
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=466.5 y step 908
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1372 y step 2452
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=516 y step 996
+Tue 02:57 done 64 running 10 flags 8
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: error at t=730.3 y step 1348
+    DIED    L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=730.3 of 3.651e+04 y, step 1348
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=333.7 y step 637
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=336 y step 678
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=466.5 y step 908
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1372 y step 2452
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=516 y step 996
+Tue 03:17 done 72 running 3 flags 10
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=9200 y step 16196
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=333.7 y step 637
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=2.057e+04 y step 36136
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1.13e+04 y step 19879
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=336 y step 678
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1.003e+04 y step 17644
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=466.5 y step 908
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1372 y step 2452
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=516 y step 996
+Tue 03:57 done 92 running 0 flags 28
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=1.081e+04 y step 19024
+    ERROR   L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=333.7 y step 637
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 04:19 done 87 running 4 flags 27
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    STALLED L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: t=4210 y unchanged since 03:57 (step 19024 -> 7460)
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: NAN at t=566.5 y step 1087
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 04:58 done 88 running 6 flags 23
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 05:19 done 89 running 5 flags 22
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 05:58 done 89 running 5 flags 19
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 06:19 done 89 running 5 flags 19
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 06:58 done 89 running 5 flags 17
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 07:19 done 89 running 5 flags 15
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 07:58 done 89 running 5 flags 10
+    ERROR   L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1stab: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 08:11 done 87 running 5 flags 8
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 08:19 done 87 running 5 flags 8
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 10:05 done 85 running 6 flags 9
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    STALLED L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: t=2.472e+04 y unchanged since 08:19 (step 47185 -> 43424)
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: error at t=1247 y step 2255
+    DIED    L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=1247 of 3.651e+04 y, step 2255
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 10:06 done 85 running 6 flags 8
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: error at t=1247 y step 2255
+    DIED    L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1: no live PFLOTRAN, stopped at t=1247 of 3.651e+04 y, step 2255
+    ERROR   L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+    ERROR   L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 10:34 done 86 running 6 flags 1
+    ERROR   L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1: Time step cut criteria exceeded at t=0 y step 0
+Tue 10:34 done 86 running 6 flags 0
+Tue 11:05 done 86 running 6 flags 0
+Tue 11:34 done 86 running 6 flags 0
+Tue 12:05 done 87 running 5 flags 0
+Tue 12:34 done 92 running 0 flags 0
+Tue 14:26 done 93 running 6 flags 0
+Tue 15:00 done 102 running 6 flags 0
+Tue 16:07 done 110 running 6 flags 0
+Tue 16:37 done 112 running 6 flags 0
+Tue 17:12 done 114 running 6 flags 0
+Tue 17:31 done 115 running 5 flags 0
+Tue 17:53 done 116 running 6 flags 0
+Tue 18:23 done 120 running 5 flags 0
+Tue 18:53 done 122 running 5 flags 0
+Tue 19:23 done 123 running 5 flags 0
+Tue 19:53 done 123 running 6 flags 0
+Tue 20:23 done 123 running 6 flags 0
+Tue 20:53 done 123 running 6 flags 0
+Tue 21:23 done 123 running 6 flags 0
+Tue 21:53 done 124 running 6 flags 0
+Tue 22:23 done 126 running 5 flags 0
+Tue 22:53 done 129 running 6 flags 0
+Tue 23:25 done 130 running 6 flags 0
+Tue 23:53 done 133 running 6 flags 0
+Wed 00:23 done 135 running 5 flags 0
+Wed 00:53 done 135 running 6 flags 0
+Wed 01:23 done 135 running 6 flags 0
+Wed 01:53 done 135 running 6 flags 0
+Wed 02:23 done 135 running 6 flags 0
+Wed 02:53 done 136 running 6 flags 0
+Wed 03:23 done 139 running 5 flags 0
+Wed 03:53 done 140 running 6 flags 0
+Wed 04:23 done 143 running 5 flags 0
+Wed 04:53 done 144 running 6 flags 0
+Wed 05:23 done 146 running 6 flags 1
+    SLOW    L2_r15_p16.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005: projected 8.7 h > 6.0 h (t=3387 of 3.083e+04 y)
+Wed 05:53 done 146 running 5 flags 1
+    SLOW    L2_r15_p16.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005: projected 9.4 h > 6.0 h (t=2087 of 3.083e+04 y)
+Wed 06:23 done 146 running 4 flags 0
+Wed 06:53 done 146 running 4 flags 0
+Wed 07:23 done 146 running 4 flags 0
+Wed 07:53 done 148 running 4 flags 0
+Wed 08:23 done 149 running 3 flags 0
+Wed 08:53 done 150 running 2 flags 0
+Wed 09:23 done 150 running 3 flags 0
+Wed 09:53 done 152 running 2 flags 0
+Wed 10:23 done 152 running 2 flags 0
+Wed 10:41 done 152 running 2 flags 0
+Wed 11:23 done 152 running 2 flags 0
+Wed 12:28 done 153 running 2 flags 0
+Wed 12:58 done 154 running 1 flags 0
+Wed 13:28 done 155 running 1 flags 0
+Wed 13:58 done 156 running 0 flags 0

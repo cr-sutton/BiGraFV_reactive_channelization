@@ -1,0 +1,1 @@
+../forsmark_reactive/phase1/L2_r15_p4.0_sg0.5_seed2 graph_raw gyponly phase1dt0285 0.285 - "--k-gypsum-mult 21.95 --gypsum-vf0 0.9 --material-porosity 0.1 --perm-power 1 --c-cap 16.5 --log-vtk --dissolved-fractions 0.005 0.02 0.1 0.5 1.0 2.0 5.0"

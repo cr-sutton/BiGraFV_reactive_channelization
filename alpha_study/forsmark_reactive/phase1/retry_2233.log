@@ -1,0 +1,8 @@
+Mon 22:30 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg0.5_seed2 graph_raw gyponly phase1direct 0.57 - --k-gypsum-mult 21.95 --gypsum-vf0 0.9 --material-porosity 0.1 --perm-power 1 --c-cap 16.5 --log-vtk --dissolved-fractions 0.005 0.02 0.1 0.5 1.0 2.0 5.0
+Mon 22:30 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gyponly phase1direct 0.57 - --k-gypsum-mult 21.95 --gypsum-vf0 0.9 --material-porosity 0.1 --perm-power 1 --c-cap 16.5 --log-vtk --dissolved-fractions 0.005 0.02 0.1 0.5 1.0 2.0 5.0
+gypsum__uncorrected_graph__phase1direct: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase1direct: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase1direct: steady start, dynamic pressure at manifold 3929 Pa
+gypsum__uncorrected_graph__phase1direct: steady start, dynamic pressure at manifold 4295 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__phase1direct seconds=1982 rate=49.04272863481657 dt=0.57
+L2_r15_p4.0_sg0.5_seed2 gypsum__uncorrected_graph__phase1direct seconds=1982 rate=48.265867943539455 dt=0.57

@@ -1,0 +1,10 @@
+L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1  # 22:28 cell-closing stop at 32,748 PV, kept (see INTERVENTIONS.md)
+L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1  # 22:33 KSP divergence stop at 25,460 PV; retry phase1dt0285
+L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1  # 22:33 KSP divergence stop at 34,390 PV (94 %), kept
+L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1direct  # killed 23:10, too slow
+L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1direct  # killed 23:10, too slow
+L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1dt0285  # 00:03 same cell-closing stop at 26,650 PV, kept
+L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1  # failed 03:20 stab attempt; the valid run is ..._phase1exfix
+L2_r15_p16.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005  # SLOW expected: phi0 0.05 runs twice the years; x16 phase1 gyponly took 4.2-4.7 h, projected 8.7 h (4 Nov 05:23)
+L2_r15_p16.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005  # SLOW expected: phi0 0.05 doubles simulated years (4 Nov 05:53)
+L2_r15_p16.0_sg1.0_seed3/gypsum__uncorrected_graph__phase2_phi005  # SLOW expected: phi0 0.05 doubles simulated years (4 Nov 05:53)

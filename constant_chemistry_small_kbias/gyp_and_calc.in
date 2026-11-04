@@ -1,0 +1,285 @@
+
+
+#
+#================================================
+
+SIMULATION
+  SIMULATION_TYPE SUBSURFACE
+  PROCESS_MODELS
+    SUBSURFACE_FLOW flow
+      MODE RICHARDS
+    /
+    SUBSURFACE_TRANSPORT transport
+      MODE GIRT 
+    /
+  /
+  CHECKPOINT
+    FORMAT HDF5
+  /
+END
+SUBSURFACE
+
+
+
+#=========================== chemistry ========================================
+CHEMISTRY
+  PRIMARY_SPECIES
+    H+
+    CO3--
+    Ca++
+    Na+ 
+    SO4--
+  /
+  SECONDARY_SPECIES
+    OH-
+    HCO3-
+    CO2(aq)
+    CaCO3(aq)
+    CaHCO3+
+    CaOH+
+    NaCO3-
+    CaSO4(aq)
+    HSO4-
+    NaSO4-
+    H2SO4(aq)
+    NaHCO3(aq)
+  /
+  PASSIVE_GAS_SPECIES
+    CO2(g)
+  /
+
+ MINERALS     # List all primary minerals first, before listing secondary minerals
+     Gypsum
+     Calcite
+  /
+  MINERAL_KINETICS
+    Gypsum
+        SURFACE_AREA_FUNCTION VOLUME_FRACTION_RATIO
+        RATE_CONSTANT 7.382575853955734e-05  mol/m^2-sec 
+        SURFACE_AREA_VOL_FRAC_POWER 0.6667 
+    /
+    Calcite
+      SURFACE_AREA_FUNCTION VOLUME_FRACTION_RATIO
+      RATE_CONSTANT 2.287975768343148e-05 mol/m^2-sec 
+      SURFACE_AREA_VOL_FRAC_POWER 0.6667
+    /
+  /
+
+
+  DATABASE /Users/collin/src/pflotran/database/hanford.dat
+  # DATABASE /home/apachalieva/Projects/di_dfns/cal-gyp/hanford.dat
+  LOG_FORMULATION
+  ACTIVITY_COEFFICIENTS TIMESTEP
+  #UPDATE_MINERAL_SURFACE_AREA
+  UPDATE_POROSITY
+  UPDATE_PERMEABILITY
+  UPDATE_TORTUOSITY
+  MOLAL
+  OUTPUT
+    MINERALS
+    PH
+    TOTAL
+    ALL
+    MINERALS
+    MINERAL_VOLUME_FRACTION
+    MINERAL_SURFACE_AREA
+    MINERAL_SATURATION_INDEX
+  /
+/
+
+#=========================== discretization ===================================
+GRID
+  TYPE unstructured_explicit full_mesh_vol_area.uge 
+  GRAVITY 0.d0 0.d0 0.d0
+END
+
+#=========================== fluid properties =================================
+FLUID_PROPERTY
+    DIFFUSION_COEFFICIENT 1e-9 
+END
+
+DATASET Permeability
+  FILENAME dfn_properties.h5
+END
+
+#=========================== material properties ==============================
+MATERIAL_PROPERTY fractures
+  ID 1
+  POROSITY 0.9d0 
+  TORTUOSITY 1.0d0
+  CHARACTERISTIC_CURVES default
+  PERMEABILITY
+    DATASET Permeability
+  /
+END
+
+
+#=========================== characteristic curves ============================
+CHARACTERISTIC_CURVES default
+  SATURATION_FUNCTION VAN_GENUCHTEN
+    M 0.5d0
+    ALPHA  1.d-4
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+    MAX_CAPILLARY_PRESSURE 1.d8
+  /
+  PERMEABILITY_FUNCTION MUALEM_VG_LIQ
+    M 0.5d0
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+  /
+END
+
+#=========================== output options ===================================
+OUTPUT
+  # PERIODIC TIME 1.d-2 y
+#  FORMAT TECPLOT BLOCK
+  PRINT_PRIMAL_GRID
+  FORMAT VTK
+  ACKNOWLEDGE_VTK_FLAW
+  MASS_FLOWRATE
+  MASS_BALANCE
+  MASS_BALANCE_FILE
+    TOTAL_MASS_REGIONS
+      All
+      inflow
+      outflow
+    /
+    # PERIODIC TIME 1.0d0 y
+  /
+
+  VARIABLES
+    LIQUID_PRESSURE
+    LIQUID_SATURATION
+    PERMEABILITY
+    POROSITY
+  /
+END
+
+#=========================== times ============================================
+TIME
+    #MAXIMUM_TIMESTEP_SIZE 1.d-1 y
+    #FINAL_TIME 1.0d-1 y
+    MAXIMUM_TIMESTEP_SIZE 1.d-3 y
+    FINAL_TIME 1.0d-1 y
+END
+
+
+#=========================== regions ==========================================
+REGION All
+  COORDINATES
+    -5.d20 -5.d20 -5.d20
+    5.d20 5.d20 5.d20
+  /
+END 
+
+
+REGION inflow
+  FILE boundary_left_w.ex
+END
+
+REGION outflow
+  FILE boundary_right_e.ex
+END
+
+#=========================== constraints ======================================
+CONSTRAINT initial
+  CONCENTRATIONS
+    H+     7.d0      pH   
+    Na+    1d-10     T
+    CO3--  1.d-10    T 
+    Ca++   1.d-10    T #M Calcite
+    SO4--  1.d-10    T
+  /
+  MINERALS
+    Gypsum  0.77d0  750   m^2/kg     # Natural gypsum; SSA = 0.75 m2/g 
+    Calcite 0.0d0  200 m^2/m^3     # source: Xu & Jiang
+  /
+ EQUILIBRATE_AT_EACH_CELL
+END
+
+
+CONSTRAINT injection_constraint
+  CONCENTRATIONS
+    H+     11.11      pH   
+    Na+    0.2d0      T
+    CO3--  0.1d0      T 
+    Ca++   1.d-10     M Calcite
+    SO4--  1.d-10     T
+  /
+  END
+
+#=========================== flow conditions ==================================
+FLOW_CONDITION initial
+  TYPE
+     LIQUID_PRESSURE dirichlet 
+  /
+  LIQUID_PRESSURE 1.05d6
+END
+
+FLOW_CONDITION inflow 
+  TYPE
+     LIQUID_PRESSURE dirichlet 
+  /
+  LIQUID_PRESSURE 1.1d6
+END
+
+FLOW_CONDITION outflow
+  TYPE
+     LIQUID_PRESSURE dirichlet 
+  /
+  LIQUID_PRESSURE 1.0d6
+END
+
+
+TRANSPORT_CONDITION initial
+  TYPE dirichlet 
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+
+TRANSPORT_CONDITION seepage_face
+  TYPE DIRICHLET_ZERO_GRADIENT 
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+TRANSPORT_CONDITION inflow_conc
+  TYPE ZERO_GRADIENT
+  CONSTRAINT_LIST
+    0.d0 injection_constraint
+  /
+END
+
+
+# initial condition
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION initial
+  REGION All
+/
+
+BOUNDARY_CONDITION INFLOW
+    FLOW_CONDITION inflow 
+    TRANSPORT_CONDITION inflow_conc
+    REGION inflow
+END
+
+## east boundary condition
+BOUNDARY_CONDITION OUTFLOW
+  FLOW_CONDITION outflow
+  TRANSPORT_CONDITION seepage_face
+  REGION outflow
+/
+
+
+#=========================== stratigraphy couplers ============================
+STRATA
+  REGION All 
+  MATERIAL fractures
+END
+
+END_SUBSURFACE
+
+

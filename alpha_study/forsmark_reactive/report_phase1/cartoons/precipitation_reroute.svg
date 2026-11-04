@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="cartoon" viewBox="0 0 960 300" role="img" aria-label="Hypothesis test for precipitation rerouting. Step 1: calcium released where gypsum dissolves meets carbonate from the inlet and calcite coats the open path A downstream of the dissolving zone. Step 2: the coating narrows path A and its permeability falls. Step 3, the hypothesis: flow diverts to the neighbouring path B, which starts dissolving and breaks inheritance. In the 2 mM carbonate runs this has not been seen so far.">
+<defs><marker id="precipitation_reroute-fs" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="precipitation_reroute-fm" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="precipitation_reroute-fl" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="17" markerHeight="17" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="precipitation_reroute-k" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text x="12" y="18" font-size="13" font-weight="600" fill="currentColor">1 · calcite forms downstream</text>
+<text x="12" y="36" font-size="12" fill="currentColor">Ca²⁺ from the dissolving zone meets CO₃²⁻</text>
+<text x="12" y="51" font-size="12" fill="currentColor">from the inlet: calcite coats path A</text>
+<polyline points="34,142 60,112 255,112 280,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="34,142 60,172 255,172 280,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="34,142 60,112 150,112" fill="none" stroke="var(--open)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="150" y1="112" x2="164" y2="112" stroke="var(--open)" stroke-width="16" stroke-opacity="0.5"/>
+<polyline points="18,142 34,142" fill="none" stroke="var(--flow)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="34,142 60,112 255,112 261,112" fill="none" stroke="var(--flow)" stroke-width="5" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fl)"/>
+<polyline points="34,142 60,172 255,172 261,172" fill="none" stroke="var(--flow)" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fs)"/>
+<rect x="168" y="104" width="60" height="3" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<rect x="168" y="117" width="60" height="3" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<text x="54" y="98" font-size="12" font-weight="600" fill="currentColor">A</text>
+<text x="54" y="196" font-size="12" font-weight="600" fill="currentColor">B</text>
+<text x="34" y="172" font-size="11" text-anchor="middle" fill="currentColor">in</text>
+<text x="280" y="172" font-size="11" text-anchor="middle" fill="currentColor">out</text>
+<circle cx="144" cy="80" r="10" fill="var(--ion)" fill-opacity="0.22" stroke="var(--ion)" stroke-width="1.3"/><text x="144" y="83.8" font-size="11" text-anchor="middle" fill="currentColor">Ca</text>
+<circle cx="176" cy="80" r="10" fill="var(--ion)" fill-opacity="0.22" stroke="var(--ion)" stroke-width="1.3"/><text x="176" y="83.8" font-size="11" text-anchor="middle" fill="currentColor">CO₃</text>
+<path d="M146,91 Q164,102 178,102.0" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#precipitation_reroute-k)"/>
+<text x="234" y="100" font-size="11" fill="currentColor">CaCO₃</text>
+<path d="M176,91 Q180,100 186,102.0" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="157" y="136" font-size="11" text-anchor="middle" fill="currentColor">dissolving zone</text>
+<text x="332" y="18" font-size="13" font-weight="600" fill="currentColor">2 · the coating narrows path A</text>
+<text x="332" y="36" font-size="12" fill="currentColor">its permeability falls where the calcite</text>
+<text x="332" y="51" font-size="12" fill="currentColor">sits, so A conducts less</text>
+<polyline points="354,142 380,112 575,112 600,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="354,142 380,172 575,172 600,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="354,142 380,112 470,112" fill="none" stroke="var(--open)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="470" y1="112" x2="484" y2="112" stroke="var(--open)" stroke-width="16" stroke-opacity="0.5"/>
+<polyline points="338,142 354,142" fill="none" stroke="var(--flow)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="354,142 380,112 575,112 581,112" fill="none" stroke="var(--flow)" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fm)"/>
+<polyline points="354,142 380,172 575,172 581,172" fill="none" stroke="var(--flow)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fm)"/>
+<rect x="488" y="104" width="60" height="6.5" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<rect x="488" y="113.5" width="60" height="6.5" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<text x="374" y="98" font-size="12" font-weight="600" fill="currentColor">A</text>
+<text x="374" y="196" font-size="12" font-weight="600" fill="currentColor">B</text>
+<text x="354" y="172" font-size="11" text-anchor="middle" fill="currentColor">in</text>
+<text x="600" y="172" font-size="11" text-anchor="middle" fill="currentColor">out</text>
+<text x="518" y="94" font-size="12" text-anchor="middle" font-weight="600" fill="currentColor">k ↓</text>
+<rect x="646" y="2" width="302" height="222" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="940" y="16" font-size="11" text-anchor="end" fill-opacity="0.85" fill="currentColor">hypothesis</text>
+<text x="652" y="18" font-size="13" font-weight="600" fill="currentColor">3 · flow diverts to path B</text>
+<text x="652" y="36" font-size="12" fill="currentColor">B starts to dissolve: a new channel,</text>
+<text x="652" y="51" font-size="12" fill="currentColor">inheritance would break</text>
+<polyline points="674,142 700,112 895,112 920,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="674,142 700,172 895,172 920,142" fill="none" stroke="var(--mineral)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="674,142 700,112 790,112" fill="none" stroke="var(--open)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="790" y1="112" x2="804" y2="112" stroke="var(--open)" stroke-width="16" stroke-opacity="0.5"/>
+<polyline points="674,142 700,172 787.8,172" fill="none" stroke="var(--open)" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="658,142 674,142" fill="none" stroke="var(--flow)" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="674,142 700,112 895,112 901,112" fill="none" stroke="var(--flow)" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fs)"/>
+<polyline points="674,142 700,172 895,172 901,172" fill="none" stroke="var(--flow)" stroke-width="5" stroke-linejoin="round" stroke-linecap="butt" marker-end="url(#precipitation_reroute-fl)"/>
+<rect x="808" y="104" width="60" height="6.5" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<rect x="808" y="113.5" width="60" height="6.5" fill="var(--calcite)" stroke="currentColor" stroke-width="0.5"/>
+<text x="694" y="98" font-size="12" font-weight="600" fill="currentColor">A</text>
+<text x="694" y="196" font-size="12" font-weight="600" fill="currentColor">B</text>
+<text x="674" y="172" font-size="11" text-anchor="middle" fill="currentColor">in</text>
+<text x="920" y="172" font-size="11" text-anchor="middle" fill="currentColor">out</text>
+<text x="795.8" y="158" font-size="11" fill="currentColor">new front</text>
+<line x1="306" y1="140" x2="324" y2="140" stroke="currentColor" stroke-width="1.4" marker-end="url(#precipitation_reroute-k)"/>
+<line x1="626" y1="140" x2="644" y2="140" stroke="currentColor" stroke-width="1.4" marker-end="url(#precipitation_reroute-k)"/>
+<line x1="10" y1="236" x2="950" y2="236" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.3"/>
+<text x="10" y="256" font-size="12" fill="currentColor">test: 2 mM CO₃ at φ₀ = 0.1 (precipitation on, gypsum capacity ≈ gypsum only), σ = 1, seeds 1–3, P32 ×4/×6/×8</text>
+<text x="10" y="276" font-size="12" font-weight="600" fill="currentColor">so far: no rerouting. Channel depth matches gypsum only; inheritance 0.97–0.99</text>
+<text x="10" y="294" font-size="12" fill-opacity="0.85" fill="currentColor">Phase 2 runs continue to t<tspan dy="3" font-size="11">cap</tspan><tspan dy="-3"> = 2; step 3 has not been seen in any of them yet</tspan></text>
+</svg>

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+forsmark_reactive/deck/qa/
+alpha_study/forsmark_reactive/deck/qa/
+*.vtk
+*.vtu
+*.h5

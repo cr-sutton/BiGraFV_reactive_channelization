@@ -1,0 +1,20 @@
+{
+  "domain": [
+    1000.0,
+    250.0,
+    250.0
+  ],
+  "seed": 5,
+  "network": "forsmark_ffm01",
+  "layer": 2,
+  "rmin": 15.0,
+  "rmax": 564.0,
+  "p32_scale": 6.0,
+  "transmissivity_sigma": 0.5,
+  "gen_seconds": 1.3211620410438627,
+  "Q_graph_raw": 0.00016808272989352025,
+  "n_fractures": 2796,
+  "graph_nodes": 13143,
+  "graph_edges": 19777,
+  "raw_seconds": 4.899220290826634
+}

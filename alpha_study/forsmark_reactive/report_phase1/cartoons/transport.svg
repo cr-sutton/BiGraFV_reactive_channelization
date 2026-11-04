@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="cartoon" viewBox="0 0 960 346" role="img" aria-label="Why the breakthrough curve narrows. (a) In an open-fracture network a tracer pulse races through a fast channel that holds little volume while much of it lingers in slow side fractures: early peak, long tail. (b) After channelization in a vein network the dissolved channel holds most of the pore space and most of the flow, so the pulse moves as a near-plug and arrives close to the mean residence time.">
+<defs><marker id="transport-fs" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="transport-fm" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="transport-fl" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="17" markerHeight="17" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--flow)"/></marker><marker id="transport-k" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<text x="10" y="18" font-size="13" font-weight="600" fill="currentColor">(a) open-fracture network: the fast channel holds little volume</text>
+<line x1="32" y1="40" x2="32" y2="144" stroke="currentColor" stroke-width="1.5"/>
+<line x1="568" y1="40" x2="568" y2="144" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="70" y1="92" x2="83.9" y2="56.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="83.9" y1="56.7" x2="104.2" y2="56.6" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="70" y1="92" x2="81.6" y2="130.1" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="81.6" y1="130.1" x2="95.1" y2="134.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="112" y1="92" x2="129.4" y2="52.6" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="129.4" y1="52.6" x2="148.9" y2="44.3" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="112" y1="92" x2="131.8" y2="121.5" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="131.8" y1="121.5" x2="150.1" y2="121.2" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="154" y1="92" x2="170" y2="68.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="170" y1="68.8" x2="185.9" y2="72.2" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="154" y1="92" x2="177.7" y2="124.6" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="177.7" y1="124.6" x2="197.7" y2="128" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="196" y1="92" x2="218.7" y2="61.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="218.7" y1="61.7" x2="232.4" y2="64.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="196" y1="92" x2="213.8" y2="117.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="213.8" y1="117.8" x2="235.3" y2="113.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="238" y1="92" x2="247" y2="60.6" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="247" y1="60.6" x2="264.8" y2="56.3" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="238" y1="92" x2="246.9" y2="122" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="246.9" y1="122" x2="266.3" y2="123.5" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="280" y1="92" x2="302.7" y2="56.3" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="302.7" y1="56.3" x2="319.2" y2="52.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="280" y1="92" x2="298.8" y2="115.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="298.8" y1="115.8" x2="315.1" y2="113.9" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="322" y1="92" x2="333" y2="66.2" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="333" y1="66.2" x2="348.9" y2="61.1" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="322" y1="92" x2="341.3" y2="128.3" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="341.3" y1="128.3" x2="357.7" y2="130.5" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="364" y1="92" x2="388.5" y2="61.3" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="388.5" y1="61.3" x2="409.9" y2="57.2" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="364" y1="92" x2="376.9" y2="129.8" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="376.9" y1="129.8" x2="391" y2="131.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="406" y1="92" x2="420.6" y2="61.4" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="420.6" y1="61.4" x2="433.5" y2="55.9" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="406" y1="92" x2="414.6" y2="121.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="414.6" y1="121.7" x2="429.9" y2="124.7" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="448" y1="92" x2="460.1" y2="50.9" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="460.1" y1="50.9" x2="475.6" y2="44.4" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="448" y1="92" x2="460.8" y2="126.1" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="460.8" y1="126.1" x2="475.6" y2="127.9" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="490" y1="92" x2="502.9" y2="53.4" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="502.9" y1="53.4" x2="517.2" y2="52.6" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="490" y1="92" x2="505.4" y2="117.1" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="505.4" y1="117.1" x2="524" y2="114.2" stroke="var(--open)" stroke-width="7" stroke-linecap="round"/>
+<line x1="40" y1="92" x2="560" y2="92" stroke="var(--open)" stroke-width="5" stroke-linecap="round"/>
+<line x1="40" y1="92" x2="560" y2="92" stroke="var(--open)" stroke-width="8" stroke-linecap="round"/>
+<line x1="44" y1="92" x2="554" y2="92" stroke="var(--flow)" stroke-width="2" stroke-linecap="butt" marker-end="url(#transport-fs)"/>
+<circle cx="76.3" cy="75.9" r="2.4" fill="var(--ion)"/>
+<circle cx="82.4" cy="60.4" r="2.4" fill="var(--ion)"/>
+<circle cx="78.5" cy="70.5" r="2.4" fill="var(--ion)"/>
+<circle cx="92.7" cy="56.6" r="2.4" fill="var(--ion)"/>
+<circle cx="92.8" cy="56.6" r="2.4" fill="var(--ion)"/>
+<circle cx="90.7" cy="56.6" r="2.4" fill="var(--ion)"/>
+<circle cx="73" cy="101.9" r="2.4" fill="var(--ion)"/>
+<circle cx="73.6" cy="103.9" r="2.4" fill="var(--ion)"/>
+<circle cx="78.3" cy="119.3" r="2.4" fill="var(--ion)"/>
+<circle cx="94.4" cy="134.5" r="2.4" fill="var(--ion)"/>
+<circle cx="85.9" cy="131.6" r="2.4" fill="var(--ion)"/>
+<circle cx="84.8" cy="131.2" r="2.4" fill="var(--ion)"/>
+<circle cx="128.3" cy="54.9" r="2.4" fill="var(--ion)"/>
+<circle cx="122.4" cy="68.3" r="2.4" fill="var(--ion)"/>
+<circle cx="120.8" cy="72.1" r="2.4" fill="var(--ion)"/>
+<circle cx="136.8" cy="49.5" r="2.4" fill="var(--ion)"/>
+<circle cx="142" cy="47.3" r="2.4" fill="var(--ion)"/>
+<circle cx="145.4" cy="45.8" r="2.4" fill="var(--ion)"/>
+<circle cx="122.7" cy="108" r="2.4" fill="var(--ion)"/>
+<circle cx="122.2" cy="107.2" r="2.4" fill="var(--ion)"/>
+<circle cx="116.8" cy="99.1" r="2.4" fill="var(--ion)"/>
+<circle cx="148" cy="121.2" r="2.4" fill="var(--ion)"/>
+<circle cx="135.9" cy="121.4" r="2.4" fill="var(--ion)"/>
+<circle cx="142.2" cy="121.3" r="2.4" fill="var(--ion)"/>
+<circle cx="167.3" cy="72.8" r="2.4" fill="var(--ion)"/>
+<circle cx="158.8" cy="85.1" r="2.4" fill="var(--ion)"/>
+<circle cx="166" cy="74.6" r="2.4" fill="var(--ion)"/>
+<circle cx="184.5" cy="71.9" r="2.4" fill="var(--ion)"/>
+<circle cx="180.7" cy="71.1" r="2.4" fill="var(--ion)"/>
+<circle cx="182.6" cy="71.5" r="2.4" fill="var(--ion)"/>
+<circle cx="160.6" cy="101.1" r="2.4" fill="var(--ion)"/>
+<circle cx="166.4" cy="109.1" r="2.4" fill="var(--ion)"/>
+<circle cx="161.4" cy="102.2" r="2.4" fill="var(--ion)"/>
+<circle cx="194.4" cy="127.5" r="2.4" fill="var(--ion)"/>
+<circle cx="186.1" cy="126" r="2.4" fill="var(--ion)"/>
+<circle cx="188.5" cy="126.4" r="2.4" fill="var(--ion)"/>
+<circle cx="217.6" cy="63.2" r="2.4" fill="var(--ion)"/>
+<circle cx="215.1" cy="66.6" r="2.4" fill="var(--ion)"/>
+<circle cx="217.2" cy="63.7" r="2.4" fill="var(--ion)"/>
+<circle cx="226.1" cy="63.4" r="2.4" fill="var(--ion)"/>
+<circle cx="226.4" cy="63.5" r="2.4" fill="var(--ion)"/>
+<circle cx="228.9" cy="64" r="2.4" fill="var(--ion)"/>
+<circle cx="206" cy="106.4" r="2.4" fill="var(--ion)"/>
+<circle cx="203.4" cy="102.8" r="2.4" fill="var(--ion)"/>
+<circle cx="205" cy="105" r="2.4" fill="var(--ion)"/>
+<circle cx="220.5" cy="116.5" r="2.4" fill="var(--ion)"/>
+<circle cx="224.2" cy="115.8" r="2.4" fill="var(--ion)"/>
+<circle cx="234" cy="114" r="2.4" fill="var(--ion)"/>
+<circle cx="246.3" cy="63.1" r="2.4" fill="var(--ion)"/>
+<circle cx="244" cy="71" r="2.4" fill="var(--ion)"/>
+<circle cx="243.2" cy="74" r="2.4" fill="var(--ion)"/>
+<circle cx="255" cy="58.7" r="2.4" fill="var(--ion)"/>
+<circle cx="251.7" cy="59.5" r="2.4" fill="var(--ion)"/>
+<circle cx="254.2" cy="58.9" r="2.4" fill="var(--ion)"/>
+<circle cx="245" cy="115.6" r="2.4" fill="var(--ion)"/>
+<circle cx="245.5" cy="117.5" r="2.4" fill="var(--ion)"/>
+<circle cx="242.2" cy="106.1" r="2.4" fill="var(--ion)"/>
+<circle cx="262.2" cy="123.2" r="2.4" fill="var(--ion)"/>
+<circle cx="262.1" cy="123.2" r="2.4" fill="var(--ion)"/>
+<circle cx="260.9" cy="123.1" r="2.4" fill="var(--ion)"/>
+<circle cx="295.9" cy="67.1" r="2.4" fill="var(--ion)"/>
+<circle cx="297.5" cy="64.5" r="2.4" fill="var(--ion)"/>
+<circle cx="290.7" cy="75.1" r="2.4" fill="var(--ion)"/>
+<circle cx="293.7" cy="109.3" r="2.4" fill="var(--ion)"/>
+<circle cx="287.7" cy="101.8" r="2.4" fill="var(--ion)"/>
+<circle cx="290.6" cy="105.4" r="2.4" fill="var(--ion)"/>
+<circle cx="311.5" cy="114.3" r="2.4" fill="var(--ion)"/>
+<circle cx="310.5" cy="114.5" r="2.4" fill="var(--ion)"/>
+<circle cx="305.7" cy="115" r="2.4" fill="var(--ion)"/>
+<circle cx="519.1" cy="92.4" r="2.4" fill="var(--ion)"/>
+<circle cx="446.1" cy="90.5" r="2.4" fill="var(--ion)"/>
+<circle cx="439.4" cy="91.3" r="2.4" fill="var(--ion)"/>
+<circle cx="464.3" cy="91.9" r="2.4" fill="var(--ion)"/>
+<circle cx="493.3" cy="92.4" r="2.4" fill="var(--ion)"/>
+<circle cx="489.5" cy="91.5" r="2.4" fill="var(--ion)"/>
+<circle cx="458.8" cy="92.7" r="2.4" fill="var(--ion)"/>
+<circle cx="495.6" cy="91.6" r="2.4" fill="var(--ion)"/>
+<circle cx="498.6" cy="93.1" r="2.4" fill="var(--ion)"/>
+<circle cx="467.7" cy="93.4" r="2.4" fill="var(--ion)"/>
+<circle cx="521.3" cy="92.1" r="2.4" fill="var(--ion)"/>
+<circle cx="435.9" cy="91" r="2.4" fill="var(--ion)"/>
+<circle cx="497.3" cy="93.3" r="2.4" fill="var(--ion)"/>
+<circle cx="425.4" cy="92.6" r="2.4" fill="var(--ion)"/>
+<circle cx="473.9" cy="92.7" r="2.4" fill="var(--ion)"/>
+<circle cx="364.4" cy="92.8" r="2.4" fill="var(--ion)"/>
+<text x="556" y="36" font-size="11" text-anchor="end" fill="currentColor">fast channel, little volume</text>
+<text x="42" y="150" font-size="11" fill="currentColor">most volume in slow side fractures</text>
+<line x1="640" y1="128" x2="900" y2="128" stroke="currentColor" stroke-width="1" marker-end="url(#transport-k)"/>
+<line x1="640" y1="128" x2="640" y2="34" stroke="currentColor" stroke-width="1" marker-end="url(#transport-k)"/>
+<polygon points="640,128 641.1,127.9 642.2,127 643.2,124.4 644.3,120 645.4,114.3 646.5,107.9 647.6,101.1 648.7,94.3 649.8,87.8 650.8,81.6 651.9,75.9 653,70.7 654.1,66.1 655.2,62 656.2,58.4 657.3,55.3 658.4,52.6 659.5,50.4 660.6,48.6 661.7,47.1 662.8,45.9 663.8,45.1 664.9,44.5 666,44.1 667.1,44 668.2,44 669.2,44.3 670.3,44.6 671.4,45.1 672.5,45.7 673.6,46.4 674.7,47.2 675.8,48.1 676.8,49 677.9,50 679,51 680.1,52.1 681.2,53.2 682.2,54.3 683.3,55.4 684.4,56.6 685.5,57.8 686.6,59 687.7,60.1 688.8,61.3 689.8,62.5 690.9,63.7 692,64.9 693.1,66 694.2,67.2 695.2,68.3 696.3,69.5 697.4,70.6 698.5,71.7 699.6,72.8 700.7,73.9 701.8,74.9 702.8,76 703.9,77 705,78 706.1,79 707.2,79.9 708.2,80.9 709.3,81.8 710.4,82.8 711.5,83.7 712.6,84.5 713.7,85.4 714.8,86.3 715.8,87.1 716.9,87.9 718,88.7 719.1,89.5 720.2,90.3 721.2,91 722.3,91.7 723.4,92.5 724.5,93.2 725.6,93.9 726.7,94.5 727.8,95.2 728.8,95.8 729.9,96.5 731,97.1 732.1,97.7 733.2,98.3 734.2,98.9 735.3,99.4 736.4,100 737.5,100.5 738.6,101.1 739.7,101.6 740.8,102.1 741.8,102.6 742.9,103.1 744,103.6 745.1,104 746.2,104.5 747.2,104.9 748.3,105.4 749.4,105.8 750.5,106.2 751.6,106.6 752.7,107 753.8,107.4 754.8,107.8 755.9,108.2 757,108.5 758.1,108.9 759.2,109.2 760.2,109.6 761.3,109.9 762.4,110.2 763.5,110.6 764.6,110.9 765.7,111.2 766.8,111.5 767.8,111.8 768.9,112.1 770,112.4 771.1,112.6 772.2,112.9 773.2,113.2 774.3,113.4 775.4,113.7 776.5,114 777.6,114.2 778.7,114.4 779.8,114.7 780.8,114.9 781.9,115.1 783,115.4 784.1,115.6 785.2,115.8 786.2,116 787.3,116.2 788.4,116.4 789.5,116.6 790.6,116.8 791.7,117 792.8,117.2 793.8,117.3 794.9,117.5 796,117.7 797.1,117.9 798.2,118 799.2,118.2 800.3,118.4 801.4,118.5 802.5,118.7 803.6,118.8 804.7,119 805.8,119.1 806.8,119.3 807.9,119.4 809,119.5 810.1,119.7 811.2,119.8 812.2,119.9 813.3,120.1 814.4,120.2 815.5,120.3 816.6,120.4 817.7,120.6 818.8,120.7 819.8,120.8 820.9,120.9 822,121 823.1,121.1 824.2,121.2 825.2,121.3 826.3,121.4 827.4,121.5 828.5,121.6 829.6,121.7 830.7,121.8 831.8,121.9 832.8,122 833.9,122.1 835,122.2 836.1,122.3 837.2,122.4 838.2,122.4 839.3,122.5 840.4,122.6 841.5,122.7 842.6,122.8 843.7,122.8 844.8,122.9 845.8,123 846.9,123.1 848,123.1 849.1,123.2 850.2,123.3 851.2,123.3 852.3,123.4 853.4,123.5 854.5,123.5 855.6,123.6 856.7,123.7 857.8,123.7 858.8,123.8 859.9,123.8 861,123.9 862.1,124 863.2,124 864.2,124.1 865.3,124.1 866.4,124.2 867.5,124.2 868.6,124.3 869.7,124.3 870.8,124.4 871.8,124.4 872.9,124.5 874,124.5 875.1,124.6 876.2,124.6 877.2,124.7 878.3,124.7 879.4,124.8 880.5,124.8 881.6,124.9 882.7,124.9 883.8,124.9 884.8,125 885.9,125 887,125.1 888.1,125.1 889.2,125.1 890.2,125.2 891.3,125.2 892.4,125.2 893.5,125.3 894.6,125.3 895.7,125.4 896.8,125.4 897.8,125.4 898.9,125.5 900,125.5 900,128" fill="var(--ion)" fill-opacity="0.18"/>
+<polyline points="641.1,127.9 642.2,127 643.2,124.4 644.3,120 645.4,114.3 646.5,107.9 647.6,101.1 648.7,94.3 649.8,87.8 650.8,81.6 651.9,75.9 653,70.7 654.1,66.1 655.2,62 656.2,58.4 657.3,55.3 658.4,52.6 659.5,50.4 660.6,48.6 661.7,47.1 662.8,45.9 663.8,45.1 664.9,44.5 666,44.1 667.1,44 668.2,44 669.2,44.3 670.3,44.6 671.4,45.1 672.5,45.7 673.6,46.4 674.7,47.2 675.8,48.1 676.8,49 677.9,50 679,51 680.1,52.1 681.2,53.2 682.2,54.3 683.3,55.4 684.4,56.6 685.5,57.8 686.6,59 687.7,60.1 688.8,61.3 689.8,62.5 690.9,63.7 692,64.9 693.1,66 694.2,67.2 695.2,68.3 696.3,69.5 697.4,70.6 698.5,71.7 699.6,72.8 700.7,73.9 701.8,74.9 702.8,76 703.9,77 705,78 706.1,79 707.2,79.9 708.2,80.9 709.3,81.8 710.4,82.8 711.5,83.7 712.6,84.5 713.7,85.4 714.8,86.3 715.8,87.1 716.9,87.9 718,88.7 719.1,89.5 720.2,90.3 721.2,91 722.3,91.7 723.4,92.5 724.5,93.2 725.6,93.9 726.7,94.5 727.8,95.2 728.8,95.8 729.9,96.5 731,97.1 732.1,97.7 733.2,98.3 734.2,98.9 735.3,99.4 736.4,100 737.5,100.5 738.6,101.1 739.7,101.6 740.8,102.1 741.8,102.6 742.9,103.1 744,103.6 745.1,104 746.2,104.5 747.2,104.9 748.3,105.4 749.4,105.8 750.5,106.2 751.6,106.6 752.7,107 753.8,107.4 754.8,107.8 755.9,108.2 757,108.5 758.1,108.9 759.2,109.2 760.2,109.6 761.3,109.9 762.4,110.2 763.5,110.6 764.6,110.9 765.7,111.2 766.8,111.5 767.8,111.8 768.9,112.1 770,112.4 771.1,112.6 772.2,112.9 773.2,113.2 774.3,113.4 775.4,113.7 776.5,114 777.6,114.2 778.7,114.4 779.8,114.7 780.8,114.9 781.9,115.1 783,115.4 784.1,115.6 785.2,115.8 786.2,116 787.3,116.2 788.4,116.4 789.5,116.6 790.6,116.8 791.7,117 792.8,117.2 793.8,117.3 794.9,117.5 796,117.7 797.1,117.9 798.2,118 799.2,118.2 800.3,118.4 801.4,118.5 802.5,118.7 803.6,118.8 804.7,119 805.8,119.1 806.8,119.3 807.9,119.4 809,119.5 810.1,119.7 811.2,119.8 812.2,119.9 813.3,120.1 814.4,120.2 815.5,120.3 816.6,120.4 817.7,120.6 818.8,120.7 819.8,120.8 820.9,120.9 822,121 823.1,121.1 824.2,121.2 825.2,121.3 826.3,121.4 827.4,121.5 828.5,121.6 829.6,121.7 830.7,121.8 831.8,121.9 832.8,122 833.9,122.1 835,122.2 836.1,122.3 837.2,122.4 838.2,122.4 839.3,122.5 840.4,122.6 841.5,122.7 842.6,122.8 843.7,122.8 844.8,122.9 845.8,123 846.9,123.1 848,123.1 849.1,123.2 850.2,123.3 851.2,123.3 852.3,123.4 853.4,123.5 854.5,123.5 855.6,123.6 856.7,123.7 857.8,123.7 858.8,123.8 859.9,123.8 861,123.9 862.1,124 863.2,124 864.2,124.1 865.3,124.1 866.4,124.2 867.5,124.2 868.6,124.3 869.7,124.3 870.8,124.4 871.8,124.4 872.9,124.5 874,124.5 875.1,124.6 876.2,124.6 877.2,124.7 878.3,124.7 879.4,124.8 880.5,124.8 881.6,124.9 882.7,124.9 883.8,124.9 884.8,125 885.9,125 887,125.1 888.1,125.1 889.2,125.1 890.2,125.2 891.3,125.2 892.4,125.2 893.5,125.3 894.6,125.3 895.7,125.4 896.8,125.4 897.8,125.4 898.9,125.5 900,125.5" fill="none" stroke="var(--ion)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="726.7" y1="128" x2="726.7" y2="40" stroke="currentColor" stroke-width="1" stroke-opacity="0.7" stroke-dasharray="3 3"/>
+<text x="726.7" y="142" font-size="11" text-anchor="middle" fill="currentColor">τ<tspan dy="3" font-size="11">res</tspan></text>
+<text x="904" y="132" font-size="11" fill="currentColor">t</text>
+<text x="634" y="42" font-size="11" text-anchor="end" fill="currentColor">f</text>
+<text x="733" y="58" font-size="11" fill="currentColor">← early peak</text>
+<text x="780" y="112" font-size="11" fill="currentColor">long tail</text>
+<text x="10" y="182" font-size="13" font-weight="600" fill="currentColor">(b) vein network after channelization: the channel holds most of the pore space</text>
+<line x1="32" y1="200" x2="32" y2="304" stroke="currentColor" stroke-width="1.5"/>
+<line x1="568" y1="200" x2="568" y2="304" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+<line x1="70" y1="252" x2="85.1" y2="217" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="70" y1="252" x2="85.1" y2="217" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="70" y1="252" x2="84.8" y2="284.7" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="70" y1="252" x2="84.8" y2="284.7" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="112" y1="252" x2="128.7" y2="214.7" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="112" y1="252" x2="128.7" y2="214.7" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="112" y1="252" x2="137.4" y2="283" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="112" y1="252" x2="137.4" y2="283" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="154" y1="252" x2="169.6" y2="223.8" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="154" y1="252" x2="169.6" y2="223.8" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="154" y1="252" x2="176.2" y2="284.2" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="154" y1="252" x2="176.2" y2="284.2" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="196" y1="252" x2="212.3" y2="215.9" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="196" y1="252" x2="212.3" y2="215.9" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="196" y1="252" x2="210.5" y2="279" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="196" y1="252" x2="210.5" y2="279" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="238" y1="252" x2="258.7" y2="226.1" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="238" y1="252" x2="258.7" y2="226.1" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="238" y1="252" x2="254.9" y2="279" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="238" y1="252" x2="254.9" y2="279" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="280" y1="252" x2="298.7" y2="225.4" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="280" y1="252" x2="298.7" y2="225.4" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="280" y1="252" x2="294.5" y2="278.8" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="280" y1="252" x2="294.5" y2="278.8" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="322" y1="252" x2="336.8" y2="219.9" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="322" y1="252" x2="336.8" y2="219.9" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="322" y1="252" x2="343.4" y2="283.7" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="322" y1="252" x2="343.4" y2="283.7" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="364" y1="252" x2="391.4" y2="219.3" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="364" y1="252" x2="391.4" y2="219.3" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="364" y1="252" x2="383.4" y2="281.9" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="364" y1="252" x2="383.4" y2="281.9" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="406" y1="252" x2="427.6" y2="223.5" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="406" y1="252" x2="427.6" y2="223.5" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="406" y1="252" x2="427.2" y2="287.8" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="406" y1="252" x2="427.2" y2="287.8" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="448" y1="252" x2="460.7" y2="224.3" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="448" y1="252" x2="460.7" y2="224.3" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="448" y1="252" x2="461.9" y2="280.1" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="448" y1="252" x2="461.9" y2="280.1" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="490" y1="252" x2="504.9" y2="220.6" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="490" y1="252" x2="504.9" y2="220.6" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="490" y1="252" x2="504.5" y2="292.9" stroke="var(--mineral)" stroke-width="7" stroke-linecap="round"/>
+<line x1="490" y1="252" x2="504.5" y2="292.9" stroke="var(--open)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="40" y1="252" x2="560" y2="252" stroke="var(--open)" stroke-width="26" stroke-linecap="round"/>
+<line x1="44" y1="260" x2="554" y2="260" stroke="var(--flow)" stroke-width="4" stroke-linecap="butt" marker-end="url(#transport-fm)"/>
+<circle cx="347.2" cy="258.3" r="2.4" fill="var(--ion)"/>
+<circle cx="361.7" cy="249.4" r="2.4" fill="var(--ion)"/>
+<circle cx="329.2" cy="253.9" r="2.4" fill="var(--ion)"/>
+<circle cx="356.7" cy="261.1" r="2.4" fill="var(--ion)"/>
+<circle cx="382.9" cy="254.2" r="2.4" fill="var(--ion)"/>
+<circle cx="342.8" cy="259.9" r="2.4" fill="var(--ion)"/>
+<circle cx="320.1" cy="244.2" r="2.4" fill="var(--ion)"/>
+<circle cx="356.8" cy="254.3" r="2.4" fill="var(--ion)"/>
+<circle cx="329.1" cy="254.6" r="2.4" fill="var(--ion)"/>
+<circle cx="377.9" cy="249.5" r="2.4" fill="var(--ion)"/>
+<circle cx="348.1" cy="246.5" r="2.4" fill="var(--ion)"/>
+<circle cx="338.9" cy="261.4" r="2.4" fill="var(--ion)"/>
+<circle cx="344.7" cy="261.2" r="2.4" fill="var(--ion)"/>
+<circle cx="379.4" cy="253.9" r="2.4" fill="var(--ion)"/>
+<circle cx="336.9" cy="261.6" r="2.4" fill="var(--ion)"/>
+<circle cx="352.3" cy="250.3" r="2.4" fill="var(--ion)"/>
+<circle cx="340.7" cy="261.7" r="2.4" fill="var(--ion)"/>
+<circle cx="352" cy="247.7" r="2.4" fill="var(--ion)"/>
+<circle cx="351" cy="244.4" r="2.4" fill="var(--ion)"/>
+<circle cx="360.4" cy="250.9" r="2.4" fill="var(--ion)"/>
+<circle cx="339.1" cy="257.6" r="2.4" fill="var(--ion)"/>
+<circle cx="373.7" cy="242.3" r="2.4" fill="var(--ion)"/>
+<circle cx="354.6" cy="247.5" r="2.4" fill="var(--ion)"/>
+<circle cx="380.8" cy="257.6" r="2.4" fill="var(--ion)"/>
+<circle cx="336" cy="247.4" r="2.4" fill="var(--ion)"/>
+<circle cx="330.1" cy="261.8" r="2.4" fill="var(--ion)"/>
+<circle cx="339.1" cy="254.2" r="2.4" fill="var(--ion)"/>
+<circle cx="350.9" cy="254.9" r="2.4" fill="var(--ion)"/>
+<circle cx="359.3" cy="256.9" r="2.4" fill="var(--ion)"/>
+<circle cx="327.7" cy="257.2" r="2.4" fill="var(--ion)"/>
+<circle cx="339.5" cy="252.7" r="2.4" fill="var(--ion)"/>
+<circle cx="341.8" cy="247.9" r="2.4" fill="var(--ion)"/>
+<circle cx="354.4" cy="251.3" r="2.4" fill="var(--ion)"/>
+<circle cx="343.5" cy="256.9" r="2.4" fill="var(--ion)"/>
+<text x="392" y="251" font-size="11" fill="currentColor">← pulse moves as a near-plug</text>
+<text x="42" y="310" font-size="11" fill="currentColor">side fractures still filled: little volume, little flow</text>
+<line x1="640" y1="288" x2="900" y2="288" stroke="currentColor" stroke-width="1" marker-end="url(#transport-k)"/>
+<line x1="640" y1="288" x2="640" y2="194" stroke="currentColor" stroke-width="1" marker-end="url(#transport-k)"/>
+<polygon points="640,288 641.1,288 642.2,288 643.2,288 644.3,288 645.4,288 646.5,288 647.6,288 648.7,288 649.8,288 650.8,288 651.9,288 653,288 654.1,288 655.2,288 656.2,288 657.3,288 658.4,288 659.5,288 660.6,288 661.7,288 662.8,288 663.8,288 664.9,288 666,288 667.1,288 668.2,288 669.2,288 670.3,288 671.4,288 672.5,288 673.6,288 674.7,288 675.8,288 676.8,287.9 677.9,287.9 679,287.8 680.1,287.7 681.2,287.6 682.2,287.4 683.3,287.1 684.4,286.7 685.5,286.2 686.6,285.5 687.7,284.6 688.8,283.5 689.8,282.2 690.9,280.6 692,278.7 693.1,276.5 694.2,274 695.2,271.2 696.3,268.1 697.4,264.7 698.5,261.1 699.6,257.2 700.7,253.2 701.8,249 702.8,244.7 703.9,240.4 705,236.1 706.1,231.9 707.2,227.9 708.2,224 709.3,220.4 710.4,217.1 711.5,214.1 712.6,211.4 713.7,209.2 714.8,207.3 715.8,205.9 716.9,204.8 718,204.2 719.1,204 720.2,204.2 721.2,204.7 722.3,205.7 723.4,206.9 724.5,208.4 725.6,210.3 726.7,212.3 727.8,214.6 728.8,217 729.9,219.6 731,222.3 732.1,225.1 733.2,227.9 734.2,230.8 735.3,233.6 736.4,236.5 737.5,239.4 738.6,242.2 739.7,244.9 740.8,247.6 741.8,250.2 742.9,252.7 744,255 745.1,257.3 746.2,259.5 747.2,261.6 748.3,263.6 749.4,265.5 750.5,267.2 751.6,268.9 752.7,270.4 753.8,271.9 754.8,273.2 755.9,274.5 757,275.6 758.1,276.7 759.2,277.7 760.2,278.6 761.3,279.5 762.4,280.3 763.5,281 764.6,281.6 765.7,282.2 766.8,282.8 767.8,283.3 768.9,283.7 770,284.2 771.1,284.5 772.2,284.9 773.2,285.2 774.3,285.5 775.4,285.7 776.5,286 777.6,286.2 778.7,286.4 779.8,286.5 780.8,286.7 781.9,286.8 783,286.9 784.1,287.1 785.2,287.2 786.2,287.3 787.3,287.3 788.4,287.4 789.5,287.5 790.6,287.5 791.7,287.6 792.8,287.6 793.8,287.7 794.9,287.7 796,287.7 797.1,287.8 798.2,287.8 799.2,287.8 800.3,287.8 801.4,287.9 802.5,287.9 803.6,287.9 804.7,287.9 805.8,287.9 806.8,287.9 807.9,287.9 809,287.9 810.1,287.9 811.2,288 812.2,288 813.3,288 814.4,288 815.5,288 816.6,288 817.7,288 818.8,288 819.8,288 820.9,288 822,288 823.1,288 824.2,288 825.2,288 826.3,288 827.4,288 828.5,288 829.6,288 830.7,288 831.8,288 832.8,288 833.9,288 835,288 836.1,288 837.2,288 838.2,288 839.3,288 840.4,288 841.5,288 842.6,288 843.7,288 844.8,288 845.8,288 846.9,288 848,288 849.1,288 850.2,288 851.2,288 852.3,288 853.4,288 854.5,288 855.6,288 856.7,288 857.8,288 858.8,288 859.9,288 861,288 862.1,288 863.2,288 864.2,288 865.3,288 866.4,288 867.5,288 868.6,288 869.7,288 870.8,288 871.8,288 872.9,288 874,288 875.1,288 876.2,288 877.2,288 878.3,288 879.4,288 880.5,288 881.6,288 882.7,288 883.8,288 884.8,288 885.9,288 887,288 888.1,288 889.2,288 890.2,288 891.3,288 892.4,288 893.5,288 894.6,288 895.7,288 896.8,288 897.8,288 898.9,288 900,288 900,288" fill="var(--ion)" fill-opacity="0.18"/>
+<polyline points="641.1,288 642.2,288 643.2,288 644.3,288 645.4,288 646.5,288 647.6,288 648.7,288 649.8,288 650.8,288 651.9,288 653,288 654.1,288 655.2,288 656.2,288 657.3,288 658.4,288 659.5,288 660.6,288 661.7,288 662.8,288 663.8,288 664.9,288 666,288 667.1,288 668.2,288 669.2,288 670.3,288 671.4,288 672.5,288 673.6,288 674.7,288 675.8,288 676.8,287.9 677.9,287.9 679,287.8 680.1,287.7 681.2,287.6 682.2,287.4 683.3,287.1 684.4,286.7 685.5,286.2 686.6,285.5 687.7,284.6 688.8,283.5 689.8,282.2 690.9,280.6 692,278.7 693.1,276.5 694.2,274 695.2,271.2 696.3,268.1 697.4,264.7 698.5,261.1 699.6,257.2 700.7,253.2 701.8,249 702.8,244.7 703.9,240.4 705,236.1 706.1,231.9 707.2,227.9 708.2,224 709.3,220.4 710.4,217.1 711.5,214.1 712.6,211.4 713.7,209.2 714.8,207.3 715.8,205.9 716.9,204.8 718,204.2 719.1,204 720.2,204.2 721.2,204.7 722.3,205.7 723.4,206.9 724.5,208.4 725.6,210.3 726.7,212.3 727.8,214.6 728.8,217 729.9,219.6 731,222.3 732.1,225.1 733.2,227.9 734.2,230.8 735.3,233.6 736.4,236.5 737.5,239.4 738.6,242.2 739.7,244.9 740.8,247.6 741.8,250.2 742.9,252.7 744,255 745.1,257.3 746.2,259.5 747.2,261.6 748.3,263.6 749.4,265.5 750.5,267.2 751.6,268.9 752.7,270.4 753.8,271.9 754.8,273.2 755.9,274.5 757,275.6 758.1,276.7 759.2,277.7 760.2,278.6 761.3,279.5 762.4,280.3 763.5,281 764.6,281.6 765.7,282.2 766.8,282.8 767.8,283.3 768.9,283.7 770,284.2 771.1,284.5 772.2,284.9 773.2,285.2 774.3,285.5 775.4,285.7 776.5,286 777.6,286.2 778.7,286.4 779.8,286.5 780.8,286.7 781.9,286.8 783,286.9 784.1,287.1 785.2,287.2 786.2,287.3 787.3,287.3 788.4,287.4 789.5,287.5 790.6,287.5 791.7,287.6 792.8,287.6 793.8,287.7 794.9,287.7 796,287.7 797.1,287.8 798.2,287.8 799.2,287.8 800.3,287.8 801.4,287.9 802.5,287.9 803.6,287.9 804.7,287.9 805.8,287.9 806.8,287.9 807.9,287.9 809,287.9 810.1,287.9 811.2,288 812.2,288 813.3,288 814.4,288 815.5,288 816.6,288 817.7,288 818.8,288 819.8,288 820.9,288 822,288 823.1,288 824.2,288 825.2,288 826.3,288 827.4,288 828.5,288 829.6,288 830.7,288 831.8,288 832.8,288 833.9,288 835,288 836.1,288 837.2,288 838.2,288 839.3,288 840.4,288 841.5,288 842.6,288 843.7,288 844.8,288 845.8,288 846.9,288 848,288 849.1,288 850.2,288 851.2,288 852.3,288 853.4,288 854.5,288 855.6,288 856.7,288 857.8,288 858.8,288 859.9,288 861,288 862.1,288 863.2,288 864.2,288 865.3,288 866.4,288 867.5,288 868.6,288 869.7,288 870.8,288 871.8,288 872.9,288 874,288 875.1,288 876.2,288 877.2,288 878.3,288 879.4,288 880.5,288 881.6,288 882.7,288 883.8,288 884.8,288 885.9,288 887,288 888.1,288 889.2,288 890.2,288 891.3,288 892.4,288 893.5,288 894.6,288 895.7,288 896.8,288 897.8,288 898.9,288 900,288" fill="none" stroke="var(--ion)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="726.7" y1="288" x2="726.7" y2="200" stroke="currentColor" stroke-width="1" stroke-opacity="0.7" stroke-dasharray="3 3"/>
+<text x="726.7" y="302" font-size="11" text-anchor="middle" fill="currentColor">τ<tspan dy="3" font-size="11">res</tspan></text>
+<text x="904" y="292" font-size="11" fill="currentColor">t</text>
+<text x="634" y="202" font-size="11" text-anchor="end" fill="currentColor">f</text>
+<text x="730" y="212" font-size="11" fill="currentColor">peak near τ<tspan dy="3" font-size="11">res</tspan></text>
+<text x="790" y="272" font-size="11" fill="currentColor">short tail</text>
+<text x="10" y="338" font-size="12" fill="currentColor">as the channel forms: median arrival rises towards τ<tspan dy="3" font-size="11">res</tspan><tspan dy="-3"> (≈0.79 → 0.90), the tail steepens (γ ≈ 3.3 → 4.1), dispersivity falls</tspan></text>
+</svg>

@@ -1,0 +1,1 @@
+In open fractures the aperture sets both flow and volume, so the flow channel is the pore-space channel. In a vein network mid-dissolution the dissolved space sits upstream while the still-filled fractures downstream set the flow, so flow and pore space decouple (PR_pore falls while PR_V holds).

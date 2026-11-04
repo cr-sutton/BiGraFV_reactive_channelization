@@ -1,0 +1,3291 @@
+Starting DFNGen
+DFN Generator Input File: dfnGen_output/model_graph_raw_dfnGen_input_clean.dat
+
+
+
+FRAM IS DISABLED
+Expecting Trend & Plunge (trend clockwise from North; plunge positive downward)
+The orientation_distribution is: Fisher
+The orientation_distribution is: Fisher
+The orientation_distribution is: Fisher
+The orientation_distribution is: Fisher
+The orientation_distribution is: Fisher
+Converting to Radians for Family: 0
+Converting to Radians for Family: 1
+Converting to Radians for Family: 2
+Converting to Radians for Family: 3
+Converting to Radians for Family: 4
+h: 1.000000
+Shape Families:
+
+
+Ellipse Family 1:
+Number of Vertices: 16
+Aspect Ratio: 1.000000
+P32 (Fracture Intensity) Target: 0.048249
+Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+Trend: 5.096361 rad, 292.000000 deg
+Plunge: 0.017453 rad, 1.000000 deg 
+Orientation Distribution: fisher
+Kappa: 17.799999
+Kappa1: 0.000000
+Kappa2: 0.000000
+Layer: Entire domain
+Region: Entire domain
+Distribution: Truncated Power-Law
+Alpha: 2.500000
+Minimum Radius: 15.000000m
+Maximum Radius: 564.000000m
+Family Insertion Probability: 0.166626
+
+
+Ellipse Family 2:
+Number of Vertices: 16
+Aspect Ratio: 1.000000
+P32 (Fracture Intensity) Target: 0.038752
+Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+Trend: 5.689773 rad, 326.000000 deg
+Plunge: 0.034907 rad, 2.000000 deg 
+Orientation Distribution: fisher
+Kappa: 14.300000
+Kappa1: 0.000000
+Kappa2: 0.000000
+Layer: Entire domain
+Region: Entire domain
+Distribution: Truncated Power-Law
+Alpha: 2.700000
+Minimum Radius: 15.000000m
+Maximum Radius: 564.000000m
+Family Insertion Probability: 0.133830
+
+
+Ellipse Family 3:
+Number of Vertices: 16
+Aspect Ratio: 1.000000
+P32 (Fracture Intensity) Target: 0.001455
+Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+Trend: 1.047198 rad, 60.000000 deg
+Plunge: 0.104720 rad, 6.000000 deg 
+Orientation Distribution: fisher
+Kappa: 12.900000
+Kappa1: 0.000000
+Kappa2: 0.000000
+Layer: Entire domain
+Region: Entire domain
+Distribution: Truncated Power-Law
+Alpha: 3.100000
+Minimum Radius: 15.000000m
+Maximum Radius: 564.000000m
+Family Insertion Probability: 0.005025
+
+
+Ellipse Family 4:
+Number of Vertices: 16
+Aspect Ratio: 1.000000
+P32 (Fracture Intensity) Target: 0.000886
+Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+Trend: 0.261799 rad, 15.000000 deg
+Plunge: 0.034907 rad, 2.000000 deg 
+Orientation Distribution: fisher
+Kappa: 14.000000
+Kappa1: 0.000000
+Kappa2: 0.000000
+Layer: Entire domain
+Region: Entire domain
+Distribution: Truncated Power-Law
+Alpha: 3.100000
+Minimum Radius: 15.000000m
+Maximum Radius: 564.000000m
+Family Insertion Probability: 0.003060
+
+
+Ellipse Family 5:
+Number of Vertices: 16
+Aspect Ratio: 1.000000
+P32 (Fracture Intensity) Target: 0.200221
+Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+Trend: 0.087266 rad, 5.000000 deg
+Plunge: 1.500983 rad, 86.000000 deg 
+Orientation Distribution: fisher
+Kappa: 15.200000
+Kappa1: 0.000000
+Kappa2: 0.000000
+Layer: Entire domain
+Region: Entire domain
+Distribution: Truncated Power-Law
+Alpha: 2.380000
+Minimum Radius: 15.000000m
+Maximum Radius: 564.000000m
+Family Insertion Probability: 0.691458
+Accepted 200 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.001228
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.002404
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000040
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.009171
+
+Accepted 400 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.002561
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.004278
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000058
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.019430
+
+Accepted 600 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.004698
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.007356
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000082
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.027677
+
+Accepted 800 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.006271
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.008288
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000107
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000025
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.038164
+
+Accepted 1000 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.009913
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.009403
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.053316
+
+Accepted 1200 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.014119
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.012115
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.065402
+
+Accepted 1400 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.015729
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.013977
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.075612
+
+Accepted 1600 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.017230
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.015288
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000173
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.086466
+
+Accepted 1800 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.018691
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.017406
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000188
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.094452
+
+Accepted 2000 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.021165
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.020005
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.101736
+
+Accepted 2200 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.023217
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.021862
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000229
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.111059
+
+Accepted 2400 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.025093
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.023345
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000287
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.125949
+
+Accepted 2600 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.026749
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025178
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000338
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.136644
+
+Accepted 2800 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.028612
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025977
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000519
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.145510
+
+Accepted 3000 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.030029
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.027125
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000541
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.155598
+
+Accepted 3200 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.031754
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.028942
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.166221
+
+Accepted 3400 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.034332
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.030409
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.176198
+
+Accepted 3600 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.036349
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.032175
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.184496
+
+Accepted 3800 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.037685
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.034210
+
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000433
+
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.195595
+
+P32 For Family 5 Completed
+
+P32 For Family 4 Completed
+
+P32 For Family 2 Completed
+
+P32 For Family 3 Completed
+
+Accepted 4000 fractures
+Rejected 0 fractures
+Re-translated 0 fractures
+
+Current p32 values per family:
+Ellipse family 1 target P32 = 0.048249, Current P32 = 0.044059
+
+Ellipse family 2 target P32 = 0.038752, Current P32 = 0.040271
+...Done
+Ellipse family 3 target P32 = 0.001455, Current P32 = 0.001668
+...Done
+Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000921
+...Done
+Ellipse family 5 target P32 = 0.200221, Current P32 = 0.200290
+...Done
+P32 For Family 1 Completed
+
+========================================================
+            Network Generation Complete
+========================================================
+Version of DFNGen: 2.2
+Layer Conforming Fractures: perfect conforming
+Time Stamp: Mon Nov  2 15:13:33 2026
+
+Final p32 values per family:
+Family 1 target P32 = 0.048249, Final P32 = 0.048286
+Family 2 target P32 = 0.038752, Final P32 = 0.040271
+Family 3 target P32 = 0.001455, Final P32 = 0.001668
+Family 4 target P32 = 0.000886, Final P32 = 0.000921
+Family 5 target P32 = 0.200221, Final P32 = 0.200290
+________________________________________________________
+
+Statistics Before Isolated Fractures Removed:
+
+Fractures: 4069
+Truncated: 1411
+
+Total Surface Area:     18214754.730211 m^2
+Total Fracture Density   (P30): 0.000065
+Total Fracture Intensity (P32): 0.291436
+Family: 1
+    Accepted: 792
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 3017863.162407 m^2
+    Fracture Intensity (P32): 0.048286
+
+Family: 2
+    Accepted: 588
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 2516962.247665 m^2
+    Fracture Intensity (P32): 0.040271
+
+Family: 3
+    Accepted: 29
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 104254.375244 m^2
+    Fracture Intensity (P32): 0.001668
+
+Family: 4
+    Accepted: 21
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 57562.558105 m^2
+    Fracture Intensity (P32): 0.000921
+
+Family: 5
+    Accepted: 2639
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 12518112.386789 m^2
+    Fracture Intensity (P32): 0.200290
+
+In cluster groups
+Number of fractures: 4069
+Number of groups: 756
+________________________________________________________
+
+Statistics After Isolated Fractures Removed:
+Final Number of Fractures: 4008
+Isolated Fractures Removed: 61
+Fractures before isolated fractures removed:: 4069
+
+Total Surface Area:     18142756.466639 m^2
+Total Fracture Density   (P30): 0.000064
+Total Fracture Intensity (P32): 0.290284
+Family: 1
+    Fractures After Isolated Fracture Removal: 786
+    Isolated Fractures Removed: 6
+    Accepted: 792
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 3014005.023102 m^2
+    Fracture Intensity (P32): 0.048224
+
+Family: 2
+    Fractures After Isolated Fracture Removal: 586
+    Isolated Fractures Removed: 2
+    Accepted: 588
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 2515023.422897 m^2
+    Fracture Intensity (P32): 0.040240
+
+Family: 3
+    Fractures After Isolated Fracture Removal: 29
+    Isolated Fractures Removed: 0
+    Accepted: 29
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 104254.375244 m^2
+    Fracture Intensity (P32): 0.001668
+
+Family: 4
+    Fractures After Isolated Fracture Removal: 21
+    Isolated Fractures Removed: 0
+    Accepted: 21
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 57562.558105 m^2
+    Fracture Intensity (P32): 0.000921
+
+Family: 5
+    Fractures After Isolated Fracture Removal: 2586
+    Isolated Fractures Removed: 53
+    Accepted: 2639
+    Rejected: 0
+    Layer: Whole Domain 
+    Region: Whole Domain 
+    Surface Area: 12451911.087290 m^2
+    Fracture Intensity (P32): 0.199231
+
+________________________________________________________
+
+4069 Fractures Accepted (Before Isolated Fracture Removal)
+4008 Final Fractures (After Isolated Fracture Removal)
+
+Total Fractures Rejected: 0
+Total Fractures Re-translated: 0
+Number of Triple Intersection Points (Before Isolated Fracture Removal): 0
+Intersection Statistics:
+    Number of Intersections: 17309 
+    Intersections Shortened: 0 
+    Original Intersection (Before Intersection Shrinking) Length: 441729.214961 m
+    Intersection Length Discarded: 0.000000 m
+    Final Intersection Length: 441729.214961 m
+Rejection Statistics: 
+    0 Short Intersections 
+    0 Close to Node
+    0 Close to Edge
+    0 Vertex Close to Edge
+    15 Outside of Domain
+    0 Triple intersection Rejections
+    0 Intersections Close to Other Intersections
+
+________________________________________________________
+Fracture Estimation statistics:
+NOTE: If estimation and actual are very different, expected family distributions might not be accurate. If this is the case, try increasing or decreasing the 'radiiListIncrease' option in the input file.
+Ellipse Family 1
+Actual:    7920
+Ellipse Family 2
+Actual:    5880
+Ellipse Family 3
+Actual:    290
+Ellipse Family 4
+Actual:    210
+Ellipse Family 5
+Actual:    26390
+________________________________________________________
+
+Seed: 3
+/Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output
+Writing Graph Data Files
+Writing Polygon Files
+Writing Polygon Files Complete
+Writing Intersection Files
+Writing poly inp files
+Writing /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output/../params.txt
+Writing Radii File (radii.dat)
+Writing Rejection Statistics File (rejections.dat)
+Writing Family Definitions File (families.dat)
+Writing Fracture Translations File (translations.dat)
+Writing Connectivity Data (connectivity.dat)
+Writing Rotation Data File (poly_info.dat)
+Writing Normal Vectors into File (normal_vectors.dat)
+Writing Rotation Data File (rejectsPerAttempt.dat)
+Writing Boundary Files
+Lagrit Should Remove 34614 Nodes (69228/2 - 0)
+DFNGen - Complete
+
+================================
+  PFLOTRAN Development Version
+================================
+
+pflotran card:: CHEMISTRY
+pflotran card:: GRID
+pflotran card:: FLUID_PROPERTY
+"FLUID_PROPERTY,diffusion_coefficient units" set to default value.
+pflotran card:: DATASET
+pflotran card:: MATERIAL_PROPERTY
+  Name :: fractures
+pflotran card:: CHARACTERISTIC_CURVES
+  Name :: default
+ WARNING: Mualem-van Genuchten relative permeability function is being used without SMOOTH option.
+pflotran card:: OUTPUT
+"OUTPUT,MASS_BALANCE,DETAILED" set to default value.
+pflotran card:: TIME
+pflotran card:: REGION
+All
+pflotran card:: REGION
+inflow
+pflotran card:: REGION
+outflow
+pflotran card:: TRANSPORT_CONDITION
+initial
+pflotran card:: TRANSPORT_CONDITION
+inject
+pflotran card:: CONSTRAINT
+initial
+Constraint Species: TRACER
+pflotran card:: FLOW_CONDITION
+initial
+pflotran card:: FLOW_CONDITION
+outflow
+pflotran card:: FLOW_CONDITION
+inflow
+pflotran card:: INITIAL_CONDITION
+"Initial Condition name" set to default value.
+pflotran card:: BOUNDARY_CONDITION
+pflotran card:: BOUNDARY_CONDITION
+pflotran card:: STRATA
+pflotran card:: END_SUBSURFACE
+
+Number of processes: 1
+
+Extent of Gridded Domain
+ X: -5.045856E+02 - 5.045399E+02
+ Y: -1.298267E+02 - 1.299845E+02
+ Z: -1.299783E+02 - 1.299369E+02
+
+Size of Gridded Domain
+ Number of grid cells: 5563
+
+Min/Max Cell Volumes [m^3]
+ Maximum: 2.063967E+01
+ Minimum: 7.896863E-06
+Testing group: Permeability
+Group "Permeability" in HDF5 file "dfn_properties.h5" not found in file.  Therefore, assuming a cell-indexed dataset.
+Opening hdf5 file: dfn_properties.h5
+Setting up grid cell indices
+Reading dataset: Cell Ids
+  0.00 Seconds to set up indices
+Reading dataset: Permeability
+  0.00 Seconds to read real array
+Closing hdf5 file: dfn_properties.h5
+
+Number of active grid cells: 5563
+Number of inactive grid cells: 0
+
+  Setting up TRAN Realization
+
+Initializing constraints for reactive transport.
+  Finished setting up TRAN Realization
+Default HDF5 method is used in Initialization
+  Beginning setup of FLOW SNES
+ number of dofs =   1, number of phases =   1
+ mode = Richards: p
+  Finished setting up FLOW SNES
+mode = Reactive Transport
+  Beginning setup of TRAN SNES
+  Finished setting up TRAN SNES
+
+ Requested processors =     1
+
+FLOW Time Stepper SNES
+      maximum number of steps: 999999
+constant time steps threshold: 5
+       maximum number of cuts: 16
+             reduction factor: 5.000000E-01
+        maximum growth factor: 2.000000E+00
+                 acceleration: on
+       acceleration threshold: 5
+       number of ramp entries: 5
+                ramp entry #1: 2.0000
+                ramp entry #2: 2.0000
+                ramp entry #3: 2.0000
+                ramp entry #4: 2.0000
+                ramp entry #5: 2.0000
+                ramp entry #6: 1.8000
+                ramp entry #7: 1.6000
+                ramp entry #8: 1.4000
+                ramp entry #9: 1.2000
+               ramp entry #10: 1.0000
+               ramp entry #11: 1.0000
+               ramp entry #12: 1.0000
+               ramp entry #13: 1.0000
+
+FLOW Newton Solver
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-08
+                         stol: 1.000000E-08
+                         dtol: 1.000000E+04
+                      maxnorm: 1.000000E+20
+                    inftolres: -9.990000E+02
+                    inftolupd: -9.990000E+02
+                 inftolrelupd: -9.990000E+02
+                 inftolsclres: -9.990000E+02
+                     max iter: 50
+                     min iter: 1
+                         maxf: 10000
+                  matrix type: baij
+         precond. matrix type: baij
+               inexact newton: off
+            print convergence: on
+   print detailed convergence: off
+          check infinity norm: on
+
+FLOW Linear Solver
+                       solver: bcgs
+               preconditioner: ilu
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-05
+                         dtol: 1.000000E+04
+            maximum iteration: 10000
+
+TRAN Time Stepper SNES
+      maximum number of steps: 999999
+constant time steps threshold: 5
+       maximum number of cuts: 16
+             reduction factor: 5.000000E-01
+        maximum growth factor: 2.000000E+00
+                 acceleration: on
+       acceleration threshold: 5
+       number of ramp entries: 5
+                ramp entry #1: 2.0000
+                ramp entry #2: 2.0000
+                ramp entry #3: 2.0000
+                ramp entry #4: 2.0000
+                ramp entry #5: 2.0000
+                ramp entry #6: 1.8000
+                ramp entry #7: 1.6000
+                ramp entry #8: 1.4000
+                ramp entry #9: 1.2000
+               ramp entry #10: 1.0000
+               ramp entry #11: 1.0000
+               ramp entry #12: 1.0000
+               ramp entry #13: 1.0000
+
+TRAN Newton Solver
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-08
+                         stol: 1.000000E-08
+                         dtol: 1.000000E+04
+                      maxnorm: 1.000000E+20
+                    inftolres: -9.990000E+02
+                    inftolupd: -9.990000E+02
+                 inftolrelupd: -9.990000E+02
+                 inftolsclres: -9.990000E+02
+                     max iter: 50
+                     min iter: 1
+                         maxf: 10000
+                  matrix type: baij
+         precond. matrix type: baij
+               inexact newton: off
+            print convergence: on
+   print detailed convergence: off
+          check infinity norm: on
+
+TRAN Linear Solver
+                       solver: bcgs
+               preconditioner: ilu
+                         atol: 1.000000E-50
+                         rtol: 1.000000E-05
+                         dtol: 1.000000E+04
+            maximum iteration: 10000
+
+ --> write rate output file: pflotran_hybrid_pressure-darcyvel-000
+      0.03 Seconds to write to Rates file.
+ --> write vtk output file: pflotran_hybrid_pressure-000.vtk
+ WARNING: For unstructured grids, VTK formatted output lacks cell geometry information.
+ max_local_size_saved:         5563
+      0.00 Seconds to write to VTK file(s)
+
+ Finished Initialization
+
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 5.68E+06 2x: 0.00E+00 2u: 0.00E+00 ir: 5.62E+06 iu: 0.00E+00 rsn:   0
+  1 2r: 2.03E+01 2x: 7.83E+07 2u: 8.56E+05 ir: 2.02E+01 iu: 5.00E+04 rsn:   0
+  2 2r: 5.75E-09 2x: 7.83E+07 2u: 1.02E+01 ir: 5.72E-09 iu: 3.70E+00 rsn: rtol
+
+ Step      1 Time=  1.00000E-08 Dt=  1.00000E-08 [y] conv_reason: 3
+  newton =   2 [       2] linear =    12 [        12] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 12 / 2
+  --> SNES Residual: 0.575050E-08 0.103370E-11 0.571742E-08
+  --> max change: dpmx=   5.0000E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 8.77E-25 2x: 0.00E+00 2u: 0.00E+00 ir: 8.64E-25 iu: 0.00E+00 rsn:   0
+  1 2r: 1.45E-31 2x: 7.48E-19 2u: 2.05E-25 ir: 4.93E-32 iu: 1.65E-25 rsn:   0
+  2 2r: 8.82E-32 2x: 7.48E-19 2u: 7.81E-35 ir: 4.93E-32 iu: 4.33E-36 rsn: stol
+
+ Step      1 Time=  1.00000E-08 Dt=  1.00000E-08 [y] conv_reason: 4
+  newton =   2 [       2] linear =     2 [         2] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.882030E-31 0.882030E-31 0.493038E-31
+  --> max change:  dcmx=   1.6541E-25  dc/dt=   5.2451E-25 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 1.16E-02 2x: 0.00E+00 2u: 0.00E+00 ir: 5.45E-03 iu: 0.00E+00 rsn:   0
+  1 2r: 4.25E-08 2x: 7.83E+07 2u: 2.68E+05 ir: 1.77E-08 iu: 1.72E+04 rsn:   0
+  2 2r: 6.36E-09 2x: 7.83E+07 2u: 6.43E+00 ir: 6.31E-09 iu: 2.44E+00 rsn:   0
+  3 2r: 6.36E-09 2x: 7.83E+07 2u: 1.54E-05 ir: 6.31E-09 iu: 4.86E-06 rsn: stol
+
+ Step      2 Time=  3.00000E-08 Dt=  2.00000E-08 [y] conv_reason: 4
+  newton =   3 [       5] linear =    28 [        40] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 28 / 3
+  --> SNES Residual: 0.635682E-08 0.114270E-11 0.631130E-08
+  --> max change: dpmx=   1.7248E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 2.60E-25 2x: 0.00E+00 2u: 0.00E+00 ir: 2.28E-25 iu: 0.00E+00 rsn:   0
+  1 2r: 1.34E-31 2x: 7.48E-19 2u: 1.85E-25 ir: 9.86E-32 iu: 6.81E-26 rsn:   0
+  2 2r: 4.88E-32 2x: 7.48E-19 2u: 8.37E-35 ir: 2.47E-32 iu: 4.42E-36 rsn: stol
+
+ Step      2 Time=  3.00000E-08 Dt=  2.00000E-08 [y] conv_reason: 4
+  newton =   2 [       4] linear =     2 [         4] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.488447E-31 0.488447E-31 0.246519E-31
+  --> max change:  dcmx=   6.8136E-26  dc/dt=   1.0803E-25 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 6.27E-03 2x: 0.00E+00 2u: 0.00E+00 ir: 2.69E-03 iu: 0.00E+00 rsn:   0
+  1 2r: 2.80E-08 2x: 7.83E+07 2u: 3.05E+05 ir: 1.04E-08 iu: 1.56E+04 rsn:   0
+  2 2r: 5.28E-09 2x: 7.83E+07 2u: 5.37E+00 ir: 5.21E-09 iu: 2.14E+00 rsn:   0
+  3 2r: 5.28E-09 2x: 7.83E+07 2u: 4.45E-05 ir: 5.21E-09 iu: 1.69E-05 rsn: stol
+
+ Step      3 Time=  7.00000E-08 Dt=  4.00000E-08 [y] conv_reason: 4
+  newton =   3 [       8] linear =    36 [        76] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 36 / 3
+  --> SNES Residual: 0.527846E-08 0.948851E-12 0.520677E-08
+  --> max change: dpmx=   1.5645E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.04E-25 2x: 0.00E+00 2u: 0.00E+00 ir: 3.54E-26 iu: 0.00E+00 rsn:   0
+  1 2r: 4.41E-32 2x: 7.48E-19 2u: 2.37E-25 ir: 2.47E-32 iu: 6.01E-26 rsn:   0
+  2 2r: 2.41E-32 2x: 7.48E-19 2u: 8.82E-35 ir: 1.23E-32 iu: 4.48E-36 rsn: stol
+
+ Step      3 Time=  7.00000E-08 Dt=  4.00000E-08 [y] conv_reason: 4
+  newton =   2 [       6] linear =     2 [         6] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.240913E-31 0.240913E-31 0.123260E-31
+  --> max change:  dcmx=   6.0129E-26  dc/dt=   4.7667E-26 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 4.21E-03 2x: 0.00E+00 2u: 0.00E+00 ir: 1.53E-03 iu: 0.00E+00 rsn:   0
+  1 2r: 2.29E-08 2x: 7.83E+07 2u: 4.00E+05 ir: 8.49E-09 iu: 1.22E+04 rsn:   0
+  2 2r: 3.10E-09 2x: 7.83E+07 2u: 8.18E+00 ir: 2.96E-09 iu: 3.49E+00 rsn:   0
+  3 2r: 3.10E-09 2x: 7.83E+07 2u: 6.94E-05 ir: 2.96E-09 iu: 2.83E-05 rsn: stol
+
+ Step      4 Time=  1.50000E-07 Dt=  8.00000E-08 [y] conv_reason: 4
+  newton =   3 [      11] linear =    48 [       124] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 48 / 3
+  --> SNES Residual: 0.309761E-08 0.556824E-12 0.296354E-08
+  --> max change: dpmx=   1.2178E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 7.19E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 2.28E-26 iu: 0.00E+00 rsn:   0
+  1 2r: 2.02E-32 2x: 7.48E-19 2u: 2.89E-25 ir: 1.23E-32 iu: 5.40E-26 rsn:   0
+  2 2r: 6.33E-33 2x: 7.48E-19 2u: 9.14E-35 ir: 3.08E-33 iu: 4.45E-36 rsn: stol
+
+ Step      4 Time=  1.50000E-07 Dt=  8.00000E-08 [y] conv_reason: 4
+  newton =   2 [       8] linear =     2 [         8] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.632972E-32 0.632972E-32 0.308149E-32
+  --> max change:  dcmx=   5.3965E-26  dc/dt=   2.1390E-26 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 2.90E-03 2x: 0.00E+00 2u: 0.00E+00 ir: 1.10E-03 iu: 0.00E+00 rsn:   0
+  1 2r: 1.77E-08 2x: 7.82E+07 2u: 5.08E+05 ir: 5.94E-09 iu: 1.18E+04 rsn:   0
+  2 2r: 4.91E-09 2x: 7.82E+07 2u: 1.29E+01 ir: 4.84E-09 iu: 4.14E+00 rsn:   0
+  3 2r: 4.91E-09 2x: 7.82E+07 2u: 7.97E-05 ir: 4.84E-09 iu: 1.84E-05 rsn: stol
+
+ Step      5 Time=  3.10000E-07 Dt=  1.60000E-07 [y] conv_reason: 4
+  newton =   3 [      14] linear =    65 [       189] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 65 / 3
+  --> SNES Residual: 0.490587E-08 0.881876E-12 0.483641E-08
+  --> max change: dpmx=   1.1823E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.91E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 1.38E-26 iu: 0.00E+00 rsn:   0
+  1 2r: 2.00E-32 2x: 7.48E-19 2u: 3.36E-25 ir: 1.23E-32 iu: 5.14E-26 rsn:   0
+  2 2r: 6.35E-33 2x: 7.48E-19 2u: 9.49E-35 ir: 3.08E-33 iu: 5.51E-36 rsn: stol
+
+ Step      5 Time=  3.10000E-07 Dt=  1.60000E-07 [y] conv_reason: 4
+  newton =   2 [      10] linear =     2 [        10] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.634984E-32 0.634984E-32 0.308149E-32
+  --> max change:  dcmx=   5.1431E-26  dc/dt=   1.0193E-26 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 1.80E-03 2x: 0.00E+00 2u: 0.00E+00 ir: 6.85E-04 iu: 0.00E+00 rsn:   0
+  1 2r: 1.07E-08 2x: 7.81E+07 2u: 5.40E+05 ir: 4.23E-09 iu: 1.29E+04 rsn:   0
+  2 2r: 4.28E-09 2x: 7.81E+07 2u: 2.71E+01 ir: 4.16E-09 iu: 1.06E+01 rsn:   0
+  3 2r: 4.28E-09 2x: 7.81E+07 2u: 1.46E-04 ir: 4.16E-09 iu: 4.93E-05 rsn: stol
+
+ Step      6 Time=  6.30000E-07 Dt=  3.20000E-07 [y] conv_reason: 4
+  newton =   3 [      17] linear =    83 [       272] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 83 / 3
+  --> SNES Residual: 0.427559E-08 0.768577E-12 0.415935E-08
+  --> max change: dpmx=   1.2874E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 3.27E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 7.92E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 6.16E-33 2x: 7.48E-19 2u: 3.78E-25 ir: 3.08E-33 iu: 5.04E-26 rsn:   0
+  2 2r: 2.20E-33 2x: 7.48E-19 2u: 9.66E-35 ir: 7.70E-34 iu: 4.76E-36 rsn: stol
+
+ Step      6 Time=  6.30000E-07 Dt=  3.20000E-07 [y] conv_reason: 4
+  newton =   2 [      12] linear =     2 [        12] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.219883E-32 0.219883E-32 0.770372E-33
+  --> max change:  dcmx=   5.0400E-26  dc/dt=   4.9943E-27 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 9.31E-04 2x: 0.00E+00 2u: 0.00E+00 ir: 3.55E-04 iu: 0.00E+00 rsn:   0
+  1 2r: 4.59E-09 2x: 7.79E+07 2u: 4.45E+05 ir: 2.06E-09 iu: 1.23E+04 rsn:   0
+  2 2r: 9.25E-10 2x: 7.79E+07 2u: 2.66E+01 ir: 5.34E-10 iu: 9.90E+00 rsn:   0
+  3 2r: 9.25E-10 2x: 7.79E+07 2u: 9.08E-05 ir: 5.34E-10 iu: 2.50E-05 rsn: stol
+
+ Step      7 Time=  1.27000E-06 Dt=  6.40000E-07 [y] conv_reason: 4
+  newton =   3 [      20] linear =    98 [       370] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 98 / 3
+  --> SNES Residual: 0.924775E-09 0.166237E-12 0.533560E-09
+  --> max change: dpmx=   1.2292E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 2.28E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 7.11E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 3.13E-33 2x: 7.48E-19 2u: 4.19E-25 ir: 1.54E-33 iu: 4.97E-26 rsn:   0
+  2 2r: 9.21E-34 2x: 7.48E-19 2u: 9.59E-35 ir: 3.85E-34 iu: 5.19E-36 rsn: stol
+
+ Step      7 Time=  1.27000E-06 Dt=  6.40000E-07 [y] conv_reason: 4
+  newton =   2 [      14] linear =     2 [        14] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.920773E-33 0.920773E-33 0.385186E-33
+  --> max change:  dcmx=   4.9715E-26  dc/dt=   2.4632E-27 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.85E-04 2x: 0.00E+00 2u: 0.00E+00 ir: 1.46E-04 iu: 0.00E+00 rsn:   0
+  1 2r: 3.07E-09 2x: 7.77E+07 2u: 2.90E+05 ir: 2.40E-09 iu: 1.16E+04 rsn:   0
+  2 2r: 2.63E-09 2x: 7.77E+07 2u: 2.32E+01 ir: 2.41E-09 iu: 8.65E+00 rsn:   0
+  3 2r: 2.63E-09 2x: 7.77E+07 2u: 4.66E-05 ir: 2.41E-09 iu: 8.04E-06 rsn: stol
+
+ Step      8 Time=  2.55000E-06 Dt=  1.28000E-06 [y] conv_reason: 4
+  newton =   3 [      23] linear =   110 [       480] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 110 / 3
+  --> SNES Residual: 0.263293E-08 0.473294E-12 0.240796E-08
+  --> max change: dpmx=   1.1619E+04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.69E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 5.91E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 1.32E-33 2x: 7.48E-19 2u: 4.49E-25 ir: 7.70E-34 iu: 4.94E-26 rsn:   0
+  2 2r: 5.73E-34 2x: 7.48E-19 2u: 9.59E-35 ir: 3.85E-34 iu: 5.25E-36 rsn: stol
+
+ Step      8 Time=  2.55000E-06 Dt=  1.28000E-06 [y] conv_reason: 4
+  newton =   2 [      16] linear =     2 [        16] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.573364E-33 0.573364E-33 0.385186E-33
+  --> max change:  dcmx=   4.9368E-26  dc/dt=   1.2230E-27 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 1.23E-04 2x: 0.00E+00 2u: 0.00E+00 ir: 4.56E-05 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 1.41E+05 ir: 3.00E-09 iu: 9.59E+03 rsn:   0
+  2 2r: 3.19E-09 2x: 7.76E+07 2u: 1.61E+01 ir: 3.01E-09 iu: 6.14E+00 rsn:   0
+  3 2r: 3.19E-09 2x: 7.76E+07 2u: 8.36E-06 ir: 3.01E-09 iu: 1.00E-06 rsn: stol
+
+ Step      9 Time=  5.11000E-06 Dt=  2.56000E-06 [y] conv_reason: 4
+  newton =   3 [      26] linear =   113 [       593] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 113 / 3
+  --> SNES Residual: 0.318791E-08 0.573055E-12 0.300588E-08
+  --> max change: dpmx=   9.5972E+03
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.27E-26 2x: 0.00E+00 2u: 0.00E+00 ir: 4.22E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 9.38E-34 2x: 7.48E-19 2u: 4.41E-25 ir: 3.85E-34 iu: 4.95E-26 rsn:   0
+  2 2r: 5.14E-34 2x: 7.48E-19 2u: 9.66E-35 ir: 3.85E-34 iu: 4.42E-36 rsn: stol
+
+ Step      9 Time=  5.11000E-06 Dt=  2.56000E-06 [y] conv_reason: 4
+  newton =   2 [      18] linear =     2 [        18] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.514212E-33 0.514212E-33 0.385186E-33
+  --> max change:  dcmx=   4.9543E-26  dc/dt=   6.1367E-28 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 2.81E-05 2x: 0.00E+00 2u: 0.00E+00 ir: 1.09E-05 iu: 0.00E+00 rsn:   0
+  1 2r: 6.32E-09 2x: 7.76E+07 2u: 4.56E+04 ir: 6.25E-09 iu: 7.99E+03 rsn:   0
+  2 2r: 6.31E-09 2x: 7.76E+07 2u: 1.03E+00 ir: 6.25E-09 iu: 2.83E-01 rsn:   0
+  3 2r: 6.31E-09 2x: 7.76E+07 2u: 3.31E-06 ir: 6.25E-09 iu: 9.62E-07 rsn: stol
+
+ Step     10 Time=  1.02300E-05 Dt=  5.12000E-06 [y] conv_reason: 4
+  newton =   3 [      29] linear =   128 [       721] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 128 / 3
+  --> SNES Residual: 0.631477E-08 0.113514E-11 0.624840E-08
+  --> max change: dpmx=   7.9880E+03
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 9.53E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.71E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 4.29E-34 2x: 7.48E-19 2u: 3.87E-25 ir: 1.93E-34 iu: 4.94E-26 rsn:   0
+  2 2r: 2.49E-34 2x: 7.48E-19 2u: 9.69E-35 ir: 1.93E-34 iu: 5.13E-36 rsn: stol
+
+ Step     10 Time=  1.02300E-05 Dt=  5.12000E-06 [y] conv_reason: 4
+  newton =   2 [      20] linear =     2 [        20] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.249416E-33 0.249416E-33 0.192593E-33
+  --> max change:  dcmx=   4.9408E-26  dc/dt=   3.0600E-28 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.95E-06 2x: 0.00E+00 2u: 0.00E+00 ir: 1.59E-06 iu: 0.00E+00 rsn:   0
+  1 2r: 5.94E-09 2x: 7.76E+07 2u: 1.23E+04 ir: 5.86E-09 iu: 3.99E+03 rsn:   0
+  2 2r: 5.94E-09 2x: 7.76E+07 2u: 9.84E-02 ir: 5.86E-09 iu: 3.33E-02 rsn: stol
+
+ Step     11 Time=  2.04700E-05 Dt=  1.02400E-05 [y] conv_reason: 4
+  newton =   2 [      31] linear =    77 [       798] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 77 / 2
+  --> SNES Residual: 0.594132E-08 0.106801E-11 0.585703E-08
+  --> max change: dpmx=   3.9867E+03
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 7.38E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.55E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 2.21E-34 2x: 7.48E-19 2u: 3.18E-25 ir: 9.63E-35 iu: 4.95E-26 rsn:   0
+  2 2r: 8.90E-35 2x: 7.48E-19 2u: 9.90E-35 ir: 4.81E-35 iu: 4.44E-36 rsn: stol
+
+ Step     11 Time=  2.04700E-05 Dt=  1.02400E-05 [y] conv_reason: 4
+  newton =   2 [      22] linear =     2 [        22] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.890372E-34 0.890372E-34 0.481482E-34
+  --> max change:  dcmx=   4.9496E-26  dc/dt=   1.5327E-28 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.10E-07 2x: 0.00E+00 2u: 0.00E+00 ir: 1.26E-07 iu: 0.00E+00 rsn:   0
+  1 2r: 2.91E-09 2x: 7.76E+07 2u: 2.98E+03 ir: 2.75E-09 iu: 1.12E+03 rsn:   0
+  2 2r: 2.91E-09 2x: 7.76E+07 2u: 9.34E-03 ir: 2.75E-09 iu: 4.00E-03 rsn: stol
+
+ Step     12 Time=  4.09500E-05 Dt=  2.04800E-05 [y] conv_reason: 4
+  newton =   2 [      33] linear =    80 [       878] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 80 / 2
+  --> SNES Residual: 0.291271E-08 0.523587E-12 0.275297E-08
+  --> max change: dpmx=   1.1165E+03
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 6.21E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.27E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 1.15E-34 2x: 7.48E-19 2u: 2.72E-25 ir: 4.81E-35 iu: 4.92E-26 rsn:   0
+  2 2r: 4.46E-35 2x: 7.48E-19 2u: 9.80E-35 ir: 2.41E-35 iu: 4.40E-36 rsn: rtol
+
+ Step     12 Time=  4.09500E-05 Dt=  2.04800E-05 [y] conv_reason: 3
+  newton =   2 [      24] linear =     2 [        24] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.445618E-34 0.445618E-34 0.240741E-34
+  --> max change:  dcmx=   4.9158E-26  dc/dt=   7.6113E-29 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 1.36E-08 2x: 0.00E+00 2u: 0.00E+00 ir: 5.23E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.19E-09 2x: 7.76E+07 2u: 4.39E+02 ir: 3.13E-09 iu: 1.67E+02 rsn:   0
+  2 2r: 3.19E-09 2x: 7.76E+07 2u: 5.15E-04 ir: 3.13E-09 iu: 1.85E-04 rsn: stol
+
+ Step     13 Time=  8.19100E-05 Dt=  4.09600E-05 [y] conv_reason: 4
+  newton =   2 [      35] linear =    81 [       959] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 81 / 2
+  --> SNES Residual: 0.319463E-08 0.574264E-12 0.312634E-08
+  --> max change: dpmx=   1.6715E+02
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.98E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.78E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 6.15E-35 2x: 7.48E-19 2u: 2.54E-25 ir: 2.41E-35 iu: 4.90E-26 rsn:   0
+  2 2r: 3.99E-35 2x: 7.48E-19 2u: 1.01E-34 ir: 2.41E-35 iu: 9.71E-36 rsn: rtol
+
+ Step     13 Time=  8.19100E-05 Dt=  4.09600E-05 [y] conv_reason: 3
+  newton =   2 [      26] linear =     2 [        26] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.399005E-34 0.399005E-34 0.240741E-34
+  --> max change:  dcmx=   4.9044E-26  dc/dt=   3.7968E-29 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.22E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.13E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.40E+01 ir: 3.14E-09 iu: 1.30E+01 rsn:   0
+  2 2r: 3.21E-09 2x: 7.76E+07 2u: 7.14E-06 ir: 3.14E-09 iu: 2.26E-06 rsn: stol
+
+ Step     14 Time=  1.63830E-04 Dt=  8.19200E-05 [y] conv_reason: 4
+  newton =   2 [      37] linear =    82 [      1041] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 82 / 2
+  --> SNES Residual: 0.320552E-08 0.576222E-12 0.313528E-08
+  --> max change: dpmx=   1.2978E+01
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.29E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.38E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 3.33E-35 2x: 7.48E-19 2u: 2.29E-25 ir: 1.20E-35 iu: 4.94E-26 rsn: rtol
+
+ Step     14 Time=  1.63830E-04 Dt=  8.19200E-05 [y] conv_reason: 3
+  newton =   1 [      27] linear =     1 [        27] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 1 / 1
+  --> SNES Residual: 0.332727E-34 0.332727E-34 0.120371E-34
+  --> max change:  dcmx=   4.9359E-26  dc/dt=   1.9106E-29 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 1.35E+00 ir: 3.14E-09 iu: 5.14E-01 rsn:   0
+  2 2r: 3.21E-09 2x: 7.76E+07 2u: 2.61E-06 ir: 3.14E-09 iu: 5.93E-07 rsn: stol
+
+ Step     15 Time=  3.27670E-04 Dt=  1.63840E-04 [y] conv_reason: 4
+  newton =   2 [      39] linear =    83 [      1124] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 83 / 2
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   5.1355E-01
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.10E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.80E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 1.21E-34 2x: 7.48E-19 2u: 1.85E-25 ir: 9.03E-35 iu: 4.94E-26 rsn:   0
+  2 2r: 7.14E-36 2x: 7.48E-19 2u: 2.10E-33 ir: 3.01E-36 iu: 1.21E-33 rsn: rtol
+
+ Step     15 Time=  3.27670E-04 Dt=  1.63840E-04 [y] conv_reason: 3
+  newton =   2 [      29] linear =     2 [        29] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.713763E-35 0.713763E-35 0.300927E-35
+  --> max change:  dcmx=   4.9419E-26  dc/dt=   9.5645E-30 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 2.69E-02 ir: 3.14E-09 iu: 1.03E-02 rsn: stol
+
+ Step     16 Time=  6.55350E-04 Dt=  3.27680E-04 [y] conv_reason: 4
+  newton =   1 [      40] linear =    33 [      1157] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 33 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   1.0261E-02
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.22E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.05E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 1.10E-33 2x: 7.48E-19 2u: 1.63E-25 ir: 9.80E-34 iu: 4.94E-26 rsn:   0
+  2 2r: 6.83E-36 2x: 7.48E-19 2u: 2.39E-32 ir: 3.01E-36 iu: 1.02E-32 rsn: rtol
+
+ Step     16 Time=  6.55350E-04 Dt=  3.27680E-04 [y] conv_reason: 3
+  newton =   2 [      31] linear =     2 [        31] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.683271E-35 0.683271E-35 0.300927E-35
+  --> max change:  dcmx=   4.9350E-26  dc/dt=   4.7757E-30 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 2.70E-04 ir: 3.14E-09 iu: 1.03E-04 rsn: stol
+
+ Step     17 Time=  1.31071E-03 Dt=  6.55360E-04 [y] conv_reason: 4
+  newton =   1 [      41] linear =    30 [      1187] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 30 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   1.0302E-04
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.31E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.10E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 9.80E-33 2x: 7.48E-19 2u: 1.99E-25 ir: 9.08E-33 iu: 4.97E-26 rsn:   0
+  2 2r: 3.02E-36 2x: 7.48E-19 2u: 3.38E-31 ir: 1.50E-36 iu: 1.80E-31 rsn: rtol
+
+ Step     17 Time=  1.31071E-03 Dt=  6.55360E-04 [y] conv_reason: 3
+  newton =   2 [      33] linear =     2 [        33] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 2
+  --> SNES Residual: 0.302048E-35 0.302048E-35 0.150463E-35
+  --> max change:  dcmx=   4.9705E-26  dc/dt=   2.4050E-30 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 1.36E-06 ir: 3.14E-09 iu: 5.19E-07 rsn: stol
+
+ Step     18 Time=  2.62143E-03 Dt=  1.31072E-03 [y] conv_reason: 4
+  newton =   1 [      42] linear =    32 [      1219] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 32 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   5.1898E-07
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.28E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 2.00E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 4.78E-36 2x: 7.48E-19 2u: 2.75E-25 ir: 2.44E-36 iu: 4.94E-26 rsn: rtol
+
+ Step     18 Time=  2.62143E-03 Dt=  1.31072E-03 [y] conv_reason: 3
+  newton =   1 [      34] linear =     2 [        35] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 2 / 1
+  --> SNES Residual: 0.477897E-35 0.477897E-35 0.244048E-35
+  --> max change:  dcmx=   4.9447E-26  dc/dt=   1.1963E-30 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 5.05E-09 ir: 3.14E-09 iu: 1.35E-09 rsn: stol
+
+ Step     19 Time=  5.24287E-03 Dt=  2.62144E-03 [y] conv_reason: 4
+  newton =   1 [      43] linear =    38 [      1257] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 38 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   1.3970E-09
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.11E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.79E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 2.83E-34 2x: 7.48E-19 2u: 3.84E-25 ir: 1.74E-34 iu: 5.04E-26 rsn:   0
+  2 2r: 1.99E-36 2x: 7.48E-19 2u: 5.15E-32 ir: 1.65E-36 iu: 1.92E-32 rsn: rtol
+
+ Step     19 Time=  5.24287E-03 Dt=  2.62144E-03 [y] conv_reason: 3
+  newton =   2 [      36] linear =     4 [        39] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 2
+  --> SNES Residual: 0.198770E-35 0.198770E-35 0.165003E-35
+  --> max change:  dcmx=   5.0423E-26  dc/dt=   6.0993E-31 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.58E-09 ir: 3.14E-09 iu: 1.21E-10 rsn: stol
+
+ Step     20 Time=  1.04858E-02 Dt=  5.24288E-03 [y] conv_reason: 4
+  newton =   1 [      44] linear =    45 [      1302] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 45 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 3.76E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.90E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 2.13E-32 2x: 7.48E-19 2u: 5.50E-25 ir: 1.59E-32 iu: 5.46E-26 rsn:   0
+  2 2r: 2.74E-36 2x: 7.48E-19 2u: 5.03E-30 ir: 2.68E-36 iu: 1.75E-30 rsn: rtol
+
+ Step     20 Time=  1.04858E-02 Dt=  5.24288E-03 [y] conv_reason: 3
+  newton =   2 [      38] linear =     4 [        43] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 4 / 2
+  --> SNES Residual: 0.274223E-35 0.274223E-35 0.267899E-35
+  --> max change:  dcmx=   5.4595E-26  dc/dt=   3.3020E-31 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.56E-09 ir: 3.14E-09 iu: 1.19E-10 rsn: stol
+
+ Step     21 Time=  2.09715E-02 Dt=  1.04858E-02 [y] conv_reason: 4
+  newton =   1 [      45] linear =    46 [      1348] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 3.23E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.81E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 9.43E-34 2x: 7.48E-19 2u: 8.58E-25 ir: 5.05E-34 iu: 6.38E-26 rsn:   0
+  2 2r: 1.02E-36 2x: 7.48E-19 2u: 4.91E-31 ir: 9.18E-37 iu: 1.41E-31 rsn: rtol
+
+ Step     21 Time=  2.09715E-02 Dt=  1.04858E-02 [y] conv_reason: 3
+  newton =   2 [      40] linear =     5 [        48] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 5 / 2
+  --> SNES Residual: 0.102349E-35 0.102349E-35 0.917836E-36
+  --> max change:  dcmx=   6.3777E-26  dc/dt=   1.9287E-31 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     22 Time=  4.19430E-02 Dt=  2.09715E-02 [y] conv_reason: 4
+  newton =   1 [      46] linear =    36 [      1384] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 36 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 2.57E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 1.42E-27 iu: 0.00E+00 rsn:   0
+  1 2r: 2.98E-34 2x: 7.48E-19 2u: 1.41E-24 ir: 1.46E-34 iu: 6.69E-26 rsn:   0
+  2 2r: 1.20E-36 2x: 7.48E-19 2u: 1.73E-31 ir: 1.15E-36 iu: 2.65E-32 rsn: rtol
+
+ Step     22 Time=  4.19430E-02 Dt=  2.09715E-02 [y] conv_reason: 3
+  newton =   2 [      42] linear =     7 [        55] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 7 / 2
+  --> SNES Residual: 0.119721E-35 0.119721E-35 0.115021E-35
+  --> max change:  dcmx=   6.6931E-26  dc/dt=   1.0120E-31 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     23 Time=  8.38861E-02 Dt=  4.19430E-02 [y] conv_reason: 4
+  newton =   1 [      47] linear =    39 [      1423] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 39 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.87E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 9.40E-28 iu: 0.00E+00 rsn:   0
+  1 2r: 2.53E-32 2x: 7.48E-19 2u: 2.26E-24 ir: 2.31E-32 iu: 7.95E-26 rsn:   0
+  2 2r: 2.57E-36 2x: 7.48E-19 2u: 9.13E-30 ir: 2.50E-36 iu: 1.78E-30 rsn: rtol
+
+ Step     23 Time=  8.38861E-02 Dt=  4.19430E-02 [y] conv_reason: 3
+  newton =   2 [      44] linear =     8 [        63] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 8 / 2
+  --> SNES Residual: 0.256587E-35 0.256587E-35 0.249617E-35
+  --> max change:  dcmx=   7.9510E-26  dc/dt=   6.0111E-32 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     24 Time=  1.67772E-01 Dt=  8.38861E-02 [y] conv_reason: 4
+  newton =   1 [      48] linear =    47 [      1470] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 47 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.31E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 6.54E-28 iu: 0.00E+00 rsn:   0
+  1 2r: 7.20E-33 2x: 7.48E-19 2u: 3.27E-24 ir: 5.65E-33 iu: 9.09E-26 rsn:   0
+  2 2r: 1.37E-36 2x: 7.48E-19 2u: 4.71E-30 ir: 1.31E-36 iu: 5.47E-31 rsn: rtol
+
+ Step     24 Time=  1.67772E-01 Dt=  8.38861E-02 [y] conv_reason: 3
+  newton =   2 [      46] linear =     9 [        72] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 9 / 2
+  --> SNES Residual: 0.136764E-35 0.136764E-35 0.130717E-35
+  --> max change:  dcmx=   9.0859E-26  dc/dt=   3.4346E-32 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     25 Time=  3.35544E-01 Dt=  1.67772E-01 [y] conv_reason: 4
+  newton =   1 [      49] linear =    40 [      1510] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 40 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.05E-27 2x: 0.00E+00 2u: 0.00E+00 ir: 3.96E-28 iu: 0.00E+00 rsn:   0
+  1 2r: 9.89E-33 2x: 7.48E-19 2u: 3.89E-24 ir: 5.01E-33 iu: 1.00E-25 rsn:   0
+  2 2r: 6.43E-36 2x: 7.48E-19 2u: 1.74E-29 ir: 6.42E-36 iu: 1.19E-30 rsn: rtol
+
+ Step     25 Time=  3.35544E-01 Dt=  1.67772E-01 [y] conv_reason: 3
+  newton =   2 [      48] linear =    10 [        82] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 10 / 2
+  --> SNES Residual: 0.643155E-35 0.643155E-35 0.641942E-35
+  --> max change:  dcmx=   9.9999E-26  dc/dt=   1.8900E-32 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     26 Time=  6.71089E-01 Dt=  3.35544E-01 [y] conv_reason: 4
+  newton =   1 [      50] linear =    46 [      1556] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 6.75E-28 2x: 0.00E+00 2u: 0.00E+00 ir: 2.95E-28 iu: 0.00E+00 rsn:   0
+  1 2r: 7.11E-33 2x: 7.48E-19 2u: 3.31E-24 ir: 3.88E-33 iu: 9.36E-26 rsn:   0
+  2 2r: 5.96E-36 2x: 7.48E-19 2u: 1.67E-29 ir: 5.95E-36 iu: 1.23E-30 rsn: rtol
+
+ Step     26 Time=  6.71089E-01 Dt=  3.35544E-01 [y] conv_reason: 3
+  newton =   2 [      50] linear =    10 [        92] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 10 / 2
+  --> SNES Residual: 0.596224E-35 0.596224E-35 0.594811E-35
+  --> max change:  dcmx=   9.3609E-26  dc/dt=   8.8463E-33 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     27 Time=  1.34218E+00 Dt=  6.71089E-01 [y] conv_reason: 4
+  newton =   1 [      51] linear =    46 [      1602] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 2.42E-28 2x: 0.00E+00 2u: 0.00E+00 ir: 1.15E-28 iu: 0.00E+00 rsn:   0
+  1 2r: 2.46E-34 2x: 7.48E-19 2u: 2.03E-24 ir: 1.97E-34 iu: 9.13E-26 rsn:   0
+  2 2r: 2.80E-36 2x: 7.48E-19 2u: 7.22E-31 ir: 2.78E-36 iu: 4.28E-32 rsn: stol
+
+ Step     27 Time=  1.34218E+00 Dt=  6.71089E-01 [y] conv_reason: 4
+  newton =   2 [      52] linear =    11 [       103] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 11 / 2
+  --> SNES Residual: 0.280340E-35 0.280340E-35 0.278084E-35
+  --> max change:  dcmx=   9.1337E-26  dc/dt=   4.3158E-33 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     28 Time=  2.68435E+00 Dt=  1.34218E+00 [y] conv_reason: 4
+  newton =   1 [      52] linear =    46 [      1648] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 4.68E-29 2x: 0.00E+00 2u: 0.00E+00 ir: 2.06E-29 iu: 0.00E+00 rsn:   0
+  1 2r: 1.42E-34 2x: 7.48E-19 2u: 1.18E-24 ir: 1.07E-34 iu: 8.22E-26 rsn:   0
+  2 2r: 1.22E-36 2x: 7.48E-19 2u: 5.18E-31 ir: 1.18E-36 iu: 3.40E-32 rsn: stol
+
+ Step     28 Time=  2.68435E+00 Dt=  1.34218E+00 [y] conv_reason: 4
+  newton =   2 [      54] linear =    11 [       114] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 11 / 2
+  --> SNES Residual: 0.122191E-35 0.122191E-35 0.117772E-35
+  --> max change:  dcmx=   8.2167E-26  dc/dt=   1.9412E-33 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     29 Time=  5.36871E+00 Dt=  2.68435E+00 [y] conv_reason: 4
+  newton =   1 [      53] linear =    49 [      1697] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 49 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 5.91E-30 2x: 0.00E+00 2u: 0.00E+00 ir: 2.38E-30 iu: 0.00E+00 rsn:   0
+  1 2r: 9.78E-34 2x: 7.48E-19 2u: 9.17E-25 ir: 4.93E-34 iu: 8.18E-26 rsn:   0
+  2 2r: 4.19E-36 2x: 7.48E-19 2u: 4.21E-30 ir: 4.18E-36 iu: 2.37E-31 rsn: stol
+
+ Step     29 Time=  5.36871E+00 Dt=  2.68435E+00 [y] conv_reason: 4
+  newton =   2 [      56] linear =     9 [       123] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 9 / 2
+  --> SNES Residual: 0.419282E-35 0.419282E-35 0.417897E-35
+  --> max change:  dcmx=   8.1788E-26  dc/dt=   9.6615E-34 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     30 Time=  1.07374E+01 Dt=  5.36871E+00 [y] conv_reason: 4
+  newton =   1 [      54] linear =    46 [      1743] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 7.16E-31 2x: 0.00E+00 2u: 0.00E+00 ir: 2.68E-31 iu: 0.00E+00 rsn:   0
+  1 2r: 2.98E-34 2x: 7.48E-19 2u: 9.38E-25 ir: 1.76E-34 iu: 6.97E-26 rsn:   0
+  2 2r: 3.67E-37 2x: 7.48E-19 2u: 1.22E-30 ir: 1.72E-37 iu: 1.12E-31 rsn: stol
+
+ Step     30 Time=  1.07374E+01 Dt=  5.36871E+00 [y] conv_reason: 4
+  newton =   2 [      58] linear =     9 [       132] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 9 / 2
+  --> SNES Residual: 0.367205E-36 0.367205E-36 0.171521E-36
+  --> max change:  dcmx=   6.9659E-26  dc/dt=   4.1143E-34 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     31 Time=  2.14748E+01 Dt=  1.07374E+01 [y] conv_reason: 4
+  newton =   1 [      55] linear =    49 [      1792] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 49 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.41E-31 2x: 0.00E+00 2u: 0.00E+00 ir: 4.99E-32 iu: 0.00E+00 rsn:   0
+  1 2r: 4.12E-33 2x: 7.48E-19 2u: 1.03E-24 ir: 2.63E-33 iu: 7.70E-26 rsn:   0
+  2 2r: 4.10E-37 2x: 7.48E-19 2u: 1.70E-29 ir: 2.39E-37 iu: 1.17E-30 rsn: stol
+
+ Step     31 Time=  2.14748E+01 Dt=  1.07374E+01 [y] conv_reason: 4
+  newton =   2 [      60] linear =     8 [       140] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 8 / 2
+  --> SNES Residual: 0.410349E-36 0.410349E-36 0.239160E-36
+  --> max change:  dcmx=   7.6956E-26  dc/dt=   2.2727E-34 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     32 Time=  4.29497E+01 Dt=  2.14748E+01 [y] conv_reason: 4
+  newton =   1 [      56] linear =    46 [      1838] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 3.87E-32 2x: 0.00E+00 2u: 0.00E+00 ir: 1.42E-32 iu: 0.00E+00 rsn:   0
+  1 2r: 4.89E-33 2x: 7.48E-19 2u: 1.08E-24 ir: 3.12E-33 iu: 7.20E-26 rsn:   0
+  2 2r: 9.65E-37 2x: 7.48E-19 2u: 1.14E-29 ir: 8.87E-37 iu: 2.11E-30 rsn: stol
+
+ Step     32 Time=  4.29497E+01 Dt=  2.14748E+01 [y] conv_reason: 4
+  newton =   2 [      62] linear =     7 [       147] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 7 / 2
+  --> SNES Residual: 0.964611E-36 0.964611E-36 0.887498E-36
+  --> max change:  dcmx=   7.1984E-26  dc/dt=   1.0629E-34 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     33 Time=  8.58993E+01 Dt=  4.29497E+01 [y] conv_reason: 4
+  newton =   1 [      57] linear =    49 [      1887] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 49 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.32E-32 2x: 0.00E+00 2u: 0.00E+00 ir: 5.35E-33 iu: 0.00E+00 rsn:   0
+  1 2r: 1.44E-33 2x: 7.48E-19 2u: 1.10E-24 ir: 8.21E-34 iu: 6.80E-26 rsn:   0
+  2 2r: 3.57E-36 2x: 7.48E-19 2u: 3.90E-30 ir: 3.55E-36 iu: 8.76E-31 rsn: stol
+
+ Step     33 Time=  8.58993E+01 Dt=  4.29497E+01 [y] conv_reason: 4
+  newton =   2 [      64] linear =     8 [       155] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 8 / 2
+  --> SNES Residual: 0.356799E-35 0.356799E-35 0.355073E-35
+  --> max change:  dcmx=   6.8030E-26  dc/dt=   5.0227E-35 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     34 Time=  1.71799E+02 Dt=  8.58993E+01 [y] conv_reason: 4
+  newton =   1 [      58] linear =    46 [      1933] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 6.11E-33 2x: 0.00E+00 2u: 0.00E+00 ir: 3.20E-33 iu: 0.00E+00 rsn:   0
+  1 2r: 2.14E-33 2x: 7.48E-19 2u: 1.13E-24 ir: 1.09E-33 iu: 6.14E-26 rsn:   0
+  2 2r: 1.17E-36 2x: 7.48E-19 2u: 1.24E-29 ir: 1.11E-36 iu: 1.79E-30 rsn: stol
+
+ Step     34 Time=  1.71799E+02 Dt=  8.58993E+01 [y] conv_reason: 4
+  newton =   2 [      66] linear =     6 [       161] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 6 / 2
+  --> SNES Residual: 0.116994E-35 0.116994E-35 0.111452E-35
+  --> max change:  dcmx=   6.1406E-26  dc/dt=   2.2668E-35 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     35 Time=  3.43597E+02 Dt=  1.71799E+02 [y] conv_reason: 4
+  newton =   1 [      59] linear =    49 [      1982] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 49 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 3.16E-33 2x: 0.00E+00 2u: 0.00E+00 ir: 1.57E-33 iu: 0.00E+00 rsn:   0
+  1 2r: 1.17E-33 2x: 7.48E-19 2u: 1.11E-24 ir: 6.71E-34 iu: 6.28E-26 rsn:   0
+  2 2r: 1.13E-36 2x: 7.48E-19 2u: 1.07E-29 ir: 1.08E-36 iu: 4.86E-30 rsn: stol
+
+ Step     35 Time=  3.43597E+02 Dt=  1.71799E+02 [y] conv_reason: 4
+  newton =   2 [      68] linear =     7 [       168] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 7 / 2
+  --> SNES Residual: 0.112603E-35 0.112603E-35 0.107668E-35
+  --> max change:  dcmx=   6.2816E-26  dc/dt=   1.1594E-35 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     36 Time=  6.87195E+02 Dt=  3.43597E+02 [y] conv_reason: 4
+  newton =   1 [      60] linear =    46 [      2028] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 46 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.77E-33 2x: 0.00E+00 2u: 0.00E+00 ir: 8.59E-34 iu: 0.00E+00 rsn:   0
+  1 2r: 3.44E-34 2x: 7.48E-19 2u: 1.02E-24 ir: 1.87E-34 iu: 6.69E-26 rsn:   0
+  2 2r: 4.36E-37 2x: 7.48E-19 2u: 1.35E-30 ir: 2.91E-37 iu: 1.20E-31 rsn: stol
+
+ Step     36 Time=  6.87195E+02 Dt=  3.43597E+02 [y] conv_reason: 4
+  newton =   2 [      70] linear =     7 [       175] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 7 / 2
+  --> SNES Residual: 0.436137E-36 0.436137E-36 0.291302E-36
+  --> max change:  dcmx=   6.6864E-26  dc/dt=   6.1708E-36 [mol/s]
+
+== RICHARDS FLOW ===============================================================
+  0 2r: 3.21E-09 2x: 0.00E+00 2u: 0.00E+00 ir: 3.14E-09 iu: 0.00E+00 rsn:   0
+  1 2r: 3.21E-09 2x: 7.76E+07 2u: 3.55E-09 ir: 3.14E-09 iu: 1.17E-10 rsn: stol
+
+ Step     37 Time=  1.00000E+03 Dt=  3.12805E+02 [y] conv_reason: 4
+  newton =   1 [      61] linear =    49 [      2077] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 49 / 1
+  --> SNES Residual: 0.320576E-08 0.576265E-12 0.313542E-08
+  --> max change: dpmx=   2.3283E-10
+
+== REACTIVE TRANSPORT ==========================================================
+  0 2r: 1.10E-33 2x: 0.00E+00 2u: 0.00E+00 ir: 3.81E-34 iu: 0.00E+00 rsn:   0
+  1 2r: 1.47E-34 2x: 7.48E-19 2u: 5.53E-25 ir: 7.96E-35 iu: 3.94E-26 rsn:   0
+  2 2r: 6.67E-37 2x: 7.48E-19 2u: 5.99E-31 ir: 5.72E-37 iu: 4.92E-32 rsn: stol
+
+ Step     37 Time=  1.00000E+03 Dt=  3.12805E+02 [y] conv_reason: 4
+  newton =   2 [      72] linear =     7 [       182] cuts =  0 [   0]
+  --> SNES Linear/Non-Linear Iterations = 7 / 2
+  --> SNES Residual: 0.667041E-36 0.667041E-36 0.572319E-36
+  --> max change:  dcmx=   3.9399E-26  dc/dt=   3.9940E-36 [mol/s]
+
+ --> write rate output file: pflotran_hybrid_pressure-darcyvel-001
+      0.03 Seconds to write to Rates file.
+ --> write vtk output file: pflotran_hybrid_pressure-001.vtk
+ WARNING: For unstructured grids, VTK formatted output lacks cell geometry information.
+      0.00 Seconds to write to VTK file(s)
+ --> Dump checkpoint file: pflotran_hybrid_pressure-restart.h5
+      Seconds to write to checkpoint file:       0.00
+
+PMCSubsurfaceFlow
+ Total Time: 1.0546E+00 seconds
+
+ FLOW TS SNES steps = 37  newton = 61  linear = 2077  cuts = 0
+ FLOW TS SNES Wasted Linear Iterations = 0
+ FLOW TS SNES Wasted Newton Iterations = 0
+ FLOW TS SNES time = 1.0 seconds
+
+PMCSubsurfaceTransport
+ Total Time: 1.6040E+00 seconds
+
+ TRAN TS SNES steps = 37  newton = 72  linear = 182  cuts = 0
+ TRAN TS SNES Wasted Linear Iterations = 0
+ TRAN TS SNES Wasted Newton Iterations = 0
+ TRAN TS SNES time = 1.4 seconds
+
+ Wall Clock Time:  2.8075E+00 [sec]   4.6792E-02 [min]   7.7986E-04 [hr]
+Initializing logfile: /Users/collin/Projects/bipartite_pflotran/src/alpha_study/model_graph_raw.log
+Starting at 2026-11-02 15:13:33.787128
+
+===================================================================
+===================================================================
+===================================================================
+||\    _____         \               / ______  _______       /  \ 
+||  \  |     |\     | \             /  |    |  |     | | /  /    \ 
+||   \ |___  | \    |  \    /\     /   |    |  |_____| |/   |  |  |
+||   / |     |   \  |   \  /  \  /     |    |  |   \   |\    \  \ 
+||  /  |     |     \|    \/    \/      |____|  |    \  | \ |  |  |
+||/ ======================================================= \    /
+============================================================  \/
+===================================================================
+
+Program: pydfnWorks v2.10.0 
+Release Date: 02-27-2026
+Install Date: 2025-10-29
+Run time : 2026-11-02 15:13:33.787171
+
+This program was prepared at Los Alamos National Laboratory (LANL),
+Earth and Environmental Sciences Division.
+
+All rights in the program are reserved by the DOE and LANL.
+Permission is granted to the public to copy and use this software
+without charge, provided that this Notice and any statement of
+authorship are reproduced on all copies. Neither the U.S. Government
+nor LANS makes any warranty, express or implied, or assumes
+any liability or responsibility for the use of this software.
+
+Contact Information : dfnworks@lanl.gov
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LA-CC-17-027
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+(or copyright) 2018 Triad National Security, LLC. All rights reserved.
+ 
+This program was produced under U.S. Government contract 89233218CNA000001
+for Los Alamos National Laboratory (LANL), which is operated by Triad 
+National Security, LLC for the U.S. Department of Energy/National Nuclear
+Security Administration.
+
+This is free software; you can redistribute it and/or modify it under the
+terms of the GNU Lesser General Public License as published by the Free
+Software Foundation; either version 3.0 of the License, or (at your option)
+any later version. If software is modified to produce derivative works,
+such modified software should be clearly marked, so as not to confuse it with
+the version available from LANL.
+
+All rights in the program are reserved by Triad National Security, LLC, 
+and the U.S. Department of Energy/National Nuclear Security Administration.
+The Government is granted for itself and others acting on its behalf a 
+nonexclusive, paid-up, irrevocable worldwide license in this material 
+to reproduce, prepare derivative works, distribute copies to the public,
+perform publicly and display publicly, and to permit others to do so.
+
+The U.S. Government has rights to use, reproduce, and distribute this software.  
+NEITHER THE GOVERNMENT NOR TRIAD NATIONAL SECURITY, LLC MAKES ANY WARRANTY, 
+EXPRESS OR IMPLIED, OR ASSUMES ANY LIABILITY FOR THE USE OF THIS SOFTWARE.  
+If software is modified to  produce derivative works, such modified 
+software should be clearly marked, so as not to confuse it with the 
+version available from LANL.
+
+Additionally, this program is free software; you can redistribute it and/or 
+modify it under the terms of the GNU General Public License as published by the 
+Free Software Foundation; either version 2 of the License, or (at your option) 
+any later version. Accordingly, this program is distributed in the hope that it 
+will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public 
+License for more details.
+ 
+Additionally, redistribution and use in source and binary forms, with or 
+without modification, are permitted provided that the following conditions are 
+met:
+1.       Redistributions of source code must retain the above copyright notice, 
+this list of conditions and the following disclaimer.
+
+2.      Redistributions in binary form must reproduce the above copyright 
+notice, this list of conditions and the following disclaimer in the 
+documentation and/or other materials provided with the distribution.
+
+3.      Neither the name of Los Alamos National Security, LLC, Los Alamos 
+National Laboratory, LANL, the U.S. Government, nor the names of its 
+contributors may be used to endorse or promote products derived from this 
+software without specific prior written permission.
+ 
+THIS SOFTWARE IS PROVIDED BY LOS ALAMOS NATIONAL SECURITY, LLC AND 
+CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LOS ALAMOS NATIONAL 
+SECURITY, LLC OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER 
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+
+--> Creating DFN Object: Starting
+--> Loading and checking dfnWorks dependency paths.
+--> /Users/collin/.dfnworksrc found.
+
+--> DFNGen version 2.3 verified.
+dfnWorks paths:
+---------------
+* dfnworks_PATH: /Users/collin/src/dfnWorks_jdhdev/
+* LAGRIT_EXE: /Users/collin/src/LaGriT/build/lagrit
+* PETSC_DIR: /Users/collin/src/petsc
+* PETSC_ARCH: arch-darwin-c-opt
+* PFLOTRAN_EXE: /Users/collin/src/pflotran/src/pflotran/pflotran
+* FEHM_EXE: /Users/collin/src/FEHM/src/xfehm
+
+--> Loading and checking dfnWorks dependency paths successful
+================================================================================
+
+--> Jobname: /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw
+--> Local Jobname: model_graph_raw
+--> Number of Processors Requested: 1
+--> dfnGen filename : model_graph_raw_dfnGen_input.dat
+--> Local dfnGen filename : model_graph_raw_dfnGen_input.dat
+--> dfnFlow filename : /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/pflotran_hybrid_pressure.in
+--> Local dfnFlow filename : pflotran_hybrid_pressure.in
+================================================================================
+
+* Checking input paths: Starting
+* Checking input paths: Complete
+--> Creating DFN Object: Complete
+--> Adding new facture family
+Orientation_distribution of fisher.
+
+--> Family information for family # 1
+Name: number                                  Value: None
+Name: probability                             Value: 0.04824884501885617
+Name: type                                    Value: {'rect': False, 'ellipse': True}
+Name: layer                                   Value: 0
+Name: region                                  Value: 0
+Name: p32                                     Value: 0.04824884501885617
+Name: aspect                                  Value: 1.0
+Name: number_of_points                        Value: 16
+Name: beta_distribution                       Value: 1
+Name: beta                                    Value: 0.0
+Name: orientation_distribution                Value: fisher
+Name: fisher                                  Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': 292.0, 'plunge': 1.0, 'kappa': 17.8, 'kappa1': 0, 'kappa2': 0}
+Name: bingham                                 Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': None, 'plunge': None, 'kappa1': None, 'kappa2': None}
+Name: distribution                            Value: {'tpl': True, 'log_normal': False, 'exp': False, 'constant': False}
+Name: tpl                                     Value: {'alpha': 2.5}
+Name: log_normal                              Value: {'mean': None, 'std': None}
+Name: exp                                     Value: {'mean': None}
+Name: constant                                Value: None
+Name: min_radius                              Value: 15.0
+Name: max_radius                              Value: 564.0
+Name: hydraulic_properties : variable : transmissivity
+Name: hydraulic_properties : function : correlated
+Name: hydraulic_properties : params : {'alpha': 6.3e-09, 'beta': 1.3}
+--> Adding new facture family
+Orientation_distribution of fisher.
+
+--> Family information for family # 2
+Name: number                                  Value: None
+Name: probability                             Value: 0.0387523386053027
+Name: type                                    Value: {'rect': False, 'ellipse': True}
+Name: layer                                   Value: 0
+Name: region                                  Value: 0
+Name: p32                                     Value: 0.0387523386053027
+Name: aspect                                  Value: 1.0
+Name: number_of_points                        Value: 16
+Name: beta_distribution                       Value: 1
+Name: beta                                    Value: 0.0
+Name: orientation_distribution                Value: fisher
+Name: fisher                                  Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': 326.0, 'plunge': 2.0, 'kappa': 14.3, 'kappa1': 0, 'kappa2': 0}
+Name: bingham                                 Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': None, 'plunge': None, 'kappa1': None, 'kappa2': None}
+Name: distribution                            Value: {'tpl': True, 'log_normal': False, 'exp': False, 'constant': False}
+Name: tpl                                     Value: {'alpha': 2.7}
+Name: log_normal                              Value: {'mean': None, 'std': None}
+Name: exp                                     Value: {'mean': None}
+Name: constant                                Value: None
+Name: min_radius                              Value: 15.0
+Name: max_radius                              Value: 564.0
+Name: hydraulic_properties : variable : transmissivity
+Name: hydraulic_properties : function : correlated
+Name: hydraulic_properties : params : {'alpha': 6.3e-09, 'beta': 1.3}
+--> Adding new facture family
+Orientation_distribution of fisher.
+
+--> Family information for family # 3
+Name: number                                  Value: None
+Name: probability                             Value: 0.0014551320561376928
+Name: type                                    Value: {'rect': False, 'ellipse': True}
+Name: layer                                   Value: 0
+Name: region                                  Value: 0
+Name: p32                                     Value: 0.0014551320561376928
+Name: aspect                                  Value: 1.0
+Name: number_of_points                        Value: 16
+Name: beta_distribution                       Value: 1
+Name: beta                                    Value: 0.0
+Name: orientation_distribution                Value: fisher
+Name: fisher                                  Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': 60.0, 'plunge': 6.0, 'kappa': 12.9, 'kappa1': 0, 'kappa2': 0}
+Name: bingham                                 Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': None, 'plunge': None, 'kappa1': None, 'kappa2': None}
+Name: distribution                            Value: {'tpl': True, 'log_normal': False, 'exp': False, 'constant': False}
+Name: tpl                                     Value: {'alpha': 3.1}
+Name: log_normal                              Value: {'mean': None, 'std': None}
+Name: exp                                     Value: {'mean': None}
+Name: constant                                Value: None
+Name: min_radius                              Value: 15.0
+Name: max_radius                              Value: 564.0
+Name: hydraulic_properties : variable : transmissivity
+Name: hydraulic_properties : function : correlated
+Name: hydraulic_properties : params : {'alpha': 6.3e-09, 'beta': 1.3}
+--> Adding new facture family
+Orientation_distribution of fisher.
+
+--> Family information for family # 4
+Name: number                                  Value: None
+Name: probability                             Value: 0.0008862082447154369
+Name: type                                    Value: {'rect': False, 'ellipse': True}
+Name: layer                                   Value: 0
+Name: region                                  Value: 0
+Name: p32                                     Value: 0.0008862082447154369
+Name: aspect                                  Value: 1.0
+Name: number_of_points                        Value: 16
+Name: beta_distribution                       Value: 1
+Name: beta                                    Value: 0.0
+Name: orientation_distribution                Value: fisher
+Name: fisher                                  Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': 15.0, 'plunge': 2.0, 'kappa': 14.0, 'kappa1': 0, 'kappa2': 0}
+Name: bingham                                 Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': None, 'plunge': None, 'kappa1': None, 'kappa2': None}
+Name: distribution                            Value: {'tpl': True, 'log_normal': False, 'exp': False, 'constant': False}
+Name: tpl                                     Value: {'alpha': 3.1}
+Name: log_normal                              Value: {'mean': None, 'std': None}
+Name: exp                                     Value: {'mean': None}
+Name: constant                                Value: None
+Name: min_radius                              Value: 15.0
+Name: max_radius                              Value: 564.0
+Name: hydraulic_properties : variable : transmissivity
+Name: hydraulic_properties : function : correlated
+Name: hydraulic_properties : params : {'alpha': 6.3e-09, 'beta': 1.3}
+--> Adding new facture family
+Orientation_distribution of fisher.
+
+--> Family information for family # 5
+Name: number                                  Value: None
+Name: probability                             Value: 0.20022096889305213
+Name: type                                    Value: {'rect': False, 'ellipse': True}
+Name: layer                                   Value: 0
+Name: region                                  Value: 0
+Name: p32                                     Value: 0.20022096889305213
+Name: aspect                                  Value: 1.0
+Name: number_of_points                        Value: 16
+Name: beta_distribution                       Value: 1
+Name: beta                                    Value: 0.0
+Name: orientation_distribution                Value: fisher
+Name: fisher                                  Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': 5.0, 'plunge': 86.0, 'kappa': 15.2, 'kappa1': 0, 'kappa2': 0}
+Name: bingham                                 Value: {'theta': None, 'phi': None, 'strike': None, 'dip': None, 'trend': None, 'plunge': None, 'kappa1': None, 'kappa2': None}
+Name: distribution                            Value: {'tpl': True, 'log_normal': False, 'exp': False, 'constant': False}
+Name: tpl                                     Value: {'alpha': 2.38}
+Name: log_normal                              Value: {'mean': None, 'std': None}
+Name: exp                                     Value: {'mean': None}
+Name: constant                                Value: None
+Name: min_radius                              Value: 15.0
+Name: max_radius                              Value: 564.0
+Name: hydraulic_properties : variable : transmissivity
+Name: hydraulic_properties : function : correlated
+Name: hydraulic_properties : params : {'alpha': 6.3e-09, 'beta': 1.3}
+Making subdirectory: dfnGen_output
+Making subdirectory: dfnGen_output/radii
+Making subdirectory: intersections
+Making subdirectory: polys
+Current directory is now: /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw
+Jobname is /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw/
+================================================================================
+Checking Input File
+
+Fracture Family order was not changed
+--> Clean output file name: dfnGen_output/model_graph_raw_dfnGen_input_clean.dat
+--> Checking General Parameters: Starting
+--> Warning while parsing input
+
+* 'famProb' probabilities did not sum to 1. They have been re-scaled accordingly
+* Be careful out there *
+
+--> New Values: [0.16662613283633596, 0.133830194642842, 0.005025260753612914, 0.003060497150696587, 0.6914579146165125]
+
+--> Warning while parsing input
+
+* Running with FRAM off. Mesh will not work for DFN flow and transport.
+* Be careful out there *
+
+--> Warning while parsing input
+
+* Running with FRAM off. Mesh will not work for DFN flow and transport.
+* Be careful out there *
+
+--> Checking General Parameters: Complete
+
+--> Checking Ellipse Family Parameters
+
+--> Checking Aspect Ratios: Starting
+--> Checking Aspect Ratios: Complete
+
+--> Checking Fracture Layers: Starting
+--> Checking Fracture Layers: Complete
+
+--> Checking Fracture Regions: Starting
+--> Checking Fracture Regions: Complete
+
+--> Checking Fracture Regions/Layers: Starting
+--> Checking Fracture Regions/Layers: Complete
+
+--> Checking Family Orientation Parameters: Starting
+* Checking Kappa Values > 0
+* Checking Kappa1 & Kappa2 < 0
+--> Checking Family Orientation Parameters: Complete
+
+--> Checking Beta Parameters: Starting
+--> Checking Beta Parameters: Complete
+
+--> Checking Length Distributions: Starting
+--> Checking Length Distributions: Complete
+
+--> Checking Angle Option: Starting
+* Converting angleOption value from degree to 1 for dfnGen input
+--> Checking Angle Option: Complete
+
+--> Writing parameters to file dfnGen_output/model_graph_raw_dfnGen_input_clean.dat : Starting
+--> Writing parameters to file dfnGen_output/model_graph_raw_dfnGen_input_clean.dat : Complete
+Checking Input File Complete
+================================================================================
+--> Running DFNGEN
+Running: >> /Users/collin/src/dfnWorks_jdhdev/DFNGen/DFNGen dfnGen_output/model_graph_raw_dfnGen_input_clean.dat /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw/
+-->Opening dfnGen LogFile...
+
+[2026-11-02 15:13:33] INFO: Starting DFNGen
+[2026-11-02 15:13:33] INFO: DFN Generator Input File: dfnGen_output/model_graph_raw_dfnGen_input_clean.dat
+
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: 
+FRAM IS DISABLED
+[2026-11-02 15:13:33] INFO: Expecting Trend & Plunge (trend clockwise from North; plunge positive downward)
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: h: 1.000000
+[2026-11-02 15:13:33] INFO: Shape Families:
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 1:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.048249
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 5.096361 rad, 292.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.017453 rad, 1.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 17.799999
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.500000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.166626
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 2:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.038752
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 5.689773 rad, 326.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.034907 rad, 2.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 14.300000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.700000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.133830
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 3:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.001455
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 1.047198 rad, 60.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.104720 rad, 6.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 12.900000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 3.100000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.005025
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 4:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.000886
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 0.261799 rad, 15.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.034907 rad, 2.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 14.000000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 3.100000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.003060
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 5:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.200221
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 0.087266 rad, 5.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 1.500983 rad, 86.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 15.200000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.380000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.691458
+[2026-11-02 15:13:33] INFO: Accepted 200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.001228
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.002404
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000040
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.009171
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.002561
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.004278
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000058
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.019430
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.004698
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.007356
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000082
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.027677
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.006271
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.008288
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000107
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000025
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.038164
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.009913
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.009403
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.053316
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.014119
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.012115
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.065402
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.015729
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.013977
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.075612
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.017230
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.015288
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000173
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.086466
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.018691
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.017406
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000188
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.094452
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.021165
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.020005
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.101736
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.023217
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.021862
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000229
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.111059
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.025093
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.023345
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000287
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.125949
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.026749
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025178
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000338
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.136644
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.028612
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025977
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000519
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.145510
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.030029
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.027125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000541
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.155598
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.031754
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.028942
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.166221
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.034332
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.030409
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.176198
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.036349
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.032175
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.184496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.037685
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.034210
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000433
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.195595
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: P32 For Family 5 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 4 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 2 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 3 Completed
+
+[2026-11-02 15:13:33] INFO: Accepted 4000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.044059
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.040271
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.001668
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000921
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.200290
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: P32 For Family 1 Completed
+
+[2026-11-02 15:13:33] INFO: ========================================================
+[2026-11-02 15:13:33] INFO:             Network Generation Complete
+[2026-11-02 15:13:33] INFO: ========================================================
+[2026-11-02 15:13:33] INFO: Version of DFNGen: 2.2
+[2026-11-02 15:13:33] INFO: Layer Conforming Fractures: perfect conforming
+[2026-11-02 15:13:33] INFO: Time Stamp: Mon Nov  2 15:13:33 2026
+
+[2026-11-02 15:13:33] INFO: Final p32 values per family:
+[2026-11-02 15:13:33] INFO: Family 1 target P32 = 0.048249, Final P32 = 0.048286
+[2026-11-02 15:13:33] INFO: Family 2 target P32 = 0.038752, Final P32 = 0.040271
+[2026-11-02 15:13:33] INFO: Family 3 target P32 = 0.001455, Final P32 = 0.001668
+[2026-11-02 15:13:33] INFO: Family 4 target P32 = 0.000886, Final P32 = 0.000921
+[2026-11-02 15:13:33] INFO: Family 5 target P32 = 0.200221, Final P32 = 0.200290
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Statistics Before Isolated Fractures Removed:
+
+[2026-11-02 15:13:33] INFO: Fractures: 4069
+[2026-11-02 15:13:33] INFO: Truncated: 1411
+
+[2026-11-02 15:13:33] INFO: Total Surface Area:     18214754.730211 m^2
+[2026-11-02 15:13:33] INFO: Total Fracture Density   (P30): 0.000065
+[2026-11-02 15:13:33] INFO: Total Fracture Intensity (P32): 0.291436
+[2026-11-02 15:13:33] INFO: Family: 1
+[2026-11-02 15:13:33] INFO:     Accepted: 792
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 3017863.162407 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.048286
+
+[2026-11-02 15:13:33] INFO: Family: 2
+[2026-11-02 15:13:33] INFO:     Accepted: 588
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 2516962.247665 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.040271
+
+[2026-11-02 15:13:33] INFO: Family: 3
+[2026-11-02 15:13:33] INFO:     Accepted: 29
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 104254.375244 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.001668
+
+[2026-11-02 15:13:33] INFO: Family: 4
+[2026-11-02 15:13:33] INFO:     Accepted: 21
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 57562.558105 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.000921
+
+[2026-11-02 15:13:33] INFO: Family: 5
+[2026-11-02 15:13:33] INFO:     Accepted: 2639
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 12518112.386789 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.200290
+
+[2026-11-02 15:13:33] INFO: In cluster groups
+[2026-11-02 15:13:33] INFO: Number of fractures: 4069
+[2026-11-02 15:13:33] INFO: Number of groups: 756
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Statistics After Isolated Fractures Removed:
+[2026-11-02 15:13:33] INFO: Final Number of Fractures: 4008
+[2026-11-02 15:13:33] INFO: Isolated Fractures Removed: 61
+[2026-11-02 15:13:33] INFO: Fractures before isolated fractures removed:: 4069
+
+[2026-11-02 15:13:33] INFO: Total Surface Area:     18142756.466639 m^2
+[2026-11-02 15:13:33] INFO: Total Fracture Density   (P30): 0.000064
+[2026-11-02 15:13:33] INFO: Total Fracture Intensity (P32): 0.290284
+[2026-11-02 15:13:33] INFO: Family: 1
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 786
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 6
+[2026-11-02 15:13:33] INFO:     Accepted: 792
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 3014005.023102 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.048224
+
+[2026-11-02 15:13:33] INFO: Family: 2
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 586
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 2
+[2026-11-02 15:13:33] INFO:     Accepted: 588
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 2515023.422897 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.040240
+
+[2026-11-02 15:13:33] INFO: Family: 3
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 29
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 0
+[2026-11-02 15:13:33] INFO:     Accepted: 29
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 104254.375244 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.001668
+
+[2026-11-02 15:13:33] INFO: Family: 4
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 21
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 0
+[2026-11-02 15:13:33] INFO:     Accepted: 21
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 57562.558105 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.000921
+
+[2026-11-02 15:13:33] INFO: Family: 5
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 2586
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 53
+[2026-11-02 15:13:33] INFO:     Accepted: 2639
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 12451911.087290 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.199231
+
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: 4069 Fractures Accepted (Before Isolated Fracture Removal)
+[2026-11-02 15:13:33] INFO: 4008 Final Fractures (After Isolated Fracture Removal)
+
+[2026-11-02 15:13:33] INFO: Total Fractures Rejected: 0
+[2026-11-02 15:13:33] INFO: Total Fractures Re-translated: 0
+[2026-11-02 15:13:33] INFO: Number of Triple Intersection Points (Before Isolated Fracture Removal): 0
+[2026-11-02 15:13:33] INFO: Intersection Statistics:
+[2026-11-02 15:13:33] INFO:     Number of Intersections: 17309 
+[2026-11-02 15:13:33] INFO:     Intersections Shortened: 0 
+[2026-11-02 15:13:33] INFO:     Original Intersection (Before Intersection Shrinking) Length: 441729.214961 m
+[2026-11-02 15:13:33] INFO:     Intersection Length Discarded: 0.000000 m
+[2026-11-02 15:13:33] INFO:     Final Intersection Length: 441729.214961 m
+[2026-11-02 15:13:33] INFO: Rejection Statistics: 
+[2026-11-02 15:13:33] INFO:     0 Short Intersections 
+[2026-11-02 15:13:33] INFO:     0 Close to Node
+[2026-11-02 15:13:33] INFO:     0 Close to Edge
+[2026-11-02 15:13:33] INFO:     0 Vertex Close to Edge
+[2026-11-02 15:13:33] INFO:     15 Outside of Domain
+[2026-11-02 15:13:33] INFO:     0 Triple intersection Rejections
+[2026-11-02 15:13:33] INFO:     0 Intersections Close to Other Intersections
+
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+[2026-11-02 15:13:33] INFO: Fracture Estimation statistics:
+[2026-11-02 15:13:33] INFO: NOTE: If estimation and actual are very different, expected family distributions might not be accurate. If this is the case, try increasing or decreasing the 'radiiListIncrease' option in the input file.
+[2026-11-02 15:13:33] INFO: Ellipse Family 1
+[2026-11-02 15:13:33] INFO: Actual:    7920
+[2026-11-02 15:13:33] INFO: Ellipse Family 2
+[2026-11-02 15:13:33] INFO: Actual:    5880
+[2026-11-02 15:13:33] INFO: Ellipse Family 3
+[2026-11-02 15:13:33] INFO: Actual:    290
+[2026-11-02 15:13:33] INFO: Ellipse Family 4
+[2026-11-02 15:13:33] INFO: Actual:    210
+[2026-11-02 15:13:33] INFO: Ellipse Family 5
+[2026-11-02 15:13:33] INFO: Actual:    26390
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Seed: 3
+[2026-11-02 15:13:33] INFO: /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output
+[2026-11-02 15:13:33] INFO: Writing Graph Data Files
+[2026-11-02 15:13:33] INFO: Writing Polygon Files
+[2026-11-02 15:13:33] INFO: Writing Polygon Files Complete
+[2026-11-02 15:13:33] INFO: Writing Intersection Files
+[2026-11-02 15:13:34] INFO: Writing poly inp files
+[2026-11-02 15:13:34] INFO: Writing /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output/../params.txt
+[2026-11-02 15:13:34] INFO: Writing Radii File (radii.dat)
+[2026-11-02 15:13:34] INFO: Writing Rejection Statistics File (rejections.dat)
+[2026-11-02 15:13:34] INFO: Writing Family Definitions File (families.dat)
+[2026-11-02 15:13:34] INFO: Writing Fracture Translations File (translations.dat)
+[2026-11-02 15:13:34] INFO: Writing Connectivity Data (connectivity.dat)
+[2026-11-02 15:13:34] INFO: Writing Rotation Data File (poly_info.dat)
+[2026-11-02 15:13:34] INFO: Writing Normal Vectors into File (normal_vectors.dat)
+[2026-11-02 15:13:34] INFO: Writing Rotation Data File (rejectsPerAttempt.dat)
+[2026-11-02 15:13:34] INFO: Writing Boundary Files
+[2026-11-02 15:13:34] INFO: Lagrit Should Remove 34614 Nodes (69228/2 - 0)
+[2026-11-02 15:13:34] INFO: DFNGen - Complete
+
+-->Opening dfnGen LogFile...
+
+[2026-11-02 15:13:33] INFO: Starting DFNGen
+[2026-11-02 15:13:33] INFO: DFN Generator Input File: dfnGen_output/model_graph_raw_dfnGen_input_clean.dat
+
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: 
+FRAM IS DISABLED
+[2026-11-02 15:13:33] INFO: Expecting Trend & Plunge (trend clockwise from North; plunge positive downward)
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: The orientation_distribution is: Fisher
+[2026-11-02 15:13:33] INFO: h: 1.000000
+[2026-11-02 15:13:33] INFO: Shape Families:
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 1:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.048249
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 5.096361 rad, 292.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.017453 rad, 1.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 17.799999
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.500000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.166626
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 2:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.038752
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 5.689773 rad, 326.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.034907 rad, 2.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 14.300000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.700000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.133830
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 3:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.001455
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 1.047198 rad, 60.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.104720 rad, 6.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 12.900000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 3.100000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.005025
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 4:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.000886
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 0.261799 rad, 15.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 0.034907 rad, 2.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 14.000000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 3.100000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.003060
+[2026-11-02 15:13:33] INFO: 
+
+Ellipse Family 5:
+[2026-11-02 15:13:33] INFO: Number of Vertices: 16
+[2026-11-02 15:13:33] INFO: Aspect Ratio: 1.000000
+[2026-11-02 15:13:33] INFO: P32 (Fracture Intensity) Target: 0.200221
+[2026-11-02 15:13:33] INFO: Beta (Rotation Around Normal Vector): 0.000000 rad, 0.000000 deg
+[2026-11-02 15:13:33] INFO: Trend: 0.087266 rad, 5.000000 deg
+[2026-11-02 15:13:33] INFO: Plunge: 1.500983 rad, 86.000000 deg 
+[2026-11-02 15:13:33] INFO: Orientation Distribution: fisher
+[2026-11-02 15:13:33] INFO: Kappa: 15.200000
+[2026-11-02 15:13:33] INFO: Kappa1: 0.000000
+[2026-11-02 15:13:33] INFO: Kappa2: 0.000000
+[2026-11-02 15:13:33] INFO: Layer: Entire domain
+[2026-11-02 15:13:33] INFO: Region: Entire domain
+[2026-11-02 15:13:33] INFO: Distribution: Truncated Power-Law
+[2026-11-02 15:13:33] INFO: Alpha: 2.380000
+[2026-11-02 15:13:33] INFO: Minimum Radius: 15.000000m
+[2026-11-02 15:13:33] INFO: Maximum Radius: 564.000000m
+[2026-11-02 15:13:33] INFO: Family Insertion Probability: 0.691458
+[2026-11-02 15:13:33] INFO: Accepted 200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.001228
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.002404
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000040
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.009171
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.002561
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.004278
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000058
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.019430
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.004698
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.007356
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000082
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000000
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.027677
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.006271
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.008288
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000107
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000025
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.038164
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.009913
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.009403
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.053316
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.014119
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.012115
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000099
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.065402
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.015729
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.013977
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000128
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.075612
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.017230
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.015288
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000173
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.086466
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 1800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.018691
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.017406
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000188
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.094452
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.021165
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.020005
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000206
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.101736
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.023217
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.021862
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000229
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.111059
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.025093
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.023345
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000287
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.125949
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.026749
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025178
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000338
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.136644
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 2800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.028612
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.025977
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000519
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.145510
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.030029
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.027125
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000368
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000541
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.155598
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3200 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.031754
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.028942
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.166221
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3400 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.034332
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.030409
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.176198
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3600 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.036349
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.032175
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000396
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.184496
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Accepted 3800 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.037685
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.034210
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.000433
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000579
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.195595
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: P32 For Family 5 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 4 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 2 Completed
+
+[2026-11-02 15:13:33] INFO: P32 For Family 3 Completed
+
+[2026-11-02 15:13:33] INFO: Accepted 4000 fractures
+[2026-11-02 15:13:33] INFO: Rejected 0 fractures
+[2026-11-02 15:13:33] INFO: Re-translated 0 fractures
+
+[2026-11-02 15:13:33] INFO: Current p32 values per family:
+[2026-11-02 15:13:33] INFO: Ellipse family 1 target P32 = 0.048249, Current P32 = 0.044059
+[2026-11-02 15:13:33] INFO: 
+[2026-11-02 15:13:33] INFO: Ellipse family 2 target P32 = 0.038752, Current P32 = 0.040271
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 3 target P32 = 0.001455, Current P32 = 0.001668
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 4 target P32 = 0.000886, Current P32 = 0.000921
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: Ellipse family 5 target P32 = 0.200221, Current P32 = 0.200290
+[2026-11-02 15:13:33] INFO: ...Done
+[2026-11-02 15:13:33] INFO: P32 For Family 1 Completed
+
+[2026-11-02 15:13:33] INFO: ========================================================
+[2026-11-02 15:13:33] INFO:             Network Generation Complete
+[2026-11-02 15:13:33] INFO: ========================================================
+[2026-11-02 15:13:33] INFO: Version of DFNGen: 2.2
+[2026-11-02 15:13:33] INFO: Layer Conforming Fractures: perfect conforming
+[2026-11-02 15:13:33] INFO: Time Stamp: Mon Nov  2 15:13:33 2026
+
+[2026-11-02 15:13:33] INFO: Final p32 values per family:
+[2026-11-02 15:13:33] INFO: Family 1 target P32 = 0.048249, Final P32 = 0.048286
+[2026-11-02 15:13:33] INFO: Family 2 target P32 = 0.038752, Final P32 = 0.040271
+[2026-11-02 15:13:33] INFO: Family 3 target P32 = 0.001455, Final P32 = 0.001668
+[2026-11-02 15:13:33] INFO: Family 4 target P32 = 0.000886, Final P32 = 0.000921
+[2026-11-02 15:13:33] INFO: Family 5 target P32 = 0.200221, Final P32 = 0.200290
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Statistics Before Isolated Fractures Removed:
+
+[2026-11-02 15:13:33] INFO: Fractures: 4069
+[2026-11-02 15:13:33] INFO: Truncated: 1411
+
+[2026-11-02 15:13:33] INFO: Total Surface Area:     18214754.730211 m^2
+[2026-11-02 15:13:33] INFO: Total Fracture Density   (P30): 0.000065
+[2026-11-02 15:13:33] INFO: Total Fracture Intensity (P32): 0.291436
+[2026-11-02 15:13:33] INFO: Family: 1
+[2026-11-02 15:13:33] INFO:     Accepted: 792
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 3017863.162407 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.048286
+
+[2026-11-02 15:13:33] INFO: Family: 2
+[2026-11-02 15:13:33] INFO:     Accepted: 588
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 2516962.247665 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.040271
+
+[2026-11-02 15:13:33] INFO: Family: 3
+[2026-11-02 15:13:33] INFO:     Accepted: 29
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 104254.375244 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.001668
+
+[2026-11-02 15:13:33] INFO: Family: 4
+[2026-11-02 15:13:33] INFO:     Accepted: 21
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 57562.558105 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.000921
+
+[2026-11-02 15:13:33] INFO: Family: 5
+[2026-11-02 15:13:33] INFO:     Accepted: 2639
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 12518112.386789 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.200290
+
+[2026-11-02 15:13:33] INFO: In cluster groups
+[2026-11-02 15:13:33] INFO: Number of fractures: 4069
+[2026-11-02 15:13:33] INFO: Number of groups: 756
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Statistics After Isolated Fractures Removed:
+[2026-11-02 15:13:33] INFO: Final Number of Fractures: 4008
+[2026-11-02 15:13:33] INFO: Isolated Fractures Removed: 61
+[2026-11-02 15:13:33] INFO: Fractures before isolated fractures removed:: 4069
+
+[2026-11-02 15:13:33] INFO: Total Surface Area:     18142756.466639 m^2
+[2026-11-02 15:13:33] INFO: Total Fracture Density   (P30): 0.000064
+[2026-11-02 15:13:33] INFO: Total Fracture Intensity (P32): 0.290284
+[2026-11-02 15:13:33] INFO: Family: 1
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 786
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 6
+[2026-11-02 15:13:33] INFO:     Accepted: 792
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 3014005.023102 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.048224
+
+[2026-11-02 15:13:33] INFO: Family: 2
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 586
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 2
+[2026-11-02 15:13:33] INFO:     Accepted: 588
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 2515023.422897 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.040240
+
+[2026-11-02 15:13:33] INFO: Family: 3
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 29
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 0
+[2026-11-02 15:13:33] INFO:     Accepted: 29
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 104254.375244 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.001668
+
+[2026-11-02 15:13:33] INFO: Family: 4
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 21
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 0
+[2026-11-02 15:13:33] INFO:     Accepted: 21
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 57562.558105 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.000921
+
+[2026-11-02 15:13:33] INFO: Family: 5
+[2026-11-02 15:13:33] INFO:     Fractures After Isolated Fracture Removal: 2586
+[2026-11-02 15:13:33] INFO:     Isolated Fractures Removed: 53
+[2026-11-02 15:13:33] INFO:     Accepted: 2639
+[2026-11-02 15:13:33] INFO:     Rejected: 0
+[2026-11-02 15:13:33] INFO:     Layer: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Region: Whole Domain 
+[2026-11-02 15:13:33] INFO:     Surface Area: 12451911.087290 m^2
+[2026-11-02 15:13:33] INFO:     Fracture Intensity (P32): 0.199231
+
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: 4069 Fractures Accepted (Before Isolated Fracture Removal)
+[2026-11-02 15:13:33] INFO: 4008 Final Fractures (After Isolated Fracture Removal)
+
+[2026-11-02 15:13:33] INFO: Total Fractures Rejected: 0
+[2026-11-02 15:13:33] INFO: Total Fractures Re-translated: 0
+[2026-11-02 15:13:33] INFO: Number of Triple Intersection Points (Before Isolated Fracture Removal): 0
+[2026-11-02 15:13:33] INFO: Intersection Statistics:
+[2026-11-02 15:13:33] INFO:     Number of Intersections: 17309 
+[2026-11-02 15:13:33] INFO:     Intersections Shortened: 0 
+[2026-11-02 15:13:33] INFO:     Original Intersection (Before Intersection Shrinking) Length: 441729.214961 m
+[2026-11-02 15:13:33] INFO:     Intersection Length Discarded: 0.000000 m
+[2026-11-02 15:13:33] INFO:     Final Intersection Length: 441729.214961 m
+[2026-11-02 15:13:33] INFO: Rejection Statistics: 
+[2026-11-02 15:13:33] INFO:     0 Short Intersections 
+[2026-11-02 15:13:33] INFO:     0 Close to Node
+[2026-11-02 15:13:33] INFO:     0 Close to Edge
+[2026-11-02 15:13:33] INFO:     0 Vertex Close to Edge
+[2026-11-02 15:13:33] INFO:     15 Outside of Domain
+[2026-11-02 15:13:33] INFO:     0 Triple intersection Rejections
+[2026-11-02 15:13:33] INFO:     0 Intersections Close to Other Intersections
+
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+[2026-11-02 15:13:33] INFO: Fracture Estimation statistics:
+[2026-11-02 15:13:33] INFO: NOTE: If estimation and actual are very different, expected family distributions might not be accurate. If this is the case, try increasing or decreasing the 'radiiListIncrease' option in the input file.
+[2026-11-02 15:13:33] INFO: Ellipse Family 1
+[2026-11-02 15:13:33] INFO: Actual:    7920
+[2026-11-02 15:13:33] INFO: Ellipse Family 2
+[2026-11-02 15:13:33] INFO: Actual:    5880
+[2026-11-02 15:13:33] INFO: Ellipse Family 3
+[2026-11-02 15:13:33] INFO: Actual:    290
+[2026-11-02 15:13:33] INFO: Ellipse Family 4
+[2026-11-02 15:13:33] INFO: Actual:    210
+[2026-11-02 15:13:33] INFO: Ellipse Family 5
+[2026-11-02 15:13:33] INFO: Actual:    26390
+[2026-11-02 15:13:33] INFO: ________________________________________________________
+
+[2026-11-02 15:13:33] INFO: Seed: 3
+[2026-11-02 15:13:33] INFO: /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output
+[2026-11-02 15:13:33] INFO: Writing Graph Data Files
+[2026-11-02 15:13:33] INFO: Writing Polygon Files
+[2026-11-02 15:13:33] INFO: Writing Polygon Files Complete
+[2026-11-02 15:13:33] INFO: Writing Intersection Files
+[2026-11-02 15:13:34] INFO: Writing poly inp files
+[2026-11-02 15:13:34] INFO: Writing /Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p8.0_sg0.0_seed3/model_graph_raw//dfnGen_output/../params.txt
+[2026-11-02 15:13:34] INFO: Writing Radii File (radii.dat)
+[2026-11-02 15:13:34] INFO: Writing Rejection Statistics File (rejections.dat)
+[2026-11-02 15:13:34] INFO: Writing Family Definitions File (families.dat)
+[2026-11-02 15:13:34] INFO: Writing Fracture Translations File (translations.dat)
+[2026-11-02 15:13:34] INFO: Writing Connectivity Data (connectivity.dat)
+[2026-11-02 15:13:34] INFO: Writing Rotation Data File (poly_info.dat)
+[2026-11-02 15:13:34] INFO: Writing Normal Vectors into File (normal_vectors.dat)
+[2026-11-02 15:13:34] INFO: Writing Rotation Data File (rejectsPerAttempt.dat)
+[2026-11-02 15:13:34] INFO: Writing Boundary Files
+[2026-11-02 15:13:34] INFO: Lagrit Should Remove 34614 Nodes (69228/2 - 0)
+[2026-11-02 15:13:34] INFO: DFNGen - Complete
+
+--> Parsing dfnWorks output and adding to object
+--> Parsing params.txt file
+--> Number of Fractures: 4008
+--> h: 1.00e+00 m
+--> Visual mode is on
+--> Expected Number of dudded points: 34614
+--> X Domain Size 1000.0 m
+--> Y Domain Size 250.0 m
+--> Z Domain Size 250.0 m
+--> Parsing params.txt complete
+
+--> Loading Polygon information onto DFN object
+--> Data from polygons.dat stored on class in self.polygons
+
+--> Computing P21 per fracture
+--> Assign hydraulic properties: Starting 
+--> Assign hydraulic properties to fracture families : Starting 
+--> Working on Fracture Family 1
+--> Creating Perfectly Correlated transmissivity values based on fracture radius.
+T = 6.30e-09 * r^1.3 m^2/s
+--> Complete
+
+--> Working on Fracture Family 2
+--> Creating Perfectly Correlated transmissivity values based on fracture radius.
+T = 6.30e-09 * r^1.3 m^2/s
+--> Complete
+
+--> Working on Fracture Family 3
+--> Creating Perfectly Correlated transmissivity values based on fracture radius.
+T = 6.30e-09 * r^1.3 m^2/s
+--> Complete
+
+--> Working on Fracture Family 4
+--> Creating Perfectly Correlated transmissivity values based on fracture radius.
+T = 6.30e-09 * r^1.3 m^2/s
+--> Complete
+
+--> Working on Fracture Family 5
+--> Creating Perfectly Correlated transmissivity values based on fracture radius.
+T = 6.30e-09 * r^1.3 m^2/s
+--> Complete
+
+--> Assign hydraulic properties to fracture families : Complete 
+--> No Rejected User Fractures, Ignore Following Warning.
+--> Inserting User Rectangle Hydraulic Params First
+--> Assign hydraulic properties: Complete 
+--------------------------------------------------------------------------------
+Generation Succeeded
+--------------------------------------------------------------------------------
+--> Dumping values to files
+--> Using prefix None
+--> Using format : None
+--> Writing dfnGen_output/fracture_info.dat
+--> Complete
+--> Creating Bipartite Graph
+--> Complete
+================================================================================
+--> Running PFLOTRAN
+--> Running: /Users/collin/src/petsc/arch-darwin-c-opt/bin/mpirun -np 1 /Users/collin/src/pflotran/src/pflotran/pflotran -pflotranin pflotran_hybrid_pressure.in
+================================================================================
+--> Running PFLOTRAN Complete
+================================================================================
+
+
+--> Processing PFLOTRAN output
+Running >> cat pflotran_hybrid_pressure-cellinfo-000-rank*.dat > cellinfo_000.dat
+--> Running >> cat pflotran_hybrid_pressure-darcyvel-000-rank*.dat > darcyvel_000.dat
+Running >> cat pflotran_hybrid_pressure-cellinfo-001-rank*.dat > cellinfo_001.dat
+--> Running >> cat pflotran_hybrid_pressure-darcyvel-001-rank*.dat > darcyvel_001.dat
+--> Computing Effective Permeability of Block
+
+--> Inflow boundary file name:		boundary_left_w.ex
+--> Darcy Velocity File:	darcyvel_001.dat
+--> Inflow Pressure:		1.10000e+06 Pa
+--> Outflow Pressure:		1.00000e+06 Pa
+--> Primary Flow Direction:	x
+
+--> Effective Permeability Properties: 
+The mass flow rate [kg/s]: 8.10411e-02
+The volume flow rate [m^3/s]: 8.12353e-05
+The Darcy flow rate over 250.0 x 250.0 m^2 area [m^3/m^2/s]: 1.29976e-09
+The Darcy flow rate over 250.0 x 250.0 m^2 area [m^3/m^2/y]: 4.10175e-02
+The effective permeability of the domain [m^2]: 1.15679e-14
+--> Complete
+{
+  "domain": [
+    1000.0,
+    250.0,
+    250.0
+  ],
+  "seed": 3,
+  "network": "forsmark_ffm01",
+  "layer": 2,
+  "rmin": 15.0,
+  "rmax": 564.0,
+  "p32_scale": 8.0,
+  "transmissivity_sigma": 0.0,
+  "gen_seconds": 1.9930814169347286,
+  "Q_graph_raw": 8.123531093016083e-05,
+  "n_fractures": 4008,
+  "graph_nodes": 22874,
+  "graph_edges": 36382,
+  "raw_seconds": 8.162415042053908
+}
+--> model_graph_raw completed/exited 
+L2_r15_p8.0_sg0.0_seed3 {"n_fractures": 4008, "n_intersections": 17307, "mean_degree": 8.636227544910179, "n_inlet_fractures": 108, "n_outlet_fractures": 105, "node_disjoint_paths": 44, "edge_disjoint_paths": 105, "backbone_fraction": 0.9598303393213573, "n_dead_end_fractures": 161, "Q_graph_raw": 8.123531093016083e-05, "graph_nodes": 22874, "graph_edges": 36382}

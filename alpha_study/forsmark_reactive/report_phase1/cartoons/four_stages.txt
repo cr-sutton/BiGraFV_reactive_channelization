@@ -1,0 +1,1 @@
+The four stages on a schematic 1 km network (inlet left): pore space opens first near the inlet while flow is still set by the filled fractures downstream (PR_pore drops, PR_V holds); the front then runs down the inherited high-flow paths, breaks through on one of them (PR_V minimum, PR_pore recovered) and finally neighbouring paths open and flow spreads.

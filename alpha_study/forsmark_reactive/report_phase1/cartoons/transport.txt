@@ -1,0 +1,1 @@
+Arrival time depends on where the flow and the volume are. When a thin fast channel carries the flow but the volume sits in slow side fractures (a), the tracer peaks early and tails; when the dissolved channel holds both the flow and most of the pore space (b), the pulse arrives near τ_res with a steeper tail.
