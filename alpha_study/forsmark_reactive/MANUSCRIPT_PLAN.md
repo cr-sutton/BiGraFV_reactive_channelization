@@ -82,3 +82,35 @@ Everything else can come from the data we already have. The olivine result is a 
 3. Launch the cap test and the rate test in parallel.
 4. Scope the DFN validation cost on one block.
 5. Write.
+
+## Update, 4 Nov evening: results of the existing-data analyses
+
+- **A. Breakthrough predictor.** The flow Gini (my quick guess) does not hold up under cross-validation (CV R² 0.03). The predictor that does is the initial flow share of the single largest-flow fracture:
+  - CV R² 0.54 (gypsum-only) and 0.47 (coupled), Spearman 0.77;
+  - out of sample on Phase 2: R² 0.37, Spearman 0.90;
+  - held-out R² by level: ×4 0.38, ×6 0.75, ×8 0.76, ×16 0.32.
+
+  The channel-volume-share mass balance does poorly (R² 0.12). The timing of the PR_V minimum is not predictable from the initial state.
+- **B. Master curves.** Rescaling by d_bt does not improve the collapse (PR_V IQR 0.096 on d against 0.104 on d/d_bt). It does put the PR_V minimum at breakthrough. Not a headline figure.
+- **D. Transport link.** The tail exponent tracks PR_V: Spearman −0.80 pooled; within-run −0.88 (gypsum-only) and −0.76 (coupled). PR_pore adds little. Linear models explain 23–43 % of the variance out of sample.
+- **E. Turnover.**
+  - A third of the initial 90 %-flow set drops out (23–44 %), and only 1.4–3.4 % of the peak set is new.
+  - Leavers are the small, narrow, downstream tail of the initial set.
+  - Joiners are side branches touching the channel.
+  - Inheritance (97–98 %) and narrowing are the two halves of one picture.
+- **C. Depth variability.**
+  - Depth is a stable property of each network: Spearman 0.89 for gypsum-only against coupled on the same network, and 0.79–0.92 for the Phase 2 pairs.
+  - None of 19 initial-state features predicts it (|ρ| ≤ 0.24; leave-one-P32-out R² negative).
+  - Probably dynamic; an early-time flow-redistribution predictor is the next test.
+
+## Draft figure list (main text)
+
+1. **Set-up.** Forsmark network render (flow share), domain, the one-cell model cartoon, and the two chemistries with their capacity and ceilings.
+2. **Four stages.** Cartoon plus the stage-3 slice of the example network, and PR_V / PR_pore against the dissolved fraction (all runs, medians by chemistry).
+3. **The clock.** Event timing on PV, t_cap, d and τ: the matched-network spread (×1.16–1.20 on d against ×3.5 on τ) and the paired coupled − gypsum-only gaps.
+4. **Inheritance and narrowing.** The overlap0 time series and the turnover box plots (stayers, leavers, joiners, others).
+5. **Depth law.** Depth against ceiling (×3.3, ×5.5, ×10, ×10.6, ×20 once Phase 3 is in), paired differences, and the same-network depth scatter (network property).
+6. **Breakthrough predictor.** d_bt against the largest fracture's flow share, with CV and Phase 2 out of sample, plus the wormhole scenario band.
+7. **Transport.** Paused-pulse frames (one network) and the binned tail exponent and t50/τ_res against PR_V.
+8. **Robustness.** Rate test (×0.1, ×1, ×10) and P32 ×16.
+9. Supplement: DFN validation (once run), regime map, d_Q size baseline, master curves, olivine outlook.

@@ -1,0 +1,449 @@
+section,cond,item,value,p,n
+depth,phase1 gypsum,median [min-max] sd,0.655 [0.472-0.797] sd 0.077,,60.0
+depth,phase1 gypsum,resid sd,0.07754680533882617,,60.0
+spearman_resid_raw,phase1 gypsum,vol_share_S,-0.0782826185130692,0.5521560993653916,60.0
+spearman_resid_within,phase1 gypsum,vol_share_S,-0.007031684269038354,0.9574753087832424,60.0
+spearman_resid_raw,phase1 gypsum,n_S,-0.052466305911492594,0.6905361435092525,60.0
+spearman_resid_within,phase1 gypsum,n_S,-0.0543958642133538,0.6797598056965468,60.0
+spearman_resid_raw,phase1 gypsum,mean_area_S,0.1444212880413279,0.27092551318168184,60.0
+spearman_resid_within,phase1 gypsum,mean_area_S,0.19160644802668145,0.1424896112409534,60.0
+spearman_resid_raw,phase1 gypsum,b_ratio_med,0.1937473966180754,0.1379984486496338,60.0
+spearman_resid_within,phase1 gypsum,b_ratio_med,0.2356309060589216,0.06992323781650328,60.0
+spearman_resid_raw,phase1 gypsum,b_ratio_flow,0.10173683577435086,0.4392367166436859,60.0
+spearman_resid_within,phase1 gypsum,b_ratio_flow,0.12626459143968868,0.33639037094426905,60.0
+spearman_resid_raw,phase1 gypsum,sd_lnb_S,0.1594831195053263,0.22353853683251487,60.0
+spearman_resid_within,phase1 gypsum,sd_lnb_S,0.19819344080044465,0.1290123934096542,60.0
+spearman_resid_raw,phase1 gypsum,sd_lnb_all,0.15812144101503858,0.22756817002566532,60.0
+spearman_resid_within,phase1 gypsum,sd_lnb_all,0.20489160644802665,0.1163199491860047,60.0
+spearman_resid_raw,phase1 gypsum,vol_S_inlet3,0.11752119051891007,0.37117736359234,60.0
+spearman_resid_within,phase1 gypsum,vol_S_inlet3,0.011700944969427456,0.9292952765357034,60.0
+spearman_resid_raw,phase1 gypsum,vol_S_outlet3,-0.13911352086490042,0.28911461525872845,60.0
+spearman_resid_within,phase1 gypsum,vol_S_outlet3,-0.1383824346859366,0.29168129246487084,60.0
+spearman_resid_raw,phase1 gypsum,n_inlet90,-0.06092712399024356,0.6437645499822136,60.0
+spearman_resid_within,phase1 gypsum,n_inlet90,0.06331291952319057,0.6308108174753977,60.0
+spearman_resid_raw,phase1 gypsum,n_outlet90,-0.08178686543458101,0.5344458367091998,60.0
+spearman_resid_within,phase1 gypsum,n_outlet90,-0.05338923654018356,0.6853739102800543,60.0
+spearman_resid_raw,phase1 gypsum,path_hops,-0.011467236026069938,0.9307039993954611,60.0
+spearman_resid_within,phase1 gypsum,path_hops,-0.12277781453698289,0.35001034717238666,60.0
+spearman_resid_raw,phase1 gypsum,path_bneck,0.20255662276952838,0.12063125117498907,60.0
+spearman_resid_within,phase1 gypsum,path_bneck,0.17525013896609226,0.18046741358132842,60.0
+spearman_resid_raw,phase1 gypsum,S_xextent,0.059942444980227036,0.6491420589483812,60.0
+spearman_resid_within,phase1 gypsum,S_xextent,0.08565312427680499,0.5152356333569438,60.0
+spearman_resid_raw,phase1 gypsum,gini,0.1331388091218014,0.31052638502289037,60.0
+spearman_resid_within,phase1 gypsum,gini,0.17160922734852693,0.1898351394774755,60.0
+spearman_resid_raw,phase1 gypsum,top1_share,0.20386272254592677,0.11820491351594488,60.0
+spearman_resid_within,phase1 gypsum,top1_share,0.18478321289605332,0.15753231063230433,60.0
+spearman_resid_raw,phase1 gypsum,pr_vol0,0.01397804654315719,0.9155815787978618,60.0
+spearman_resid_within,phase1 gypsum,pr_vol0,0.14836020011117285,0.2579318551121825,60.0
+spearman_resid_raw,phase1 gypsum,sigma,0.10963200865045636,0.40436008432175674,60.0
+spearman_resid_within,phase1 gypsum,sigma,0.10963200865045636,0.40436008432175674,60.0
+spearman_resid_raw,phase1 gypsum,P32,-0.028409770571484777,0.829396709148292,60.0
+depth,phase1 gypcal,median [min-max] sd,0.782 [0.615-0.856] sd 0.055,,60.0
+depth,phase1 gypcal,resid sd,0.0568925128133912,,60.0
+spearman_resid_raw,phase1 gypcal,vol_share_S,-0.09556759853263933,0.4676204201485581,60.0
+spearman_resid_within,phase1 gypcal,vol_share_S,0.14922178988326845,0.25514672560314355,60.0
+spearman_resid_raw,phase1 gypcal,n_S,-0.11791024151613512,0.36958476653403094,60.0
+spearman_resid_within,phase1 gypcal,n_S,0.03499457999213717,0.7906659260365071,60.0
+spearman_resid_raw,phase1 gypcal,mean_area_S,0.16248437005534813,0.21483309272479137,60.0
+spearman_resid_within,phase1 gypcal,mean_area_S,0.014341300722623677,0.9133960609867684,60.0
+spearman_resid_raw,phase1 gypcal,b_ratio_med,0.13722384459266443,0.2957792917866898,60.0
+spearman_resid_within,phase1 gypcal,b_ratio_med,0.12654252362423565,0.3353192034386602,60.0
+spearman_resid_raw,phase1 gypcal,b_ratio_flow,-0.03946088686139803,0.7646734649487834,60.0
+spearman_resid_within,phase1 gypcal,b_ratio_flow,-0.04719288493607559,0.7202951811966118,60.0
+spearman_resid_raw,phase1 gypcal,sd_lnb_S,0.10234820162713307,0.4364774182346023,60.0
+spearman_resid_within,phase1 gypcal,sd_lnb_S,0.08349082823790994,0.5259361987035438,60.0
+spearman_resid_raw,phase1 gypcal,sd_lnb_all,0.11488120160916866,0.3820934617388714,60.0
+spearman_resid_within,phase1 gypcal,sd_lnb_all,0.12192884936075594,0.3533774205098027,60.0
+spearman_resid_raw,phase1 gypcal,vol_S_inlet3,-0.00969848557368163,0.941372014402104,60.0
+spearman_resid_within,phase1 gypcal,vol_S_inlet3,-0.10986659255141744,0.4033491520153619,60.0
+spearman_resid_raw,phase1 gypcal,vol_S_outlet3,-0.06780603094493746,0.6067153308288453,60.0
+spearman_resid_within,phase1 gypcal,vol_S_outlet3,-0.10626737076153417,0.4190216109320941,60.0
+spearman_resid_raw,phase1 gypcal,n_inlet90,-0.07611024115075156,0.5632742103932602,60.0
+spearman_resid_within,phase1 gypcal,n_inlet90,0.22429190552635458,0.08491819918350343,60.0
+spearman_resid_raw,phase1 gypcal,n_outlet90,-0.1390334977297504,0.28939483375762587,60.0
+spearman_resid_within,phase1 gypcal,n_outlet90,0.029555254310535493,0.8226272944288936,60.0
+spearman_resid_raw,phase1 gypcal,path_hops,0.12540973548706844,0.33969845690834843,60.0
+spearman_resid_within,phase1 gypcal,path_hops,0.012739628288549241,0.923037094758412,60.0
+spearman_resid_raw,phase1 gypcal,path_bneck,0.1593163833636584,0.22402927295584904,60.0
+spearman_resid_within,phase1 gypcal,path_bneck,0.1291550861589772,0.32535499613184893,60.0
+spearman_resid_raw,phase1 gypcal,S_xextent,-0.011596381144400219,0.9299255274590416,60.0
+spearman_resid_within,phase1 gypcal,S_xextent,0.08661301798723207,0.5105209476800636,60.0
+spearman_resid_raw,phase1 gypcal,gini,0.11935528807725675,0.36370570799505686,60.0
+spearman_resid_within,phase1 gypcal,gini,0.0013618677042801556,0.9917603342350294,60.0
+spearman_resid_raw,phase1 gypcal,top1_share,0.04399055204337542,0.7385735221971592,60.0
+spearman_resid_within,phase1 gypcal,top1_share,0.029516397998888264,0.8228567142631167,60.0
+spearman_resid_raw,phase1 gypcal,pr_vol0,-0.11051827256885915,0.40054850443016865,60.0
+spearman_resid_within,phase1 gypcal,pr_vol0,0.1430794886047804,0.27544986152021284,60.0
+spearman_resid_raw,phase1 gypcal,sigma,0.023576776053861583,0.8580884450143326,60.0
+spearman_resid_within,phase1 gypcal,sigma,0.023576776053861583,0.8580884450143326,60.0
+spearman_resid_raw,phase1 gypcal,P32,-0.13602253788771498,0.30006782822950534,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,vol_share_S,0.08617479588534882,0.5126706236004226,60.0
+spearman_resid_pair_c_within,phase1 gypcal,vol_share_S,0.22352695942190104,0.0860145294887377,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,n_S,0.02495484253629256,0.8498870434381184,60.0
+spearman_resid_pair_c_within,phase1 gypcal,n_S,0.20451955487064755,0.11699889254002815,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,mean_area_S,-0.14883979579552667,0.25637901644700395,60.0
+spearman_resid_pair_c_within,phase1 gypcal,mean_area_S,-0.3675236242356864,0.0038673570452553148,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,b_ratio_med,-0.31338057826477866,0.014763401971097616,60.0
+spearman_resid_pair_c_within,phase1 gypcal,b_ratio_med,-0.3369510839355197,0.008473951610778779,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,b_ratio_flow,-0.30006947628829295,0.019838225823884857,60.0
+spearman_resid_pair_c_within,phase1 gypcal,b_ratio_flow,-0.33782657031684266,0.008294272636953377,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,sd_lnb_S,-0.24760317037680035,0.056469130795525506,60.0
+spearman_resid_pair_c_within,phase1 gypcal,sd_lnb_S,-0.3165925514174541,0.013721125674184827,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,sd_lnb_all,-0.24476865596844644,0.05944765282852137,60.0
+spearman_resid_pair_c_within,phase1 gypcal,sd_lnb_all,-0.27392996108949413,0.034182537234753986,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,vol_S_inlet3,-0.2615812169199575,0.04349998781515561,60.0
+spearman_resid_pair_c_within,phase1 gypcal,vol_S_inlet3,-0.21322957198443573,0.10188197465522515,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,vol_S_outlet3,0.1577601793747582,0.22864566571287,60.0
+spearman_resid_pair_c_within,phase1 gypcal,vol_S_outlet3,0.18568649249583097,0.15547624405002308,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,n_inlet90,0.07473374975982638,0.5703729881654065,60.0
+spearman_resid_pair_c_within,phase1 gypcal,n_inlet90,0.22454276014916275,0.08456107750945027,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,n_outlet90,0.06793081543069554,0.6060518906135828,60.0
+spearman_resid_pair_c_within,phase1 gypcal,n_outlet90,0.23910731001464855,0.06577633512427322,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,path_hops,0.17918082632657142,0.1707345427186871,60.0
+spearman_resid_pair_c_within,phase1 gypcal,path_hops,0.2712467419973261,0.03605138561474133,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,path_bneck,-0.1360011128871,0.30014467776567194,60.0
+spearman_resid_pair_c_within,phase1 gypcal,path_bneck,-0.11570316842690381,0.37867433717806875,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,S_xextent,-0.11350270897091005,0.3878687805578056,60.0
+spearman_resid_pair_c_within,phase1 gypcal,S_xextent,-0.08264823961807673,0.5301356651721231,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,gini,-0.17090454520957601,0.1916877934170804,60.0
+spearman_resid_pair_c_within,phase1 gypcal,gini,-0.3560033351862145,0.005243556124398063,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,top1_share,-0.37340558926521505,0.003296567119042534,60.0
+spearman_resid_pair_c_within,phase1 gypcal,top1_share,-0.33952195664257917,0.007955740371490872,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,pr_vol0,-0.08625816395618274,0.5122613122484734,60.0
+spearman_resid_pair_c_within,phase1 gypcal,pr_vol0,-0.06306281267370761,0.6321636942812006,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,sigma,-0.23930427694669507,0.06554742062514207,60.0
+spearman_resid_pair_c_within,phase1 gypcal,sigma,-0.23930427694669507,0.06554742062514207,60.0
+spearman_resid_pair_c_raw,phase1 gypcal,P32,-0.053375932588850185,0.6854482225135257,60.0
+depth,phase2 phi005 gypsum,median [min-max] sd,0.527 [0.293-0.656] sd 0.125,,12.0
+depth,phase2 phi005 gypsum,resid sd,0.1354105015322404,,12.0
+spearman_resid_raw,phase2 phi005 gypsum,vol_share_S,0.14237129446267177,0.6589311174788266,12.0
+spearman_resid_within,phase2 phi005 gypsum,vol_share_S,0.11050724637681161,0.7324282291719526,12.0
+spearman_resid_raw,phase2 phi005 gypsum,n_S,0.15304914154737218,0.6348737675360501,12.0
+spearman_resid_within,phase2 phi005 gypsum,n_S,0.15245034181453182,0.6362145833098187,12.0
+spearman_resid_raw,phase2 phi005 gypsum,mean_area_S,0.010677847084700381,0.9737264800375165,12.0
+spearman_resid_within,phase2 phi005 gypsum,mean_area_S,0.1431159420289855,0.657243440164091,12.0
+spearman_resid_raw,phase2 phi005 gypsum,b_ratio_med,0.4413510128342825,0.15091472285393895,12.0
+spearman_resid_within,phase2 phi005 gypsum,b_ratio_med,0.7463768115942028,0.005299430048154352,12.0
+spearman_resid_raw,phase2 phi005 gypsum,b_ratio_flow,0.22779407114027483,0.47643126635631095,12.0
+spearman_resid_within,phase2 phi005 gypsum,b_ratio_flow,0.2246376811594203,0.4827268675702744,12.0
+spearman_resid_raw,phase2 phi005 gypsum,sd_lnb_S,-0.18864196516304008,0.5570972684616313,12.0
+spearman_resid_within,phase2 phi005 gypsum,sd_lnb_S,-0.13949275362318841,0.6654687590243684,12.0
+spearman_resid_raw,phase2 phi005 gypsum,sd_lnb_all,0.23135335350184164,0.46937777096642697,12.0
+spearman_resid_within,phase2 phi005 gypsum,sd_lnb_all,0.7518115942028986,0.004803245374765819,12.0
+spearman_resid_raw,phase2 phi005 gypsum,vol_S_inlet3,0.2527090476712424,0.42810100436041054,12.0
+spearman_resid_within,phase2 phi005 gypsum,vol_S_inlet3,0.15760869565217392,0.6246973853154936,12.0
+spearman_resid_raw,phase2 phi005 gypsum,vol_S_outlet3,-0.4271138833880153,0.1661050662537703,12.0
+spearman_resid_within,phase2 phi005 gypsum,vol_S_outlet3,-0.5090579710144928,0.09097088994155363,12.0
+spearman_resid_raw,phase2 phi005 gypsum,n_inlet90,-0.017827606243356588,0.9561459616141047,12.0
+spearman_resid_within,phase2 phi005 gypsum,n_inlet90,-0.223230857656993,0.48554503244880354,12.0
+spearman_resid_raw,phase2 phi005 gypsum,n_outlet90,0.16728627099363932,0.603298209716268,12.0
+spearman_resid_within,phase2 phi005 gypsum,n_outlet90,0.07427536231884059,0.818550857011033,12.0
+spearman_resid_raw,phase2 phi005 gypsum,path_hops,-0.1672705158294148,0.6033328212336267,12.0
+spearman_resid_within,phase2 phi005 gypsum,path_hops,-0.205218025679975,0.522276434612315,12.0
+spearman_resid_raw,phase2 phi005 gypsum,path_bneck,0.5623666131275535,0.05700045335003887,12.0
+spearman_resid_within,phase2 phi005 gypsum,path_bneck,0.4818840579710145,0.11265013205395924,12.0
+spearman_resid_raw,phase2 phi005 gypsum,S_xextent,0.2121485142959434,0.5080035883155194,12.0
+spearman_resid_within,phase2 phi005 gypsum,S_xextent,0.10507246376811594,0.745191938434983,12.0
+spearman_resid_raw,phase2 phi005 gypsum,gini,-0.014237129446267177,0.964972781580715,12.0
+spearman_resid_within,phase2 phi005 gypsum,gini,0.3007246376811594,0.34221685090746345,12.0
+spearman_resid_raw,phase2 phi005 gypsum,top1_share,0.12101560029327099,0.7079272414616193,12.0
+spearman_resid_within,phase2 phi005 gypsum,top1_share,0.18115942028985507,0.573119138852759,12.0
+spearman_resid_raw,phase2 phi005 gypsum,pr_vol0,0.26694617711750956,0.4016110488346386,12.0
+spearman_resid_within,phase2 phi005 gypsum,pr_vol0,0.286231884057971,0.36709257261980466,12.0
+spearman_resid_raw,phase2 phi005 gypsum,P32,0.1538554437923503,0.6330699081995241,12.0
+depth,phase2 phi005 gypcal,median [min-max] sd,0.668 [0.468-0.799] sd 0.102,,12.0
+depth,phase2 phi005 gypcal,resid sd,0.09699427534602156,,12.0
+spearman_resid_raw,phase2 phi005 gypcal,vol_share_S,0.13525272973953817,0.67513751307536,12.0
+spearman_resid_within,phase2 phi005 gypcal,vol_share_S,0.1557971014492754,0.6287335680356462,12.0
+spearman_resid_raw,phase2 phi005 gypcal,n_S,0.11389703557013742,0.7244984151913487,12.0
+spearman_resid_within,phase2 phi005 gypcal,n_S,0.105263331252891,0.744742663904184,12.0
+spearman_resid_raw,phase2 phi005 gypcal,mean_area_S,0.04982995306193512,0.8777766794108113,12.0
+spearman_resid_within,phase2 phi005 gypcal,mean_area_S,0.2318840579710145,0.4683302432066371,12.0
+spearman_resid_raw,phase2 phi005 gypcal,b_ratio_med,0.39863962449548096,0.19928841290498092,12.0
+spearman_resid_within,phase2 phi005 gypcal,b_ratio_med,0.6902173913043479,0.012975429076447623,12.0
+spearman_resid_raw,phase2 phi005 gypcal,b_ratio_flow,0.2349126358634084,0.4623731983980175,12.0
+spearman_resid_within,phase2 phi005 gypcal,b_ratio_flow,0.10688405797101451,0.740930661709865,12.0
+spearman_resid_raw,phase2 phi005 gypcal,sd_lnb_S,-0.1245748826548378,0.6996845792102099,12.0
+spearman_resid_within,phase2 phi005 gypcal,sd_lnb_S,-0.12318840579710144,0.7028919294225255,12.0
+spearman_resid_raw,phase2 phi005 gypcal,sd_lnb_all,0.345250389071979,0.27171101942024206,12.0
+spearman_resid_within,phase2 phi005 gypcal,sd_lnb_all,0.8134057971014493,0.0012902542570477438,12.0
+spearman_resid_raw,phase2 phi005 gypcal,vol_S_inlet3,0.36304680087981306,0.24608852288355584,12.0
+spearman_resid_within,phase2 phi005 gypcal,vol_S_inlet3,0.20652173913043478,0.5195783783383476,12.0
+spearman_resid_raw,phase2 phi005 gypcal,vol_S_outlet3,-0.4306731657495821,0.16222059753277357,12.0
+spearman_resid_within,phase2 phi005 gypcal,vol_S_outlet3,-0.47826086956521735,0.11577690727371129,12.0
+spearman_resid_raw,phase2 phi005 gypcal,n_inlet90,-0.003565521248671318,0.9912256237837626,12.0
+spearman_resid_within,phase2 phi005 gypcal,n_inlet90,-0.12704195151210984,0.6939886380536455,12.0
+spearman_resid_raw,phase2 phi005 gypcal,n_outlet90,0.1708455533552061,0.5954984043740537,12.0
+spearman_resid_within,phase2 phi005 gypcal,n_outlet90,0.12318840579710144,0.7028919294225255,12.0
+spearman_resid_raw,phase2 phi005 gypcal,path_hops,-0.20324266977122443,0.5263759570323894,12.0
+spearman_resid_within,phase2 phi005 gypcal,path_hops,-0.20152040359565115,0.5299614635189727,12.0
+spearman_resid_raw,phase2 phi005 gypcal,path_bneck,0.41643603630331494,0.17810838379077146,12.0
+spearman_resid_within,phase2 phi005 gypcal,path_bneck,0.42210144927536236,0.1716742054487224,12.0
+spearman_resid_raw,phase2 phi005 gypcal,S_xextent,0.2585002905286705,0.41722434329330227,12.0
+spearman_resid_within,phase2 phi005 gypcal,S_xextent,0.2826086956521739,0.3734554159181326,12.0
+spearman_resid_raw,phase2 phi005 gypcal,gini,-0.014237129446267177,0.964972781580715,12.0
+spearman_resid_within,phase2 phi005 gypcal,gini,0.1865942028985507,0.561463711765599,12.0
+spearman_resid_raw,phase2 phi005 gypcal,top1_share,0.1245748826548378,0.6996845792102099,12.0
+spearman_resid_within,phase2 phi005 gypcal,top1_share,0.125,0.6987020501983352,12.0
+spearman_resid_raw,phase2 phi005 gypcal,pr_vol0,0.16372698863207252,0.611136331652682,12.0
+spearman_resid_within,phase2 phi005 gypcal,pr_vol0,0.17753623188405798,0.580942512459496,12.0
+spearman_resid_raw,phase2 phi005 gypcal,P32,0.1318760946791574,0.6828698924286418,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,vol_share_S,0.23135335350184164,0.46937777096642697,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,vol_share_S,0.34420289855072467,0.27326511143706206,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,n_S,0.17440483571677293,0.5877375856990321,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,n_S,0.41197889990355624,0.18327474990453266,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,mean_area_S,-0.39152105977234736,0.2081739082628553,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,mean_area_S,-0.5670289855072465,0.05453099766283136,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,b_ratio_med,-0.4057581892186145,0.19063953591847155,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,b_ratio_med,-0.7336956521739131,0.006607003969972836,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,b_ratio_flow,-0.48406240117308397,0.11079739837956118,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,b_ratio_flow,-0.6938405797101449,0.012317955152098778,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,sd_lnb_S,-0.17440483571677293,0.5877375856990321,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,sd_lnb_S,-0.266304347826087,0.40278707354868537,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,sd_lnb_all,-0.20287909460930725,0.5271319987807744,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,sd_lnb_all,-0.3405797101449275,0.27867985351863156,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,vol_S_inlet3,-0.4662659893652501,0.12653478790347403,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,vol_S_inlet3,-0.6014492753623188,0.038567753626147096,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,vol_S_outlet3,0.41999531866488177,0.17404880649770288,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,vol_S_outlet3,0.5434782608695652,0.067803527030558,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,n_inlet90,0.2995037848883907,0.3442765250252722,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,n_inlet90,0.5045380360052363,0.09436367616092915,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,n_outlet90,0.20287909460930725,0.5271319987807744,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,n_outlet90,0.5923913043478262,0.04239486452303066,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,path_hops,0.2302217852275817,0.47161493999387627,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,path_hops,0.2847169004929383,0.36974615910519826,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,path_bneck,-0.20999765933244088,0.5124146151968759,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,path_bneck,-0.3134057971014493,0.321217378865386,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,S_xextent,0.0820069887194403,0.799984647020109,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,S_xextent,0.07246376811594203,0.8229138487767294,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,gini,-0.3844024950492138,0.2172964902182517,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,gini,-0.7735507246376812,0.0031605169883724845,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,top1_share,-0.5872815896585211,0.04466864249662086,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,top1_share,-0.6557971014492754,0.020583954194210528,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,pr_vol0,0.01779641180783397,0.9562226317931497,12.0
+spearman_resid_pair_c_within,phase2 phi005 gypcal,pr_vol0,0.0,1.0,12.0
+spearman_resid_pair_c_raw,phase2 phi005 gypcal,P32,0.0659380473395787,0.8386676055216361,12.0
+depth,phase2 co3lo gypcal,median [min-max] sd,0.684 [0.491-0.829] sd 0.105,,12.0
+depth,phase2 co3lo gypcal,resid sd,0.10059343965016314,,12.0
+spearman_resid_raw,phase2 co3lo gypcal,vol_share_S,0.13881201210110497,0.6670179864750514,12.0
+spearman_resid_within,phase2 co3lo gypcal,vol_share_S,0.24818840579710147,0.436686546778839,12.0
+spearman_resid_raw,phase2 co3lo gypcal,n_S,0.028474258892534354,0.9300023256880593,12.0
+spearman_resid_within,phase2 co3lo gypcal,n_S,-0.03985507246376811,0.9021265865235902,12.0
+spearman_resid_raw,phase2 co3lo gypcal,mean_area_S,0.16372698863207252,0.611136331652682,12.0
+spearman_resid_within,phase2 co3lo gypcal,mean_area_S,0.3224637681159421,0.30666257010768855,12.0
+spearman_resid_raw,phase2 co3lo gypcal,b_ratio_med,0.5054180953424848,0.09369651439334968,12.0
+spearman_resid_within,phase2 co3lo gypcal,b_ratio_med,0.802536231884058,0.0016793459676693373,12.0
+spearman_resid_raw,phase2 co3lo gypcal,b_ratio_flow,0.27762402420220994,0.38230213467402174,12.0
+spearman_resid_within,phase2 co3lo gypcal,b_ratio_flow,0.14492753623188406,0.6531437679729322,12.0
+spearman_resid_raw,phase2 co3lo gypcal,sd_lnb_S,-0.053389235423501914,0.8691104938617286,12.0
+spearman_resid_within,phase2 co3lo gypcal,sd_lnb_S,0.06159420289855072,0.8491846618850012,12.0
+spearman_resid_raw,phase2 co3lo gypcal,sd_lnb_all,0.37728393032608015,0.22665643326935325,12.0
+spearman_resid_within,phase2 co3lo gypcal,sd_lnb_all,0.7355072463768116,0.0064067594036384705,12.0
+spearman_resid_raw,phase2 co3lo gypcal,vol_S_inlet3,0.44846957755741607,0.14366512941483017,12.0
+spearman_resid_within,phase2 co3lo gypcal,vol_S_inlet3,0.3278985507246377,0.2981093198261552,12.0
+spearman_resid_raw,phase2 co3lo gypcal,vol_S_outlet3,-0.4591474246421165,0.13321782133066423,12.0
+spearman_resid_within,phase2 co3lo gypcal,vol_S_outlet3,-0.5235507246376812,0.08064958301219478,12.0
+spearman_resid_raw,phase2 co3lo gypcal,n_inlet90,-0.05348281873006977,0.8688828103821045,12.0
+spearman_resid_within,phase2 co3lo gypcal,n_inlet90,-0.18363757777312292,0.5677925281744352,12.0
+spearman_resid_raw,phase2 co3lo gypcal,n_outlet90,0.09254134140073665,0.7748420204627596,12.0
+spearman_resid_within,phase2 co3lo gypcal,n_outlet90,-0.03985507246376811,0.9021265865235902,12.0
+spearman_resid_raw,phase2 co3lo gypcal,path_hops,-0.32914520856755813,0.29616642139361243,12.0
+spearman_resid_within,phase2 co3lo gypcal,path_hops,-0.37715745260103517,0.2268248811243768,12.0
+spearman_resid_raw,phase2 co3lo gypcal,path_bneck,0.43423244811114897,0.15839417349819543,12.0
+spearman_resid_within,phase2 co3lo gypcal,path_bneck,0.5489130434782609,0.06456144041356639,12.0
+spearman_resid_raw,phase2 co3lo gypcal,S_xextent,0.23532440241230695,0.4615660326064883,12.0
+spearman_resid_within,phase2 co3lo gypcal,S_xextent,0.35688405797101447,0.254794132021856,12.0
+spearman_resid_raw,phase2 co3lo gypcal,gini,0.06762636486976908,0.834586391153786,12.0
+spearman_resid_within,phase2 co3lo gypcal,gini,0.25,0.4332360327243806,12.0
+spearman_resid_raw,phase2 co3lo gypcal,top1_share,0.24203120058654198,0.44851277797292655,12.0
+spearman_resid_within,phase2 co3lo gypcal,top1_share,0.23369565217391305,0.4647626549001179,12.0
+spearman_resid_raw,phase2 co3lo gypcal,pr_vol0,0.15660842390893895,0.6269248019462761,12.0
+spearman_resid_within,phase2 co3lo gypcal,pr_vol0,0.22644927536231885,0.47910890370512427,12.0
+spearman_resid_raw,phase2 co3lo gypcal,P32,0.08791739645277158,0.7858551166391811,12.0
+depth,all,median [min-max] sd,0.696 [0.293-0.856] sd 0.109,,156.0
+depth,all,resid sd,0.0788514992315899,,156.0
+spearman_resid_raw,all,vol_share_S,-0.013701605186747299,0.8651952518494509,156.0
+spearman_resid_within,all,vol_share_S,0.09398492101766932,0.2432040898155749,156.0
+spearman_resid_raw,all,n_S,-0.022624417164861584,0.7792150359052139,156.0
+spearman_resid_within,all,n_S,0.00867180905010944,0.9144385061774881,156.0
+spearman_resid_raw,all,mean_area_S,0.11562217864206095,0.15062386411116813,156.0
+spearman_resid_within,all,mean_area_S,0.1455768534143408,0.06978504151827139,156.0
+spearman_resid_raw,all,b_ratio_med,0.18169042635741095,0.02320822539329097,156.0
+spearman_resid_within,all,b_ratio_med,0.26327902366585454,0.0008979464345391148,156.0
+spearman_resid_raw,all,b_ratio_flow,0.07009803085709024,0.3845447430750777,156.0
+spearman_resid_within,all,b_ratio_flow,0.07152445007254357,0.374921460366174,156.0
+spearman_resid_raw,all,sd_lnb_S,0.08423120536845627,0.29581713350566013,156.0
+spearman_resid_within,all,sd_lnb_S,0.14846874552588063,0.0643531402216512,156.0
+spearman_resid_raw,all,sd_lnb_all,0.14572382588214594,0.06950026792582839,156.0
+spearman_resid_within,all,sd_lnb_all,0.24673549485267562,0.0019021961130261174,156.0
+spearman_resid_raw,all,vol_S_inlet3,0.12128100409078861,0.13150605202385662,156.0
+spearman_resid_within,all,vol_S_inlet3,0.0018714059810143041,0.9815019952508297,156.0
+spearman_resid_raw,all,vol_S_outlet3,-0.17168189630051334,0.03211324926899459,156.0
+spearman_resid_within,all,vol_S_outlet3,-0.19770094036034144,0.013364979435758746,156.0
+spearman_resid_raw,all,n_inlet90,-0.04926822630187442,0.5413439142221013,156.0
+spearman_resid_within,all,n_inlet90,0.07971748924204959,0.3225463262344911,156.0
+spearman_resid_raw,all,n_outlet90,-0.03337597689880683,0.6791462389104379,156.0
+spearman_resid_within,all,n_outlet90,0.02052336427255036,0.7992623069787379,156.0
+spearman_resid_raw,all,path_hops,-0.006708852841531933,0.9337556723257691,156.0
+spearman_resid_within,all,path_hops,-0.09665194270247755,0.23002832429627534,156.0
+spearman_resid_raw,all,path_bneck,0.23237355813579014,0.00351078447745961,156.0
+spearman_resid_within,all,path_bneck,0.20621099813107796,0.009803628513531046,156.0
+spearman_resid_raw,all,S_xextent,0.07725881391826557,0.3377425034246596,156.0
+spearman_resid_within,all,S_xextent,0.12257714008767541,0.12740144185906152,156.0
+spearman_resid_raw,all,gini,0.07390906992121732,0.3591664181105002,156.0
+spearman_resid_within,all,gini,0.11039970477328054,0.1700634961353961,156.0
+spearman_resid_raw,all,top1_share,0.11988538964645228,0.13603837892648235,156.0
+spearman_resid_within,all,top1_share,0.1223425232706455,0.12813701953716153,156.0
+spearman_resid_raw,all,pr_vol0,0.030585728121277002,0.7046641319216713,156.0
+spearman_resid_within,all,pr_vol0,0.16207776945404956,0.04323261581028246,156.0
+spearman_resid_raw,all,sigma,0.05143469559789816,0.5236854225791798,156.0
+spearman_resid_within,all,sigma,0.06347683684313714,0.43113935179629326,156.0
+spearman_resid_raw,all,P32,-0.015421891810187743,0.8484616755251538,156.0
+depth,phase1 gypsum sg1 seeds1-3,median [min-max] sd,0.667 [0.472-0.797] sd 0.103,,12.0
+depth,phase1 gypsum sg1 seeds1-3,resid sd,0.10508966002434582,,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,vol_share_S,-0.22377622377622378,0.48445166145539886,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,vol_share_S,0.17482517482517487,0.5868236643627043,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,n_S,-0.2657342657342658,0.40383308831471165,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,n_S,0.1258741258741259,0.6966831093957659,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,mean_area_S,0.4055944055944056,0.19083587400450033,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,mean_area_S,0.2937062937062937,0.35414764123292175,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,b_ratio_med,0.30069930069930073,0.34225952894002465,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,b_ratio_med,0.37762237762237766,0.22620604493502663,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,b_ratio_flow,0.09090909090909093,0.7787253962454419,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,b_ratio_flow,0.06993006993006995,0.8290236405313092,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,sd_lnb_S,0.25874125874125875,0.41677476889913834,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,sd_lnb_S,0.10489510489510491,0.7456094809807079,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,sd_lnb_all,0.5034965034965035,0.09515736659412469,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,sd_lnb_all,0.6573426573426573,0.020185498509854103,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,vol_S_inlet3,0.41958041958041964,0.1745190081300594,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,vol_S_inlet3,0.2517482517482518,0.42991878503288405,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,vol_S_outlet3,-0.37762237762237766,0.22620604493502663,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,vol_S_outlet3,-0.5034965034965035,0.09515736659412469,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,n_inlet90,-0.3572684988525566,0.25424587401619864,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,n_inlet90,0.04585716222225941,0.8874642093509264,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,n_outlet90,-0.2027972027972028,0.5273023541661082,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,n_outlet90,0.10193463298246631,0.7525882976022029,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,path_hops,-0.04593897702811427,0.887264559481174,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,path_hops,-0.1888849650373281,0.556580044747703,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,path_bneck,0.3356643356643357,0.28612290291498754,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,path_bneck,0.2027972027972028,0.5273023541661082,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,S_xextent,-0.0770579115172181,0.8118586763333357,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,S_xextent,0.2447552447552448,0.4432619364501832,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,gini,0.30069930069930073,0.34225952894002465,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,gini,0.0979020979020979,0.762121655996299,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,top1_share,0.1398601398601399,0.6646331617926677,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,top1_share,0.18310313195303968,0.5689395918915536,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,pr_vol0,-0.18881118881118883,0.5567370561768314,12.0
+spearman_resid_within,phase1 gypsum sg1 seeds1-3,pr_vol0,0.04895104895104895,0.8799185788786749,12.0
+spearman_resid_raw,phase1 gypsum sg1 seeds1-3,P32,-0.23750843439814176,0.45729586926772514,12.0
+depth,phase1 gypcal sg1 seeds1-3,median [min-max] sd,0.787 [0.615-0.846] sd 0.064,,12.0
+depth,phase1 gypcal sg1 seeds1-3,resid sd,0.07047959462289348,,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,vol_share_S,-0.1398601398601399,0.6646331617926677,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,vol_share_S,0.4055944055944056,0.19083587400450033,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,n_S,-0.22377622377622378,0.48445166145539886,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,n_S,0.2867132867132868,0.36625146058358227,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,mean_area_S,0.32867132867132864,0.2969041156887641,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,mean_area_S,0.1258741258741259,0.6966831093957659,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,b_ratio_med,0.14685314685314685,0.6487957097846664,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,b_ratio_med,0.30069930069930073,0.34225952894002465,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,b_ratio_flow,-0.2377622377622378,0.4568008526399232,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,b_ratio_flow,-0.2657342657342658,0.40383308831471165,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,sd_lnb_S,0.16083916083916086,0.6175234895401425,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,sd_lnb_S,0.006993006993006993,0.9827917689028476,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,sd_lnb_all,0.2937062937062937,0.35414764123292175,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,sd_lnb_all,0.5664335664335665,0.05484211977540786,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,vol_S_inlet3,0.3216783216783217,0.30790987618065263,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,vol_S_inlet3,0.0979020979020979,0.762121655996299,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,vol_S_outlet3,-0.3356643356643357,0.28612290291498754,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,vol_S_outlet3,-0.5174825174825175,0.08486877113393489,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,n_inlet90,-0.2451842639184212,0.4424376657583864,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,n_inlet90,0.2963078174361377,0.34969973588146996,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,n_outlet90,-0.18181818181818185,0.5717012385276553,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,n_outlet90,0.09138967094979739,0.7775815355063642,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,path_hops,0.049472744491815365,0.8786471108304474,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,path_hops,-0.11260449838763792,0.727519192439744,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,path_bneck,0.27272727272727276,0.3910967709418962,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,path_bneck,0.16783216783216784,0.602099427786538,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,S_xextent,-0.07355527917552636,0.8202845257024424,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,S_xextent,0.43356643356643365,0.1591057694121953,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,gini,0.16083916083916086,0.6175234895401425,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,gini,-0.18881118881118883,0.5567370561768314,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,top1_share,-0.1328671328671329,0.6805975082860818,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,top1_share,-0.007042428152039987,0.9826701704764307,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,pr_vol0,-0.1258741258741259,0.6966831093957659,12.0
+spearman_resid_within,phase1 gypcal sg1 seeds1-3,pr_vol0,0.1188811188811189,0.712884219214772,12.0
+spearman_resid_raw,phase1 gypcal sg1 seeds1-3,P32,-0.21591675854376524,0.5003162216868782,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,vol_share_S,0.32867132867132864,0.2969041156887641,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,vol_share_S,0.2867132867132868,0.36625146058358227,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,n_S,0.2937062937062937,0.35414764123292175,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,n_S,0.2797202797202798,0.37856866966230307,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,mean_area_S,-0.49650349650349657,0.10060263183225483,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,mean_area_S,-0.6363636363636365,0.026096891052703127,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,b_ratio_med,-0.4545454545454546,0.13765791634772945,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,b_ratio_med,-0.41958041958041964,0.1745190081300594,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,b_ratio_flow,-0.6013986013986015,0.038588452922019435,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,b_ratio_flow,-0.5244755244755246,0.08001937592027475,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,sd_lnb_S,-0.30069930069930073,0.34225952894002465,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,sd_lnb_S,-0.2027972027972028,0.5273023541661082,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,sd_lnb_all,-0.5874125874125874,0.044609296463363105,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,sd_lnb_all,-0.5034965034965035,0.09515736659412469,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,vol_S_inlet3,-0.5174825174825175,0.08486877113393489,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,vol_S_inlet3,-0.49650349650349657,0.10060263183225483,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,vol_S_outlet3,0.4895104895104896,0.106252371759346,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,vol_S_outlet3,0.5384615384615385,0.07089431754922315,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,n_inlet90,0.416813248661316,0.1776753737252057,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,n_inlet90,0.41271446000033474,0.18241579809890365,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,n_outlet90,0.21678321678321683,0.49855598552418856,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,n_outlet90,0.11599458235935822,0.71960393993745,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,path_hops,0.3498429789064087,0.264957491747561,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,path_hops,0.43225597768157775,0.16051183145946388,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,path_bneck,-0.2797202797202798,0.37856866966230307,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,path_bneck,-0.2027972027972028,0.5273023541661082,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,S_xextent,0.003502632341691731,0.9913803817213171,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,S_xextent,-0.034965034965034975,0.9140933424107598,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,gini,-0.4825174825174825,0.11210929146889191,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,gini,-0.5874125874125874,0.044609296463363105,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,top1_share,-0.6293706293706295,0.028319671295760022,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,top1_share,-0.5915639647713589,0.04275733150402945,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,pr_vol0,0.2027972027972028,0.5273023541661082,12.0
+spearman_resid_pair_c_within,phase1 gypcal sg1 seeds1-3,pr_vol0,0.09090909090909093,0.7787253962454419,12.0
+spearman_resid_pair_c_raw,phase1 gypcal sg1 seeds1-3,P32,0.19432508268938872,0.5450527029269673,12.0
+cross_condition_resid_spearman,gypsum|phase1 vs gypsum_calcite|phase1,rho,0.867148415786548,3.309219251840577e-19,60.0
+cross_condition_resid_spearman,gypsum|phase1 vs gypsum|phase2_phi005,rho,0.8150756607987959,0.0012372420128365493,12.0
+cross_condition_resid_spearman,gypsum_calcite|phase1 vs gypsum_calcite|phase2_phi005,rho,0.7901606842678284,0.0022255407179782817,12.0
+cross_condition_resid_spearman,gypsum_calcite|phase1 vs gypsum_calcite|phase2_co3lo,rho,0.8150756607987959,0.0012372420128365493,12.0
+cross_condition_resid_spearman,gypsum|phase2_phi005 vs gypsum_calcite|phase2_phi005,rho,0.9184782608695653,2.469888562139183e-05,12.0
+lopo,phase1 gypsum,"R2 (resid, features centred in group)",-0.43777256729750946,,60.0
+lopo,phase1 gypsum,features selected per held-out P32,"4: n_inlet90,mean_area_S,pr_vol0; 6: n_inlet90,b_ratio_med,pr_vol0; 8: n_inlet90,gini,n_S; 16: gini,S_xextent,vol_S_outlet3",,
+fit_all,phase1 gypsum,selected,"n_inlet90,mean_area_S,b_ratio_med",,
+fit_all,phase1 gypsum,in-sample R2,0.34112214728016865,,
+fit_all,phase1 gypsum,std coef n_inlet90,0.040827252256141616,,
+fit_all,phase1 gypsum,std coef mean_area_S,0.023813099328606476,,
+fit_all,phase1 gypsum,std coef b_ratio_med,0.01936930995991053,,
+lopo,phase1 gypcal,"R2 (resid, features centred in group)",-0.18790342748947997,,60.0
+lopo,phase1 gypcal,features selected per held-out P32,"4: n_inlet90,S_xextent,path_bneck; 6: n_inlet90; 8: n_inlet90,path_bneck,b_ratio_med; 16: S_xextent",,
+fit_all,phase1 gypcal,selected,"n_inlet90,S_xextent,b_ratio_med",,
+fit_all,phase1 gypcal,in-sample R2,0.44795852592582275,,
+fit_all,phase1 gypcal,std coef n_inlet90,0.03665884044991605,,
+fit_all,phase1 gypcal,std coef S_xextent,0.01739394648768931,,
+fit_all,phase1 gypcal,std coef b_ratio_med,0.014478652653564851,,
+lopo,all,"R2 (resid, features centred in group)",-0.14247719690463057,,156.0
+lopo,all,features selected per held-out P32,"4: n_inlet90,mean_area_S,pr_vol0; 6: n_inlet90,b_ratio_med,sigma; 8: n_inlet90,mean_area_S,pr_vol0; 16: mean_area_S,vol_S_outlet3,S_xextent",,
+pooled_fixed_effects,all conditions x P32,vol_share_S,-0.0008892013636361273,0.9626189696741745,156.0
+pooled_fixed_effects,all conditions x P32,n_S,0.05318534574693368,0.13464244698155953,156.0
+pooled_fixed_effects,all conditions x P32,mean_area_S,0.035031024287769275,0.0038920212219674603,156.0
+pooled_fixed_effects,all conditions x P32,b_ratio_med,0.016286274736582396,0.03388612165060041,156.0
+pooled_fixed_effects,all conditions x P32,b_ratio_flow,0.002615345079600928,0.7091272811630527,156.0
+pooled_fixed_effects,all conditions x P32,sd_lnb_S,0.005168403878264782,0.510928284877787,156.0
+pooled_fixed_effects,all conditions x P32,sd_lnb_all,0.003233958147575211,0.6620916960608744,156.0
+pooled_fixed_effects,all conditions x P32,vol_S_inlet3,0.00912945722306413,0.17447851271020412,156.0
+pooled_fixed_effects,all conditions x P32,vol_S_outlet3,-0.027496785463594464,7.192815896931516e-05,156.0
+pooled_fixed_effects,all conditions x P32,n_inlet90,0.0591748518275349,0.00014819341117242689,156.0
+pooled_fixed_effects,all conditions x P32,n_outlet90,0.0183705477062448,0.4825767977145813,156.0
+pooled_fixed_effects,all conditions x P32,path_hops,-0.011808472630146257,0.08447442147486577,156.0
+pooled_fixed_effects,all conditions x P32,path_bneck,0.010987661290294493,0.10462465361530751,156.0
+pooled_fixed_effects,all conditions x P32,S_xextent,0.02209535184694944,0.052171123098293304,156.0
+pooled_fixed_effects,all conditions x P32,gini,0.014572251817974058,0.20724997749348184,156.0
+pooled_fixed_effects,all conditions x P32,top1_share,0.012676434633971279,0.05254376417755182,156.0
+pooled_fixed_effects,all conditions x P32,pr_vol0,0.02871987703071921,0.015869892632895982,156.0
+pooled_fixed_effects,all conditions x P32,sigma,0.0011811259228123872,0.8752487193056637,156.0

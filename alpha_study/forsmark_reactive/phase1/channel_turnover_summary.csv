@@ -1,0 +1,299 @@
+section,P32,mode,item,value
+counts,4.0,gypsum,n_start,297 [276-355]
+counts,4.0,gypsum,n_peak,188 [152-223]
+counts,4.0,gypsum,stayer,178 [152-220]
+counts,4.0,gypsum,joiner,5 [2.5-8]
+counts,4.0,gypsum,leaver,125 [106-139]
+counts,4.0,gypsum,other,1.39e+03 [1.33e+03-1.44e+03]
+counts,4.0,gypsum,joiner_share_of_peak,0.0231 [0.0112-0.048]
+counts,4.0,gypsum,leaver_share_of_start,0.432 [0.357-0.477]
+counts,4.0,gypsum_calcite,n_start,297 [276-355]
+counts,4.0,gypsum_calcite,n_peak,215 [184-266]
+counts,4.0,gypsum_calcite,stayer,207 [184-263]
+counts,4.0,gypsum_calcite,joiner,5 [3-7]
+counts,4.0,gypsum_calcite,leaver,96 [72.5-105]
+counts,4.0,gypsum_calcite,other,1.39e+03 [1.33e+03-1.44e+03]
+counts,4.0,gypsum_calcite,joiner_share_of_peak,0.0187 [0.0106-0.0349]
+counts,4.0,gypsum_calcite,leaver_share_of_start,0.302 [0.253-0.363]
+counts,6.0,gypsum,n_start,610 [533-756]
+counts,6.0,gypsum,n_peak,391 [294-511]
+counts,6.0,gypsum,stayer,367 [288-495]
+counts,6.0,gypsum,joiner,13 [4.5-19.5]
+counts,6.0,gypsum,leaver,243 [223-284]
+counts,6.0,gypsum,other,2.19e+03 [2.14e+03-2.25e+03]
+counts,6.0,gypsum,joiner_share_of_peak,0.0303 [0.0147-0.0471]
+counts,6.0,gypsum,leaver_share_of_start,0.442 [0.358-0.467]
+counts,6.0,gypsum_calcite,n_start,610 [533-756]
+counts,6.0,gypsum_calcite,n_peak,446 [352-598]
+counts,6.0,gypsum_calcite,stayer,435 [348-584]
+counts,6.0,gypsum_calcite,joiner,11 [2.5-14]
+counts,6.0,gypsum_calcite,leaver,182 [156-208]
+counts,6.0,gypsum_calcite,other,2.2e+03 [2.15e+03-2.26e+03]
+counts,6.0,gypsum_calcite,joiner_share_of_peak,0.0192 [0.00709-0.0243]
+counts,6.0,gypsum_calcite,leaver_share_of_start,0.317 [0.25-0.338]
+counts,8.0,gypsum,n_start,1.09e+03 [982-1.21e+03]
+counts,8.0,gypsum,n_peak,673 [598-776]
+counts,8.0,gypsum,stayer,663 [583-754]
+counts,8.0,gypsum,joiner,9 [6.5-22]
+counts,8.0,gypsum,leaver,412 [359-448]
+counts,8.0,gypsum,other,2.78e+03 [2.74e+03-2.89e+03]
+counts,8.0,gypsum,joiner_share_of_peak,0.0166 [0.00983-0.0322]
+counts,8.0,gypsum,leaver_share_of_start,0.39 [0.349-0.428]
+counts,8.0,gypsum_calcite,n_start,1.09e+03 [982-1.21e+03]
+counts,8.0,gypsum_calcite,n_peak,800 [711-928]
+counts,8.0,gypsum_calcite,stayer,782 [702-908]
+counts,8.0,gypsum_calcite,joiner,10 [7-20.5]
+counts,8.0,gypsum_calcite,leaver,305 [260-316]
+counts,8.0,gypsum_calcite,other,2.78e+03 [2.75e+03-2.9e+03]
+counts,8.0,gypsum_calcite,joiner_share_of_peak,0.0138 [0.00803-0.0232]
+counts,8.0,gypsum_calcite,leaver_share_of_start,0.281 [0.251-0.305]
+counts,16.0,gypsum,n_start,2.68e+03 [2.52e+03-2.85e+03]
+counts,16.0,gypsum,n_peak,1.83e+03 [1.62e+03-2.12e+03]
+counts,16.0,gypsum,stayer,1.76e+03 [1.54e+03-2.04e+03]
+counts,16.0,gypsum,joiner,57 [47.5-95]
+counts,16.0,gypsum,leaver,914 [785-1.03e+03]
+counts,16.0,gypsum,other,5.22e+03 [5.14e+03-5.39e+03]
+counts,16.0,gypsum,joiner_share_of_peak,0.0341 [0.0257-0.0465]
+counts,16.0,gypsum,leaver_share_of_start,0.325 [0.293-0.394]
+counts,16.0,gypsum_calcite,n_start,2.68e+03 [2.52e+03-2.85e+03]
+counts,16.0,gypsum_calcite,n_peak,2.09e+03 [1.89e+03-2.4e+03]
+counts,16.0,gypsum_calcite,stayer,2.03e+03 [1.83e+03-2.33e+03]
+counts,16.0,gypsum_calcite,joiner,63 [51-78]
+counts,16.0,gypsum_calcite,leaver,591 [555-732]
+counts,16.0,gypsum_calcite,other,5.23e+03 [5.16e+03-5.39e+03]
+counts,16.0,gypsum_calcite,joiner_share_of_peak,0.0282 [0.0242-0.0345]
+counts,16.0,gypsum_calcite,leaver_share_of_start,0.231 [0.195-0.274]
+group_feature,all,gypsum,stayer:x,pooled -79.08; runs -83 [-144-18.9]
+group_feature,all,gypsum,stayer:area,pooled 2707; runs 3.02e+03 [2.58e+03-3.56e+03]
+group_feature,all,gypsum,stayer:volume,pooled 0.2399; runs 0.276 [0.231-0.334]
+group_feature,all,gypsum,stayer:b0,pooled 8.979e-05; runs 9.31e-05 [8.86e-05-9.78e-05]
+group_feature,all,gypsum,stayer:k0,pooled 6.718e-10; runs 7.22e-10 [6.54e-10-7.96e-10]
+group_feature,all,gypsum,stayer:rank_frac,pooled 0.1006; runs 0.0843 [0.0598-0.102]
+group_feature,all,gypsum,stayer:degree,pooled 17; runs 11 [10-16.5]
+group_feature,all,gypsum,stayer:adj_start,pooled share 1; runs 1 [1-1]
+group_feature,all,gypsum,stayer:dist_in,pooled 2; runs 2 [2-3]
+group_feature,all,gypsum,stayer:dist_out,pooled 2; runs 3 [2-4]
+group_feature,all,gypsum,stayer:flow_start,pooled 0.0002857; runs 0.00063 [0.000312-0.00127]
+group_feature,all,gypsum,stayer:flow_peak,pooled 0.0002906; runs 0.000577 [0.000312-0.00125]
+group_feature,all,gypsum,stayer:t_half,pooled 2315; runs 2.31e+03 [1.98e+03-2.69e+03]
+group_feature,all,gypsum,joiner:x,pooled 98.96; runs 150 [32.3-213]
+group_feature,all,gypsum,joiner:area,pooled 996.9; runs 1e+03 [943-1.11e+03]
+group_feature,all,gypsum,joiner:volume,pooled 0.06857; runs 0.0684 [0.0613-0.0763]
+group_feature,all,gypsum,joiner:b0,pooled 6.761e-05; runs 6.79e-05 [6.52e-05-7.17e-05]
+group_feature,all,gypsum,joiner:k0,pooled 3.81e-10; runs 3.85e-10 [3.54e-10-4.3e-10]
+group_feature,all,gypsum,joiner:rank_frac,pooled 0.3636; runs 0.305 [0.233-0.342]
+group_feature,all,gypsum,joiner:degree,pooled 10; runs 6 [5.12-11]
+group_feature,all,gypsum,joiner:adj_start,pooled share 1; runs 1 [1-1]
+group_feature,all,gypsum,joiner:dist_in,pooled 3; runs 3 [2-4]
+group_feature,all,gypsum,joiner:dist_out,pooled 2; runs 2 [2-2]
+group_feature,all,gypsum,joiner:flow_start,pooled 4.853e-05; runs 0.000135 [4.96e-05-0.000204]
+group_feature,all,gypsum,joiner:flow_peak,pooled 9.399e-05; runs 0.000247 [9.24e-05-0.000421]
+group_feature,all,gypsum,joiner:t_half,pooled 2686; runs 2.7e+03 [2.07e+03-3.33e+03]
+group_feature,all,gypsum,leaver:x,pooled 162; runs 149 [86.7-243]
+group_feature,all,gypsum,leaver:area,pooled 1937; runs 2.03e+03 [1.77e+03-2.36e+03]
+group_feature,all,gypsum,leaver:volume,pooled 0.1591; runs 0.172 [0.153-0.202]
+group_feature,all,gypsum,leaver:b0,pooled 8.162e-05; runs 8.41e-05 [8.06e-05-8.74e-05]
+group_feature,all,gypsum,leaver:k0,pooled 5.552e-10; runs 5.9e-10 [5.42e-10-6.37e-10]
+group_feature,all,gypsum,leaver:rank_frac,pooled 0.2057; runs 0.19 [0.141-0.228]
+group_feature,all,gypsum,leaver:degree,pooled 13; runs 9 [7-12.2]
+group_feature,all,gypsum,leaver:adj_start,pooled share 0.9994; runs 1 [1-1]
+group_feature,all,gypsum,leaver:dist_in,pooled 3; runs 4 [3-4.25]
+group_feature,all,gypsum,leaver:dist_out,pooled 2; runs 2 [2-3]
+group_feature,all,gypsum,leaver:flow_start,pooled 0.000132; runs 0.000272 [0.00014-0.000452]
+group_feature,all,gypsum,leaver:flow_peak,pooled 5.431e-05; runs 0.000112 [6.49e-05-0.0002]
+group_feature,all,gypsum,leaver:t_half,pooled 5815; runs 5.79e+03 [5.35e+03-6.75e+03]
+group_feature,all,gypsum,other:x,pooled -2.464; runs -0.944 [-25.7-24.9]
+group_feature,all,gypsum,other:area,pooled 946.8; runs 963 [932-1.01e+03]
+group_feature,all,gypsum,other:volume,pooled 0.06364; runs 0.0654 [0.0622-0.07]
+group_feature,all,gypsum,other:b0,pooled 6.707e-05; runs 6.76e-05 [6.67e-05-6.85e-05]
+group_feature,all,gypsum,other:k0,pooled 3.749e-10; runs 3.81e-10 [3.71e-10-3.91e-10]
+group_feature,all,gypsum,other:rank_frac,pooled 0.6465; runs 0.632 [0.599-0.657]
+group_feature,all,gypsum,other:degree,pooled 6; runs 4.5 [3.75-6]
+group_feature,all,gypsum,other:adj_start,pooled share 0.8778; runs 0.831 [0.743-0.911]
+group_feature,all,gypsum,other:dist_in,pooled 3; runs 3 [2-4.25]
+group_feature,all,gypsum,other:dist_out,pooled 3; runs 3 [3-4]
+group_feature,all,gypsum,other:flow_start,pooled 1.747e-05; runs 1.99e-05 [1.59e-05-2.28e-05]
+group_feature,all,gypsum,other:flow_peak,pooled 6.929e-06; runs 6.86e-06 [5.1e-06-7.98e-06]
+group_feature,all,gypsum,other:t_half,pooled 6779; runs 7.3e+03 [6.75e+03-9.17e+03]
+group_feature,all,gypsum_calcite,stayer:x,pooled -60.58; runs -67.4 [-124-27.8]
+group_feature,all,gypsum_calcite,stayer:area,pooled 2600; runs 2.91e+03 [2.5e+03-3.24e+03]
+group_feature,all,gypsum_calcite,stayer:volume,pooled 0.2285; runs 0.257 [0.222-0.312]
+group_feature,all,gypsum_calcite,stayer:b0,pooled 8.876e-05; runs 9.15e-05 [8.69e-05-9.56e-05]
+group_feature,all,gypsum_calcite,stayer:k0,pooled 6.565e-10; runs 6.98e-10 [6.29e-10-7.62e-10]
+group_feature,all,gypsum_calcite,stayer:rank_frac,pooled 0.1124; runs 0.0961 [0.0683-0.116]
+group_feature,all,gypsum_calcite,stayer:degree,pooled 17; runs 11 [9-15.5]
+group_feature,all,gypsum_calcite,stayer:adj_start,pooled share 0.9999; runs 1 [1-1]
+group_feature,all,gypsum_calcite,stayer:dist_in,pooled 2; runs 2 [2-3]
+group_feature,all,gypsum_calcite,stayer:dist_out,pooled 2; runs 2.5 [2-3.25]
+group_feature,all,gypsum_calcite,stayer:flow_start,pooled 0.0002601; runs 0.000538 [0.000283-0.00111]
+group_feature,all,gypsum_calcite,stayer:flow_peak,pooled 0.0002567; runs 0.000516 [0.000276-0.00103]
+group_feature,all,gypsum_calcite,stayer:t_half,pooled 91.72; runs 91.7 [78.7-107]
+group_feature,all,gypsum_calcite,joiner:x,pooled 93.03; runs 179 [39.6-224]
+group_feature,all,gypsum_calcite,joiner:area,pooled 1032; runs 1.03e+03 [983-1.17e+03]
+group_feature,all,gypsum_calcite,joiner:volume,pooled 0.07152; runs 0.069 [0.065-0.079]
+group_feature,all,gypsum_calcite,joiner:b0,pooled 6.804e-05; runs 6.84e-05 [6.54e-05-7.18e-05]
+group_feature,all,gypsum_calcite,joiner:k0,pooled 3.858e-10; runs 3.89e-10 [3.57e-10-4.3e-10]
+group_feature,all,gypsum_calcite,joiner:rank_frac,pooled 0.3533; runs 0.29 [0.218-0.334]
+group_feature,all,gypsum_calcite,joiner:degree,pooled 10; runs 6 [5-10.8]
+group_feature,all,gypsum_calcite,joiner:adj_start,pooled share 0.9993; runs 1 [1-1]
+group_feature,all,gypsum_calcite,joiner:dist_in,pooled 3; runs 3 [2-4]
+group_feature,all,gypsum_calcite,joiner:dist_out,pooled 2; runs 2 [2-2]
+group_feature,all,gypsum_calcite,joiner:flow_start,pooled 4.945e-05; runs 0.000138 [5.09e-05-0.000225]
+group_feature,all,gypsum_calcite,joiner:flow_peak,pooled 7.368e-05; runs 0.000205 [7.5e-05-0.000356]
+group_feature,all,gypsum_calcite,joiner:t_half,pooled 106.9; runs 107 [86.2-125]
+group_feature,all,gypsum_calcite,leaver:x,pooled 200.1; runs 162 [114-267]
+group_feature,all,gypsum_calcite,leaver:area,pooled 1849; runs 1.92e+03 [1.78e+03-2.26e+03]
+group_feature,all,gypsum_calcite,leaver:volume,pooled 0.1515; runs 0.162 [0.142-0.187]
+group_feature,all,gypsum_calcite,leaver:b0,pooled 8.063e-05; runs 8.19e-05 [7.93e-05-8.65e-05]
+group_feature,all,gypsum_calcite,leaver:k0,pooled 5.417e-10; runs 5.59e-10 [5.24e-10-6.23e-10]
+group_feature,all,gypsum_calcite,leaver:rank_frac,pooled 0.2239; runs 0.209 [0.15-0.246]
+group_feature,all,gypsum_calcite,leaver:degree,pooled 12; runs 9 [7-11.2]
+group_feature,all,gypsum_calcite,leaver:adj_start,pooled share 0.9993; runs 1 [1-1]
+group_feature,all,gypsum_calcite,leaver:dist_in,pooled 3; runs 4 [3-5]
+group_feature,all,gypsum_calcite,leaver:dist_out,pooled 2; runs 2 [2-3]
+group_feature,all,gypsum_calcite,leaver:flow_start,pooled 0.0001182; runs 0.000244 [0.000128-0.000414]
+group_feature,all,gypsum_calcite,leaver:flow_peak,pooled 5.665e-05; runs 0.00013 [7.37e-05-0.000235]
+group_feature,all,gypsum_calcite,leaver:t_half,pooled 216.6; runs 198 [198-230]
+group_feature,all,gypsum_calcite,other:x,pooled -2.031; runs 0.153 [-24.9-24.9]
+group_feature,all,gypsum_calcite,other:area,pooled 946.6; runs 963 [932-1.01e+03]
+group_feature,all,gypsum_calcite,other:volume,pooled 0.06363; runs 0.0652 [0.0622-0.07]
+group_feature,all,gypsum_calcite,other:b0,pooled 6.706e-05; runs 6.76e-05 [6.67e-05-6.85e-05]
+group_feature,all,gypsum_calcite,other:k0,pooled 3.748e-10; runs 3.81e-10 [3.71e-10-3.9e-10]
+group_feature,all,gypsum_calcite,other:rank_frac,pooled 0.6462; runs 0.63 [0.598-0.656]
+group_feature,all,gypsum_calcite,other:degree,pooled 6; runs 4.5 [3.75-6]
+group_feature,all,gypsum_calcite,other:adj_start,pooled share 0.8779; runs 0.832 [0.744-0.911]
+group_feature,all,gypsum_calcite,other:dist_in,pooled 3; runs 3 [2-4.25]
+group_feature,all,gypsum_calcite,other:dist_out,pooled 3; runs 3 [3-4]
+group_feature,all,gypsum_calcite,other:flow_start,pooled 1.75e-05; runs 1.99e-05 [1.59e-05-2.28e-05]
+group_feature,all,gypsum_calcite,other:flow_peak,pooled 9.649e-06; runs 9.19e-06 [7.22e-06-1.12e-05]
+group_feature,all,gypsum_calcite,other:t_half,pooled 233.3; runs 269 [217-326]
+group_feature,all,all,stayer:x,pooled -68.87; runs -76.3 [-130-23.2]
+group_feature,all,all,stayer:area,pooled 2650; runs 2.98e+03 [2.56e+03-3.42e+03]
+group_feature,all,all,stayer:volume,pooled 0.2336; runs 0.27 [0.227-0.322]
+group_feature,all,all,stayer:b0,pooled 8.923e-05; runs 9.25e-05 [8.78e-05-9.72e-05]
+group_feature,all,all,stayer:k0,pooled 6.635e-10; runs 7.13e-10 [6.43e-10-7.88e-10]
+group_feature,all,all,stayer:rank_frac,pooled 0.107; runs 0.0893 [0.0637-0.112]
+group_feature,all,all,stayer:degree,pooled 17; runs 11 [10-16.2]
+group_feature,all,all,stayer:adj_start,pooled share 0.9999; runs 1 [1-1]
+group_feature,all,all,stayer:dist_in,pooled 2; runs 2 [2-3]
+group_feature,all,all,stayer:dist_out,pooled 2; runs 3 [2-4]
+group_feature,all,all,stayer:flow_start,pooled 0.0002716; runs 0.000574 [0.000295-0.0012]
+group_feature,all,all,stayer:flow_peak,pooled 0.000272; runs 0.000536 [0.000285-0.00116]
+group_feature,all,all,stayer:t_half,pooled 197.6; runs 785 [91.7-2.31e+03]
+group_feature,all,all,joiner:x,pooled 96.75; runs 153 [32.2-214]
+group_feature,all,all,joiner:area,pooled 1017; runs 1.02e+03 [964-1.13e+03]
+group_feature,all,all,joiner:volume,pooled 0.06961; runs 0.0688 [0.0635-0.077]
+group_feature,all,all,joiner:b0,pooled 6.782e-05; runs 6.82e-05 [6.53e-05-7.18e-05]
+group_feature,all,all,joiner:k0,pooled 3.833e-10; runs 3.88e-10 [3.55e-10-4.3e-10]
+group_feature,all,all,joiner:rank_frac,pooled 0.358; runs 0.293 [0.223-0.34]
+group_feature,all,all,joiner:degree,pooled 10; runs 6 [5-11]
+group_feature,all,all,joiner:adj_start,pooled share 0.9997; runs 1 [1-1]
+group_feature,all,all,joiner:dist_in,pooled 3; runs 3 [2-4]
+group_feature,all,all,joiner:dist_out,pooled 2; runs 2 [2-2]
+group_feature,all,all,joiner:flow_start,pooled 4.899e-05; runs 0.000137 [5.06e-05-0.000216]
+group_feature,all,all,joiner:flow_peak,pooled 8.508e-05; runs 0.000227 [9.04e-05-0.000406]
+group_feature,all,all,joiner:t_half,pooled 1074; runs 169 [107-2.7e+03]
+group_feature,all,all,leaver:x,pooled 181.1; runs 157 [99.1-257]
+group_feature,all,all,leaver:area,pooled 1897; runs 1.97e+03 [1.77e+03-2.33e+03]
+group_feature,all,all,leaver:volume,pooled 0.1561; runs 0.167 [0.148-0.195]
+group_feature,all,all,leaver:b0,pooled 8.12e-05; runs 8.28e-05 [7.97e-05-8.7e-05]
+group_feature,all,all,leaver:k0,pooled 5.494e-10; runs 5.72e-10 [5.29e-10-6.31e-10]
+group_feature,all,all,leaver:rank_frac,pooled 0.2137; runs 0.192 [0.145-0.236]
+group_feature,all,all,leaver:degree,pooled 13; runs 9 [7-12]
+group_feature,all,all,leaver:adj_start,pooled share 0.9994; runs 1 [1-1]
+group_feature,all,all,leaver:dist_in,pooled 3; runs 4 [3-5]
+group_feature,all,all,leaver:dist_out,pooled 2; runs 2 [2-3]
+group_feature,all,all,leaver:flow_start,pooled 0.0001276; runs 0.000246 [0.000131-0.000435]
+group_feature,all,all,leaver:flow_peak,pooled 5.539e-05; runs 0.000115 [6.54e-05-0.000219]
+group_feature,all,all,leaver:t_half,pooled 3651; runs 1.94e+03 [198-5.79e+03]
+group_feature,all,all,other:x,pooled -2.37; runs -0.219 [-25.7-24.9]
+group_feature,all,all,other:area,pooled 946.7; runs 963 [932-1.01e+03]
+group_feature,all,all,other:volume,pooled 0.06364; runs 0.0652 [0.0622-0.07]
+group_feature,all,all,other:b0,pooled 6.707e-05; runs 6.76e-05 [6.67e-05-6.85e-05]
+group_feature,all,all,other:k0,pooled 3.748e-10; runs 3.81e-10 [3.71e-10-3.9e-10]
+group_feature,all,all,other:rank_frac,pooled 0.6464; runs 0.631 [0.599-0.657]
+group_feature,all,all,other:degree,pooled 6; runs 4.5 [3.75-6]
+group_feature,all,all,other:adj_start,pooled share 0.8779; runs 0.831 [0.743-0.911]
+group_feature,all,all,other:dist_in,pooled 3; runs 3 [2-4.25]
+group_feature,all,all,other:dist_out,pooled 3; runs 3 [3-4]
+group_feature,all,all,other:flow_start,pooled 1.749e-05; runs 1.99e-05 [1.59e-05-2.28e-05]
+group_feature,all,all,other:flow_peak,pooled 8.193e-06; runs 7.64e-06 [6.03e-06-1.02e-05]
+group_feature,all,all,other:t_half,pooled 1069; runs 2.99e+03 [269-7.3e+03]
+test,all,gypsum,joiner_vs_other:x,median_a 98.96 median_b -2.464 pooled_ratio -40.2 pooled_p 5.9e-27 run_median_ratio -3 run_wilcoxon_p 3.4e-05 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:area,median_a 996.9 median_b 946.8 pooled_ratio 1.05 pooled_p 5.2e-08 run_median_ratio 1.08 run_wilcoxon_p 0.00025 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:volume,median_a 0.06857 median_b 0.06364 pooled_ratio 1.08 pooled_p 1.4e-09 run_median_ratio 1.09 run_wilcoxon_p 0.0019 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:b0,median_a 6.761e-05 median_b 6.707e-05 pooled_ratio 1.01 pooled_p 0.11 run_median_ratio 1.01 run_wilcoxon_p 0.22 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:k0,median_a 3.81e-10 median_b 3.749e-10 pooled_ratio 1.02 pooled_p 0.11 run_median_ratio 1.02 run_wilcoxon_p 0.2 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:rank_frac,median_a 0.3636 median_b 0.6465 pooled_ratio 0.562 pooled_p 0 run_median_ratio 0.472 run_wilcoxon_p 1.6e-10 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:degree,median_a 10 median_b 6 pooled_ratio 1.67 pooled_p 1.5e-179 run_median_ratio 1.33 run_wilcoxon_p 3.6e-10 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 1.9e-48 run_median_ratio 1 run_wilcoxon_p nan n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:dist_in,median_a 3 median_b 3 pooled_ratio 1 pooled_p 1.1e-12 run_median_ratio 1 run_wilcoxon_p 0.072 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:dist_out,median_a 2 median_b 3 pooled_ratio 0.667 pooled_p 2.3e-190 run_median_ratio 0.667 run_wilcoxon_p 9.8e-07 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:flow_start,median_a 4.853e-05 median_b 1.747e-05 pooled_ratio 2.78 pooled_p 0 run_median_ratio 6.05 run_wilcoxon_p 1.6e-10 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:flow_peak,median_a 9.399e-05 median_b 6.929e-06 pooled_ratio 13.6 pooled_p 0 run_median_ratio 30.2 run_wilcoxon_p 1.6e-10 n_runs 54 na 1539 nb 175005
+test,all,gypsum,joiner_vs_other:t_half,median_a 2686 median_b 6779 pooled_ratio 0.396 pooled_p 0 run_median_ratio 0.398 run_wilcoxon_p 1.6e-10 n_runs 54 na 1539 nb 175005
+test,all,gypsum,leaver_vs_stayer:x,median_a 162 median_b -79.08 pooled_ratio -2.05 pooled_p 0 run_median_ratio -0.577 run_wilcoxon_p 1.1e-10 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:area,median_a 1937 median_b 2707 pooled_ratio 0.715 pooled_p 0 run_median_ratio 0.708 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:volume,median_a 0.1591 median_b 0.2399 pooled_ratio 0.663 pooled_p 0 run_median_ratio 0.647 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:b0,median_a 8.162e-05 median_b 8.979e-05 pooled_ratio 0.909 pooled_p 0 run_median_ratio 0.897 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:k0,median_a 5.552e-10 median_b 6.718e-10 pooled_ratio 0.826 pooled_p 0 run_median_ratio 0.805 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:rank_frac,median_a 0.2057 median_b 0.1006 pooled_ratio 2.04 pooled_p 0 run_median_ratio 2.28 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:degree,median_a 13 median_b 17 pooled_ratio 0.765 pooled_p 0 run_median_ratio 0.756 run_wilcoxon_p 1.9e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 1.5e-05 run_median_ratio 1 run_wilcoxon_p nan n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:dist_in,median_a 3 median_b 2 pooled_ratio 1.5 pooled_p 0 run_median_ratio 1.58 run_wilcoxon_p 4.4e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:dist_out,median_a 2 median_b 2 pooled_ratio 1 pooled_p 2.5e-274 run_median_ratio 1 run_wilcoxon_p 0.001 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:flow_start,median_a 0.000132 median_b 0.0002857 pooled_ratio 0.462 pooled_p 0 run_median_ratio 0.418 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:flow_peak,median_a 5.431e-05 median_b 0.0002906 pooled_ratio 0.187 pooled_p 0 run_median_ratio 0.194 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum,leaver_vs_stayer:t_half,median_a 5815 median_b 2315 pooled_ratio 2.51 pooled_p 0 run_median_ratio 2.51 run_wilcoxon_p 1.6e-11 n_runs 60 na 25321 nb 45596
+test,all,gypsum_calcite,joiner_vs_other:x,median_a 93.03 median_b -2.031 pooled_ratio -45.8 pooled_p 1.2e-27 run_median_ratio -3.59 run_wilcoxon_p 4e-05 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:area,median_a 1032 median_b 946.6 pooled_ratio 1.09 pooled_p 6.9e-12 run_median_ratio 1.1 run_wilcoxon_p 2.6e-06 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:volume,median_a 0.07152 median_b 0.06363 pooled_ratio 1.12 pooled_p 1.4e-15 run_median_ratio 1.14 run_wilcoxon_p 0.00028 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:b0,median_a 6.804e-05 median_b 6.706e-05 pooled_ratio 1.01 pooled_p 0.00053 run_median_ratio 1.02 run_wilcoxon_p 0.043 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:k0,median_a 3.858e-10 median_b 3.748e-10 pooled_ratio 1.03 pooled_p 0.00053 run_median_ratio 1.04 run_wilcoxon_p 0.033 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:rank_frac,median_a 0.3533 median_b 0.6462 pooled_ratio 0.547 pooled_p 0 run_median_ratio 0.457 run_wilcoxon_p 1.1e-10 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:degree,median_a 10 median_b 6 pooled_ratio 1.67 pooled_p 1.5e-173 run_median_ratio 1.33 run_wilcoxon_p 3.7e-10 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 3.2e-43 run_median_ratio 1 run_wilcoxon_p nan n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:dist_in,median_a 3 median_b 3 pooled_ratio 1 pooled_p 5.5e-08 run_median_ratio 1 run_wilcoxon_p 0.19 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:dist_out,median_a 2 median_b 3 pooled_ratio 0.667 pooled_p 5.9e-177 run_median_ratio 0.667 run_wilcoxon_p 5.8e-07 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:flow_start,median_a 4.945e-05 median_b 1.75e-05 pooled_ratio 2.83 pooled_p 0 run_median_ratio 6.25 run_wilcoxon_p 1.1e-10 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:flow_peak,median_a 7.368e-05 median_b 9.649e-06 pooled_ratio 7.64 pooled_p 0 run_median_ratio 18 run_wilcoxon_p 1.1e-10 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,joiner_vs_other:t_half,median_a 106.9 median_b 233.3 pooled_ratio 0.458 pooled_p 0 run_median_ratio 0.398 run_wilcoxon_p 1.1e-10 n_runs 55 na 1384 nb 175160
+test,all,gypsum_calcite,leaver_vs_stayer:x,median_a 200.1 median_b -60.58 pooled_ratio -3.3 pooled_p 0 run_median_ratio -0.683 run_wilcoxon_p 2.3e-10 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:area,median_a 1849 median_b 2600 pooled_ratio 0.711 pooled_p 0 run_median_ratio 0.716 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:volume,median_a 0.1515 median_b 0.2285 pooled_ratio 0.663 pooled_p 0 run_median_ratio 0.655 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:b0,median_a 8.063e-05 median_b 8.876e-05 pooled_ratio 0.908 pooled_p 0 run_median_ratio 0.898 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:k0,median_a 5.417e-10 median_b 6.565e-10 pooled_ratio 0.825 pooled_p 0 run_median_ratio 0.807 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:rank_frac,median_a 0.2239 median_b 0.1124 pooled_ratio 1.99 pooled_p 0 run_median_ratio 2.14 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:degree,median_a 12 median_b 17 pooled_ratio 0.706 pooled_p 0 run_median_ratio 0.75 run_wilcoxon_p 1.3e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 1.8e-07 run_median_ratio 1 run_wilcoxon_p nan n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:dist_in,median_a 3 median_b 2 pooled_ratio 1.5 pooled_p 0 run_median_ratio 1.5 run_wilcoxon_p 2.9e-10 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:dist_out,median_a 2 median_b 2 pooled_ratio 1 pooled_p 1.6e-253 run_median_ratio 1 run_wilcoxon_p 0.091 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:flow_start,median_a 0.0001182 median_b 0.0002601 pooled_ratio 0.454 pooled_p 0 run_median_ratio 0.431 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:flow_peak,median_a 5.665e-05 median_b 0.0002567 pooled_ratio 0.221 pooled_p 0 run_median_ratio 0.262 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,gypsum_calcite,leaver_vs_stayer:t_half,median_a 216.6 median_b 91.72 pooled_ratio 2.36 pooled_p 0 run_median_ratio 2.15 run_wilcoxon_p 1.6e-11 n_runs 60 na 17622 nb 53295
+test,all,all,joiner_vs_other:x,median_a 96.75 median_b -2.37 pooled_ratio -40.8 pooled_p 8e-53 run_median_ratio -3.23 run_wilcoxon_p 5.9e-09 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:area,median_a 1017 median_b 946.7 pooled_ratio 1.07 pooled_p 4.3e-18 run_median_ratio 1.09 run_wilcoxon_p 3.4e-09 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:volume,median_a 0.06961 median_b 0.06364 pooled_ratio 1.09 pooled_p 4.6e-23 run_median_ratio 1.12 run_wilcoxon_p 1.8e-06 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:b0,median_a 6.782e-05 median_b 6.707e-05 pooled_ratio 1.01 pooled_p 0.0004 run_median_ratio 1.02 run_wilcoxon_p 0.021 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:k0,median_a 3.833e-10 median_b 3.748e-10 pooled_ratio 1.02 pooled_p 0.0004 run_median_ratio 1.04 run_wilcoxon_p 0.014 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:rank_frac,median_a 0.358 median_b 0.6464 pooled_ratio 0.554 pooled_p 0 run_median_ratio 0.464 run_wilcoxon_p 1.3e-19 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:degree,median_a 10 median_b 6 pooled_ratio 1.67 pooled_p 0 run_median_ratio 1.33 run_wilcoxon_p 9.7e-19 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 7.6e-90 run_median_ratio 1 run_wilcoxon_p nan n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:dist_in,median_a 3 median_b 3 pooled_ratio 1 pooled_p 5.4e-19 run_median_ratio 1 run_wilcoxon_p 0.029 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:dist_out,median_a 2 median_b 3 pooled_ratio 0.667 pooled_p 0 run_median_ratio 0.667 run_wilcoxon_p 3e-12 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:flow_start,median_a 4.899e-05 median_b 1.749e-05 pooled_ratio 2.8 pooled_p 0 run_median_ratio 6.12 run_wilcoxon_p 1.3e-19 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:flow_peak,median_a 8.508e-05 median_b 8.193e-06 pooled_ratio 10.4 pooled_p 0 run_median_ratio 22.8 run_wilcoxon_p 1.3e-19 n_runs 109 na 2923 nb 350165
+test,all,all,joiner_vs_other:t_half,median_a 1074 median_b 1069 pooled_ratio 1 pooled_p 2.2e-186 run_median_ratio 0.398 run_wilcoxon_p 1.3e-19 n_runs 109 na 2923 nb 350165
+test,all,all,leaver_vs_stayer:x,median_a 181.1 median_b -68.87 pooled_ratio -2.63 pooled_p 0 run_median_ratio -0.619 run_wilcoxon_p 1.9e-19 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:area,median_a 1897 median_b 2650 pooled_ratio 0.716 pooled_p 0 run_median_ratio 0.714 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:volume,median_a 0.1561 median_b 0.2336 pooled_ratio 0.668 pooled_p 0 run_median_ratio 0.649 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:b0,median_a 8.12e-05 median_b 8.923e-05 pooled_ratio 0.91 pooled_p 0 run_median_ratio 0.898 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:k0,median_a 5.494e-10 median_b 6.635e-10 pooled_ratio 0.828 pooled_p 0 run_median_ratio 0.807 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:rank_frac,median_a 0.2137 median_b 0.107 pooled_ratio 2 pooled_p 0 run_median_ratio 2.19 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:degree,median_a 13 median_b 17 pooled_ratio 0.765 pooled_p 0 run_median_ratio 0.75 run_wilcoxon_p 1.9e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:adj_start,median_a 1 median_b 1 pooled_ratio 1 pooled_p 2.7e-11 run_median_ratio 1 run_wilcoxon_p nan n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:dist_in,median_a 3 median_b 2 pooled_ratio 1.5 pooled_p 0 run_median_ratio 1.5 run_wilcoxon_p 8.9e-20 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:dist_out,median_a 2 median_b 2 pooled_ratio 1 pooled_p 0 run_median_ratio 1 run_wilcoxon_p 0.0004 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:flow_start,median_a 0.0001276 median_b 0.0002716 pooled_ratio 0.47 pooled_p 0 run_median_ratio 0.427 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:flow_peak,median_a 5.539e-05 median_b 0.000272 pooled_ratio 0.204 pooled_p 0 run_median_ratio 0.233 run_wilcoxon_p 2e-21 n_runs 120 na 42943 nb 98891
+test,all,all,leaver_vs_stayer:t_half,median_a 3651 median_b 197.6 pooled_ratio 18.5 pooled_p 0 run_median_ratio 2.33 run_wilcoxon_p 1.9e-21 n_runs 120 na 42943 nb 98891

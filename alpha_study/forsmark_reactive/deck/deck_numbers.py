@@ -118,5 +118,18 @@ out["bound_channel_share"] = med(w1.D_ch / w1.D_bt)
 ol = pd.read_csv(HERE.parent / "explore_olivine" / "L2_r15_p6.0_sg1.0_seed1" / "olivine__uncorrected_graph__explore" / "clogging.csv")
 out["olivine"] = dict(k_eff_end=float(ol.k_eff_ratio.iloc[-1]), floor_end=int(ol.n_at_floor.iloc[-1]), overlap_min_after10=float(ol[ol.t_y >= 10].overlap0.min()),
                       overlap_end=float(ol.overlap0.iloc[-1]), n90_0=int(ol.n90.iloc[0]), n90_max=int(ol.n90.max()))
+
+# manuscript analyses (section 8)
+bs = pd.read_csv(P1 / "breakthrough_predictor_summary.csv")
+g = lambda chem, subset: bs[(bs.target == "d_bt") & (bs.scope == "chem") & (bs.model == "S_top1_share") & (bs.subset == subset) & (bs.chem == chem)].iloc[0]
+out["predictor"] = dict(r2_gyp=float(g("gyponly", "overall").R2), r2_cal=float(g("gypcal", "overall").R2), rho=float(g("all", "overall").spearman),
+                        oos_r2=float(g("all", "oos_phase2_all").R2), oos_rho=float(g("all", "oos_phase2_all").spearman))
+tl = pd.read_csv(P1 / "transport_channel_link.csv")
+from scipy.stats import spearmanr
+out["transport_link"] = dict(rho_gamma_prv=float(spearmanr(tl.rgamma, tl.PRV_rel).correlation))
+tc = pd.read_csv(P1 / "channel_turnover_counts.csv")
+out["turnover"] = dict(leaver_share=med(tc.leaver_share_of_start), joiner_share=med(tc.joiner_share_of_peak), n=int(len(tc)))
+dv = pd.read_csv(P1 / "depth_variability.csv"); pp = dv[dv.tag == "phase1"].pivot_table(index=["P32", "sigma", "seed"], columns="mode", values="depth").dropna()
+out["depth_rank_rho"] = float(spearmanr(pp.gypsum, pp.gypsum_calcite).correlation)
 (HERE / "numbers.json").write_text(json.dumps(out, indent=1))
 print(json.dumps(out, indent=1)[:4000])

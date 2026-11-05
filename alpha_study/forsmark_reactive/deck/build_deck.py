@@ -401,7 +401,7 @@ for i, (lab, key, fmt) in enumerate([("residence time τ_res (yr)", "tau", "{:.1
     text(s, lab, 8.6, y, 4.1, 0.4, size=15, color=INK2)
     text(s, "  ".join(fmt.format(r[key]) for r in pg), 8.6, y + 0.4, 4.2, 0.7, size=22, font=HEAD, color=FLOW if key == "t50" else ACCENT)
 text(s, "start · pause 1 · 2 · 3 · 4", 8.6, 5.0, 4.1, 0.4, size=13, color=INK2)
-text(s, "Stage 1 adds pore volume at the same flow; stages 2–3 change the shape.", 8.6, 5.5, 4.1, 0.9, size=15)
+text(s, f"Across all 720 probed states the tail exponent tracks PR_V: ρ {N['transport_link']['rho_gamma_prv']:.2f}.", 8.6, 5.5, 4.1, 0.9, size=15)
 
 # Candidates -------------------------------------------------------------------------------------------------------
 section("Candidate findings", "What might be new, and what could make it wrong", notes="Section divider: candidate findings.")
@@ -448,6 +448,33 @@ picture(s, CART / "precipitation_reroute.png", M, 1.45, W - 2 * M, 3.6, alt="Car
 stat(s, prange(N['inheritance_2mM']['min'], N['inheritance_2mM']['max']), f"inheritance at 2 mM carbonate ({N['inheritance_2mM']['n']} networks)", M, 5.2, 4.0, big_size=36)
 text(s, [[("Why: ", {"bold": True}), ("calcite (36.9 cm³/mol) replaces gypsum (74.7 cm³/mol) where it dissolves, so every well-mixed cell "
           "gains porosity. Clogging needs a reaction that adds solid volume.", {})]], M + 4.5, 5.25, 7.6, 1.3, size=16)
+
+# manuscript analyses -----------------------------------------------------------------------------------------------------
+MS = HERE.parent / "report_phase1" / "img" / "manuscript"
+pr, to = N["predictor"], N["turnover"]
+s = new_slide(notes=(
+    f"Breakthrough can be predicted from the initial flow field. The single best predictor, held out one P32 level at a time, is the "
+    f"initial flow share of the largest-flow fracture: R2 {pr['r2_gyp']:.2f} (gypsum-only) and {pr['r2_cal']:.2f} (coupled), Spearman "
+    f"{pr['rho']:.2f}; on the Phase 2 runs, never used in fitting, R2 {pr['oos_r2']:.2f} and Spearman {pr['oos_rho']:.2f}. The more one "
+    "fracture dominates at the start, the less gypsum has to dissolve before the outlet breaks through."))
+title(s, "One fracture's flow share predicts breakthrough")
+picture(s, MS / "breakthrough_top1.png", M, 1.45, 8.2, 3.6, alt="Dissolved at breakthrough against the largest fracture's flow share")
+stat(s, f"R² {pr['r2_gyp']:.2f}", "held-out P32 level, gypsum-only (coupled 0.47)", 9.1, 1.6, 3.6, big_size=36)
+stat(s, f"ρ {pr['oos_rho']:.2f}", "rank agreement on the Phase 2 runs, never used in fitting", 9.1, 3.3, 3.6, color=ACCENT, big_size=36)
+text(s, "The channel-volume share, the obvious mass-balance guess, predicts poorly (R² 0.12).", M, 5.4, 8.2, 0.8, size=15, color=INK2)
+
+s = new_slide(notes=(
+    f"Turnover: inheritance says the peak channel is built from the initial one, but about {pct(to['leaver_share'])} of the initial "
+    f"90 %-flow set drops out (median over {to['n']} runs), mostly small, narrow fractures downstream where the flow converges. Only "
+    f"{pct(to['joiner_share'])} of the peak set is new, all of them side branches touching the channel. And the depth of focusing is a "
+    f"stable property of each network: the gypsum-only and coupled depths on the same network have Spearman {N['depth_rank_rho']:.2f}, "
+    "although none of 19 initial-state features predicts it."))
+title(s, "The channel narrows; depth belongs to the network")
+picture(s, MS / "channel_turnover.png", M, 1.45, 7.3, 4.5, alt="Stayers, joiners, leavers and others compared")
+picture(s, MS / "depth_network_property.png", 8.1, 1.45, 4.6, 4.2, alt="Coupled against gypsum-only depth on the same network")
+text(s, [[(f"{pct(to['leaver_share'])} ", {"bold": True, "color": FLOW, "size": 22, "font": HEAD}), ("of the initial channel drops out (median); ", {}),
+          (f"{pct(to['joiner_share'])} ", {"bold": True, "color": ACCENT, "size": 22, "font": HEAD}), ("of the peak channel is new.", {})]], M, 6.15, 7.3, 0.7, size=15)
+text(s, f"Depth rank kept across chemistry: ρ {N['depth_rank_rho']:.2f} (n 60)", 8.1, 5.75, 4.6, 0.5, size=14, color=INK2)
 
 rg, bd = N["regime"], N["bound"]
 s = new_slide(notes=(

@@ -1,0 +1,31 @@
+target,scope,chem,fit,predictors
+d_bt,chem,gyponly,4.0,top1_share sigma n90_vol_share
+d_bt,chem,gyponly,6.0,top1_share pr_fracture_vol backbone_share
+d_bt,chem,gyponly,8.0,top1_share
+d_bt,chem,gyponly,16.0,top1_share n_inlet_fractures
+d_bt,chem,gyponly,full,top1_share
+d_bt,chem,gypcal,4.0,top1_share sigma
+d_bt,chem,gypcal,6.0,top1_share pr_fracture_vol backbone_share
+d_bt,chem,gypcal,8.0,top1_share pr_fracture_vol
+d_bt,chem,gypcal,16.0,flow_gini top1_share n_inlet_fractures
+d_bt,chem,gypcal,full,top1_share
+d_bt,pool,pool,4.0,chem top1_share sigma
+d_bt,pool,pool,6.0,chem top1_share pr_fracture_vol backbone_share
+d_bt,pool,pool,8.0,chem top1_share
+d_bt,pool,pool,16.0,chem top1_share n_inlet_fractures
+d_bt,pool,pool,full,chem top1_share
+d_prv,chem,gyponly,4.0,pr_fracture_vol flow_gini n90_vol_share
+d_prv,chem,gyponly,6.0,pr_fracture_vol top1_share
+d_prv,chem,gyponly,8.0,backbone_fraction top1_share
+d_prv,chem,gyponly,16.0,dQ_P32 n_dead_end_fractures n_outlet_fractures
+d_prv,chem,gyponly,full,backbone_fraction flow_gini pr_fracture_vol
+d_prv,chem,gypcal,4.0,top1_share
+d_prv,chem,gypcal,6.0,backbone_share
+d_prv,chem,gypcal,8.0,backbone_fraction top1_share
+d_prv,chem,gypcal,16.0,dQ_P32 n_dead_end_fractures n_outlet_fractures
+d_prv,chem,gypcal,full,backbone_fraction top1_share
+d_prv,pool,pool,4.0,chem pr_fracture_vol
+d_prv,pool,pool,6.0,chem pr_fracture_vol top1_share
+d_prv,pool,pool,8.0,chem backbone_fraction top1_share
+d_prv,pool,pool,16.0,chem dQ_P32 n_dead_end_fractures n_outlet_fractures
+d_prv,pool,pool,full,chem backbone_fraction flow_gini n90_share

@@ -2807,8 +2807,65 @@ nav.toc{font-size:.9rem;display:flex;flex-wrap:wrap;gap:4px 14px;margin:12px 0}
 <p><strong>Literature context.</strong> The largest reactive graph study we found is 25 m with about 526 fractures (Hyman et al. 2026); meshed DFNs are 10 m. The only coupled 3D DFN dissolution-precipitation study is Hyman et al. (2024a), at 10 m. Hyman et al. (2026, graph) is dissolution-only. We found no km-scale reactive DFN with thousands of fractures. BiGraFV itself is unpublished.</p>
 </div>
 </section>
+<section id="manuscript">
+<h2>8. Toward a manuscript: new analyses</h2>
+<div class="summary"><span class="tag">In plain words</span><p>New analyses of the existing runs, done for the manuscript. Three are useful. The initial flow field predicts how much gypsum must dissolve before breakthrough: one number does it, the flow share of the single largest-flow fracture. The tracer tail tracks how focused the flow is. And the channel narrows: about a third of the initial flow paths drop out, mostly downstream, and very few new ones join. Channel depth is a stable property of each network, but no initial-state feature predicts it. One idea did not work: dividing by the breakthrough point does not make the channel curves collapse. The ceiling and rate tests and the DFN-validation scope are running and will be added here.</p></div>
+<div class="item" id="ms-predictor"><h3>8.1 Breakthrough is predicted by the initial flow field</h3>
+<p>We predicted the fraction of the gypsum dissolved at breakthrough, d<sub>bt</sub>, from initial-state measures only. Each P32 level was held out in turn: train on three levels, predict the fourth. The best predictor is a single number: the initial share of the flow carried by the largest-flow fracture. The more one fracture dominates at the start, the earlier the outlet breaks through.</p>
+<div class="tablewrap"><table>
+<thead><tr><th class="l">Model (per chemistry)</th><th>R&sup2;, leave-one-P32-out (n = 120)</th><th>MAE</th><th>Spearman</th><th>Phase 2 out of sample (n = 36): R&sup2;, Spearman</th></tr></thead>
+<tbody>
+<tr><td class="l">largest-fracture flow share</td><td>0.54 (gypsum-only), 0.47 (coupled)</td><td>0.06</td><td>0.77</td><td>0.37, 0.90</td></tr>
+<tr><td class="l">ridge, &le; 3 predictors (forward selection)</td><td>0.19 (both pooled)</td><td>0.08</td><td>0.65</td><td>0.37, 0.90</td></tr>
+<tr><td class="l">d<sub>bt</sub> &prop; initial channel volume share</td><td>0.12 (both pooled)</td><td>0.08</td><td>0.42</td><td>&minus;0.13, 0.34</td></tr>
+</tbody></table></div>
+<p class="src">Source: forsmark_reactive/phase1/breakthrough_predictor_summary.csv (breakthrough_predictor.py). Held-out R&sup2; by level for the largest-fracture share: &times;4 0.38, &times;6 0.75, &times;8 0.76, &times;16 0.32 (an extrapolation). The ridge model picks the largest-fracture share first in every fold. The same predictors do not predict when the PR<sub>V</sub> minimum happens (R&sup2; &le; 0.11).</p>
+<figure><img src="img/manuscript/breakthrough_top1.png" alt="Gypsum dissolved at breakthrough against the initial flow share of the largest-flow fracture." loading="lazy"><figcaption>Look at the downward trend in both chemistries: networks whose largest fracture starts with a larger flow share break through after less dissolution. Open symbols are Phase 2 runs, not used in fitting.</figcaption></figure>
+<p><strong>What could make it wrong.</strong> R&sup2; is 0.5, not 0.9, so the predictor ranks networks well (Spearman 0.77&ndash;0.90) but leaves half of the variance unexplained. The &times;16 level is predicted less well. It is a one-cell-model result; with in-fracture wormholes breakthrough could come earlier everywhere (6.6).</p></div>
+<div class="item" id="ms-transport"><h3>8.2 The tracer tail tracks flow focusing</h3>
+<p>Across all 720 probed states (P32 &times;4&ndash;&times;8, 90 runs), the tracer tail exponent rises as PR<sub>V</sub> falls: Spearman &minus;0.80 pooled, and &minus;0.88 [&minus;0.93 to &minus;0.74] within gypsum-only runs (&minus;0.76 coupled). The median arrival t<sub>50</sub>/&tau;<sub>res</sub> follows PR<sub>V</sub> less closely (within-run &minus;0.71 gypsum-only, &minus;0.45 coupled). Open pore space (PR<sub>pore</sub>) adds little once PR<sub>V</sub> is known. A tracer test could therefore indicate how far a channel has formed, at least in this model.</p>
+<p class="src">Source: forsmark_reactive/phase1/transport_channel_link_summary.csv (transport_channel_link.py). Linear models of the change in &gamma; on the change in ln PR<sub>V</sub> and ln PR<sub>pore</sub> explain 28&ndash;48 % of the variance in sample and 23&ndash;43 % with P32 held out.</p>
+<figure><img src="img/manuscript/transport_binned.png" alt="Tail exponent and median arrival against PR_V relative to its start." loading="lazy"><figcaption>Medians and IQR in bins of PR<sub>V</sub> relative to its start (left = little focusing, right = strong focusing). Look at the tail exponent rising by 20&ndash;35 % as the flow focuses.</figcaption></figure>
+<p><strong>What could make it wrong.</strong> Eulerian probes with a finite pulse and window, one transport model, and half or more of the variance unexplained.</p></div>
+<div class="item" id="ms-master"><h3>8.3 Master curves: no extra collapse from rescaling</h3>
+<p>We tested whether the channel curves of all runs collapse when time is measured relative to each run's breakthrough (d/d<sub>bt</sub>). The spread across runs (mean IQR of PR<sub>V</sub>/PR<sub>V0</sub>) is 0.096 on d and 0.104 on d/d<sub>bt</sub> (Phase 1, 120 runs), so rescaling does not help. For PR<sub>pore</sub> it helps slightly (0.234 to 0.219). The rescaling does line up the PR<sub>V</sub> minimum with breakthrough (d/d<sub>bt</sub> &asymp; 1). What does not collapse is the depth, which varies from run to run (next item).</p>
+<p class="src">Source: forsmark_reactive/phase1/master_curve_collapse.csv (master_curves.py). The collapse metric depends on the grid, so comparisons with the time-like clocks are only indicative.</p>
+<figure><img src="img/manuscript/master_curves.png" alt="PR_V and PR_pore relative to start against d and d/d_bt for all runs." loading="lazy"><figcaption>All runs, thin lines; medians per chemistry bold. Look at the right column: the minima gather near d/d<sub>bt</sub> = 1 but their depths differ by a factor of two.</figcaption></figure></div>
+<div class="item" id="ms-turnover"><h3>8.4 The channel narrows: who leaves and who joins</h3>
+<p>Inheritance (97&ndash;98 %) says the peak channel is built from the initial one. Turnover shows the other half of the story: about a third of the initial 90 %-flow set drops out by the channel peak (median 23&ndash;44 % by P32 and chemistry; fewer in coupled runs, 23&ndash;32 %, than in gypsum-only runs, 33&ndash;44 %). Only 1.4&ndash;3.4 % of the peak set is new.</p>
+<div class="tablewrap"><table>
+<thead><tr><th class="l">Group (pooled over 120 Phase 1 runs)</th><th>n fractures</th><th>median x (m)</th><th>volume (m&sup3;)</th><th>aperture (&micro;m)</th><th>initial flow rank / n</th><th>degree</th></tr></thead>
+<tbody>
+<tr><td class="l">stayers (initial and peak set)</td><td>98,891</td><td>&minus;69</td><td>0.23</td><td>89</td><td>0.11</td><td>17</td></tr>
+<tr><td class="l">leavers (initial set only)</td><td>42,943</td><td>+181</td><td>0.16</td><td>81</td><td>0.21</td><td>13</td></tr>
+<tr><td class="l">joiners (peak set only)</td><td>2,923</td><td>+97</td><td>0.07</td><td>68</td><td>0.36</td><td>10</td></tr>
+<tr><td class="l">others</td><td>350,165</td><td>&minus;2</td><td>0.06</td><td>67</td><td>0.65</td><td>6</td></tr>
+</tbody></table></div>
+<p class="src">Source: forsmark_reactive/phase1/channel_turnover_summary.csv (channel_turnover.py). All leaver/stayer differences are significant by a per-run paired test (Wilcoxon on run medians, n = 120, p &lt; 10<sup>&minus;19</sup>); pooled-fracture tests would overstate significance.</p>
+<div class="col"><p><strong>Plain answer.</strong> The stayers are the large, wide, well-connected fractures near the inlet. The leavers are the weakest members of the initial set: smaller (volume &times;0.65), narrower (&times;0.90), with half the initial flow, and mostly downstream (about two thirds have x &gt; 0). They drop out where the flow converges and focuses. The few joiners are ordinary fractures that sit right next to the channel (all touch an initial-set fracture) in the downstream half, high in the flow ranking among non-channel fractures. They are side branches, not new paths.</p></div>
+<figure><img src="img/manuscript/channel_turnover.png" alt="Box plots of position, volume, aperture, flow rank and graph distance for stayers, joiners, leavers and others." loading="lazy"><figcaption>Look at x (top left): leavers and joiners sit downstream; stayers sit upstream. Look at flow rank (bottom left): leavers are the tail of the initial set, joiners the top of the rest.</figcaption></figure></div>
+<div class="item" id="ms-depth"><h3>8.5 Channel depth is a property of the network, but not one we can read from its initial state</h3>
+<p>At a fixed ceiling, single runs vary in depth (gypsum-only 0.47&ndash;0.80, coupled 0.62&ndash;0.86). The variation is not noise: the same network keeps its rank across chemistry and porosity (Spearman 0.89 for gypsum-only against coupled, n = 60; 0.79&ndash;0.92 for the Phase 2 pairs, n = 12). But none of 19 initial-state features explains it. These included the channel's volume share, the aperture contrast between channel and rest, the transmissivity spread, the path bottleneck and the inlet/outlet counts. Within-group |&rho;| &le; 0.24, none with p &lt; 0.05, and leave-one-P32-out R&sup2; is negative.</p>
+<p class="src">Source: forsmark_reactive/phase1/depth_variability_summary.csv (depth_variability.py). Residual = depth minus the median of its (chemistry, phase, P32) group. Some features look strong in Phase 2 (n = 12 per case) but not in the matching Phase 1 networks, so we treat them as small-sample effects.</p>
+<figure><img src="img/manuscript/depth_network_property.png" alt="Channel depth of the coupled run against the gypsum-only run on the same network." loading="lazy"><figcaption>Each point is one network: the gypsum-only depth against the coupled depth. Look at how tightly they track: a network that focuses strongly with one chemistry does so with the other.</figcaption></figure>
+<p><strong>What this means.</strong> The depth law sets the level (the ceiling), and the network sets the offset. That offset seems to come from how the first dissolution fronts grow through the network, not from any single static feature we tried. A dynamic predictor, for example the early-time flow redistribution, is the next thing to test.</p></div>
+<div class="item" id="ms-figures"><h3>8.6 Draft figure list for the manuscript</h3>
+<div class="col"><ol>
+<li><strong>Set-up:</strong> network render, the one-cell model, two chemistries with their capacity and ceilings.</li>
+<li><strong>Four stages:</strong> cartoon, stage-3 slices of the example network, PR<sub>V</sub> and PR<sub>pore</sub> against the dissolved fraction.</li>
+<li><strong>The clock:</strong> event timing on pore volumes, t<sub>cap</sub>, d and &tau;. The spread is &times;1.16&ndash;1.20 on d against &times;3.5 on &tau;.</li>
+<li><strong>Inheritance and narrowing:</strong> inheritance through time and the turnover box plots (8.4).</li>
+<li><strong>Depth law:</strong> depth against the ceiling (with the Phase 3 ceilings once in), paired differences, and the same-network scatter (8.5).</li>
+<li><strong>Breakthrough predictor:</strong> d<sub>bt</sub> against the largest fracture's flow share, cross-validated, with the wormhole scenario band (8.1, 6.6).</li>
+<li><strong>Transport:</strong> paused-pulse frames and the tail exponent against PR<sub>V</sub> (5e, 8.2).</li>
+<li><strong>Robustness:</strong> the rate test and P32 &times;16 (5f; rate test running).</li>
+<li><strong>Supplement:</strong> DFN validation (being scoped), the regime map, the d<sub>Q</sub> size baseline, master curves, the olivine outlook.</li>
+</ol></div>
+<p class="src">Plan and reasoning: forsmark_reactive/MANUSCRIPT_PLAN.md.</p></div>
+<!--MS_MORE-->
+</section>
 <section id="limits">
-<h2>8. Limits and decisions for the user</h2>
+<h2>9. Limits and decisions for the user</h2>
 <div class="summary"><span class="tag">In plain words</span><p>Some results depend on modelling choices that we could not check against a published source. Three need a decision from you: the transmissivity law, the pore-volume convention, and the capacity bound.</p></div>
 <div class="col"><ul>
 <li><strong>BiGraFV caveats.</strong> One control volume per fracture: no in-plane fronts or wormholes; a long fracture opens along its whole length at once; dead ends only approximate. On smaller paired TPL networks meshed DFNs channelized more than the one-cell graph (n90 ratio 0.79 vs 0.94 and 0.84 vs 0.88), and graph timing lagged at strong k&ndash;&phi; feedback.</li>
@@ -2820,7 +2877,7 @@ nav.toc{font-size:.9rem;display:flex;flex-wrap:wrap;gap:4px 14px;margin:12px 0}
 <li><strong>Small samples.</strong> The depth-law table and the 2 mM result use sigma 1.0, seeds 1&ndash;3.</li>
 </ul></div>
 </section>
-<section id="refs"><h2>9. References</h2><div class="summary"><span class="tag">In plain words</span><p>In the text, sources appear as (Author year). Items marked unpublished or without a DOI are given as in the source records.</p></div><ol class="refs"><li>Bell, R.J., Dean, P., Hibbins-Butler, D.C. (1970). Localization of normal modes in vitreous silica, germania and beryllium fluoride. <em>J. Phys. C</em> 3(10), 2111&ndash;2118. <a href="https://doi.org/10.1088/0022-3719/3/10/013">doi:10.1088/0022-3719/3/10/013</a></li>
+<section id="refs"><h2>10. References</h2><div class="summary"><span class="tag">In plain words</span><p>In the text, sources appear as (Author year). Items marked unpublished or without a DOI are given as in the source records.</p></div><ol class="refs"><li>Bell, R.J., Dean, P., Hibbins-Butler, D.C. (1970). Localization of normal modes in vitreous silica, germania and beryllium fluoride. <em>J. Phys. C</em> 3(10), 2111&ndash;2118. <a href="https://doi.org/10.1088/0022-3719/3/10/013">doi:10.1088/0022-3719/3/10/013</a></li>
 <li>Budek, A., Szymczak, P., Kang, P.K. (2026). Fractures regulate coupled dissolution-precipitation dynamics: regime map, optimal fracture conductance, and clogging. <em>Earth Planet. Sci. Lett.</em> 690, 120163. <a href="https://doi.org/10.1016/j.epsl.2026.120163">doi:10.1016/j.epsl.2026.120163</a></li>
 <li>Edwards, J.T., Thouless, D.J. (1972). Numerical studies of localization in disordered systems. <em>J. Phys. C</em> 5(8), 807&ndash;820. <a href="https://doi.org/10.1088/0022-3719/5/8/007">doi:10.1088/0022-3719/5/8/007</a></li>
 <li>Fox, A., La Pointe, P., Hermanson, J., Oehman, J. (2007). Statistical geological discrete fracture network model, Forsmark modelling stage 2.2. SKB R-07-46.</li>
@@ -2846,7 +2903,7 @@ nav.toc{font-size:.9rem;display:flex;flex-wrap:wrap;gap:4px 14px;margin:12px 0}
 <li>Steefel, C.I., Hu, M. (2022). <em>Water Resour. Res.</em> 58, e2022WR032321.</li>
 <li>BiGraFV: this work, unpublished.</li></ol></section>
 <section id="appendix">
-<h2>10. Appendix: runs and files</h2>
+<h2>11. Appendix: runs and files</h2>
 <div class="summary"><span class="tag">In plain words</span><p>Phase 1, Phase 2 and the P32 &times;16 set are complete (4 November).</p></div>
 <div class="tablewrap"><table>
 <thead><tr><th class="l">Set</th><th class="l">Content</th><th class="l">Status</th></tr></thead>
