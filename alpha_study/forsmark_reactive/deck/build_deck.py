@@ -11,6 +11,7 @@ figure from report_phase1/img/ and the report's own cartoons (render_cartoons.py
 from __future__ import annotations
 
 import datetime
+import math
 import json
 from pathlib import Path
 
@@ -401,7 +402,7 @@ for i, (lab, key, fmt) in enumerate([("residence time τ_res (yr)", "tau", "{:.1
     text(s, lab, 8.6, y, 4.1, 0.4, size=15, color=INK2)
     text(s, "  ".join(fmt.format(r[key]) for r in pg), 8.6, y + 0.4, 4.2, 0.7, size=22, font=HEAD, color=FLOW if key == "t50" else ACCENT)
 text(s, "start · pause 1 · 2 · 3 · 4", 8.6, 5.0, 4.1, 0.4, size=13, color=INK2)
-text(s, f"Across all 720 probed states the tail exponent tracks PR_V: ρ {N['transport_link']['rho_gamma_prv']:.2f}.", 8.6, 5.5, 4.1, 0.9, size=15)
+text(s, f"Across 720 probed states the change in tail exponent tracks PR_V: ρ {N['transport_link']['rho_gamma_prv']:.2f}.", 8.6, 5.5, 4.1, 0.9, size=15)
 
 # Candidates -------------------------------------------------------------------------------------------------------
 section("Candidate findings", "What might be new, and what could make it wrong", notes="Section divider: candidate findings.")
@@ -420,7 +421,19 @@ items = [(f"{dp['x106_vs_x10']['median_abs']:.3f}", f"median |difference|, equal
          (f"{dp['x20_minus_x10']['max']:.2f} to {dp['x20_minus_x10']['min']:.2f}", f"×20 minus ×10: deeper in all {dp['x20_minus_x10']['n']} pairs", FLOW)]
 for i, (b, l, c) in enumerate(items):
     stat(s, b, l, 7.9, 1.55 + i * 1.6, 4.8, color=c, big_size=34)
-source(s, "Depth = PR_V minimum over start. Paired on the same network (σ = 1, seeds 1–3). Candidate; Phase 2 continuing.")
+source(s, f"Depth = PR_V minimum over start, paired on the same network (σ = 1, seeds 1–3). Phase 3: gypsum-only at ×5.5 vs coupled ×5.5: {N['ceiling']['gyp55_minus_cal55']:+.3f} (n {N['ceiling']['n']}).")
+cl, rt = N["ceiling"], N["rate"]
+s = new_slide(notes=(
+    f"Two robustness tests from Phase 3. Ceiling: gypsum-only at porosity 0.182 has the same x5.5 ceiling as the coupled runs at 0.1; on the "
+    f"same 9 networks the depths match within a median {abs(cl['gyp55_minus_cal55']):.3f} (gypsum-only slightly deeper in all 9), against "
+    f"+{cl['gyp55_minus_gyp10']:.2f} when the same chemistry goes from x10 to x5.5. The depth law now spans x3.3 to x20. Rate: 100-fold range, "
+    f"0.1 to 10 pore volumes per year, three networks per chemistry: stage timing on the dissolved fraction changes by at most "
+    f"{rt['gyp_max']:.4f} (gypsum-only) and {rt['cal_events_max']:.4f} (coupled), depth by at most {rt['cal_depth_max']:.3f}. Local equilibrium."))
+title(s, "Same ceiling, same depth; any rate, same stages")
+picture(s, IMG / "depth_law.png", M, 1.45, 6.9, 4.4, alt="Depth law from x3.3 to x20")
+stat(s, f"{abs(cl['gyp55_minus_cal55']):.3f}", f"depth difference at equal ×5.5 ceiling, two chemistries and porosities (median, {cl['n']} networks)", 7.9, 1.55, 4.8, big_size=36)
+stat(s, f"+{cl['gyp55_minus_gyp10']:.2f}", "depth change from ×10 to ×5.5 with the same chemistry", 7.9, 3.1, 4.8, color=ACCENT, big_size=36)
+stat(s, f"< {math.ceil(rt['cal_events_max'] * 1000) / 1000:.3f}", "largest shift in the PR_V minimum, outlet and breakthrough between 0.1 and 10 pore volumes per year (3 networks per chemistry)", 7.9, 4.65, 4.8, color=FLOW, big_size=36)
 
 s = new_slide(notes=(
     f"Breakthrough is expensive: when the outlet passes 50 % dissolved, the network has used "
@@ -455,12 +468,12 @@ pr, to = N["predictor"], N["turnover"]
 s = new_slide(notes=(
     f"Breakthrough can be predicted from the initial flow field. The single best predictor, held out one P32 level at a time, is the "
     f"initial flow share of the largest-flow fracture: R2 {pr['r2_gyp']:.2f} (gypsum-only) and {pr['r2_cal']:.2f} (coupled), Spearman "
-    f"{pr['rho']:.2f}; on the Phase 2 runs, never used in fitting, R2 {pr['oos_r2']:.2f} and Spearman {pr['oos_rho']:.2f}. The more one "
+    f"{pr['rho']:.2f}; on the Phase 2 runs (same 12 networks, new ceiling and porosity, so not independent) R2 {pr['oos_r2']:.2f} and Spearman {pr['oos_rho']:.2f}. The more one "
     "fracture dominates at the start, the less gypsum has to dissolve before the outlet breaks through."))
 title(s, "One fracture's flow share predicts breakthrough")
 picture(s, MS / "breakthrough_top1.png", M, 1.45, 8.2, 3.6, alt="Dissolved at breakthrough against the largest fracture's flow share")
 stat(s, f"R² {pr['r2_gyp']:.2f}", "held-out P32 level, gypsum-only (coupled 0.47)", 9.1, 1.6, 3.6, big_size=36)
-stat(s, f"ρ {pr['oos_rho']:.2f}", "rank agreement on the Phase 2 runs, never used in fitting", 9.1, 3.3, 3.6, color=ACCENT, big_size=36)
+stat(s, f"ρ {pr['oos_rho']:.2f}", "rank agreement on Phase 2 runs (same networks, new ceiling and porosity; not independent)", 9.1, 3.3, 3.6, color=ACCENT, big_size=36)
 text(s, "The channel-volume share, the obvious mass-balance guess, predicts poorly (R² 0.12).", M, 5.4, 8.2, 0.8, size=15, color=INK2)
 
 s = new_slide(notes=(
@@ -468,13 +481,34 @@ s = new_slide(notes=(
     f"90 %-flow set drops out (median over {to['n']} runs), mostly small, narrow fractures downstream where the flow converges. Only "
     f"{pct(to['joiner_share'])} of the peak set is new, all of them side branches touching the channel. And the depth of focusing is a "
     f"stable property of each network: the gypsum-only and coupled depths on the same network have Spearman {N['depth_rank_rho']:.2f}, "
-    "although none of 19 initial-state features predicts it."))
+    "although none of 19 initial-state features predicts it out of sample."))
 title(s, "The channel narrows; depth belongs to the network")
 picture(s, MS / "channel_turnover.png", M, 1.45, 7.3, 4.5, alt="Stayers, joiners, leavers and others compared")
 picture(s, MS / "depth_network_property.png", 8.1, 1.45, 4.6, 4.2, alt="Coupled against gypsum-only depth on the same network")
 text(s, [[(f"{pct(to['leaver_share'])} ", {"bold": True, "color": FLOW, "size": 22, "font": HEAD}), ("of the initial channel drops out (median); ", {}),
           (f"{pct(to['joiner_share'])} ", {"bold": True, "color": ACCENT, "size": 22, "font": HEAD}), ("of the peak channel is new.", {})]], M, 6.15, 7.3, 0.7, size=15)
 text(s, f"Depth rank kept across chemistry: ρ {N['depth_rank_rho']:.2f} (n 60)", 8.1, 5.75, 4.6, 0.5, size=14, color=INK2)
+
+s = new_slide(notes=(
+    "Validation scope. The Phase 1 networks were generated with dfnWorks' feasibility checks off, so they cannot be meshed; a validation "
+    "needs a regenerated network. With relaxed checks (rFram) the P32 x4 network keeps 1,605 fractures and 9 inlet-outlet paths "
+    "(Phase 1: 1,608 and 11). At h = 1 m that is about 0.78 M DFN cells: the coupled chemistry to capacity time 2 is about 9-17 core-h, "
+    "gypsum-only to capacity time 1 about 120-240 core-h. x8 at 1 m and x16 do not fit in 24 GB. All estimates; a 10-step smoke test "
+    "would replace them."))
+title(s, "A DFN check is feasible for one 1 km network")
+rows_dfn = [("1 km, P32 ×4, h = 1 m", "0.78 M cells", "coupled 9–17 core-h · gypsum-only 240–470", "recommended"),
+            ("1 km, P32 ×8, h = 2 m", "1.5 M cells", "coupled 17–38 core-h", "coupled only"),
+            ("1 km, ×8 at 1 m; ×16", "2.9 M; 11 M", "16–110 GB memory", "not on this laptop"),
+            ("250 m block, ×4", "0.19 M cells", "cannot test 1 km depth or breakthrough", "partial")]
+for i, (a1, a2, a3, a4) in enumerate(rows_dfn):
+    y = 1.75 + i * 1.0
+    card(s, M, y, W - 2 * M, 0.85, fill=HL if i else "FBE9E2")
+    text(s, a1, M + 0.25, y + 0.22, 3.6, 0.5, size=17, bold=True)
+    text(s, a2, M + 4.0, y + 0.22, 2.2, 0.5, size=16, color=INK2)
+    text(s, a3, M + 6.3, y + 0.22, 4.0, 0.5, size=15, color=INK2)
+    text(s, a4, M + 10.4, y + 0.22, 1.8, 0.5, size=15, color=FLOW if i == 0 else INK2, bold=i == 0)
+text(s, "Needs a regenerated network: the Phase 1 networks were built with dfnWorks' feasibility checks off and cannot be meshed.", M, 5.95, W - 2 * M, 0.6, size=15, color=INK2)
+source(s, "Estimates from four Forsmark mesh tests and the earlier TPL DFN runs (forsmark_reactive/DFN_VALIDATION_SCOPE.md).")
 
 rg, bd = N["regime"], N["bound"]
 s = new_slide(notes=(

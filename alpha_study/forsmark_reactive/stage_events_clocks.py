@@ -3,7 +3,7 @@
 # pore volume), tau_F (Delta V / initial fracture volume = phi0 x tau_H).  Window t_cap <= 3.  python3 forsmark_reactive/stage_events_clocks.py
 import numpy as np, pandas as pd
 d = pd.read_csv("phase1/phase1_mechanism.csv")
-PHI0 = {"phase1": 0.1, "phase2_phi005": 0.05, "phase2_co3lo": 0.1}
+PHI0 = {"phase1": 0.1, "phase2_phi005": 0.05, "phase2_co3lo": 0.1, "phase3_phi0182": 0.182, "phase3_rate01": 0.1, "phase3_rate10": 0.1}
 d["phi0"] = d.tag.map(PHI0)
 d["tau_F"] = d.tau_H * d.phi0          # Delta V / initial FRACTURE (cell) volume
 rows = []

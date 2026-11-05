@@ -35,10 +35,10 @@ def channel_rows():
         tag = m[5]
         if float(m[1]) > 8:                       # P32 x16 is reported separately
             continue
-        if tag not in ("phase1", "phase2_phi005"):
+        if tag not in ("phase1", "phase2_phi005", "phase3_phi0182"):
             continue
         mode = "gypcal" if "calcite" in m[4] else "gyponly"
-        phi0 = 0.05 if tag == "phase2_phi005" else 0.1
+        phi0 = {"phase2_phi005": 0.05, "phase3_phi0182": 0.182}.get(tag, 0.1)
         d = pd.read_csv(f)
         rows.append(dict(p32=float(m[1]), sigma=float(m[2]), seed=int(m[3]), mode=mode, phi0=phi0, tag=tag,
                          contrast=ceiling(mode, phi0), depth=d.pr_fracture_vol.min() / d.pr_fracture_vol.iloc[0]))
@@ -48,7 +48,7 @@ def channel_rows():
 def depth_law(df):
     fig, ax = plt.subplots(figsize=(6.2, 4))
     for mode, lab in (("gyponly", "gypsum only"), ("gypcal", "gypsum → calcite")):
-        for phi0, mk in ((0.1, "o"), (0.05, "s")):
+        for phi0, mk in ((0.1, "o"), (0.05, "s"), (0.182, "D")):
             d = df[(df["mode"] == mode) & (df.phi0 == phi0)]
             c = ceiling(mode, phi0)
             if len(d):
@@ -59,8 +59,8 @@ def depth_law(df):
             else:
                 ax.scatter([c], [0.5], marker=mk, s=70, facecolors="none", edgecolors=COL[mode], lw=1.5, label=f"{lab}, porosity {phi0:g}: running")
                 ax.annotate("pending", (c, 0.5), xytext=(6, -12), textcoords="offset points", fontsize=8, color=INK2)
-    ax.set_xscale("log"); ax.set_xlim(4, 25); ax.set_ylim(0.3, 1.0)
-    ax.set_xticks([5, 10, 20]); ax.set_xticklabels(["×5", "×10", "×20"]); ax.minorticks_off()
+    ax.set_xscale("log"); ax.set_xlim(2.8, 25); ax.set_ylim(0.3, 1.0)
+    ax.set_xticks([3.3, 5.5, 10, 20]); ax.set_xticklabels(["×3.3", "×5.5", "×10", "×20"]); ax.minorticks_off()
     ax.grid(color=GRID, lw=0.8)
     ax.set_xlabel("permeability gain the reaction can reach (n = 1 ceiling)", fontsize=9, color=INK2)
     ax.set_ylabel("channel depth: participation ratio\nminimum ÷ start", fontsize=9, color=INK2)

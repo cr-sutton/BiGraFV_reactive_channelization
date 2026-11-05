@@ -88,7 +88,7 @@ def one(run):
 
 
 def main():
-    runs = sorted(r for t in ("phase1", "phase2_phi005", "phase2_co3lo") for r in glob.glob(str(P1 / f"L2_r15_p*_sg*_seed*/gyp*__{t}"))
+    runs = sorted(r for t in ("phase1", "phase2_phi005", "phase2_co3lo", "phase3_phi0182", "phase3_rate01", "phase3_rate10") for r in glob.glob(str(P1 / f"L2_r15_p*_sg*_seed*/gyp*__{t}"))
                   if (Path(r) / "patterns.csv").exists())   # x16 included since 4 Nov; figures and tables filter p32
     with Pool(4) as p:
         rows = [r for rs in p.map(one, runs) for r in rs]

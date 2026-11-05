@@ -37,3 +37,85 @@ Wed 18:19 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gy
 gypsum__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
 gypsum__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 1.379e+04 Pa
 L2_r15_p4.0_sg1.0_seed1 gypsum__uncorrected_graph__phase3_phi0182 seconds=570 rate=95.7803540153881 dt=0.57
+Wed 18:23 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells
+gypsum_calcite__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__phase3_phi0182 seconds=690 rate=89.2577661153662 dt=0.57
+gypsum_calcite__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 1.379e+04 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum__uncorrected_graph__phase3_phi0182 seconds=780 rate=91.87657518762167 dt=0.57
+Wed 18:25 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gyponly phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 16.5
+gypsum__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 4307 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__phase3_phi0182 seconds=180 rate=136.85015918380645 dt=0.57
+Wed 18:27 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gypcal phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells
+gypsum_calcite__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 4307 Pa
+Wed 18:29 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gyponly phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 16.5
+gypsum__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 3924 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__phase3_phi0182 seconds=241 rate=174.63866851086206 dt=0.57
+Wed 18:34 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gypcal phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells
+gypsum_calcite__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 3924 Pa
+L2_r15_p8.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__phase3_phi0182 seconds=150 rate=183.82856831660501 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__phase3_phi0182 seconds=1531 rate=151.23140223371837 dt=0.57
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__phase3_phi0182 seconds=1531 rate=143.69226153039048 dt=0.57
+Wed 18:40 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gyponly phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 16.5
+gypsum__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 8473 Pa
+Wed 18:41 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gypcal phase3_phi0182 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.818 --material-porosity 0.182 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells
+Wed 18:41 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 0.1
+gypsum__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_phi0182: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 194 Pa
+gypsum_calcite__uncorrected_graph__phase3_phi0182: steady start, dynamic pressure at manifold 8473 Pa
+L2_r15_p8.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__phase3_phi0182 seconds=210 rate=173.92986524454986 dt=0.57
+Wed 18:47 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gypcal phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 0.1
+gypsum_calcite__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 194 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__phase3_phi0182 seconds=1681 rate=136.85015918380645 dt=0.57
+Wed 18:50 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 0.1
+gypsum__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 326.7 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__phase3_rate01 seconds=150 rate=8.309417705149357 dt=5.699999999999999
+Wed 18:52 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gypcal phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 0.1
+gypsum_calcite__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 326.7 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__phase3_rate01 seconds=150 rate=7.895179204966507 dt=5.699999999999998
+Wed 18:56 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 0.1
+gypsum__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 757.5 Pa
+L2_r15_p8.0_sg1.0_seed2 gypsum__uncorrected_graph__phase3_phi0182 seconds=2162 rate=183.82856831660501 dt=0.57
+L2_r15_p8.0_sg1.0_seed1 gypsum__uncorrected_graph__phase3_phi0182 seconds=2401 rate=174.63866851086206 dt=0.57
+Wed 19:08 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal phase3_rate01 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 0.1
+Wed 19:08 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 10
+gypsum__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate01: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 1.94e+04 Pa
+gypsum_calcite__uncorrected_graph__phase3_rate01: steady start, dynamic pressure at manifold 757.5 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__phase3_rate01 seconds=120 rate=7.519239515593758 dt=5.699999999999999
+Wed 19:12 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gypcal phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 10
+gypsum_calcite__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 1.94e+04 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__phase3_rate10 seconds=120 rate=830.9417705149358 dt=0.05699999999999999
+Wed 19:15 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 10
+gypsum__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 3.267e+04 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__phase3_rate01 seconds=2191 rate=8.309417705149357 dt=5.699999999999999
+L2_r15_p8.0_sg1.0_seed3 gypsum__uncorrected_graph__phase3_phi0182 seconds=2251 rate=173.92986524454986 dt=0.57
+Wed 19:19 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gypcal phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 10
+gypsum_calcite__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 3.267e+04 Pa
+Wed 19:20 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5 --rate-mult 10
+gypsum__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 7.575e+04 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__phase3_rate10 seconds=120 rate=789.5179204966506 dt=0.05699999999999999
+Wed 19:22 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal phase3_rate10 0.57 - --k-gypsum-mult 21.95 --perm-power 1 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 516.5 --inj-co3 0.5 --inj-ph 11.39 --well-fill-injection --initial-dt 1e-11 --calcite-fixed-area --min-porosity 1e-3 --perm-min-scale 1e-6 --inert-helper-cells --rate-mult 10
+gypsum_calcite__uncorrected_graph__phase3_rate10: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__phase3_rate10: steady start, dynamic pressure at manifold 7.575e+04 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__phase3_rate10 seconds=150 rate=751.9239515593757 dt=0.056999999999999995
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__phase3_rate01 seconds=2191 rate=7.895179204966507 dt=5.699999999999998
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__phase3_rate01 seconds=2222 rate=7.519239515593758 dt=5.699999999999999
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__phase3_rate10 seconds=1771 rate=830.9417705149358 dt=0.05699999999999999
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__phase3_rate10 seconds=1591 rate=789.5179204966506 dt=0.05699999999999999
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__phase3_rate10 seconds=1681 rate=751.9239515593757 dt=0.056999999999999995
+Wed 19:49 queue done

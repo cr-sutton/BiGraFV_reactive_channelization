@@ -131,5 +131,17 @@ tc = pd.read_csv(P1 / "channel_turnover_counts.csv")
 out["turnover"] = dict(leaver_share=med(tc.leaver_share_of_start), joiner_share=med(tc.joiner_share_of_peak), n=int(len(tc)))
 dv = pd.read_csv(P1 / "depth_variability.csv"); pp = dv[dv.tag == "phase1"].pivot_table(index=["P32", "sigma", "seed"], columns="mode", values="depth").dropna()
 out["depth_rank_rho"] = float(spearmanr(pp.gypsum, pp.gypsum_calcite).correlation)
+
+# Phase 3 ceiling and rate tests
+c3 = pd.read_csv(P1 / "phase3_ceiling.csv")
+out["ceiling"] = dict(gyp55_minus_cal55=med(c3.d_gyp55_minus_cal55), max_abs=float(c3.d_gyp55_minus_cal55.abs().max()),
+                      gyp55_minus_gyp10=med(c3.d_gyp55_minus_gyp10), cal33_minus_cal55=med(c3.d_cal33_minus_cal55), n=int(len(c3)),
+                      depth_x33=med(c3.cal_x33_phi0182), depth_x55_gyp=med(c3.gyp_x55_phi0182))
+r3 = pd.read_csv(P1 / "phase3_rate.csv")
+pr3 = r3.pivot_table(index=["mode", "seed", "event"], columns="rate", values="d_rate")
+dd = (pr3.phase3_rate10 - pr3.phase3_rate01).abs().reset_index(name="d")
+ev = dd[dd.event.isin(["PRV_min", "outlet5", "breakthrough"])]
+out["rate"] = dict(gyp_max=float(dd[dd["mode"] == "gyponly"].d.max()), cal_events_max=float(ev[ev["mode"] == "gypcal"].d.max()),
+                   cal_depth_max=float(dd[(dd["mode"] == "gypcal") & (dd.event == "depth")].d.max()), n=3)
 (HERE / "numbers.json").write_text(json.dumps(out, indent=1))
 print(json.dumps(out, indent=1)[:4000])
