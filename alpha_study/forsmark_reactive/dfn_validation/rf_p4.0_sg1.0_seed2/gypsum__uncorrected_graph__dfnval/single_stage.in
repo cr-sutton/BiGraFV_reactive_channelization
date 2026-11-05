@@ -1,0 +1,366 @@
+# outflow: Dirichlet faces, gravity off (stabilize_graph_run.py --dirichlet-outflow)
+
+
+#
+#================================================
+
+SIMULATION
+  SIMULATION_TYPE SUBSURFACE
+  PROCESS_MODELS
+    SUBSURFACE_FLOW flow
+      MODE RICHARDS
+    /
+    SUBSURFACE_TRANSPORT transport
+      MODE GIRT 
+    /
+  /
+  CHECKPOINT
+    TIMES y 3.651456e+01 1.460583e+02 7.302913e+02 3.651456e+03 7.302913e+03 1.460583e+04 3.651456e+04
+    FORMAT HDF5
+  /
+END
+SUBSURFACE
+
+
+
+#=========================== chemistry ========================================
+CHEMISTRY
+  PRIMARY_SPECIES
+    H+
+    CO3--
+    Ca++
+    Na+ 
+    SO4--
+  /
+  SECONDARY_SPECIES
+    OH-
+    HCO3-
+    CO2(aq)
+    CaCO3(aq)
+    CaHCO3+
+    CaOH+
+    NaCO3-
+    CaSO4(aq)
+    HSO4-
+    NaSO4-
+    H2SO4(aq)
+    NaHCO3(aq)
+  /
+  PASSIVE_GAS_SPECIES
+    CO2(g)
+  /
+
+ MINERALS     # List all primary minerals first, before listing secondary minerals
+     Gypsum
+  /
+  MINERAL_KINETICS
+    Gypsum
+        SURFACE_AREA_FUNCTION VOLUME_FRACTION_RATIO
+        RATE_CONSTANT 1.620475399943e-03  mol/m^2-sec 
+        SURFACE_AREA_VOL_FRAC_POWER 0.6667 
+    /
+  /
+
+
+  DATABASE /Users/collin/src/pflotran/database/hanford.dat
+  # DATABASE /home/apachalieva/Projects/di_dfns/cal-gyp/hanford.dat
+  LOG_FORMULATION
+  ACTIVITY_COEFFICIENTS TIMESTEP
+  #UPDATE_MINERAL_SURFACE_AREA
+  UPDATE_POROSITY
+  UPDATE_PERMEABILITY
+  UPDATE_TORTUOSITY
+  MOLAL
+  OUTPUT
+    MINERALS
+    PH
+    TOTAL
+    ALL
+    MINERALS
+    MINERAL_VOLUME_FRACTION
+    MINERAL_SURFACE_AREA
+    MINERAL_SATURATION_INDEX
+  /
+/
+
+#=========================== discretization ===================================
+GRID
+  TYPE unstructured_explicit full_mesh_vol_area.uge 
+  GRAVITY 0.d0 0.d0 0.d0
+END
+
+#=========================== fluid properties =================================
+FLUID_PROPERTY
+    DIFFUSION_COEFFICIENT 1e-9 
+END
+
+DATASET Permeability
+  FILENAME dfn_properties.h5
+END
+
+#=========================== material properties ==============================
+MATERIAL_PROPERTY fractures
+  ID 1
+  POROSITY 0.1d0 
+  TORTUOSITY 1.0d0
+  CHARACTERISTIC_CURVES default
+  PERMEABILITY
+    DATASET Permeability
+  /
+END
+
+
+#=========================== characteristic curves ============================
+CHARACTERISTIC_CURVES default
+  SATURATION_FUNCTION VAN_GENUCHTEN
+    M 0.5d0
+    ALPHA  1.d-4
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+    MAX_CAPILLARY_PRESSURE 1.d8
+  /
+  PERMEABILITY_FUNCTION MUALEM_VG_LIQ
+    M 0.5d0
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+  /
+END
+
+#=========================== output options ===================================
+OUTPUT
+  TIMES y 3.651456e+00 4.257286e+00 4.963630e+00 5.787168e+00 6.747343e+00 7.866824e+00 9.172044e+00 1.069382e+01 \
+    1.246808e+01 1.453671e+01 1.694856e+01 1.976057e+01 2.303913e+01 2.686166e+01 3.131839e+01 3.651456e+01 \
+    4.257286e+01 4.963630e+01 5.787168e+01 6.747343e+01 7.866824e+01 9.172044e+01 1.069382e+02 1.246808e+02 \
+    1.453671e+02 1.460583e+02 1.694856e+02 1.976057e+02 2.303913e+02 2.686166e+02 3.131839e+02 3.651456e+02 \
+    4.257286e+02 4.963630e+02 5.787168e+02 6.747343e+02 7.302913e+02 7.866824e+02 9.172044e+02 1.069382e+03 \
+    1.246808e+03 1.453671e+03 1.694856e+03 1.976057e+03 2.303913e+03 2.686166e+03 3.131839e+03 3.651456e+03 \
+    4.257286e+03 4.963630e+03 5.787168e+03 6.747343e+03 7.302913e+03 7.866824e+03 9.172044e+03 1.069382e+04 \
+    1.246808e+04 1.453671e+04 1.460583e+04 1.694856e+04 1.976057e+04 2.303913e+04 2.686166e+04 3.131839e+04 \
+    3.651456e+04
+  # PERIODIC TIME 1.d-2 y
+#  FORMAT TECPLOT BLOCK
+  PRINT_PRIMAL_GRID
+  FORMAT VTK
+  ACKNOWLEDGE_VTK_FLAW
+  MASS_FLOWRATE
+  MASS_BALANCE
+  MASS_BALANCE_FILE
+    TOTAL_MASS_REGIONS
+      All
+      inflow
+      outflow
+    /
+    # PERIODIC TIME 1.0d0 y
+  /
+
+  VARIABLES
+    LIQUID_PRESSURE
+    LIQUID_SATURATION
+    PERMEABILITY
+    POROSITY
+  /
+END
+
+#=========================== times ============================================
+TIME
+    MAXIMUM_TIMESTEP_SIZE 5.7e-01 y
+    FINAL_TIME 3.651456e+04 y
+END
+
+
+#=========================== regions ==========================================
+REGION All
+  COORDINATES
+    -5.d20 -5.d20 -5.d20
+    5.d20 5.d20 5.d20
+  /
+END 
+
+
+REGION inflow
+  FILE boundary_left_w.ex
+END
+
+REGION outflow
+  FILE boundary_right_e.ex
+END
+
+REGION graph_inlet_cells
+  COORDINATES
+    -5.000010e+02 -1.d3 -1.d3
+    -4.999990e+02 1.d3 1.d3
+  /
+END
+
+REGION graph_outlet_cells
+  COORDINATES
+    4.999990e+02 -1.d3 -1.d3
+    5.000010e+02 1.d3 1.d3
+  /
+END
+
+REGION well
+  COORDINATES
+    -5.001779e+02 -1.350998e+01 -9.557243e+00
+    -5.001579e+02 -1.348998e+01 -9.537243e+00
+  /
+END
+
+#=========================== constraints ======================================
+CONSTRAINT initial
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+  MINERALS
+    Gypsum  0.9d0  750   m^2/kg     # Natural gypsum; SSA = 0.75 m2/g 
+  /
+ EQUILIBRATE_AT_EACH_CELL
+END
+
+
+CONSTRAINT well_initial
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+  MINERALS
+    Gypsum  0.d0  750  m^2/kg
+  /
+  ACKNOWLEDGE_ZERO_SURFACE_AREA
+END
+CONSTRAINT w0
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+END
+
+CONSTRAINT injection
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-10  T
+    SO4--  1.d-10  T
+  /
+END
+
+#=========================== flow conditions ==================================
+FLOW_CONDITION initial
+  TYPE
+    LIQUID_PRESSURE DIRICHLET
+  /
+  LIQUID_PRESSURE DATASET initial_pressure
+END
+
+DATASET initial_pressure
+  FILENAME initial_pressure.h5
+END
+
+FLOW_CONDITION injection
+  TYPE
+    RATE VOLUMETRIC_RATE
+  /
+  RATE 5.110437e+01 m^3/y
+END
+
+FLOW_CONDITION boundaries
+  TYPE
+    LIQUID_PRESSURE DIRICHLET
+  /
+  LIQUID_PRESSURE 2.000000e+05
+END
+
+
+TRANSPORT_CONDITION well_initial
+  TYPE dirichlet
+  CONSTRAINT_LIST
+    0.d0 well_initial
+  /
+END
+
+TRANSPORT_CONDITION initial
+  TYPE dirichlet 
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+
+TRANSPORT_CONDITION seepage_face
+  TYPE ZERO_GRADIENT
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+TRANSPORT_CONDITION inflow_conc
+  TYPE ZERO_GRADIENT
+  CONSTRAINT_LIST
+    0.d0 injection
+  /
+END
+
+
+# initial condition
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION initial
+  REGION All
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION well
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION graph_inlet_cells
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION graph_outlet_cells
+/
+
+SOURCE_SINK inflow
+    FLOW_CONDITION injection
+    TRANSPORT_CONDITION inflow_conc
+    REGION well
+END
+
+## east boundary condition
+BOUNDARY_CONDITION outflow
+  FLOW_CONDITION boundaries
+  TRANSPORT_CONDITION seepage_face
+  REGION outflow
+/
+
+
+#=========================== stratigraphy couplers ============================
+STRATA
+  REGION All 
+  MATERIAL fractures
+END
+
+NUMERICAL_METHODS TRANSPORT
+  TIMESTEPPER
+    TS_ACCELERATION 10
+  /
+END
+
+END_SUBSURFACE
+
+

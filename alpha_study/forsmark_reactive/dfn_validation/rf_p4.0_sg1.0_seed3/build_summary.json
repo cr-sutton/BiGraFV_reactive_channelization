@@ -1,0 +1,30 @@
+{
+  "domain": [
+    1000.0,
+    250.0,
+    250.0
+  ],
+  "seed": 3,
+  "network": "forsmark_ffm01_rfram",
+  "layer": 2,
+  "rmin": 15.0,
+  "rmax": 564.0,
+  "p32_scale": 4.0,
+  "transmissivity_sigma": 1.0,
+  "h": 1.0,
+  "framOn": true,
+  "rFram": true,
+  "Q_graph_raw": 1.6337846587044265e-05,
+  "n_fractures": 1523,
+  "graph_nodes": 5966,
+  "graph_edges": 8329,
+  "graph_seconds": 7.475040749995969,
+  "same_dfnGen_as_graph": true,
+  "mesh_min_dist": 0.5,
+  "mesh_max_dist": 10.0,
+  "mesh_seconds": 313.7311836660083,
+  "dfn_flow_seconds": 417.1731538750173,
+  "Q_dfn": 1.9104927863384272e-05,
+  "dfn_cells": 766560,
+  "dfn_seconds": 743.5728969170013
+}

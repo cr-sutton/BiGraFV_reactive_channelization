@@ -4,7 +4,7 @@ DFN-validation stage 0 gate (5 Nov 2026): does the rFram network's one-cell run 
 seeds 1-5, same chemistry and deck)?  Same measures as the report: stage events on the dissolved fraction (PR_pore minimum,
 outlet 5 %, PR_V minimum, breakthrough; analyze_phase1_mechanism.one, events within t_cap <= 3 as stage_events_clocks.py),
 depth = PR_V min / start and inheritance = overlap0 at the n90 minimum (channelization.csv).
-  python3 forsmark_reactive/dfn_validation/gate_check.py  -> dfn_validation/rf_p4.0_sg1.0_seed1/gate_check.csv
+  python3 forsmark_reactive/dfn_validation/gate_check.py [rf_p4.0_sg1.0_seedN]  -> dfn_validation/<net>/gate_check.csv
 """
 import sys
 from pathlib import Path
@@ -17,7 +17,7 @@ FR = HERE.parent
 sys.path[:0] = [str(FR), str(FR.parent), str(FR.parent / "physics_upscaling")]
 from analyze_phase1_mechanism import one  # noqa: E402
 
-NET = HERE / "rf_p4.0_sg1.0_seed1"
+NET = HERE / (sys.argv[1] if len(sys.argv) > 1 else "rf_p4.0_sg1.0_seed1")
 P1 = FR / "phase1"
 
 

@@ -145,7 +145,7 @@ out["predictor"] = dict(r2_gyp=float(g("gyponly", "overall").R2), r2_cal=float(g
                         oos_r2=float(g("all", "oos_phase2_all").R2), oos_rho=float(g("all", "oos_phase2_all").spearman))
 tl = pd.read_csv(P1 / "transport_channel_link.csv")
 from scipy.stats import spearmanr
-out["transport_link"] = dict(rho_gamma_prv=float(spearmanr(tl.rgamma, tl.PRV_rel).correlation))
+out["transport_link"] = dict(rho_gamma_prv=float(spearmanr(tl.dgamma, tl.PRV_rel).correlation), n=int(len(tl)))
 tc = pd.read_csv(P1 / "channel_turnover_counts.csv")
 out["turnover"] = dict(leaver_share=med(tc.leaver_share_of_start), joiner_share=med(tc.joiner_share_of_peak), n=int(len(tc)))
 dv = pd.read_csv(P1 / "depth_variability.csv"); pp = dv[dv.tag == "phase1"].pivot_table(index=["P32", "sigma", "seed"], columns="mode", values="depth").dropna()

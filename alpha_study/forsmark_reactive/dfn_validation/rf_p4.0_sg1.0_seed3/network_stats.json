@@ -1,0 +1,11 @@
+{
+  "n_fractures": 1523,
+  "n_intersections": 3810,
+  "mean_degree": 5.00328299409061,
+  "n_inlet_fractures": 35,
+  "n_outlet_fractures": 44,
+  "node_disjoint_paths": 9,
+  "edge_disjoint_paths": 24,
+  "backbone_fraction": 0.8535784635587655,
+  "n_dead_end_fractures": 223
+}

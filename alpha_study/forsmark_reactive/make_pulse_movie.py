@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
 """
-Paused-pulse stage movie (network P32 x6, sigma 1, seed 1; both chemistries).  A NEW movie beside the decoupling movie
-(make_decoupling_movie.py, whose frames it reuses unchanged): the reaction plays; at each of the four stage stills the
-reaction clock is frozen, a conservative tracer pulse is sent through the frozen state, and its plume and breakthrough
-curve are shown; then the reaction resumes.  Earlier stages' curves stay on as faded lines.
+Paused-pulse stage movie (network P32 x6, sigma 1, seed 1; both chemistries), redone 5 Nov 2026 at the user's request.  The
+reaction frames of the decoupling movie (make_decoupling_movie.py, reused unchanged) play; the movie opens with a pulse through
+the unreacted network, and at each of the four stage stills the reaction is paused and the breakthrough curve of a conservative
+tracer pulse through that frozen state is drawn in; then the reaction resumes.  No plume maps.  Earlier curves stay on, faded.
 
 Inputs : phase1/figures/anim2/<mode>/frame_*.png      reaction frames (run make_decoupling_movie.py first)
-         <run>/snapanim_k/   plume probes at k = 0 and the stage stills (run_anim_probes.sh; extra VTK every 0.05 tau_res)
-         <run>/snapseq_k/    breakthrough-only probes at every movie frame (run_anim_probes.sh)
-         paraview/<net>__<run>__mech/fractures_000.vtu   fracture polygons for the slices
-Outputs: phase1/figures/anim3/pulse_<mode>.mp4, pulse_stages_<mode>.png (contact sheet of the four plume peaks),
-         phase1/figures/anim3/transport_trace_<mode>.csv (t50/tau_res, gamma, tau_res per frame state)
+         <run>/snapanim_k/   probes at k = 0 and the stage stills; <run>/snapseq_k/  probes at every movie frame (run_anim_probes.sh)
+Outputs: phase1/figures/anim3/pulse_<mode>.mp4, pulse_btc_<mode>.png (last frame), transport_trace_<mode>.csv
 
-Right-hand panels: (1) breakthrough curve against t / tau_res (shape: flow focusing), (2) the same against years (shift:
-pore volume added at the same flow), (3) t50/tau_res against the fraction of the gypsum dissolved (the report's main clock)
-for every frame state, current state marked.
-Plume maps: Total_Tracer / pulse concentration (1e-3 M) on the fracture traces of the slices z = 0 and z = +60 m, log colour.
+Right-hand panels: (1) normalised breakthrough curve E = outlet flux x tau_res = C / (M / V_pore) against theta = t / tau_res,
+the pore volumes injected since the pulse counted in the frozen network's pore volume (the same scale for every stage; in years
+the curves stretch with the added pore volume, which is not dispersion); (2) median arrival t50 / tau_res against the fraction of
+the gypsum dissolved for every frame state, current state marked.
 
   python3 forsmark_reactive/make_pulse_movie.py
 """
@@ -46,7 +43,9 @@ OUT = P1 / "figures" / "anim3"
 C_PULSE = 1e-3
 STAGE_COL = ["#86b6ef", "#2a78d6", "#d9822b", "#7a3d9a"]          # stage 1..4 curves; k = 0 in grey
 INK, INK2, GRID = "#2b2b29", "#52514e", "#d9d8d3"
-T_REACT, T_PULSE, T_HOLD = 1 / 3, 0.1, 1.2                       # seconds per reaction frame / plume frame / hold
+T_REACT, T_PULSE, T_HOLD, N_SUB = 1 / 3, 0.1, 1.5, 24              # s per reaction frame / BTC draw frame / hold; BTC draw frames
+PAUSE_COL = "#c0392b"
+YMAX = {"gyponly": 1.5, "gypcal": 1.5}
 
 
 def stills(mode):
@@ -105,121 +104,96 @@ def run_mode(mode, label):
     trace = pd.DataFrame(trace)
     OUT.mkdir(parents=True, exist_ok=True)
     trace.to_csv(OUT / f"transport_trace_{mode}.csv", index=False)
-    # pulses: k = 0 reference plus the four stills
+    # pulses: k = 0 reference plus the four stills (breakthrough curves only; no plume maps since 5 Nov)
     pulses = {}
     for name, k in [("start", 0)] + [(f"stage {i + 1}", int(fr.k[j])) for i, j in enumerate(ks)]:
-        s = rd / f"snapanim_{k}"
-        meta, t, f, mt = btc(s)
-        pulses[name] = dict(k=k, tau=meta["tau_res_y"], t=t, f=f, m=mt, plume=plume_frames(s))
+        meta, t, f, mt = btc(rd / f"snapanim_{k}")
+        pulses[name] = dict(k=k, tau=meta["tau_res_y"], th=t / meta["tau_res_y"], E=f * meta["tau_res_y"], m=mt,
+                            diss=0.0 if k == 0 else float(fr.dissolved[fr.k == k].iloc[0]))
     work = OUT / mode
     work.mkdir(exist_ok=True)
     for p in work.glob("*.png"):
         p.unlink()
-    seq, sheet = [], []                                                # (png, seconds)
-    cmap, norm = cm.get_cmap("magma_r"), colors.LogNorm(1e-3, 1)
+    seq = []                                                           # (png, seconds)
 
     def panels(fig, gs, done, cur=None, upto=None, k_now=None):
-        """Right-hand column: BTC (t/tau_res), BTC (years), t50/tau_res trace.  done = pulse names already shown."""
-        a1, a2, a3 = (fig.add_subplot(gs[i]) for i in range(3))
+        """Right-hand column: normalised breakthrough curve E(theta) against pore volumes since the pulse (current pore volume),
+        and t50/tau_res against the fraction of the gypsum dissolved.  done = pulse names already drawn in full."""
+        a1, a2 = fig.add_subplot(gs[0]), fig.add_subplot(gs[1])
         for name in done + ([cur] if cur else []):
             p = pulses[name]
             col = "#9a9a94" if name == "start" else STAGE_COL[int(name[-1]) - 1]
-            sel = slice(None) if name != cur else p["t"] / p["tau"] <= upto
-            alpha, lw = (1.0, 3) if name == cur else (0.55, 2)
-            tn, fn = p["t"][sel] / p["tau"], p["f"][sel] * p["tau"]
-            a1.plot(tn, fn, color=col, lw=lw, alpha=alpha, label=f"{name}: t50/τ_res {p['m']['t50'] / p['tau']:.2f}")
-            a2.plot(p["t"][sel], p["f"][sel], color=col, lw=lw, alpha=alpha, label=f"{name}: τ_res {p['tau']:.2f} y")
-        a1.set_xlim(0, 3); a1.set_ylim(0, None); a1.set_xlabel("time since pulse / residence time", fontsize=11)
-        a1.set_ylabel("outlet flux × τ_res\n(shape)", fontsize=11)
-        a2.set_xlim(0, 3 * max(p["tau"] for p in pulses.values())); a2.set_ylim(0, None)
-        a2.set_xlabel("time since pulse (years)", fontsize=11); a2.set_ylabel("outlet flux (1/y)\n(timing)", fontsize=11)
-        for a in (a1, a2):
-            a.legend(frameon=False, fontsize=9, loc="upper right")
+            sel = p["th"] <= (upto if name == cur else np.inf)
+            lab = "before reaction" if name == "start" else f"{name}: {100 * p['diss']:.0f} % dissolved"
+            a1.plot(p["th"][sel], p["E"][sel], color=col, lw=3.2 if name == cur else 2.2, alpha=1.0 if name == cur else 0.75,
+                    label=f"{lab}  (t50 {p['m']['t50'] / p['tau']:.2f})")
+        a1.set_xlim(0, 3); a1.set_ylim(0, YMAX[mode])
+        a1.set_xlabel("pore volumes injected since the pulse  (current pore volume of the frozen network)", fontsize=12)
+        a1.set_ylabel("normalised concentration  C / (M / V_pore)", fontsize=12)
+        a1.set_title("tracer breakthrough at the outlet", fontsize=13, color=INK, loc="left")
+        a1.legend(frameon=False, fontsize=11, loc="upper right")
         if len(trace):
             w = trace[(trace.diss > 0) & (trace.diss < 1)]
-            a3.plot(w.diss, w.t50_res, color=INK2, lw=2)
+            a2.plot(w.diss, w.t50_res, color=INK2, lw=2)
             for i, j in enumerate(ks):
-                a3.axvline(float(fr.dissolved[j]), color=STAGE_COL[i], lw=1.2, ls=":")
+                a2.axvline(float(fr.dissolved[j]), color=STAGE_COL[i], lw=1.4, ls=":")
             if k_now is not None and (trace.k == k_now).any():
                 r = trace[trace.k == k_now].iloc[0]
-                a3.plot(min(max(r.diss, 1e-3), 0.99), r.t50_res, "o", ms=10, color=INK)
-        a3.axhline(float(trace.t50_res.iloc[0]) if len(trace) else np.nan, color="#9a9a94", lw=1, ls="--")
-        a3.set_xscale("logit"); a3.set_xlim(1e-3, 0.99); a3.minorticks_off()
-        a3.set_xticks([1e-3, 0.01, 0.1, 0.5, 0.9, 0.99]); a3.set_xticklabels(["0.001", "0.01", "0.1", "0.5", "0.9", "0.99"])
-        a3.set_xlabel("fraction of the gypsum dissolved (main clock)", fontsize=11); a3.set_ylabel("t50 / τ_res", fontsize=11)
-        for a in (a1, a2, a3):
-            a.grid(color=GRID, lw=0.8); a.tick_params(labelsize=10)
+                a2.plot(min(max(r.diss, 1e-3), 0.99), r.t50_res, "o", ms=11, color=INK)
+            a2.axhline(float(trace.t50_res.iloc[0]), color="#9a9a94", lw=1, ls="--")
+        a2.set_xscale("logit"); a2.set_xlim(1e-3, 0.99); a2.minorticks_off()
+        a2.set_xticks([1e-3, 0.01, 0.1, 0.5, 0.9, 0.99]); a2.set_xticklabels(["0.001", "0.01", "0.1", "0.5", "0.9", "0.99"])
+        a2.set_xlabel("fraction of the gypsum dissolved", fontsize=12)
+        a2.set_ylabel("median arrival t50\n(pore volumes)", fontsize=12)
+        a2.set_title(f"median arrival (movie ends at {100 * trace.diss.max():.0f} % dissolved)", fontsize=12, color=INK, loc="left")
+        for a in (a1, a2):
+            a.grid(color=GRID, lw=0.8); a.tick_params(labelsize=11)
             for s_ in ("top", "right"):
                 a.spines[s_].set_visible(False)
 
-    def save(fig, n, dur):
-        p = work / f"f{n:04d}.png"
-        fig.savefig(p, dpi=90); plt.close(fig)
+    def frame(i, done, head, sub, cur=None, upto=None, dur=T_REACT, col=INK):
+        fig = plt.figure(figsize=(24, 13.5), facecolor="white")
+        gs = fig.add_gridspec(2, 2, width_ratios=[1.55, 1], height_ratios=[1.35, 1], hspace=0.32, wspace=0.1, left=0.01, right=0.985, top=0.86, bottom=0.07)
+        ax = fig.add_subplot(gs[:, 0]); ax.imshow(plt.imread(frames[i])); ax.axis("off")
+        panels(fig, [gs[0, 1], gs[1, 1]], done, cur=cur, upto=upto, k_now=int(fr.k[i]))
+        fig.text(0.62, 0.975, head, fontsize=19, weight="bold", color=col, va="top")
+        fig.text(0.62, 0.94, sub, fontsize=13, color=INK2, va="top")
+        p = work / f"f{len(seq):04d}.png"
+        fig.savefig(p, dpi=80); plt.close(fig)
         seq.append((p, dur))
 
-    n, done = 0, []
+    def pause(i, name, done):
+        p = pulses[name]
+        what = "before any reaction" if name == "start" else f"{name}, {100 * p['diss']:.0f} % of the gypsum dissolved"
+        for u in np.linspace(0.05, 3.0, N_SUB):
+            frame(i, done, "REACTION PAUSED - tracer pulse", f"{what}; flow frozen, tracer does not react; residence time {p['tau']:.2f} y",
+                  cur=name, upto=u, dur=T_PULSE, col=PAUSE_COL)
+        frame(i, done, "REACTION PAUSED - tracer pulse", f"{what}; median arrival {p['m']['t50'] / p['tau']:.2f} pore volumes",
+              cur=name, upto=9.9, dur=T_HOLD, col=PAUSE_COL)
+        done.append(name)
+
+    done = []
+    pause(0, "start", done)
     for i in range(len(fr)):
-        k = int(fr.k[i])
-        fig = plt.figure(figsize=(24, 14), facecolor="white")
-        gs = fig.add_gridspec(3, 2, width_ratios=[1.6, 1], hspace=0.38, wspace=0.12, left=0.01, right=0.98, top=0.95, bottom=0.06)
-        ax = fig.add_subplot(gs[:, 0]); ax.imshow(plt.imread(frames[i])); ax.axis("off")
-        panels(fig, [gs[r, 1] for r in range(3)], done, k_now=k)
-        fig.text(0.63, 0.975, "reaction running", fontsize=16, weight="bold", color=INK, va="top")
-        save(fig, n, T_REACT); n += 1
-        if i not in ks:
-            continue
-        s = ks.index(i)
-        name = f"stage {s + 1}"
         r = fr.iloc[i]
-        for pname in (["start"] if s == 0 else []) + [name]:
-            p = pulses[pname]
-            peak = max(range(len(p["plume"])), key=lambda j: np.nanmedian(p["plume"][j][1][p["plume"][j][1] > 1e-6]) if (p["plume"][j][1] > 1e-6).any() else 0)
-            for j, (tn, c) in enumerate(p["plume"]):
-                fig = plt.figure(figsize=(24, 14), facecolor="white")
-                gs = fig.add_gridspec(3, 2, width_ratios=[1.6, 1], hspace=0.38, wspace=0.12, left=0.04, right=0.98, top=0.86, bottom=0.14)
-                sub = gs[:, 0].subgridspec(2, 1, hspace=0.18)
-                for row, (z, (sg, ids)) in enumerate(zip(M.ZS, segs)):
-                    ax = fig.add_subplot(sub[row]); ax.set_facecolor(M.BG)
-                    ax.add_collection(LineCollection(sg, colors="#cfcfca", linewidths=1.5))
-                    cc = c[ids]; on = cc > 1e-3
-                    ax.add_collection(LineCollection(sg[on], colors=cmap(norm(np.clip(cc[on], 1e-3, 1))), linewidths=5, capstyle="round"))
-                    ax.set_xlim(-500, 500); ax.set_ylim(-125, 125); ax.set_yticks([])
-                    ax.set_xticks([-500, -250, 0, 250, 500] if row == 1 else [])
-                    ax.text(0.005, 0.96, f"slice z = {z:+.0f} m", transform=ax.transAxes, va="top", fontsize=12, color=INK)
-                    if row == 0:
-                        ax.text(0.0, 1.03, "INLET  x = -500 m", transform=ax.transAxes, fontsize=12, weight="bold", color=INK)
-                        ax.text(1.0, 1.03, "OUTLET  x = +500 m", transform=ax.transAxes, ha="right", fontsize=12, weight="bold", color=INK)
-                    for s_ in ax.spines.values():
-                        s_.set_color(GRID)
-                cax = fig.add_axes([0.06, 0.055, 0.3, 0.015])
-                cb = fig.colorbar(cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax, orientation="horizontal")
-                cb.set_label("tracer concentration / pulse concentration", fontsize=11)
-                panels(fig, [gs[r_, 1] for r_ in range(3)], done, cur=pname, upto=tn, k_now=k)
-                head = "before any reaction (reference)" if pname == "start" else f"stage {M.STAGE[s]}"
-                fig.text(0.04, 0.975, f"{label}  -  REACTION PAUSED  -  tracer pulse, {head}", fontsize=19, weight="bold", va="top", color=INK)
-                fig.text(0.04, 0.935, f"frozen state: {0 if pname == 'start' else 100 * r.dissolved:.0f} % of the gypsum dissolved  |  "
-                         f"{0 if pname == 'start' else r.pv:,.0f} pore volumes  |  τ_res {p['tau']:.2f} y  |  "
-                         f"time since pulse {tn:.2f} τ_res", fontsize=14, va="top", color=INK)
-                fig.text(0.04, 0.9, "flow and pore space are frozen; the tracer does not react.  Grey traces: no tracer (< 0.1 % of the pulse).",
-                         fontsize=12, va="top", color=INK2)
-                hold = T_HOLD if j in (0, len(p["plume"]) - 1) else T_PULSE
-                save(fig, n, hold); n += 1
-                if j == peak and pname != "start":
-                    sheet.append(seq[-1][0])
-            done.append(pname)
+        frame(i, done, "reaction running", f"{100 * r.dissolved:.0f} % of the gypsum dissolved   |   {r.pv:,.0f} pore volumes injected")
+        if i in ks:
+            pause(i, f"stage {ks.index(i) + 1}", done)
+    frame(len(fr) - 1, done, "end of the movie", "all pulses: before reaction and the four stages", dur=2.5)
+    import shutil
+    shutil.copy(seq[-1][0], OUT / f"pulse_btc_{mode}.png")
+    fig = plt.figure(figsize=(13, 5.2), facecolor="white")          # standalone curves (deck, manuscript)
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.25, 1], wspace=0.28, left=0.07, right=0.98, top=0.9, bottom=0.14)
+    panels(fig, [gs[0, 0], gs[0, 1]], list(pulses))
+    fig.savefig(OUT / f"pulse_btc_only_{mode}.png", dpi=150); plt.close(fig)
     lst = work / "concat.txt"
     lst.write_text("".join(f"file '{p.name}'\nduration {d:.3f}\n" for p, d in seq) + f"file '{seq[-1][0].name}'\n")
     mp4 = OUT / f"pulse_{mode}.mp4"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-vf",
-                    "scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=12", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "20", str(mp4)], check=True)
-    fig, axs = plt.subplots(2, 2, figsize=(24, 14))
-    for a, p in zip(axs.ravel(), sheet):
-        a.imshow(plt.imread(p)); a.axis("off")
-    fig.subplots_adjust(0, 0, 1, 1, 0.01, 0.01)
-    fig.savefig(OUT / f"pulse_stages_{mode}.png", dpi=70); plt.close(fig)
+                    "scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=12", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "24", str(mp4)], check=True)
     print(mode, len(seq), "frames", f"{sum(d for _, d in seq):.0f} s", mp4)
-    print(pd.DataFrame([dict(pulse=k_, k=v["k"], tau_res_y=round(v["tau"], 3), t50_res=round(v["m"]["t50"] / v["tau"], 3),
-                             gamma=round(v["m"]["gamma"], 2)) for k_, v in pulses.items()]).to_string(index=False))
+    print(pd.DataFrame([dict(pulse=k_, k=v["k"], diss=round(v["diss"], 3), tau_res_y=round(v["tau"], 3), t50_PV=round(v["m"]["t50"] / v["tau"], 3),
+                             gamma=round(v["m"]["gamma"], 2), E_peak=round(float(v["E"].max()), 2)) for k_, v in pulses.items()]).to_string(index=False))
 
 
 if __name__ == "__main__":

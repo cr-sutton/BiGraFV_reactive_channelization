@@ -2,7 +2,7 @@
 """Compact report figures for section 8 from the manuscript-analysis CSVs:
   breakthrough_top1.png   gypsum dissolved at breakthrough against the initial flow share of the single largest-flow
                           fracture (Phase 1 x4-x16 filled, Phase 2 open), with the leave-one-P32-out CV fit per chemistry
-  transport_binned.png    gamma/gamma0 and t50_res/t50_res0 against PR_V/PR_V0: medians and IQR in bins (720 probed states)
+  transport_binned.png    gamma/gamma0 and t50_res/t50_res0 against PR_V/PR_V0: medians and IQR in bins (1,020 probed states, P32 x4-x16)
   python3 forsmark_reactive/make_manuscript_report_figures.py -> phase1/figures/manuscript/"""
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
@@ -47,6 +47,6 @@ for ax, (y, lab) in zip(axs, (("rgamma", "tail exponent γ / start"), ("rt50_res
     ax.axhline(1, color="#4c5157", lw=0.8); ax.invert_xaxis(); style(ax)
     ax.set_xlabel("PR_V / start  (← more focused)", fontsize=9, color="#4c5157"); ax.set_ylabel(lab, fontsize=9, color="#4c5157")
 axs[0].legend(frameon=False, fontsize=8)
-fig.suptitle("Transport against channel focusing: medians and IQR over probed states (P32 ×4–×8, 45 runs per chemistry)", fontsize=10)
+fig.suptitle("Transport against channel focusing: medians and IQR over probed states (P32 ×4–×16, 60 runs per chemistry)", fontsize=10)
 fig.tight_layout(); fig.savefig(OUT / "transport_binned.png", dpi=160); plt.close(fig)
 print("ok")

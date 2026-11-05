@@ -92,7 +92,7 @@ Everything else can come from the data we already have. The olivine result is a 
 
   The channel-volume-share mass balance does poorly (R² 0.12). The timing of the PR_V minimum is not predictable from the initial state.
 - **B. Master curves.** Rescaling by d_bt does not improve the collapse (PR_V IQR 0.096 on d against 0.104 on d/d_bt). It does put the PR_V minimum at breakthrough. Not a headline figure.
-- **D. Transport link.** The tail exponent tracks PR_V: Spearman −0.80 pooled; within-run −0.88 (gypsum-only) and −0.76 (coupled). PR_pore adds little. Linear models explain 23–43 % of the variance out of sample.
+- **D. Transport link.** The tail exponent tracks PR_V: Spearman −0.75 pooled; within-run −0.79 (gypsum-only) and −0.74 (coupled) (P32 ×4–×16, 1,020 states; ×4–×8 alone −0.80, −0.88, −0.76). The tail-exponent models transfer to held-out P32 (21–36 %); the arrival-time models do not transfer to ×16. PR_pore adds little.
 - **E. Turnover.**
   - A third of the initial 90 %-flow set drops out (23–44 %), and only 1.4–3.4 % of the peak set is new.
   - Leavers are the small, narrow, downstream tail of the initial set.

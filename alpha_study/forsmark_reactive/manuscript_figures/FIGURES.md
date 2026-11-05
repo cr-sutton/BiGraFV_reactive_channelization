@@ -54,9 +54,9 @@ Built by `forsmark_reactive/make_manuscript_figures.py`. Drafts: panels are the 
 
 ![Figure 7](Figure_7.png)
 
-(a) Paused-pulse tracer snapshots at the four stages (gypsum-only, P32 ×6, σ 1, seed 1). (b) Tail exponent and t50/τ_res against PR_V across all probed states.
+(a) Paused-pulse breakthrough curves before reaction and at the four stages, normalised concentration against pore volumes since the pulse (gypsum-only, P32 ×6, σ 1, seed 1). (b) Tail exponent and t50/τ_res against PR_V across all probed states.
 
-*Sources:* anim3/pulse_stages_gyponly.png (make_pulse_movie.py); manuscript/transport_binned.png (transport_channel_link.py)
+*Sources:* anim3/pulse_btc_only_gyponly.png (make_pulse_movie.py); manuscript/transport_binned.png (transport_channel_link.py)
 
 ## Figure 8. Robustness.
 

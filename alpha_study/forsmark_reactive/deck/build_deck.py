@@ -393,16 +393,18 @@ s = new_slide(notes=(
     "The paused-pulse movie: the reaction freezes at each stage and a conservative tracer pulse runs through the frozen network. "
     f"In stage 1 the residence time grows from {pg[0]['tau']:.2f} to {pg[1]['tau']:.2f} years while t50/tau_res moves only from "
     f"{pg[0]['t50']:.2f} to {pg[1]['t50']:.2f}: pore volume is added before the flow paths change. By stage 3 the shape changes: "
-    f"t50/tau_res {pg[3]['t50']:.2f}. One network only (P32 x6, sigma 1, seed 1). The movies are in the report."))
+    f"t50/tau_res {pg[3]['t50']:.2f}. Curves are normalised concentration against pore volumes since the pulse, in the frozen network's pore "
+    "volume: in years they stretch much more, but that is the added pore volume at the same flow, not dispersion. One network only "
+    "(P32 x6, sigma 1, seed 1). The movies are in the report."))
 title(s, "Pause the reaction, pulse a tracer")
-picture(s, IMG / "anim3" / "pulse_stages_gyponly.png", M, 1.45, 7.6, 5.2, alt="Paused-pulse frames at the four stages, gypsum-only")
+picture(s, IMG / "anim3" / "pulse_btc_only_gyponly.png", M, 1.6, 7.8, 3.1, alt="Normalised breakthrough curves before reaction and at the four stages, gypsum-only")
 text(s, [[("gypsum-only, example network", {"bold": True})]], 8.6, 1.6, 4.1, 0.4, size=15, color=INK2)
-for i, (lab, key, fmt) in enumerate([("residence time τ_res (yr)", "tau", "{:.1f}"), ("t50 / τ_res", "t50", "{:.2f}")]):
+for i, (lab, key, fmt) in enumerate([("residence time τ_res (yr)", "tau", "{:.1f}"), ("median arrival (pore volumes)", "t50", "{:.2f}")]):
     y = 2.15 + i * 1.45
     text(s, lab, 8.6, y, 4.1, 0.4, size=15, color=INK2)
     text(s, "  ".join(fmt.format(r[key]) for r in pg), 8.6, y + 0.4, 4.2, 0.7, size=22, font=HEAD, color=FLOW if key == "t50" else ACCENT)
 text(s, "start · pause 1 · 2 · 3 · 4", 8.6, 5.0, 4.1, 0.4, size=13, color=INK2)
-text(s, f"Across 720 probed states the change in tail exponent tracks PR_V: ρ {N['transport_link']['rho_gamma_prv']:.2f}.", 8.6, 5.5, 4.1, 0.9, size=15)
+text(s, f"Across {N['transport_link']['n']:,} probed states the change in tail exponent tracks PR_V: ρ {N['transport_link']['rho_gamma_prv']:.2f}.", 8.6, 5.5, 4.1, 0.9, size=15)
 
 # Candidates -------------------------------------------------------------------------------------------------------
 section("Candidate findings", "What might be new, and what could make it wrong", notes="Section divider: candidate findings.")
@@ -505,7 +507,10 @@ s = new_slide(notes=(
     f"{N['dfn']['rss']['gyponly']:.1f} GB: coupled to capacity time 2 about {N['dfn']['wall_h']['gypcal_tcap2']:.0f} h, gypsum-only to "
     f"capacity time 1 about {N['dfn']['wall_h']['gyponly_tcap1'] / 24:.1f} days. Gate: on this network the one-cell runs fall inside the "
     "Phase 1 x4 envelope for depth, inheritance and breakthrough, but the PR_V minimum comes very early (8-11 % dissolved) and the coupled "
-    "run shows no PR_pore dip, so it is atypical in stage timing; rFram seeds 2-3 should be gated before choosing the DFN network."))
+    "run shows no PR_pore dip, so it is atypical in stage timing. Seeds 2 and 3 were gated too. Scored the same way, Phase 1 networks fall inside "
+    "the range of the other four on 7-14 of 16 measures; the rFram seeds score 12, 11 and 10, so all are typical. Seed 2 is the only one with "
+    "typical stage timing in both chemistries, but LaGriT crashes meshing one of its fractures at h = 1 m. Seed 3 meshes cleanly (766,560 cells). "
+    "Proposal: coupled DFN on seeds 1 and 3 (about 4 h each), gypsum-only on seed 1 (about 2.5 days)."))
 title(s, "DFN check built: 4 h coupled, 2.5 days gypsum-only")
 rows_dfn = [("1 km, P32 ×4, h = 1 m", f"{N['dfn']['cells'] / 1e6:.2f} M cells (built)", f"measured: coupled {N['dfn']['wall_h']['gypcal_tcap2']:.0f} h · gypsum-only {N['dfn']['wall_h']['gyponly_tcap1'] / 24:.1f} d to t_cap 1", "smoke-tested"),
             ("1 km, P32 ×8, h = 2 m", "1.5 M cells", "coupled 17–38 core-h", "coupled only"),
@@ -518,7 +523,7 @@ for i, (a1, a2, a3, a4) in enumerate(rows_dfn):
     text(s, a2, M + 4.0, y + 0.22, 2.2, 0.5, size=16, color=INK2)
     text(s, a3, M + 6.3, y + 0.22, 4.0, 0.5, size=15, color=INK2)
     text(s, a4, M + 10.4, y + 0.22, 1.8, 0.5, size=15, color=FLOW if i == 0 else INK2, bold=i == 0)
-text(s, "Gate on the rebuilt network: depth, inheritance and breakthrough inside the Phase 1 ×4 range; stage timing is not (PR_V minimum at 8–11 % dissolved). Gate seeds 2–3 next.", M, 5.95, W - 2 * M, 0.6, size=15, color=INK2)
+text(s, "Gate, three rebuilt networks: all as typical as Phase 1 (12, 11, 10 of 16 inside; Phase 1 itself 7–14). Seed 2 will not mesh; proposal: coupled on seeds 1 and 3, gypsum-only on seed 1.", M, 5.95, W - 2 * M, 0.6, size=15, color=INK2)
 source(s, "Row 1 measured on 5 Nov (40-step smoke test, 6 ranks, machine load ~22); other rows are estimates (forsmark_reactive/DFN_VALIDATION_SCOPE.md).")
 
 rg, bd = N["regime"], N["bound"]

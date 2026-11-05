@@ -42,6 +42,8 @@ def main():
     ap.add_argument("--h", type=float, default=1.0)
     ap.add_argument("--ncpu", type=int, default=6)
     ap.add_argument("--stage", choices=("graph", "dfn", "both"), default="both")
+    ap.add_argument("--mesh-min-dist", type=float, default=0.5, help="mesh_network min_dist (x h); mesh gradation only")
+    ap.add_argument("--mesh-max-dist", type=float, default=10.0, help="mesh_network max_dist (x h); mesh gradation only")
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
     domain = forsmark.DOMAINS["km250"]
@@ -82,7 +84,8 @@ def main():
         g = out / "model_graph_raw" / "dfnGen_output" / "polygons.dat"
         summary["same_dfnGen_as_graph"] = bool(g.exists() and filecmp.cmp(g, out / "model_dfn" / "dfnGen_output" / "polygons.dat", shallow=False))
         t1 = perf_counter()
-        D.mesh_network()
+        D.mesh_network(min_dist=a.mesh_min_dist, max_dist=a.mesh_max_dist)
+        summary.update(mesh_min_dist=a.mesh_min_dist, mesh_max_dist=a.mesh_max_dist)
         summary["mesh_seconds"] = perf_counter() - t1
         D.lagrit2pflotran()
         t2 = perf_counter()

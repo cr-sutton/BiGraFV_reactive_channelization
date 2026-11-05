@@ -1,0 +1,9 @@
+network,inside_sigma1,inside_all_x4,outside_all_x4
+Phase 1 x4 sigma 1 seed 1 (leave-one-out),9,,
+Phase 1 x4 sigma 1 seed 2 (leave-one-out),10,,
+Phase 1 x4 sigma 1 seed 3 (leave-one-out),8,,
+Phase 1 x4 sigma 1 seed 4 (leave-one-out),14,,
+Phase 1 x4 sigma 1 seed 5 (leave-one-out),7,,
+rFram seed 1,12,14.0,gypcal PRpore_min 0.000; gypcal PRV_min 0.079
+rFram seed 2,11,13.0,gyponly n90_min_rel 0.335; gypcal depth 0.619; gypcal n90_min_rel 0.482
+rFram seed 3,10,11.0,gyponly PRpore_min 0.320; gyponly depth 0.747; gypcal PRpore_min 0.317; gypcal PRV_min 0.049; gypcal depth 0.858

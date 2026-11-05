@@ -159,3 +159,17 @@ One entry per stopped or re-run job: time, run, symptom, fix, retry list.
   Gate (gate_check.py): depth, inheritance, breakthrough inside the Phase 1 x4 sigma 1 envelope; PR_V minimum at 0.08-0.11 dissolved
   (Phase 1 0.13-0.51; 1 of 120 Phase 1 runs below 0.12) and no PR_pore dip in the coupled run (0 of 120): atypical in stage timing.
   Recommended to the user: gate rFram seeds 2-3 before DFN lanes. Numbers-checker on the x16 re-quote: ~275 confirmed, 5 fixed.
+- Thu 5 Nov ~11:00 (user request): paused-pulse movies redone (make_pulse_movie.py): no plume maps; the movie opens with a pulse
+  through the unreacted network, then the reaction plays and pauses at each stage while that stage's breakthrough curve draws in.
+  BTC now normalised concentration E = flux x tau_res against pore volumes since the pulse (frozen network's pore volume); the
+  years panel is gone (its stretch was the added pore volume, tau_res 1.0 -> 7.1 y, not dispersion). "(main clock)" removed.
+  New static figure pulse_btc_only_<mode>.png replaces pulse_stages_* in report 5e, deck slide 17 and manuscript Fig 7a.
+  Old movie outputs kept in the scratchpad (anim3_v1). Seed 2-3 rFram gate runs running since 10:00.
+- Thu 5 Nov ~11:15: rFram seeds 2-3 gated (gate_summary.py): Phase 1 leave-one-out baseline 7-14 of 16 inside; rFram 12/11/10.
+  Seed 2 recommended (typical stage timing, strong channelization). Seed 2 DFN mesh started (no reactive DFN run launched).
+- Thu 5 Nov ~11:40: seed 2 DFN mesh fails (LaGriT segfault in connect on fracture 329, radius 32 m, 1.5 m intersection segment;
+  also with max_dist 9; h 0.95 changes the network to 1,454 fractures). Seed 3 meshed cleanly (766,560 cells, no NaN; Q_dfn/Q_graph
+  1.17). Revised proposal: coupled DFN on seeds 1 and 3, gypsum-only on seed 1. Not launched (user: wait for the x16 probes).
+- Thu 5 Nov 12:16-12:40: x16 fine probes done (30 runs x 10 states). analyze_phase1_tracer.py and transport_channel_link.py now include
+  x16 (1,020 states). Report In brief, 5e (table + new "denser networks move less"), 6.2, 8.2 and deck re-quoted. dgamma vs PR_V
+  rho -0.80 -> -0.75 pooled; within-run gyponly -0.88 -> -0.79; t50 models do not transfer to x16 (held-out R2 -0.9 to -3.2).

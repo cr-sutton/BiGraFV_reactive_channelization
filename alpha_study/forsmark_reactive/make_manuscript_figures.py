@@ -188,9 +188,9 @@ CAPTIONS = {
         "share of the largest-flow fracture, with leave-one-P32-out cross-validation and Phase 2 (same networks). (b) Wormhole "
         "scenario bound: breakthrough if part of each fracture's gypsum stays unreacted.",
         "manuscript/breakthrough_top1.png (breakthrough_predictor.py); wormhole_bound_report.png (wormhole_bound_figure.py)"),
-    7: ("Transport signature.", "(a) Paused-pulse tracer snapshots at the four stages (gypsum-only, P32 ×6, σ 1, seed 1). "
+    7: ("Transport signature.", "(a) Paused-pulse breakthrough curves before reaction and at the four stages, normalised concentration against pore volumes since the pulse (gypsum-only, P32 ×6, σ 1, seed 1). "
         "(b) Tail exponent and t50/τ_res against PR_V across all probed states.",
-        "anim3/pulse_stages_gyponly.png (make_pulse_movie.py); manuscript/transport_binned.png (transport_channel_link.py)"),
+        "anim3/pulse_btc_only_gyponly.png (make_pulse_movie.py); manuscript/transport_binned.png (transport_channel_link.py)"),
     8: ("Robustness.", "(a) Rate test: dissolved fraction at the stage events at 0.1, 1 and 10 pore volumes per year (P32 ×6, σ 1, "
         "seeds 1–3; ×1 is the Phase 1 run, saved at different times). (b) Stage events on d by fracture intensity, P32 ×4–×16.",
         "new panels from phase1/phase3_rate.csv and phase1/stage_events_clocks.csv"),
@@ -209,7 +209,7 @@ def main():
     assemble("Figure_4", [[(IMG / "inheritance_diss.png", 1)], [(MS / "channel_turnover.png", 1)], [(MS / "channel_turnover_x.png", 1)]])
     assemble("Figure_5", [[(FIGD / "depth_law.png", 1.15), (OUT / "fig5b_ceiling.png", 1), (MS / "depth_network_property.png", 0.8)]], width=9.0)
     assemble("Figure_6", [[(MS / "breakthrough_top1.png", 1)], [(IMG / "wormhole_bound_report.png", 1)]])
-    assemble("Figure_7", [[(IMG / "anim3/pulse_stages_gyponly.png", 1)], [(MS / "transport_binned.png", 1)]])
+    assemble("Figure_7", [[(IMG / "anim3/pulse_btc_only_gyponly.png", 1)], [(MS / "transport_binned.png", 1)]])
     assemble("Figure_8", [[(OUT / "fig8a_rate.png", 1)], [(OUT / "fig8b_p32.png", 1)]])
     md = ["# Draft manuscript figures (5 Nov 2026)", "",
           "Built by `forsmark_reactive/make_manuscript_figures.py`. Drafts: panels are the study figures assembled with letters; "

@@ -1,0 +1,1022 @@
+# outflow: Dirichlet faces, gravity off (stabilize_graph_run.py --dirichlet-outflow)
+
+
+#
+#================================================
+
+SIMULATION
+  SIMULATION_TYPE SUBSURFACE
+  PROCESS_MODELS
+    SUBSURFACE_FLOW flow
+      MODE RICHARDS
+    /
+    SUBSURFACE_TRANSPORT transport
+      MODE GIRT 
+    /
+  /
+  CHECKPOINT
+    TIMES y 3.651456e+01 1.460583e+02 7.302913e+02 3.651456e+03 7.302913e+03 1.460583e+04 3.651456e+04
+    FORMAT HDF5
+  /
+END
+SUBSURFACE
+
+
+
+#=========================== chemistry ========================================
+CHEMISTRY
+  PRIMARY_SPECIES
+    H+
+    CO3--
+    Ca++
+    Na+ 
+    SO4--
+  /
+  SECONDARY_SPECIES
+    OH-
+    HCO3-
+    CO2(aq)
+    CaCO3(aq)
+    CaHCO3+
+    CaOH+
+    NaCO3-
+    CaSO4(aq)
+    HSO4-
+    NaSO4-
+    H2SO4(aq)
+    NaHCO3(aq)
+  /
+  PASSIVE_GAS_SPECIES
+    CO2(g)
+  /
+
+ MINERALS     # List all primary minerals first, before listing secondary minerals
+     Gypsum
+     Calcite
+  /
+  MINERAL_KINETICS
+    Gypsum
+        SURFACE_AREA_FUNCTION VOLUME_FRACTION_RATIO
+        RATE_CONSTANT 1.620475399943e-03  mol/m^2-sec 
+        SURFACE_AREA_VOL_FRAC_POWER 0.6667 
+    /
+    Calcite
+      RATE_CONSTANT 2.287975768343148e-05 mol/m^2-sec 
+    /
+  /
+
+
+  DATABASE /Users/collin/src/pflotran/database/hanford.dat
+  # DATABASE /home/apachalieva/Projects/di_dfns/cal-gyp/hanford.dat
+  LOG_FORMULATION
+  ACTIVITY_COEFFICIENTS TIMESTEP
+  #UPDATE_MINERAL_SURFACE_AREA
+  MINIMUM_POROSITY 1.0e-03
+  UPDATE_POROSITY
+  UPDATE_PERMEABILITY
+  UPDATE_TORTUOSITY
+  MOLAL
+  OUTPUT
+    MINERALS
+    PH
+    TOTAL
+    ALL
+    MINERALS
+    MINERAL_VOLUME_FRACTION
+    MINERAL_SURFACE_AREA
+    MINERAL_SATURATION_INDEX
+  /
+/
+
+#=========================== discretization ===================================
+GRID
+  TYPE unstructured_explicit full_mesh_vol_area.uge 
+  GRAVITY 0.d0 0.d0 0.d0
+END
+
+#=========================== fluid properties =================================
+FLUID_PROPERTY
+    DIFFUSION_COEFFICIENT 1e-9 
+END
+
+DATASET Permeability
+  FILENAME dfn_properties.h5
+END
+
+#=========================== material properties ==============================
+MATERIAL_PROPERTY fractures
+  ID 1
+  PERMEABILITY_MIN_SCALE_FACTOR 1.0e-06
+  POROSITY 0.1d0 
+  TORTUOSITY 1.0d0
+  CHARACTERISTIC_CURVES default
+  PERMEABILITY
+    DATASET Permeability
+  /
+END
+
+
+#=========================== characteristic curves ============================
+CHARACTERISTIC_CURVES default
+  SATURATION_FUNCTION VAN_GENUCHTEN
+    M 0.5d0
+    ALPHA  1.d-4
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+    MAX_CAPILLARY_PRESSURE 1.d8
+  /
+  PERMEABILITY_FUNCTION MUALEM_VG_LIQ
+    M 0.5d0
+    LIQUID_RESIDUAL_SATURATION 0.1d0
+  /
+END
+
+#=========================== output options ===================================
+OUTPUT
+  TIMES y 3.651456e+00 4.257286e+00 4.963630e+00 5.787168e+00 6.747343e+00 7.866824e+00 9.172044e+00 1.069382e+01 \
+    1.246808e+01 1.453671e+01 1.694856e+01 1.976057e+01 2.303913e+01 2.686166e+01 3.131839e+01 3.651456e+01 \
+    4.257286e+01 4.963630e+01 5.787168e+01 6.747343e+01 7.866824e+01 9.172044e+01 1.069382e+02 1.246808e+02 \
+    1.453671e+02 1.460583e+02 1.694856e+02 1.976057e+02 2.303913e+02 2.686166e+02 3.131839e+02 3.651456e+02 \
+    4.257286e+02 4.963630e+02 5.787168e+02 6.747343e+02 7.302913e+02 7.866824e+02 9.172044e+02 1.069382e+03 \
+    1.246808e+03 1.453671e+03 1.694856e+03 1.976057e+03 2.303913e+03 2.686166e+03 3.131839e+03 3.651456e+03 \
+    4.257286e+03 4.963630e+03 5.787168e+03 6.747343e+03 7.302913e+03 7.866824e+03 9.172044e+03 1.069382e+04 \
+    1.246808e+04 1.453671e+04 1.460583e+04 1.694856e+04 1.976057e+04 2.303913e+04 2.686166e+04 3.131839e+04 \
+    3.651456e+04
+  # PERIODIC TIME 1.d-2 y
+#  FORMAT TECPLOT BLOCK
+  PRINT_PRIMAL_GRID
+  FORMAT VTK
+  ACKNOWLEDGE_VTK_FLAW
+  MASS_FLOWRATE
+  MASS_BALANCE
+  MASS_BALANCE_FILE
+    TOTAL_MASS_REGIONS
+      All
+      inflow
+      outflow
+    /
+    # PERIODIC TIME 1.0d0 y
+  /
+
+  VARIABLES
+    LIQUID_PRESSURE
+    LIQUID_SATURATION
+    PERMEABILITY
+    POROSITY
+  /
+END
+
+#=========================== times ============================================
+TIME
+    INITIAL_TIMESTEP_SIZE 1.0e-11 y
+    MAXIMUM_TIMESTEP_SIZE 5.7e-01 y
+    FINAL_TIME 3.651456e+04 y
+END
+
+
+#=========================== regions ==========================================
+REGION All
+  COORDINATES
+    -5.d20 -5.d20 -5.d20
+    5.d20 5.d20 5.d20
+  /
+END 
+
+
+REGION inflow
+  FILE boundary_left_w.ex
+END
+
+REGION outflow
+  FILE boundary_right_e.ex
+END
+
+REGION graph_inlet_cells
+  COORDINATES
+    -5.000010e+02 -1.d3 -1.d3
+    -4.999990e+02 1.d3 1.d3
+  /
+END
+
+REGION graph_outlet_cells
+  COORDINATES
+    4.999990e+02 -1.d3 -1.d3
+    5.000010e+02 1.d3 1.d3
+  /
+END
+
+REGION helper_cells
+  LIST
+    1469
+    1470
+    1471
+    1472
+    1473
+    1474
+    1475
+    1476
+    1477
+    1478
+    1479
+    1480
+    1481
+    1482
+    1483
+    1484
+    1485
+    1486
+    1487
+    1488
+    1489
+    1490
+    1491
+    1492
+    1493
+    1494
+    1495
+    1496
+    1497
+    1498
+    1499
+    1500
+    1501
+    1502
+    1503
+    1504
+    1505
+    1506
+    1507
+    1508
+    1509
+    1510
+    1511
+    1512
+    1513
+    1514
+    1515
+    1516
+    1517
+    1518
+    1519
+    1520
+    1521
+    1522
+    1523
+    1524
+    1525
+    1526
+    1527
+    1528
+    1529
+    1530
+    1531
+    1532
+    1533
+    1534
+    1535
+    1536
+    1537
+    1538
+    1539
+    1540
+    1541
+    1542
+    1543
+    1544
+    1545
+    1546
+    1547
+    1548
+    1549
+    1550
+    1551
+    1552
+    1553
+    1554
+    1555
+    1556
+    1557
+    1558
+    1559
+    1560
+    1561
+    1562
+    1563
+    1564
+    1565
+    1566
+    1567
+    1568
+    1569
+    1570
+    1571
+    1572
+    1573
+    1574
+    1575
+    1576
+    1577
+    1578
+    1579
+    1580
+    1581
+    1582
+    1583
+    1584
+    1585
+    1586
+    1587
+    1588
+    1589
+    1590
+    1591
+    1592
+    1593
+    1594
+    1595
+    1596
+    1597
+    1598
+    1599
+    1600
+    1601
+    1602
+    1603
+    1604
+    1605
+    1606
+    1607
+    1608
+    1609
+    1610
+    1611
+    1612
+    1613
+    1614
+    1615
+    1616
+    1617
+    1618
+    1619
+    1620
+    1621
+    1622
+    1623
+    1624
+    1625
+    1626
+    1627
+    1628
+    1629
+    1630
+    1631
+    1632
+    1633
+    1634
+    1635
+    1636
+    1637
+    1638
+    1639
+    1640
+    1641
+    1642
+    1643
+    1644
+    1645
+    1646
+    1647
+    1648
+    1649
+    1650
+    1651
+    1652
+    1653
+    1654
+    1655
+    1656
+    1657
+    1658
+    1659
+    1660
+    1661
+    1662
+    1663
+    1664
+    1665
+    1666
+    1667
+    1668
+    1669
+    1670
+    1671
+    1672
+    1673
+    1674
+    1675
+    1676
+    1677
+    1678
+    1679
+    1680
+    1681
+    1682
+    1683
+    1684
+    1685
+    1686
+    1687
+    1688
+    1689
+    1690
+    1691
+    1692
+    1693
+    1694
+    1695
+    1696
+    1697
+    1698
+    1699
+    1700
+    1701
+    1702
+    1703
+    1704
+    1705
+    1706
+    1707
+    1708
+    1709
+    1710
+    1711
+    1712
+    1713
+    1714
+    1715
+    1716
+    1717
+    1718
+    1719
+    1720
+    1721
+    1722
+    1723
+    1724
+    1725
+    1726
+    1727
+    1728
+    1729
+    1730
+    1731
+    1732
+    1733
+    1734
+    1735
+    1736
+    1737
+    1738
+    1739
+    1740
+    1741
+    1742
+    1743
+    1744
+    1745
+    1746
+    1747
+    1748
+    1749
+    1750
+    1751
+    1752
+    1753
+    1754
+    1755
+    1756
+    1757
+    1758
+    1759
+    1760
+    1761
+    1762
+    1763
+    1764
+    1765
+    1766
+    1767
+    1768
+    1769
+    1770
+    1771
+    1772
+    1773
+    1774
+    1775
+    1776
+    1777
+    1778
+    1779
+    1780
+    1781
+    1782
+    1783
+    1784
+    1785
+    1786
+    1787
+    1788
+    1789
+    1790
+    1791
+    1792
+    1793
+    1794
+    1795
+    1796
+    1797
+    1798
+    1799
+    1800
+    1801
+    1802
+    1803
+    1804
+    1805
+    1806
+    1807
+    1808
+    1809
+    1810
+    1811
+    1812
+    1813
+    1814
+    1815
+    1816
+    1817
+    1818
+    1819
+    1820
+    1821
+    1822
+    1823
+    1824
+    1825
+    1826
+    1827
+    1828
+    1829
+    1830
+    1831
+    1832
+    1833
+    1834
+    1835
+    1836
+    1837
+    1838
+    1839
+    1840
+    1841
+    1842
+    1843
+    1844
+    1845
+    1846
+    1847
+    1848
+    1849
+    1850
+    1851
+    1852
+    1853
+    1854
+    1855
+    1856
+    1857
+    1858
+    1859
+    1860
+    1861
+    1862
+    1863
+    1864
+    1865
+    1866
+    1867
+    1868
+    1869
+    1870
+    1871
+    1872
+    1873
+    1874
+    1875
+    1876
+    1877
+    1878
+    1879
+    1880
+    1881
+    1882
+    1883
+    1884
+    1885
+    1886
+    1887
+    1888
+    1889
+    1890
+    1891
+    1892
+    1893
+    1894
+    1895
+    1896
+    1897
+    1898
+    1899
+    1900
+    1901
+    1902
+    1903
+    1904
+    1905
+    1906
+    1907
+    1908
+    1909
+    1910
+    1911
+    1912
+    1913
+    1914
+    1915
+    1916
+    1917
+    1918
+    1919
+    1920
+    1921
+    1922
+    1923
+    1924
+    1925
+    1926
+    1927
+    1928
+    1929
+    1930
+    1931
+    1932
+    1933
+    1934
+    1935
+    1936
+    1937
+    1938
+    1939
+    1940
+    1941
+    1942
+    1943
+    1944
+    1945
+    1946
+    1947
+    1948
+    1949
+    1950
+    1951
+    1952
+    1953
+    1954
+    1955
+    1956
+    1957
+    1958
+    1959
+    1960
+    1961
+    1962
+    1963
+    1964
+    1965
+    1966
+    1967
+    1968
+    1969
+    1970
+    1971
+    1972
+    1973
+    1974
+    1975
+    1976
+    1977
+    1978
+    1979
+    1980
+    1981
+    1982
+    1983
+    1984
+    1985
+    1986
+    1987
+    1988
+    1989
+    1990
+    1991
+    1992
+    1993
+    1994
+    1995
+    1996
+    1997
+    1998
+    1999
+    2000
+    2001
+    2002
+    2003
+    2004
+    2005
+    2006
+    2007
+    2008
+    2009
+    2010
+    2011
+    2012
+    2013
+    2014
+    2015
+    2016
+    2017
+    2018
+    2019
+    2020
+    2021
+    2022
+    2023
+    2024
+    2025
+    2026
+    2027
+    2028
+    2029
+    2030
+    2031
+    2032
+    2033
+    2034
+    2035
+    2036
+    2037
+    2038
+    2039
+    2040
+    2041
+    2042
+    2043
+    2044
+    2045
+    2046
+    2047
+    2048
+    2049
+    2050
+    2051
+    2052
+    2053
+    2054
+    2055
+    2056
+    2057
+    2058
+    2059
+    2060
+    2061
+    2062
+    2063
+    2064
+    2065
+    2066
+    2067
+    2068
+    2069
+    2070
+    2071
+    2072
+    2073
+    2074
+    2075
+    2076
+    2077
+    2078
+    2079
+    2080
+    2081
+    2082
+  /
+END
+
+REGION well
+  COORDINATES
+    -5.001779e+02 -1.350998e+01 -9.557243e+00
+    -5.001579e+02 -1.348998e+01 -9.537243e+00
+  /
+END
+
+#=========================== constraints ======================================
+CONSTRAINT initial
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+  MINERALS
+    Gypsum  0.9d0  750   m^2/kg     # Natural gypsum; SSA = 0.75 m2/g 
+    Calcite 0.0d0  200 m^2/m^3     # source: Xu & Jiang
+  /
+ EQUILIBRATE_AT_EACH_CELL
+END
+
+
+CONSTRAINT well_initial
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+  MINERALS
+    Gypsum  0.d0  750  m^2/kg
+    Calcite 0.d0  0.d0  m^2/m^3
+  /
+  ACKNOWLEDGE_ZERO_SURFACE_AREA
+END
+
+CONSTRAINT well_fill
+  CONCENTRATIONS
+    H+     11.3900d0  pH
+    Na+    1.000000e+00  T
+    CO3--  5.000000e-01  T
+    Ca++   1.d-10  T
+    SO4--  1.d-10  T
+  /
+  MINERALS
+    Gypsum  0.d0  750  m^2/kg
+    Calcite 0.d0  0.d0  m^2/m^3
+  /
+  ACKNOWLEDGE_ZERO_SURFACE_AREA
+END
+CONSTRAINT w0
+  CONCENTRATIONS
+    H+     7.d0  pH
+    Na+    1.d-3  T
+    CO3--  1.d-10  T
+    Ca++   1.d-3  M Gypsum
+    SO4--  1.5d-2  T
+  /
+END
+
+CONSTRAINT injection
+  CONCENTRATIONS
+    H+     11.3900d0  pH
+    Na+    1.000000e+00  T
+    CO3--  5.000000e-01  T
+    Ca++   1.d-10  M Calcite
+    SO4--  1.d-10  T
+  /
+END
+
+#=========================== flow conditions ==================================
+FLOW_CONDITION initial
+  TYPE
+    LIQUID_PRESSURE DIRICHLET
+  /
+  LIQUID_PRESSURE DATASET initial_pressure
+END
+
+DATASET initial_pressure
+  FILENAME initial_pressure.h5
+END
+
+FLOW_CONDITION injection
+  TYPE
+    RATE VOLUMETRIC_RATE
+  /
+  RATE 5.110437e+01 m^3/y
+END
+
+FLOW_CONDITION boundaries
+  TYPE
+    LIQUID_PRESSURE DIRICHLET
+  /
+  LIQUID_PRESSURE 2.000000e+05
+END
+
+
+TRANSPORT_CONDITION well_initial
+  TYPE dirichlet
+  CONSTRAINT_LIST
+    0.d0 well_initial
+  /
+END
+
+TRANSPORT_CONDITION well_fill
+  TYPE dirichlet
+  CONSTRAINT_LIST
+    0.d0 well_fill
+  /
+END
+
+TRANSPORT_CONDITION initial
+  TYPE dirichlet 
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+
+TRANSPORT_CONDITION seepage_face
+  TYPE ZERO_GRADIENT
+    CONSTRAINT_LIST
+    0.d0 initial
+  /
+END
+
+TRANSPORT_CONDITION inflow_conc
+  TYPE ZERO_GRADIENT
+  CONSTRAINT_LIST
+    0.d0 injection
+  /
+END
+
+
+# initial condition
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION initial
+  REGION All
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_fill
+  REGION well
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION graph_inlet_cells
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION graph_outlet_cells
+/
+
+INITIAL_CONDITION
+  FLOW_CONDITION initial
+  TRANSPORT_CONDITION well_initial
+  REGION helper_cells
+/
+
+SOURCE_SINK inflow
+    FLOW_CONDITION injection
+    TRANSPORT_CONDITION inflow_conc
+    REGION well
+END
+
+## east boundary condition
+BOUNDARY_CONDITION outflow
+  FLOW_CONDITION boundaries
+  TRANSPORT_CONDITION seepage_face
+  REGION outflow
+/
+
+
+#=========================== stratigraphy couplers ============================
+STRATA
+  REGION All 
+  MATERIAL fractures
+END
+
+NUMERICAL_METHODS TRANSPORT
+  TIMESTEPPER
+    TS_ACCELERATION 10
+  /
+END
+
+END_SUBSURFACE
+
+

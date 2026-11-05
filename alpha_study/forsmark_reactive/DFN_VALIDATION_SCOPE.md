@@ -276,3 +276,13 @@ The cheapest x8 check is the 250 m block x8 coupled lane (**est.** 8–16 core-h
   coupled ~4.0 h wall (24 core-h); gypsum-only ~59 h (357 core-h) to t_cap 1, ~118 h (711 core-h) to t_cap 2.
   That is 1.5-3x the section 5 estimates; memory 9-10 GB against 4.3-7.8 GB estimated. Costs at the 0.57 y step with active
   fronts are not yet measured.
+
+## 9. Gate on three rFram seeds (5 Nov 2026)
+
+`dfn_validation/gate_summary.csv` (gate_summary.py). Leave-one-out baseline: Phase 1 x4 sigma 1 networks fall inside the min-max of
+the other four on 7-14 of 16 measures (median 9). rFram seeds 1/2/3: 12/11/10 inside the sigma 1 envelope, 14/13/11 inside all 15
+Phase 1 x4 networks. Seed 1 is atypical in coupled stage timing; seed 3 in PR_pore timing and depth; seed 2 has typical stage timing
+in both chemistries and stronger narrowing (n90 to 0.34/0.48) with a deeper coupled channel (0.62). Recommended: seed 2. Its mesh was
+started on 5 Nov ~11:15 (rf_p4.0_sg1.0_seed2.dfn.log).
+Update ~11:40: seed 2 cannot be meshed at h = 1 m (LaGriT segfault on fracture 329, also with max_dist 9). Seed 3 meshes cleanly
+(766,560 cells, Q_dfn/Q_graph 1.17). Revised proposal: coupled DFN on seeds 1 and 3, gypsum-only on seed 1.
