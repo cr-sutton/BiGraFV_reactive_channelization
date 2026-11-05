@@ -55,8 +55,8 @@ def style(ax):
 
 
 def ensemble(runs, col, ylabel, fname, ylim=None):
-    fig, axs = plt.subplots(1, 3, figsize=(10.5, 3.2), sharey=True)
-    for ax, p in zip(axs, (4.0, 6.0, 8.0)):
+    fig, axs = plt.subplots(1, 4, figsize=(14, 3.2), sharey=True)
+    for ax, p in zip(axs, (4.0, 6.0, 8.0, 16.0)):
         for mode in ("gyponly", "gypcal"):
             rs = [r for r in runs if r["p32"] == p and r["mode"] == mode]
             t = rs[0]["d"].t_y.to_numpy()
@@ -118,7 +118,7 @@ def summary(runs):
 def main():
     OUT.mkdir(exist_ok=True)
     runs = load()
-    assert len(runs) == 90, len(runs)
+    assert len(runs) == 120, len(runs)
     ensemble(runs, "dissolved", "fraction of gypsum dissolved", "phase1_dissolved.png", (0, 1.02))
     ensemble(runs, "k_eff_ratio", "k_eff / k_eff,0", "phase1_keff.png")
     ensemble(runs, "n90_rel", "n90 / n90 at start", "phase1_n90.png")

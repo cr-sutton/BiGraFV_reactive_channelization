@@ -25,7 +25,7 @@ for f in sorted(glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/gyp*__*/channelization.c
                    depth=float(d.pr_fracture_vol.min() / d.pr_fracture_vol.iloc[0]), inherit=float(d.overlap0[k_n90]),
                    n_fr=None))
 ch = pd.DataFrame(ch)
-p1 = ch[(ch.tag == "phase1") & (ch.p32 <= 8)]
+p1 = ch[ch.tag == "phase1"]   # x4-x16 pooled since 5 Nov (user: include the x16 data everywhere)
 out["n_phase1_runs"] = int(len(p1)); out["n_phase1_networks"] = int(len(p1[p1["mode"] == "gyponly"]))
 out["n_x16_runs"] = int(len(ch[(ch.tag == "phase1") & (ch.p32 == 16)]))
 stats = [json.loads(Path(f).read_text()) for f in glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/network_stats.json"))]
@@ -37,12 +37,12 @@ out["fractures_by_p32"] = {f"{k:g}": [min(v), max(v)] for k, v in sorted(nf.item
 # inheritance at the n90 minimum, Phase 1
 out["inheritance"] = {m: dict(median=med(g.inherit), min=float(g.inherit.min()), max=float(g.inherit.max()), n=int(len(g)))
                       for m, g in p1.groupby("mode")}
-co3lo = ch[(ch.tag == "phase2_co3lo") & (ch.p32 <= 8)]
+co3lo = ch[ch.tag == "phase2_co3lo"]
 out["inheritance_2mM"] = dict(min=float(co3lo.inherit.min()), max=float(co3lo.inherit.max()), n=int(len(co3lo)))
 
 # channel depth: Phase 1 by chemistry; matched table; paired differences
 out["depth_phase1"] = {m: dict(median=med(g.depth), iqr=iqr(g.depth), n=int(len(g))) for m, g in p1.groupby("mode")}
-mt = ch[(ch.sigma == 1.0) & (ch.seed <= 3) & (ch.p32 <= 8)]
+mt = ch[(ch.sigma == 1.0) & (ch.seed <= 3)]
 cases = {"x10 gypsum-only (P1)": ("phase1", "gyponly", 10), "x10.6 coupled phi0 0.05 (P2)": ("phase2_phi005", "gypcal", 10.6),
          "x10 coupled 2 mM (P2)": ("phase2_co3lo", "gypcal", 10), "x5.5 coupled 0.5 M (P1)": ("phase1", "gypcal", 5.5),
          "x20 gypsum-only phi0 0.05 (P2)": ("phase2_phi005", "gyponly", 20)}
@@ -50,10 +50,9 @@ out["depth_matched"] = {k: dict(ceiling=c, by_p32={f"{p:g}": med(g.depth) for p,
                         for k, (t, m, c) in cases.items()}
 piv = ch.pivot_table(index=["p32", "sigma", "seed"], columns=["tag", "mode"], values="depth")
 d55 = (piv[("phase1", "gypcal")] - piv[("phase1", "gyponly")]).dropna()
-d55 = d55[d55.index.get_level_values(0) <= 8]
-d20 = (piv[("phase2_phi005", "gyponly")] - piv[("phase1", "gyponly")]).dropna(); d20 = d20[d20.index.get_level_values(0) <= 8]
-d106 = (piv[("phase2_phi005", "gypcal")] - piv[("phase1", "gyponly")]).dropna().abs(); d106 = d106[d106.index.get_level_values(0) <= 8]
-d2 = (piv[("phase2_co3lo", "gypcal")] - piv[("phase1", "gyponly")]).dropna().abs(); d2 = d2[d2.index.get_level_values(0) <= 8]
+d20 = (piv[("phase2_phi005", "gyponly")] - piv[("phase1", "gyponly")]).dropna()
+d106 = (piv[("phase2_phi005", "gypcal")] - piv[("phase1", "gyponly")]).dropna().abs()
+d2 = (piv[("phase2_co3lo", "gypcal")] - piv[("phase1", "gyponly")]).dropna().abs()
 out["depth_paired"] = dict(x55_minus_x10=dict(median=med(d55), n=int(len(d55)), all_positive=bool((d55 > 0).all())),
                            x20_minus_x10=dict(min=float(d20.min()), max=float(d20.max()), n=int(len(d20)), all_negative=bool((d20 < 0).all())),
                            x106_vs_x10=dict(median_abs=med(d106), max_abs=float(d106.max()), n=int(len(d106))),
@@ -61,15 +60,35 @@ out["depth_paired"] = dict(x55_minus_x10=dict(median=med(d55), n=int(len(d55)), 
 
 # stage events on the main clock (Phase 1) and the paired gaps
 e = pd.read_csv(P1 / "stage_events_clocks.csv")
-e1 = e[(e.tag == "phase1") & (e.p32 <= 8)]
+e1 = e[e.tag == "phase1"]
 out["stages"] = {ev: {m: dict(median=med(g.dissolved), iqr=iqr(g.dissolved), t_cap=med(g.t_cap), n=int(len(g)))
                       for m, g in e1[e1.event == ev].groupby("mode")} for ev in ["PRpore_min", "outlet5", "PRV_min", "breakthrough"]}
 pv = e1.pivot_table(index=["p32", "sigma", "seed", "event"], columns="mode", values=["dissolved", "t_cap"])
 out["stage_gaps"] = {ev: dict(d=med((pv[("dissolved", "gypcal")] - pv[("dissolved", "gyponly")]).xs(ev, level="event")),
                               t_cap=med((pv[("t_cap", "gypcal")] - pv[("t_cap", "gyponly")]).xs(ev, level="event")))
                      for ev in ["PRV_min", "breakthrough"]}
+e48 = e[(e.tag == "phase1") & (e.p32 <= 8)]   # x4-x8 only, for the x16 comparison slide
+out["stages_x4x8"] = {ev: {m: dict(median=med(g.dissolved), n=int(len(g))) for m, g in e48[e48.event == ev].groupby("mode")}
+                      for ev in ["PRpore_min", "outlet5", "PRV_min", "breakthrough"]}
+er = pd.read_csv(P1 / "early_redistribution_summary.csv")
+gv = lambda ds, item: float(er[(er.dstar == ds) & (er.scope == "pooled") & (er.item == item)].value.iloc[0])
+out["early"] = dict(rho10=gv(0.10, "spearman resid vs dPRV_w"), r2_10=gv(0.10, "LOPO R2 (dPRV_w only)"), r2_05=gv(0.05, "LOPO R2 (dPRV_w only)"),
+                    n10=int(gv(0.10, "n runs with minimum after d*")))
+DV = HERE.parent / "dfn_validation" / "rf_p4.0_sg1.0_seed1"
+if (DV / "gypsum__dfn__smoke" / "smoke.json").exists():
+    sm = {m: json.loads((DV / f"{d}__dfn__smoke" / "smoke.json").read_text()) for m, d in (("gyponly", "gypsum"), ("gypcal", "gypsum_calcite"))}
+    bsum = json.loads((DV / "build_summary.json").read_text())
+    steps = dict(gypcal_tcap2=908, gyponly_tcap1=12885, gyponly_tcap2=25703)   # graph step counts on this network (gate runs)
+    out["dfn"] = dict(cells=bsum["dfn_cells"], q_ratio=bsum["Q_ratio_dfn_graph"], s_step={m: v["s_per_step_2nd_half"] for m, v in sm.items()},
+                      rss={m: v["peak_rss_GB"] for m, v in sm.items()},
+                      wall_h=dict(gypcal_tcap2=steps["gypcal_tcap2"] * sm["gypcal"]["s_per_step_2nd_half"] / 3600,
+                                  gyponly_tcap1=steps["gyponly_tcap1"] * sm["gyponly"]["s_per_step_2nd_half"] / 3600,
+                                  gyponly_tcap2=steps["gyponly_tcap2"] * sm["gyponly"]["s_per_step_2nd_half"] / 3600))
+gr = pd.read_csv(P1 / "gypsum_reprecipitation.csv"); grc = gr[(gr.tag == "phase1") & (gr["mode"] == "gypsum_calcite")]
+out["reprecip"] = dict(n=int(len(grc)), runs_gain=int((grc.n_gyp_up > 0).sum()), runs_floor=int((grc.n_floor > 0).sum()),
+                       floor_max=int(grc.n_floor_ever.max()), q_floor_max=float(grc.q_floor_max.max()))
 mech = pd.read_csv(P1 / "phase1_mechanism_summary.csv")
-mech = mech[(mech.tag == "phase1") & (mech.p32 <= 8)]
+mech = mech[mech.tag == "phase1"]
 out["breakthrough_dissolved_by_mode"] = {m: dict(p32_medians=[med(gg.dissolved_at_outlet50.dropna()) for _, gg in g.groupby("p32")],
                                                  run_min=float(g.dissolved_at_outlet50.min()), run_max=float(g.dissolved_at_outlet50.max()))
                                          for m, g in mech.groupby("mode")}
@@ -110,7 +129,7 @@ rs = pd.read_csv(P1 / "wormhole_regime_summary.csv")
 rp = rs[(rs.level != "network") & (rs.k_choice == "R")]
 out["regime"] = {f"{r.P32:g}": dict(wormhole=float(r.flow_wormhole), compact=float(r.flow_compact), uniform=float(r.flow_uniform),
                                     validated=float(r.flow_in_validated), Pe=float(r.Pe_p50), Da=float(r.Da_effL_p50)) for r in rp.itertuples()}
-wb = pd.read_csv(P1 / "wormhole_bound.csv"); wb8 = wb[wb.p32 <= 8]
+wb = pd.read_csv(P1 / "wormhole_bound.csv"); wb8 = wb   # x4-x16
 out["bound"] = {m: {f"{f:g}": dict(D_lo=med(g.D_lo), D_hi=med(g.D_hi)) for f, g in gm.groupby("f")} for m, gm in wb8.groupby("mode")}
 w1 = wb8[wb8.f == 1.0]
 out["bound_channel_share"] = med(w1.D_ch / w1.D_bt)

@@ -134,10 +134,28 @@ One entry per stopped or re-run job: time, run, symptom, fix, retry list.
 - Wed 4 Nov 15:58: queue done (15:37). Started olivine run (run_olivine.sh) and paused-pulse probes (run_anim_probes.sh) in background; final analyses running.
 - Wed 4 Nov 16:06: olivine run done (444 s). Inlet fractures seal from ~6 PV; at 13 PV k_eff 0.18, 52 at floor, overlap0 0.61, n90 458->674; at 300 PV k_eff 0.013, 1374 of 2714 at floor. Section 6.7 drafted. Wormhole bound (wormhole_bound.py) done; regime map running; pulse snapseq probes running.
 - Wed 4 Nov ~17:25: final step done. x16 subsection (5f), paused-pulse movies (5e), wormhole bound + regime map (6.6), olivine exploration (6.7) added; Karen review: 5 MUST, 6 SHOULD, 3 NICE applied; report republished 1793831102-75d2; deck rebuilt (30 slides). Hourly job deleted.
-- Thu 5 Nov: Phase 3 queue started (run_phase3.sh, run_list_phase3.txt, 30 runs): ceiling test at porosity 0.182 (gypsum-only x5.5, coupled x3.3; sigma 1, seeds 1-3, P32 x4/x6/x8) and rate test (rate-mult 0.1 and 10; x6 sigma 1 seeds 1-3; both chemistries). Ceiling matched through porosity, not n (user preference).
+- Wed 4 Nov ~17:30 (first logged as "Thu 5 Nov" by mistake): Phase 3 queue started (run_phase3.sh, run_list_phase3.txt, 30 runs): ceiling test at porosity 0.182 (gypsum-only x5.5, coupled x3.3; sigma 1, seeds 1-3, P32 x4/x6/x8) and rate test (rate-mult 0.1 and 10; x6 sigma 1 seeds 1-3; both chemistries). Ceiling matched through porosity, not n (user preference).
 - Wed 4 Nov ~19:20: manuscript analyses back (breakthrough_predictor.py, master_curves.py, transport_channel_link.py, channel_turnover.py, depth_variability.py). Report section 8 added (8.1-8.5), sections renumbered; republished 1793837999-73af; deck rebuilt (32 slides).
 - Wed 4 Nov 18:33: Phase 3: 15 started, 10 finished (coupled phi0182 x4/x6 in 25-240 s, gyponly x4 in 9-13 min; all reached FINAL_TIME, no cuts). Channelization started on finished runs. GitHub push of section-8 analyses done (channel_turnover.csv gzipped, >100 MB raw).
 - Wed 4 Nov ~18:45: DFN validation scope back (DFN_VALIDATION_SCOPE.md): Phase 1 nets unmeshable (FRAM off); recommended 1 km x4 rFram h=1 m. Report 8.6 figure list and 8.7 DFN scope added, republished 1793839413-f02d; deck 33 slides.
 - Wed 4 Nov 19:23: Phase 3 all 30 started, 24 finished; channelization started on 14 finished runs.
 - Wed 4 Nov ~20:15: Phase 3 queue done 19:49. analyze_phase1_mechanism/stage_events_clocks extended to phase3 tags and rerun; phase3_tests.py -> phase3_ceiling.csv, phase3_rate.csv; depth_law.png now x3.3-x20; report 6.4 (ceiling test) and 8.8 (rate test) added. Karen review next.
 - Wed 4 Nov ~20:45: Karen review of section 8 + Phase 3: 5 MUST (Da direction, Phase 2 not independent, 14/15 folds, depth-variability disclosure, rate offset sign) and 14 SHOULD + NICE applied; deck fixed and rebuilt (34 slides).
+- Wed 4 Nov ~21:00: GitHub push done (Phase 3 + section 8). Overnight check job deleted; 8:00 report scheduled.
+- Thu 5 Nov 08:00-10:00 (user: "do all 4"; mid-turn: include x16 everywhere before drafting figures):
+  (1) rate-test outlier: coupled seed 1 at x0.1 has PR_pore 0.003 at one state because 72 fracture cells fill with re-precipitated
+  gypsum (solids > 1, porosity floor) while carrying 0.41 % of the flow. New gypsum_reprecipitation_scan.py -> phase1/gypsum_reprecipitation.csv:
+  56/60 Phase 1 coupled runs gain gypsum, 48/60 fill 1-12 cells (flow <= 1.2e-5); no gypsum-only run fills a cell. Report 5a, 6.5, 6.7, 8.8
+  reworded. (2) x16 audit: make_phase1_channel_figures / make_candidate_figures / make_phase1_report_figures / make_phase1_figures /
+  wormhole_regime_map now include x16 (26 report figures replaced); deck_numbers pools x4-x16 (stages_x4x8 kept for the x16 slide);
+  report sections 1-6 re-quoted from requote_x16.py (old x4-x8 values reproduced first); channel_identity.py rebuilt as a script
+  (reproduces the old CSV exactly, extended to x16 and Phase 2). Fine probes for the 30 x16 runs launched (run_fine_probes_x16.log;
+  transport sections 5e/6.2/8.2 wait for them). (3) early_redistribution_predictor.py: report 8.5. (4) make_manuscript_figures.py ->
+  manuscript_figures/Figure_1-8 (drafts). (5) DFN: dfn_validation/build_rfram_network.py (rFram x4 sg1 seed1, 1,605 fractures, 9 paths);
+  mesh 758,183 cells in ~5 min; 2 NaN Voronoi volumes repaired (repair_uge_nan.py, uge_repair.json); DFN steady flow 2.87e-5 m3/s in = out,
+  1.43x the graph; gate runs (one-cell gyponly+gypcal, Phase 1 settings) and the DFN smoke test (run_dfn_case.sh, 40 steps) running.
+- Thu 5 Nov ~09:40: DFN smoke done (coupled 15.7 s/step, 9.2 GB; gypsum-only 16.6 s/step, 9.7 GB; 6 ranks, load ~22; no cuts;
+  dt ramp identical to the graph). Projection: coupled to t_cap 2 ~4 h, gypsum-only to t_cap 1 ~59 h (1.5-3x the scope estimate).
+  Gate (gate_check.py): depth, inheritance, breakthrough inside the Phase 1 x4 sigma 1 envelope; PR_V minimum at 0.08-0.11 dissolved
+  (Phase 1 0.13-0.51; 1 of 120 Phase 1 runs below 0.12) and no PR_pore dip in the coupled run (0 of 120): atypical in stage timing.
+  Recommended to the user: gate rFram seeds 2-3 before DFN lanes. Numbers-checker on the x16 re-quote: ~275 confirmed, 5 fixed.

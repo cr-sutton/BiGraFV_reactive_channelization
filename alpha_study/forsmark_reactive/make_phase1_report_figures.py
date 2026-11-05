@@ -72,8 +72,6 @@ def lines(ax, d, x, y):
 def inheritance():
     rows = []
     for f in sorted(glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/gyp*__phase1/channelization.csv"))):
-        if "p16.0" in f:
-            continue
         m = re.search(r"p([\d.]+)_sg([\d.]+)_seed(\d)", f)
         d = pd.read_csv(f)
         c = clocks(Path(f).parent)
@@ -83,9 +81,9 @@ def inheritance():
         rows.append(d)
     df = pd.concat(rows)
     for x in XLAB:
-        fig, axs = plt.subplots(2, 3, figsize=(11, 5.6), sharex=True, sharey=True)
+        fig, axs = plt.subplots(2, 4, figsize=(14.5, 5.6), sharex=True, sharey=True)
         for i, (mode, lab) in enumerate(MODES):
-            for j, p in enumerate((4.0, 6.0, 8.0)):
+            for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
                 ax = axs[i, j]
                 lines(ax, df[(df["mode"] == mode) & (df.p32 == p)], x, "overlap0")
                 axis(ax, x)
@@ -108,8 +106,8 @@ def mechanism():
             ("outlet_diss", "dissolved at the outlet\n(flow-weighted, last 100 m)"), ("front_x", "front position x (m)\n(inlet −500, outlet +500)")]
     for mode, lab in MODES:
         for x in XLAB:
-            fig, axs = plt.subplots(len(mets), 3, figsize=(11, 10), sharex=True, sharey="row")
-            for j, p in enumerate((4.0, 6.0, 8.0)):
+            fig, axs = plt.subplots(len(mets), 4, figsize=(14.5, 10), sharex=True, sharey="row")
+            for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
                 for i, (y, yl) in enumerate(mets):
                     ax = axs[i, j]
                     lines(ax, df[(df["mode"] == mode) & (df.p32 == p)], x, y)

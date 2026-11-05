@@ -1,0 +1,29 @@
+{
+  "domain": [
+    1000.0,
+    250.0,
+    250.0
+  ],
+  "seed": 1,
+  "network": "forsmark_ffm01_rfram",
+  "layer": 2,
+  "rmin": 15.0,
+  "rmax": 564.0,
+  "p32_scale": 4.0,
+  "transmissivity_sigma": 1.0,
+  "h": 1.0,
+  "framOn": true,
+  "rFram": true,
+  "Q_graph_raw": 2.0067613937244775e-05,
+  "n_fractures": 1605,
+  "graph_nodes": 6065,
+  "graph_edges": 8343,
+  "graph_seconds": 3.903532083990285,
+  "Q_dfn": 2.868186585097647e-05,
+  "Q_dfn_out": 2.868314868851997e-05,
+  "dfn_cells": 758183,
+  "dfn_flow_seconds": 429,
+  "dfn_flow_ranks": 6,
+  "uge_repair": "model_dfn/uge_repair.json (2 NaN cell volumes, 1 NaN area)",
+  "Q_ratio_dfn_graph": 1.4292613930420472
+}

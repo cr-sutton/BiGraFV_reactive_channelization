@@ -86,9 +86,7 @@ def main():
     rows, curves = [], {}
     for run in sorted(glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/gyp*__phase1"))):
         m = re.search(r"p([\d.]+)_sg([\d.]+)_seed(\d)", run)
-        if float(m[1]) > 8:
-            continue
-        mode = "gypcal" if "calcite" in run else "gyponly"
+        mode = "gypcal" if "calcite" in run else "gyponly"   # x16 included since 5 Nov (fine probes run for it)
         fine = sorted(Path(run).glob("snapfine_*"), key=lambda p: int(p.name.split("_")[1]))   # finer early output if probed
         if not (fine and all((f / "snap-mas.dat").exists() for f in fine)):
             continue                      # fine probes only (steps of 0.005 tau_res for the first 3); runs without them are skipped
@@ -176,8 +174,8 @@ def main():
     XL = {"diss": "fraction of the gypsum dissolved (logit axis)", "pv": "pore volumes injected", "t_cap": "capacity-normalised time", "tau_H": "dissolved volume / initial volume (Hyman τ)"}
     XT = {"diss": "diss", "pv": "pv", "t_cap": "tcap", "tau_H": "tauH"}
     for (mode, lab), xc in [(m_, x_) for m_ in (("gyponly", "gypsum only"), ("gypcal", "gypsum → calcite")) for x_ in XL]:
-        fig, axs = plt.subplots(len(mets), 3, figsize=(11, 12), sharex=True, sharey="row")
-        for j, p in enumerate((4.0, 6.0, 8.0)):
+        fig, axs = plt.subplots(len(mets), 4, figsize=(14.5, 12), sharex=True, sharey="row")
+        for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
             for i, (c, yl) in enumerate(mets):
                 ax = axs[i, j]
                 for s, col in SIG.items():

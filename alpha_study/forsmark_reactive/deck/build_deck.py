@@ -229,15 +229,15 @@ section("Approach", "Forsmark networks, one control volume per fracture, two che
 
 s = new_slide(notes=(
     "The networks: SKB FFM01 fracture families (NS, NE, NW, EW, HZ), 1000 × 250 × 250 m, layer 2, minimum radius 15 m. "
-    "Real FFM01 intensity does not percolate across a kilometre, so we scale P32 by 4, 6 and 8 (and 16, running). "
+    "Real FFM01 intensity does not percolate across a kilometre, so we scale P32 by 4, 6, 8 and 16. "
     "Transmissivity heterogeneity sigma 0, 0.5, 1; five seeds each. Water is injected at one network pore volume per year. "
     "The transmissivity law is the 0-200 m SKB law applied at 200-400 m depth; we kept and labelled it."))
-title(s, "45 networks built from Forsmark fracture statistics")
+title(s, f"{N['n_phase1_networks']} networks built from Forsmark fracture statistics")
 picture(s, HERE / "network_p6_flow.png", M, 1.75, 6.6, 4.3, alt="Example network coloured by flow share")
 x0 = 7.6
-stat(s, f"{fr['4'][0]:,}–{fr['8'][1]:,}", "fractures per network (P32 ×4 to ×8)", x0, 1.8, 5.2)
+stat(s, f"{fr['4'][0]:,}–{fr['16'][1]:,}", "fractures per network (P32 ×4 to ×16)", x0, 1.8, 5.2)
 stat(s, "1 km", "inlet to outlet, 1000 × 250 × 250 m, SKB FFM01 families", x0, 3.25, 5.2, color=ACCENT)
-bullets(s, ["P32 ×4, ×6, ×8 (×16 running: " + f"{fr['16'][0]:,}–{fr['16'][1]:,}" + " fractures)",
+bullets(s, ["P32 ×4, ×6, ×8, ×16 (×16: " + f"{fr['16'][0]:,}–{fr['16'][1]:,}" + " fractures, run to capacity time 2)",
             "transmissivity spread σ = 0, 0.5, 1; 5 seeds each",
             "fixed rate: one network pore volume per year (Hyman)"], x0, 4.75, 5.2, 1.7, size=16)
 source(s, "Transmissivity: SKB 0–200 m law used at 200–400 m (kept and labelled).")
@@ -271,14 +271,14 @@ s = new_slide(notes=(
     "Pore volumes put the two chemistries 30 times apart. We time everything by the fraction of the gypsum dissolved, "
     "a measured quantity. Capacity time (pore volumes times what each pore volume can remove, over the inventory) is the "
     "prediction of that fraction; it holds until breakthrough and drifts after it. On the dissolved fraction the coupled "
-    "run still comes a little later than gypsum-only on the same network, but the gap is a third to a half of that on "
+    "run still comes a little later than gypsum-only on the same network, but the gap is about two thirds of that on "
     "capacity time. Hyman's tau (open volume gained over the initial) does not line the stages up across chemistries: "
     "here it is the mean permeability gain instead."))
 title(s, "One clock for both chemistries: the fraction dissolved")
 picture(s, CART / "capacity_clock.png", M, 1.6, 7.7, 3.4, alt="Cartoon: pore volumes against capacity time for the two chemistries")
-stat(s, f"+{g['breakthrough']['d']:.3f}", f"coupled minus gypsum-only at breakthrough, same network (45 pairs), on the dissolved fraction; +{g['breakthrough']['t_cap']:.2f} on capacity time",
+stat(s, f"+{g['breakthrough']['d']:.3f}", f"coupled minus gypsum-only at breakthrough, same network ({N['n_phase1_networks']} pairs), on the dissolved fraction; +{g['breakthrough']['t_cap']:.2f} on capacity time",
      8.7, 1.7, 4.0, big_size=40)
-stat(s, "×3.5", "spread of breakthrough across chemistries and porosities on Hyman's τ, against ×1.2 on the dissolved fraction",
+stat(s, "×3.2", "spread of breakthrough across chemistries and porosities on Hyman's τ, against ×1.3 on the dissolved fraction (12 matched networks per group)",
      8.7, 3.75, 4.0, color=ACCENT, big_size=40)
 text(s, "Capacity time stays as the prediction made before a run; τ = ΔV/V₀ is read as the mean permeability gain.",
      M, 5.45, 7.7, 0.8, size=15, color=INK2)
@@ -292,7 +292,7 @@ s = new_slide(notes=(
     f"flow. Stage 3: flow focusing is strongest (PR_V minimum at {pct(st['PRV_min']['gyponly']['median'])} dissolved "
     f"gypsum-only, {pct(st['PRV_min']['gypcal']['median'])} coupled) and the outlet breaks through "
     f"({pct(st['breakthrough']['gyponly']['median'])} and {pct(st['breakthrough']['gypcal']['median'])}). Stage 4: "
-    "neighbouring paths open and the flow spreads again. Phase 1 medians, 45 runs per chemistry."))
+    "neighbouring paths open and the flow spreads again. Phase 1 medians, 60 runs per chemistry, P32 x4-x16."))
 title(s, "Every run passes through the same four stages")
 picture(s, CART / "four_stages.png", M, 1.45, W - 2 * M, 5.5, alt="Cartoon: the four stages of channel formation")
 
@@ -328,20 +328,20 @@ s = new_slide(notes=(
     f"{f2(N['depth_phase1']['gypcal']['median'])} coupled. Lines are sigma ensembles, medians of 5 seeds with 10-90 % bands."))
 title(s, "Channels deepen, then the flow spreads again")
 picture(s, IMG / "channel_pr_vol_diss.png", M, 1.4, 8.4, 5.4, alt="Volume-weighted participation ratio against fraction dissolved")
-stat(s, f2(N["depth_phase1"]["gyponly"]["median"]), "PR_V minimum over its start, gypsum-only (median of 45)", 9.3, 1.9, 3.4)
+stat(s, f2(N["depth_phase1"]["gyponly"]["median"]), f"PR_V minimum over its start, gypsum-only (median of {N['depth_phase1']['gyponly']['n']})", 9.3, 1.9, 3.4)
 stat(s, f2(N["depth_phase1"]["gypcal"]["median"]), "same for the coupled brine: a shallower channel", 9.3, 3.6, 3.4, color=ACCENT)
-source(s, "PR_V = (ΣQ)² / Σ(Q²/w), w = fracture volume share. Rows: chemistries; columns: P32 ×4, ×6, ×8.")
+source(s, "PR_V = (ΣQ)² / Σ(Q²/w), w = fracture volume share. Rows: chemistries; columns: P32 ×4, ×6, ×8, ×16 (×16 ends at capacity time 2).")
 
 s = new_slide(notes=(
     f"Inheritance: of the fractures carrying 90 % of the flow when the channel is strongest, a median "
     f"{pct(inh['gyponly']['median'])} (gypsum-only) and {pct(inh['gypcal']['median'])} (coupled) were already in the "
-    f"initial 90 % set; the lowest of 90 runs is {pct(min(inh['gyponly']['min'], inh['gypcal']['min']))}. The channel is "
+    f"initial 90 % set; the lowest of {inh['gyponly']['n'] + inh['gypcal']['n']} runs is {pct(min(inh['gyponly']['min'], inh['gypcal']['min']))}. The channel is "
     "chosen by the network before any reaction. This answers question 1, for this model."))
 title(s, "The channel is inherited")
 stat(s, pct(inh["gyponly"]["median"]), "of the peak channel was already in the initial 90 %-flow set (median, gypsum-only)", M, 1.9, 3.6, big_size=60)
 stat(s, pct(min(inh["gyponly"]["min"], inh["gypcal"]["min"])), f"lowest of {inh['gyponly']['n'] + inh['gypcal']['n']} runs", M, 3.95, 3.6, color=ACCENT, big_size=44)
 picture(s, IMG / "inheritance_diss.png", 4.6, 1.5, 8.1, 4.9, alt="Inheritance through time")
-source(s, "Inheritance: share of the 90 %-flow set at its smallest that was in the initial set (n90 minimum). Phase 1, 45 runs per chemistry.")
+source(s, "Inheritance: share of the 90 %-flow set at its smallest that was in the initial set (n90 minimum). Phase 1, 60 runs per chemistry, P32 ×4–×16.")
 
 tg, tc = tr["gyponly"], tr["gypcal"]
 s = new_slide(notes=(
@@ -371,8 +371,8 @@ s = new_slide(notes=(
     f"{pct(x['inheritance']['gyponly']['median'])} (lowest {pct(min(x['inheritance']['gyponly']['min'], x['inheritance']['gypcal']['min']))}), "
     f"and the coupled run is shallower on the same network by +{x['depth_gap']:.3f} (all 15 pairs). What shifts: the flow/open-space "
     f"mismatch peaks later, at {pct(x['stages']['PRpore_min']['gyponly']['median'])} dissolved gypsum-only and "
-    f"{pct(x['stages']['PRpore_min']['gypcal']['median'])} coupled, against {pct(st['PRpore_min']['gyponly']['median'])} and "
-    f"{pct(st['PRpore_min']['gypcal']['median'])} at x4-x8."))
+    f"{pct(x['stages']['PRpore_min']['gypcal']['median'])} coupled, against {pct(N['stages_x4x8']['PRpore_min']['gyponly']['median'])} and "
+    f"{pct(N['stages_x4x8']['PRpore_min']['gypcal']['median'])} at x4-x8."))
 title(s, "Twice the fractures, the same story")
 rowsx = [("PR_pore minimum", "PRpore_min"), ("PR_V minimum", "PRV_min"), ("breakthrough", "breakthrough")]
 text(s, [[("fraction of the gypsum dissolved (gypsum-only)", {"bold": True})]], M, 1.65, 7.0, 0.4, size=15, color=INK2)
@@ -381,7 +381,7 @@ text(s, "P32 ×16", M + 5.4, 2.15, 1.6, 0.4, size=14, color=FLOW, bold=True)
 for i, (lab, key) in enumerate(rowsx):
     y = 2.65 + i * 0.75
     text(s, lab, M, y, 3.4, 0.5, size=17)
-    text(s, pct(st[key]["gyponly"]["median"]), M + 3.6, y - 0.05, 1.6, 0.6, size=24, font=HEAD, color=INK2)
+    text(s, pct(N["stages_x4x8"][key]["gyponly"]["median"]), M + 3.6, y - 0.05, 1.6, 0.6, size=24, font=HEAD, color=INK2)
     text(s, pct(x["stages"][key]["gyponly"]["median"]), M + 5.4, y - 0.05, 1.6, 0.6, size=24, font=HEAD, color=FLOW, bold=True)
 text(s, "Order unchanged; the mismatch between flow and open space peaks later.", M, 5.05, 7.0, 0.8, size=15, color=INK2)
 stat(s, pct(x["inheritance"]["gyponly"]["median"]), "inheritance at ×16 (gypsum-only, median of 15)", 8.4, 1.8, 4.3)
@@ -428,7 +428,9 @@ s = new_slide(notes=(
     f"same 9 networks the depths match within a median {abs(cl['gyp55_minus_cal55']):.3f} (gypsum-only slightly deeper in all 9), against "
     f"+{cl['gyp55_minus_gyp10']:.2f} when the same chemistry goes from x10 to x5.5. The depth law now spans x3.3 to x20. Rate: 100-fold range, "
     f"0.1 to 10 pore volumes per year, three networks per chemistry: stage timing on the dissolved fraction changes by at most "
-    f"{rt['gyp_max']:.4f} (gypsum-only) and {rt['cal_events_max']:.4f} (coupled), depth by at most {rt['cal_depth_max']:.3f}. Local equilibrium."))
+    f"{rt['gyp_max']:.4f} (gypsum-only) and {rt['cal_events_max']:.4f} (coupled), depth by at most {rt['cal_depth_max']:.3f}. Local equilibrium. "
+    "One coupled network has its PR_pore minimum at 0.003 at the slow rate: gypsum re-precipitates and fills 72 cells that briefly still carry 0.4 % "
+    "of the flow, so PR_pore collapses for one saved state. Not a timing shift."))
 title(s, "Same ceiling, same depth; any rate, same stages")
 picture(s, IMG / "depth_law.png", M, 1.45, 6.9, 4.4, alt="Depth law from x3.3 to x20")
 stat(s, f"{abs(cl['gyp55_minus_cal55']):.3f}", f"depth difference at equal ×5.5 ceiling, two chemistries and porosities (median, {cl['n']} networks)", 7.9, 1.55, 4.8, big_size=36)
@@ -454,13 +456,15 @@ s = new_slide(notes=(
     f"Question 2, precipitation rerouting. At 2 mM carbonate (capacity matched to gypsum-only) the channel depth matches "
     f"gypsum-only (median |difference| {dp['co3lo_vs_gyponly']['median_abs']:.3f}, {dp['co3lo_vs_gyponly']['n']} networks) "
     f"and inheritance at the channel peak stays {pct(N['inheritance_2mM']['min'])}-{pct(N['inheritance_2mM']['max'])}: no "
-    "rerouting. In a well-mixed cell calcite only forms where gypsum dissolves and takes half its volume, so a cell can only "
-    "open. The olivine-carbonation run tests a chemistry that adds solid volume."))
+    "rerouting. In a well-mixed cell calcite only forms where gypsum dissolves and takes half its volume, so a dissolving cell "
+    f"opens. Gypsum does re-precipitate in the coupled runs ({N['reprecip']['runs_gain']} of {N['reprecip']['n']}) and fills up to "
+    f"{N['reprecip']['floor_max']} low-flow cells per run, which carry at most {100 * N['reprecip']['q_floor_max']:.4f} % of the flow. "
+    "The olivine-carbonation run tests a chemistry that adds solid volume."))
 title(s, "No rerouting at low carbonate, and we can see why")
 picture(s, CART / "precipitation_reroute.png", M, 1.45, W - 2 * M, 3.6, alt="Cartoon: precipitation rerouting test")
 stat(s, prange(N['inheritance_2mM']['min'], N['inheritance_2mM']['max']), f"inheritance at 2 mM carbonate ({N['inheritance_2mM']['n']} networks)", M, 5.2, 4.0, big_size=36)
-text(s, [[("Why: ", {"bold": True}), ("calcite (36.9 cm³/mol) replaces gypsum (74.7 cm³/mol) where it dissolves, so every well-mixed cell "
-          "gains porosity. Clogging needs a reaction that adds solid volume.", {})]], M + 4.5, 5.25, 7.6, 1.3, size=16)
+text(s, [[("Why: ", {"bold": True}), ("calcite (36.9 cm³/mol) replaces gypsum (74.7 cm³/mol) where it dissolves, so dissolving cells open. "
+          "Re-precipitated gypsum fills a few low-flow cells without moving the flow; clogging the channel needs a reaction that adds solid volume.", {})]], M + 4.5, 5.25, 7.6, 1.3, size=16)
 
 # manuscript analyses -----------------------------------------------------------------------------------------------------
 MS = HERE.parent / "report_phase1" / "img" / "manuscript"
@@ -481,22 +485,29 @@ s = new_slide(notes=(
     f"90 %-flow set drops out (median over {to['n']} runs), mostly small, narrow fractures downstream where the flow converges. Only "
     f"{pct(to['joiner_share'])} of the peak set is new, all of them side branches touching the channel. And the depth of focusing is a "
     f"stable property of each network: the gypsum-only and coupled depths on the same network have Spearman {N['depth_rank_rho']:.2f}, "
-    "although none of 19 initial-state features predicts it out of sample."))
+    "although none of 19 initial-state features predicts it out of sample. It is set early in the reaction: how far PR_V has fallen by 10 % "
+    f"dissolved ranks the final depth (Spearman {N['early']['rho10']:.2f}, held-out R2 {N['early']['r2_10']:.2f}, n {N['early']['n10']}); at 5 % it does not "
+    f"(held-out R2 {N['early']['r2_05']:.2f}). That is an early warning from the same measure, not a forecast from the initial state."))
 title(s, "The channel narrows; depth belongs to the network")
 picture(s, MS / "channel_turnover.png", M, 1.45, 7.3, 4.5, alt="Stayers, joiners, leavers and others compared")
 picture(s, MS / "depth_network_property.png", 8.1, 1.45, 4.6, 4.2, alt="Coupled against gypsum-only depth on the same network")
 text(s, [[(f"{pct(to['leaver_share'])} ", {"bold": True, "color": FLOW, "size": 22, "font": HEAD}), ("of the initial channel drops out (median); ", {}),
           (f"{pct(to['joiner_share'])} ", {"bold": True, "color": ACCENT, "size": 22, "font": HEAD}), ("of the peak channel is new.", {})]], M, 6.15, 7.3, 0.7, size=15)
-text(s, f"Depth rank kept across chemistry: ρ {N['depth_rank_rho']:.2f} (n 60)", 8.1, 5.75, 4.6, 0.5, size=14, color=INK2)
+text(s, f"Depth rank kept across chemistry: ρ {N['depth_rank_rho']:.2f} (n 60). Set by 10 % dissolved: ρ {N['early']['rho10']:.2f}, held-out R² {N['early']['r2_10']:.2f}", 8.1, 5.65, 4.6, 0.8, size=13, color=INK2)
 
 s = new_slide(notes=(
     "Validation scope. The Phase 1 networks were generated with dfnWorks' feasibility checks off, so they cannot be meshed; a validation "
     "needs a regenerated network. With relaxed checks (rFram) the P32 x4 network keeps 1,605 fractures and 9 inlet-outlet paths "
     "(Phase 1: 1,608 and 11). At h = 1 m that is about 0.78 M DFN cells: the coupled chemistry to capacity time 2 is about 9-17 core-h, "
-    "gypsum-only to capacity time 1 about 120-240 core-h. x8 at 1 m and x16 do not fit in 24 GB. All estimates; a 10-step smoke test "
-    "would replace them."))
-title(s, "A DFN check is feasible for one 1 km network")
-rows_dfn = [("1 km, P32 ×4, h = 1 m", "0.78 M cells", "coupled 9–17 core-h · gypsum-only 240–470", "recommended"),
+    "gypsum-only to capacity time 1 about 120-240 core-h. x8 at 1 m and x16 do not fit in 24 GB. Built and smoke-tested on 5 Nov: "
+    f"{N['dfn']['cells']:,} cells, steady flow {N['dfn']['q_ratio']:.2f}x the graph at the same pressure drop, 40 steps per chemistry with no cuts. "
+    f"Measured {N['dfn']['s_step']['gypcal']:.1f} and {N['dfn']['s_step']['gyponly']:.1f} s per step on 6 ranks on a busy machine, peak "
+    f"{N['dfn']['rss']['gyponly']:.1f} GB: coupled to capacity time 2 about {N['dfn']['wall_h']['gypcal_tcap2']:.0f} h, gypsum-only to "
+    f"capacity time 1 about {N['dfn']['wall_h']['gyponly_tcap1'] / 24:.1f} days. Gate: on this network the one-cell runs fall inside the "
+    "Phase 1 x4 envelope for depth, inheritance and breakthrough, but the PR_V minimum comes very early (8-11 % dissolved) and the coupled "
+    "run shows no PR_pore dip, so it is atypical in stage timing; rFram seeds 2-3 should be gated before choosing the DFN network."))
+title(s, "DFN check built: 4 h coupled, 2.5 days gypsum-only")
+rows_dfn = [("1 km, P32 ×4, h = 1 m", f"{N['dfn']['cells'] / 1e6:.2f} M cells (built)", f"measured: coupled {N['dfn']['wall_h']['gypcal_tcap2']:.0f} h · gypsum-only {N['dfn']['wall_h']['gyponly_tcap1'] / 24:.1f} d to t_cap 1", "smoke-tested"),
             ("1 km, P32 ×8, h = 2 m", "1.5 M cells", "coupled 17–38 core-h", "coupled only"),
             ("1 km, ×8 at 1 m; ×16", "2.9 M; 11 M", "16–110 GB memory", "not on this laptop"),
             ("250 m block, ×4", "0.19 M cells", "cannot test 1 km depth or breakthrough", "partial")]
@@ -507,8 +518,8 @@ for i, (a1, a2, a3, a4) in enumerate(rows_dfn):
     text(s, a2, M + 4.0, y + 0.22, 2.2, 0.5, size=16, color=INK2)
     text(s, a3, M + 6.3, y + 0.22, 4.0, 0.5, size=15, color=INK2)
     text(s, a4, M + 10.4, y + 0.22, 1.8, 0.5, size=15, color=FLOW if i == 0 else INK2, bold=i == 0)
-text(s, "Needs a regenerated network: the Phase 1 networks were built with dfnWorks' feasibility checks off and cannot be meshed.", M, 5.95, W - 2 * M, 0.6, size=15, color=INK2)
-source(s, "Estimates from four Forsmark mesh tests and the earlier TPL DFN runs (forsmark_reactive/DFN_VALIDATION_SCOPE.md).")
+text(s, "Gate on the rebuilt network: depth, inheritance and breakthrough inside the Phase 1 ×4 range; stage timing is not (PR_V minimum at 8–11 % dissolved). Gate seeds 2–3 next.", M, 5.95, W - 2 * M, 0.6, size=15, color=INK2)
+source(s, "Row 1 measured on 5 Nov (40-step smoke test, 6 ranks, machine load ~22); other rows are estimates (forsmark_reactive/DFN_VALIDATION_SCOPE.md).")
 
 rg, bd = N["regime"], N["bound"]
 s = new_slide(notes=(

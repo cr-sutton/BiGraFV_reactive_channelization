@@ -20,7 +20,7 @@ Everything else can come from the data we already have. The olivine result is a 
 2. **Channels are inherited.** At the strongest channel, the median share of the 90 %-flow set that was already there before reaction is 0.98 (lowest 0.92). This holds over P32 ×4–×16, σ and both chemistries. It extends Hyman et al. 2026 to kilometre scale, site statistics and mineral-filled fractures.
 3. **Four stages, and stage 1 is new.** In filled fractures, open pore space and flow decouple first: PR_pore dips while PR_V holds. The two then realign. This cannot happen in open-fracture models, where pore space and fracture volume are the same thing.
 4. **The clock is the mineral consumed, not the open volume gained.**
-   - The measured dissolved fraction lines up chemistries and porosities (×1.16–1.20 spread of event times). Hyman's τ does not (×3.5).
+   - The measured dissolved fraction lines up chemistries and porosities about as well as capacity time (×1.30–1.36 spread of event times on 12 matched networks, P32 ×4–×16; ×1.16–1.20 on ×4–×8 alone). Hyman's τ does not (×3.1–3.2).
    - With n = 1, τ is the mean permeability gain.
    - Capacity time predicts the clock before a run, until breakthrough.
 5. **Depth law.** The channel depth is set by the permeability ceiling, not the chemistry. This is paired on the same networks at ×4–×16.
@@ -114,3 +114,14 @@ Everything else can come from the data we already have. The olivine result is a 
 7. **Transport.** Paused-pulse frames (one network) and the binned tail exponent and t50/τ_res against PR_V.
 8. **Robustness.** Rate test (×0.1, ×1, ×10) and P32 ×16.
 9. Supplement: DFN validation (once run), regime map, d_Q size baseline, master curves, olivine outlook.
+
+## Update, 5 Nov: x16 pooled everywhere, re-precipitation, early redistribution, DFN smoke test
+
+- All report numbers in sections 1-6 now pool P32 x4-x16 (60 networks per chemistry). Changes that matter: PR_V minimum at 0.42 dissolved
+  for gypsum-only (was 0.37 at x4-x8); clock spread x1.30-1.36 on d (was x1.16-1.20). Everything else moves by <= 0.03.
+- Gypsum re-precipitates in the coupled runs (56 of 60) and fills 1-12 low-flow cells in 48 of 60 to solid fraction > 1 (PFLOTRAN keeps
+  precipitating at the porosity floor; not physical). Flow through them <= 0.0012 %. Disclose in methods; no result changes. Slow-rate
+  seed 1 fills 72 cells and collapses PR_pore at one state.
+- Depth is set early: the PR_V change by 10 % dissolved predicts the depth residual (rho 0.52, held-out R2 0.34, n 155); at 2-5 % it
+  does not. Supplement panel; supports "depth set during stages 1-2".
+- Draft main-text figures 1-8: forsmark_reactive/manuscript_figures/ (FIGURES.md has captions and sources).

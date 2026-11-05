@@ -50,8 +50,6 @@ def load():
     out = []
     for f in sorted(glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/gyp*__phase1/channelization.csv"))):
         m = re.search(r"p([\d.]+)_sg([\d.]+)_seed(\d)", f)
-        if float(m[1]) > 8:                       # P32 x16 ran to capacity time 2 only; merged separately
-            continue
         mode = "gypcal" if "calcite" in f else "gyponly"
         d = pd.read_csv(f).sort_values("k")
         c = clocks(Path(f).parent)
@@ -85,9 +83,9 @@ def axis(ax, xcol):
 
 
 def figure(runs, metric, xcol, fname):
-    fig, axs = plt.subplots(2, 3, figsize=(11, 6.2), sharey=True, sharex=True)
+    fig, axs = plt.subplots(2, 4, figsize=(14.5, 6.2), sharey=True, sharex=True)   # x16 since 5 Nov (to t_cap 2 only)
     for i, (mode, mlab) in enumerate(MODES):
-        for j, p in enumerate((4.0, 6.0, 8.0)):
+        for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
             ax = axs[i, j]
             for s, c in SIG.items():
                 rs = [r for r in runs if r["p32"] == p and r["mode"] == mode and r["sigma"] == s]
@@ -113,7 +111,7 @@ def figure(runs, metric, xcol, fname):
 def main():
     OUT.mkdir(exist_ok=True)
     runs = load()
-    assert len(runs) == 90, len(runs)
+    assert len(runs) == 120, len(runs)
     for metric, tag in (("dQ_P32", "active_area"), ("pr_fracture_vol", "pr_vol")):
         figure(runs, metric, "pv", f"channel_{tag}_pv.png")
         figure(runs, metric, "t_cap", f"channel_{tag}_tcap.png")

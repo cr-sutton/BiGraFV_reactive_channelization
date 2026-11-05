@@ -4,21 +4,25 @@ Reactive flow in kilometre-scale fracture networks built from SKB Forsmark FFM01
 (one well-mixed control volume per fracture, bipartite fracture/intersection graph) and PFLOTRAN. Gypsum dissolution alone
 and coupled to calcite precipitation, at a fixed volumetric rate of one network pore volume per year.
 
-**Status (4 Nov 2026).** All runs complete: Phase 1 (45 networks at P32 x4/x6/x8 + 15 at x16, two chemistries each, 120
-runs), Phase 2 mechanism tests (porosity 0.05, 2 mM carbonate; sigma 1, seeds 1-3), fine tracer probes, paused-pulse
-movies, wormhole scenario and regime map, and one exploratory olivine-carbonation run.
+**Status (5 Nov 2026).** All runs complete: Phase 1 (45 networks at P32 x4/x6/x8 + 15 at x16, two chemistries each, 120
+runs; x16 is pooled into every Phase 1 figure and number since 5 Nov), Phase 2 mechanism tests (porosity 0.05, 2 mM carbonate; sigma 1,
+seeds 1-3), Phase 3 ceiling and rate tests, fine tracer probes, paused-pulse movies, wormhole scenario and regime map, one exploratory
+olivine-carbonation run. DFN validation: the x4 sigma 1 seed 1 network was regenerated with relaxed FRAM, meshed (758,183 cells) and
+smoke-tested (`alpha_study/forsmark_reactive/dfn_validation/`); the full DFN runs are not started. Draft manuscript figures:
+`alpha_study/forsmark_reactive/manuscript_figures/`.
 
 ## Main results (details, numbers and sources in the report)
 
 1. **Inherited channels.** At the strongest channel, a median of about 98 % of the fractures carrying 90 % of the flow were
    already in that set before any reaction (lowest of 120 runs: 92 %).
-2. **Four stages, timed by the fraction of the gypsum dissolved:** pore space opens near the inlet (about 17-20 % dissolved),
-   flow focusing is strongest (37-44 %), breakthrough (56-63 %), then the flow spreads again. The measured dissolved fraction
+2. **Four stages, timed by the fraction of the gypsum dissolved:** pore space opens near the inlet (about 20-21 % dissolved),
+   flow focusing is strongest (42-44 %), breakthrough (56-63 %), then the flow spreads again (P32 x4-x16 medians). The measured dissolved fraction
    lines the chemistries and porosities up; Hyman's tau = dV/V0 does not (it is the mean permeability gain for n = 1).
 3. **Channel-depth law.** The depth of flow focusing is set by the permeability gain the reaction can reach, not by the
    chemistry (equal ceilings give equal depth within about 0.01, paired on the same network).
 4. **Transport narrows while the channel forms** and partly recovers (fine tracer probes on all networks).
-5. **No rerouting with gypsum -> calcite** (calcite takes back about half the volume, so a well-mixed cell only opens).
+5. **No rerouting with gypsum -> calcite** (calcite takes back about half the volume, so a dissolving cell opens; re-precipitated
+   gypsum fills a few low-flow cells in most coupled runs without moving the flow).
    One exploratory olivine-carbonation run (solids grow) clogs the inlet fractures and re-routes the flow.
 6. **Model-dependent:** the compact front (breakthrough after more than half the inventory). In-fracture wormholes, which the
    one-cell model cannot form, could bring breakthrough to about 28-36 % (scenario estimate, section 6.6 of the report).

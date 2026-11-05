@@ -1,0 +1,76 @@
+
+##### x4-x8
+stage PRpore_min    gyponly  n=45 d=0.17 [0.13-0.24] tcap=0.17 [0.13-0.23] d/tcap=1.009 [1.008-1.012]
+stage PRpore_min    gypcal   n=45 d=0.20 [0.13-0.28] tcap=0.21 [0.13-0.29] d/tcap=0.952 [0.944-0.960]
+stage outlet5       gyponly  n=45 d=0.50 [0.43-0.57] tcap=0.50 [0.43-0.59] d/tcap=0.993 [0.980-1.006]
+stage outlet5       gypcal   n=45 d=0.58 [0.50-0.59] tcap=0.62 [0.53-0.62] d/tcap=0.939 [0.927-0.946]
+stage PRV_min       gyponly  n=45 d=0.37 [0.28-0.50] tcap=0.37 [0.27-0.50] d/tcap=1.006 [0.998-1.007]
+stage PRV_min       gypcal   n=45 d=0.44 [0.36-0.56] tcap=0.46 [0.39-0.62] d/tcap=0.940 [0.932-0.946]
+stage breakthrough  gyponly  n=45 d=0.56 [0.49-0.60] tcap=0.59 [0.50-0.68] d/tcap=0.948 [0.923-0.976]
+stage breakthrough  gypcal   n=45 d=0.63 [0.55-0.67] tcap=0.73 [0.62-0.73] d/tcap=0.889 [0.868-0.915]
+gap PRpore_min    t_cap     n=45 0.026 [0.013-0.056] positive=43
+gap PRpore_min    dissolved n=45 0.018 [0.002-0.040] positive=42
+gap PRV_min       t_cap     n=45 0.088 [0.032-0.120] positive=43
+gap PRV_min       dissolved n=45 0.058 [0.012-0.080] positive=40
+gap outlet5       t_cap     n=45 0.088 [0.037-0.120] positive=45
+gap outlet5       dissolved n=45 0.050 [0.014-0.078] positive=43
+gap breakthrough  t_cap     n=45 0.120 [0.043-0.140] positive=45
+gap breakthrough  dissolved n=45 0.066 [0.022-0.084] positive=45
+PRpore at bt / start 1.09 [1.02-1.17] ; PRV min before outlet5 0.48 ; PRV min <= bt 0.978 (n 90)
+bt dissolved gyponly per-P32 medians {4.0: 0.558, 6.0: 0.53, 8.0: 0.57} runs 0.309-0.751
+bt dissolved gypcal per-P32 medians {4.0: 0.586, 6.0: 0.584, 8.0: 0.665} runs 0.361-0.820
+depth x5.5-x10 P1: n=45 median +0.126 min +0.049 max +0.227 pos 45
+depth x20-x10: n=9 median -0.124 min -0.201 max -0.066 pos 0
+depth |x10.6-x10|: n=9 median +0.009 min +0.001 max +0.032 pos 9
+depth |2mM-x10|: n=9 median +0.009 min +0.003 max +0.052 pos 9
+equal ceilings pooled |diff| median 0.009 max 0.052 n 18
+bound gyponly f=0.1 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.056 D_hi=0.123
+bound gyponly f=0.2 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.113 D_hi=0.172
+bound gyponly f=0.3 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.169 D_hi=0.222
+bound gyponly f=0.5 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.281 D_hi=0.321
+bound gyponly f=0.75 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.422 D_hi=0.443
+bound gyponly f=1 n=45 D_bt=0.563 D_ch=0.478 D_off=0.077 D_lo=0.563 D_hi=0.563
+bound gypcal f=0.1 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.063 D_hi=0.144
+bound gypcal f=0.2 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.126 D_hi=0.198
+bound gypcal f=0.3 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.188 D_hi=0.253
+bound gypcal f=0.5 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.314 D_hi=0.363
+bound gypcal f=0.75 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.471 D_hi=0.495
+bound gypcal f=1 n=45 D_bt=0.628 D_ch=0.530 D_off=0.087 D_lo=0.628 D_hi=0.628
+
+##### x4-x16
+stage PRpore_min    gyponly  n=60 d=0.20 [0.13-0.27] tcap=0.20 [0.13-0.27] d/tcap=1.009 [1.008-1.011]
+stage PRpore_min    gypcal   n=60 d=0.21 [0.13-0.32] tcap=0.22 [0.13-0.34] d/tcap=0.951 [0.945-0.959]
+stage outlet5       gyponly  n=60 d=0.49 [0.41-0.57] tcap=0.50 [0.42-0.59] d/tcap=0.998 [0.984-1.006]
+stage outlet5       gypcal   n=60 d=0.54 [0.46-0.59] tcap=0.59 [0.50-0.62] d/tcap=0.941 [0.930-0.947]
+stage PRV_min       gyponly  n=60 d=0.42 [0.31-0.50] tcap=0.43 [0.32-0.50] d/tcap=1.004 [0.993-1.007]
+stage PRV_min       gypcal   n=60 d=0.44 [0.36-0.56] tcap=0.48 [0.39-0.60] d/tcap=0.940 [0.932-0.946]
+stage breakthrough  gyponly  n=60 d=0.56 [0.49-0.65] tcap=0.59 [0.50-0.68] d/tcap=0.952 [0.930-0.977]
+stage breakthrough  gypcal   n=60 d=0.63 [0.55-0.69] tcap=0.73 [0.62-0.75] d/tcap=0.899 [0.870-0.917]
+gap PRpore_min    t_cap     n=60 0.041 [0.014-0.076] positive=58
+gap PRpore_min    dissolved n=60 0.029 [0.002-0.054] positive=57
+gap PRV_min       t_cap     n=60 0.086 [0.032-0.120] positive=57
+gap PRV_min       dissolved n=60 0.056 [0.019-0.084] positive=54
+gap outlet5       t_cap     n=60 0.091 [0.039-0.120] positive=60
+gap outlet5       dissolved n=60 0.052 [0.016-0.078] positive=58
+gap breakthrough  t_cap     n=60 0.094 [0.050-0.140] positive=60
+gap breakthrough  dissolved n=60 0.060 [0.028-0.083] positive=60
+PRpore at bt / start 1.04 [0.97-1.14] ; PRV min before outlet5 0.40 ; PRV min <= bt 0.983 (n 120)
+bt dissolved gyponly per-P32 medians {4.0: 0.558, 6.0: 0.53, 8.0: 0.57, 16.0: 0.584} runs 0.309-0.751
+bt dissolved gypcal per-P32 medians {4.0: 0.586, 6.0: 0.584, 8.0: 0.665, 16.0: 0.645} runs 0.361-0.824
+depth x5.5-x10 P1: n=60 median +0.129 min +0.049 max +0.227 pos 60
+depth x20-x10: n=12 median -0.122 min -0.201 max -0.066 pos 0
+depth |x10.6-x10|: n=12 median +0.008 min +0.001 max +0.032 pos 12
+depth |2mM-x10|: n=12 median +0.014 min +0.003 max +0.052 pos 12
+equal ceilings pooled |diff| median 0.009 max 0.052 n 24
+bound gyponly f=0.1 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.056 D_hi=0.125
+bound gyponly f=0.2 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.113 D_hi=0.172
+bound gyponly f=0.3 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.169 D_hi=0.223
+bound gyponly f=0.5 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.282 D_hi=0.322
+bound gyponly f=0.75 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.423 D_hi=0.444
+bound gyponly f=1 n=60 D_bt=0.564 D_ch=0.479 D_off=0.077 D_lo=0.564 D_hi=0.564
+bound gypcal f=0.1 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.063 D_hi=0.144
+bound gypcal f=0.2 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.126 D_hi=0.198
+bound gypcal f=0.3 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.189 D_hi=0.254
+bound gypcal f=0.5 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.315 D_hi=0.364
+bound gypcal f=0.75 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.472 D_hi=0.497
+bound gypcal f=1 n=60 D_bt=0.630 D_ch=0.536 D_off=0.087 D_lo=0.630 D_hi=0.630

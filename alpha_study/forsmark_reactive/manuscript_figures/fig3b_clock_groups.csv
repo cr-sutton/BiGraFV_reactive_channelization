@@ -1,0 +1,41 @@
+event,clock,group,n,median
+PRV_min,pv,"gypsum-only, φ0 0.1",12,3131.8391116891
+PRV_min,pv,"coupled, φ0 0.1",12,106.93817711849998
+PRV_min,pv,"gypsum-only, φ0 0.05",12,4944.633176946749
+PRV_min,pv,"coupled, φ0 0.05",12,212.2189418003
+PRV_min,pv,"coupled 2 mM, φ0 0.1",12,2698.9371303287
+PRV_min,t_cap,"gypsum-only, φ0 0.1",12,0.43144702777601956
+PRV_min,t_cap,"coupled, φ0 0.1",12,0.4584659945714957
+PRV_min,t_cap,"gypsum-only, φ0 0.05",12,0.32266438015632326
+PRV_min,t_cap,"coupled, φ0 0.05",12,0.43097036238942527
+PRV_min,t_cap,"coupled 2 mM, φ0 0.1",12,0.4166061361461178
+PRV_min,dissolved,"gypsum-only, φ0 0.1",12,0.42724918223664565
+PRV_min,dissolved,"coupled, φ0 0.1",12,0.4333642896043499
+PRV_min,dissolved,"gypsum-only, φ0 0.05",12,0.31910341053384983
+PRV_min,dissolved,"coupled, φ0 0.05",12,0.40139011100834376
+PRV_min,dissolved,"coupled 2 mM, φ0 0.1",12,0.3947331073424587
+PRV_min,tau_H,"gypsum-only, φ0 0.1",12,3.799687932693213
+PRV_min,tau_H,"coupled, φ0 0.1",12,1.9430520817809507
+PRV_min,tau_H,"gypsum-only, φ0 0.05",12,5.988566147035234
+PRV_min,tau_H,"coupled, φ0 0.05",12,3.8380235907958484
+PRV_min,tau_H,"coupled 2 mM, φ0 0.1",12,3.314596123852911
+breakthrough,pv,"gypsum-only, φ0 0.1",12,4257.285511678
+breakthrough,pv,"coupled, φ0 0.1",12,169.4855889293
+breakthrough,pv,"gypsum-only, φ0 0.05",12,7726.9556346987
+breakthrough,pv,"coupled, φ0 0.05",12,336.3443561705
+breakthrough,pv,"coupled 2 mM, φ0 0.1",12,4277.5270847385
+breakthrough,t_cap,"gypsum-only, φ0 0.1",12,0.5864902745328905
+breakthrough,t_cap,"coupled, φ0 0.1",12,0.7266196337712285
+breakthrough,t_cap,"gypsum-only, φ0 0.05",12,0.5042261500791438
+breakthrough,t_cap,"coupled, φ0 0.05",12,0.6830419935033029
+breakthrough,t_cap,"coupled 2 mM, φ0 0.1",12,0.6602762291155116
+breakthrough,dissolved,"gypsum-only, φ0 0.1",12,0.5775580000088198
+breakthrough,dissolved,"coupled, φ0 0.1",12,0.6465189971485004
+breakthrough,dissolved,"gypsum-only, φ0 0.05",12,0.4975006885360429
+breakthrough,dissolved,"coupled, φ0 0.05",12,0.6104809182644957
+breakthrough,dissolved,"coupled 2 mM, φ0 0.1",12,0.6107113548874783
+breakthrough,tau_H,"gypsum-only, φ0 0.1",12,5.13663622812758
+breakthrough,tau_H,"coupled, φ0 0.1",12,2.910743679206135
+breakthrough,tau_H,"gypsum-only, φ0 0.05",12,9.362466584037097
+breakthrough,tau_H,"coupled, φ0 0.05",12,5.8337638599712385
+breakthrough,tau_H,"coupled 2 mM, φ0 0.1",12,5.125630310575601

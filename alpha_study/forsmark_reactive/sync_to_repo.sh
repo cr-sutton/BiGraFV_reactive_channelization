@@ -13,12 +13,16 @@ rsync -a --prune-empty-dirs \
   --include 'phase1/L2_*/*/channelization.csv' --include 'phase1/L2_*/*/channel_fractures.csv' --include 'phase1/L2_*/*/patterns.csv' \
   --include 'phase1/L2_*/*/single_stage.in.schedule.json' --include 'phase1/L2_*/*/damkohler.json' --include 'phase1/L2_*/*/inlet_manifold.json' \
   --exclude 'phase1/L2_*/**' --exclude 'pilot/L*/**' --exclude 'pilot/*.log' \
+  --include 'dfn_validation/rf_*/build_summary.json' --include 'dfn_validation/rf_*/network_stats.json' --include 'dfn_validation/rf_*/model_dfn/uge_repair.json' \
+  --include 'dfn_validation/rf_*/*/smoke.json' --include 'dfn_validation/rf_*/*/smoke_trace.txt' --include 'dfn_validation/rf_*/*/patterns.csv' \
+  --include 'dfn_validation/rf_*/*/channelization.csv' --include 'dfn_validation/rf_*/*/channel_fractures.csv' --include 'dfn_validation/rf_*/*/single_stage.in' \
+  --exclude 'dfn_validation/rf_*/**' --exclude 'dfn_validation/*.log' --exclude 'report_phase1/index_pre_x16.html' --exclude 'deck/numbers_x4x8.json' \
   --include 'explore_olivine/L2_*/*/clogging.csv' --include 'explore_olivine/L2_*/*/patterns.csv' --include 'explore_olivine/L2_*/*/channelization.csv' \
   --include 'explore_olivine/L2_*/*/single_stage.in' --include 'explore_olivine/L2_*/*/single_stage.in.schedule.json' --exclude 'explore_olivine/L2_*/**' \
   --exclude '*.vtk' --exclude '*.vtu' --exclude '*.h5' --exclude '*.stdout' --exclude 'single_stage.out' --exclude '*-mas.dat' \
   $SRC/forsmark_reactive/ $DST/alpha_study/forsmark_reactive/
 for big in wormhole_regime channel_turnover; do gzip -9 -c $SRC/forsmark_reactive/phase1/$big.csv > $DST/alpha_study/forsmark_reactive/phase1/$big.csv.gz; done
-for f in analyze_channelization.py analyze_km_dissolution_patterns.py probe_frozen_state_tracer.py deck_gypsum_calcite.py run_names.py; do cp $SRC/$f $DST/alpha_study/; done
+for f in analyze_channelization.py analyze_km_dissolution_patterns.py probe_frozen_state_tracer.py deck_gypsum_calcite.py run_names.py build_km_graph_network.py build_network_dfn_and_graphs.py add_inlet_manifold.py exfix_outflow.py init_steady_pressure.py stabilize_graph_run.py; do cp $SRC/$f $DST/alpha_study/; done
 cp $SRC/run_scripts/run_km_graph_case_hyman.sh $SRC/run_scripts/run_km_queue.py $DST/alpha_study/run_scripts/
 if [ "$1" = "--push" ]; then
   cd $DST && git add -A && git commit -q -m "$2

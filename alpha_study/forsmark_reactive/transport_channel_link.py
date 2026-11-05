@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Link between frozen-state tracer metrics and channel measures (Phase 1, P32 x4-x8, the states probed in phase1_tracer.csv).
+Link between frozen-state tracer metrics and channel measures (Phase 1, P32 x4-x16 since 5 Nov, the states probed in phase1_tracer.csv).
 
 Merge: phase1_tracer.csv with phase1_mechanism.csv (tag phase1) on (p32, sigma, seed, mode, k).  Per probed state:
   PRV_rel   = pr_frac / pr_frac(k=0)         PR_V / PR_V0
@@ -37,7 +37,7 @@ P1 = HERE / "phase1"
 FIG = P1 / "figures" / "manuscript"
 FIG.mkdir(parents=True, exist_ok=True)
 KEY = ["p32", "sigma", "seed", "mode"]
-COL = {4.0: "#86b6ef", 6.0: "#2a78d6", 8.0: "#104281"}
+COL = {4.0: "#86b6ef", 6.0: "#2a78d6", 8.0: "#104281", 16.0: "#d2572a"}
 INK, INK2, GRID = "#16181a", "#4c5157", "#e6e5e1"
 XS = ["t50_res", "gamma", "alpha_L"]
 CHAN = ["PRV_rel", "PRp_rel", "decoup", "dlnPRV", "dlnPRp"]

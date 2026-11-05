@@ -1,0 +1,13 @@
+{
+ "wall_s": 606,
+ "steps": 41,
+ "s_per_step_2nd_half": 15.65,
+ "last_time_y": 2.09715e-05,
+ "last_dt_y": 4.1943e-06,
+ "peak_rss_GB": 9.166304,
+ "rate_m3y": 52.429244621210465,
+ "dt_cap_y": 0.57,
+ "cuts": 0,
+ "killed": false,
+ "error": true
+}

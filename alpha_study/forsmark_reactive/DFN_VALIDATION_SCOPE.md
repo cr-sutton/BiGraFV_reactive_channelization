@@ -260,3 +260,19 @@ The cheapest x8 check is the 250 m block x8 coupled lane (**est.** 8–16 core-h
    graph-only. They need a DFN variant (copy files, EXFIX_DFN, NP ranks, no helper-cell handling) and a
    cell-to-fracture mapping for channel_fractures-style tables. That is about a day of coding, separate
    from the runs.
+
+## 8. Built and smoke-tested (5 Nov 2026)
+
+- Network: `dfn_validation/build_rfram_network.py` -> `dfn_validation/rf_p4.0_sg1.0_seed1/` (x4, sigma 1, seed 1, rFram, h = 1 m):
+  1,605 fractures, 3,808 intersections, 9 node-disjoint paths, 321 dead ends (Phase 1 seed 1: 1,608 / 3,791 / 11 / 276).
+- Mesh: 758,183 cells, about 5 min (machine loaded). LaGriT wrote NaN Voronoi volume for cells 114427 and 114467 and NaN area for
+  their shared face; `repair_uge_nan.py` sets each volume to the median of its neighbours and the area to 0 (uge_repair.json).
+- Steady flow (6 ranks, 7 min): Q_in 2.861e-5, Q_out 2.868e-5 m3/s; 1.43x the one-cell graph (2.007e-5) at the same pressure drop.
+  DFN fracture volume 524.3 m3 -> 52.43 m3/y at one pore volume per year.
+- Smoke (`run_dfn_case.sh ... 40`, Phase 1 deck settings, EXFIX_DFN --area 1e-6, steady start, TS_ACCEL 10, 6 ranks, load ~22):
+  coupled 15.7 s/step, peak 9.2 GB; gypsum-only 16.6 s/step, peak 9.7 GB; no cuts, no solver errors (the "error" flag in
+  smoke.json is the SIGTERM used to stop at 40 steps). The dt ramp matches the graph run step for step.
+- Projection with the graph step counts on this network (coupled 908 to t_cap 2; gypsum-only 12,885 to t_cap 1, 25,703 to t_cap 2):
+  coupled ~4.0 h wall (24 core-h); gypsum-only ~59 h (357 core-h) to t_cap 1, ~118 h (711 core-h) to t_cap 2.
+  That is 1.5-3x the section 5 estimates; memory 9-10 GB against 4.3-7.8 GB estimated. Costs at the 0.57 y step with active
+  fronts are not yet measured.

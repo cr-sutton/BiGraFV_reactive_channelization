@@ -104,7 +104,7 @@ def figure(df, path):
     fig, axs = plt.subplots(1, 2, figsize=(13, 5.6), sharex=True, sharey=True)
     xl, yl = (1e-10, 1e2), (1e-3, 1e3)
     for ax, (tag, title) in zip(axs, (("R", "k as in the deck (with area factor R)"), ("R1", "k per flat wall area (R = 1)"))):
-        g = df[(df.k_choice == tag) & (df.P32 != 16)]
+        g = df[df.k_choice == tag]   # x4-x16 since 5 Nov
         ax.axvspan(1 / DA_MAX, xl[1], color="tab:green", alpha=0.12, label="inside largest published Da_eff,L (<= 4e3)")
         nb = 60
         xb = np.logspace(*np.log10(xl), nb); yb = np.logspace(*np.log10(yl), nb)
@@ -121,7 +121,7 @@ def figure(df, path):
                 transform=ax.transAxes, va="top", fontsize=8, bbox=dict(fc="w", alpha=0.85))
     axs[0].set_ylabel(r"$\Lambda^{-1} = l_p/l_t$")
     axs[0].legend(loc="lower right", fontsize=8)
-    fig.colorbar(pc, ax=axs, label="flow share per network (mean over 45 networks, P32 x4/x6/x8)")
+    fig.colorbar(pc, ax=axs, label="flow share per network (mean over 60 networks, P32 x4-x16)")
     fig.suptitle("Li et al. 2026 regime map: 90 %-flow fractures, initial state. Boundaries: 1/Da_eff,L = 0.278 (dashed black), Lambda^-1 = 0.237 (dashed red). "
                  "Points lie outside the validated range; regime labels are extrapolations.", fontsize=9)
     fig.savefig(path, dpi=150, bbox_inches="tight")

@@ -33,8 +33,6 @@ def channel_rows():
     for f in glob.glob(str(P1 / "L2_r15_p*_sg*_seed*/gyp*__*/channelization.csv")):
         m = re.search(r"p([\d.]+)_sg([\d.]+)_seed(\d)/(gyp\w+?)__uncorrected_graph__(\w+)/", f)
         tag = m[5]
-        if float(m[1]) > 8:                       # P32 x16 is reported separately
-            continue
         if tag not in ("phase1", "phase2_phi005", "phase3_phi0182"):
             continue
         mode = "gypcal" if "calcite" in m[4] else "gyponly"
@@ -81,23 +79,23 @@ def breakthrough():
     b = pd.DataFrame(rows)
     hi = b[b.tag == "phase2_phi005"]
     b = b[b.tag == "phase1"]
-    fig, ax = plt.subplots(figsize=(6.2, 3.6))
+    fig, ax = plt.subplots(figsize=(7.6, 3.6))
     for i, (mode, lab) in enumerate((("gyponly", "gypsum only"), ("gypcal", "gypsum → calcite"))):
-        for j, p in enumerate((4.0, 6.0, 8.0)):
+        for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
             v = b[(b["mode"] == mode) & (b.p32 == p)].diss
             x = j + (i - 0.5) * 0.28
             ax.scatter(x + np.random.default_rng(j).uniform(-0.06, 0.06, len(v)), v, s=14, color=COL[mode], alpha=0.5, lw=0)
             ax.plot([x - 0.1, x + 0.1], [v.median()] * 2, color=COL[mode], lw=2.5, label=lab if j == 0 else None)
     for i, mode in enumerate(("gyponly", "gypcal")):
-        for j, p in enumerate((4.0, 6.0, 8.0)):
+        for j, p in enumerate((4.0, 6.0, 8.0, 16.0)):
             v = hi[(hi["mode"] == mode) & (hi.p32 == p)].diss
             if len(v):
                 x = j + (i - 0.5) * 0.28 + 0.12
                 ax.scatter([x] * len(v), v, s=26, marker="s", facecolors="none", edgecolors=COL[mode], lw=1.2,
                            label="porosity 0.05 (×2 contrast)" if (i, j) == (0, 0) else None)
     ax.axhspan(0, 0.1, color="#e6e5e1", alpha=0.6, lw=0)
-    ax.text(2.45, 0.05, "wormhole-like (few % dissolved)", fontsize=8, color=INK2, ha="right", va="center")
-    ax.set_xticks([0, 1, 2]); ax.set_xticklabels(["P32 ×4", "×6", "×8"])
+    ax.text(3.45, 0.05, "wormhole-like (few % dissolved)", fontsize=8, color=INK2, ha="right", va="center")
+    ax.set_xticks([0, 1, 2, 3]); ax.set_xticklabels(["P32 ×4", "×6", "×8", "×16"])
     ax.set_ylim(0, 1); ax.grid(color=GRID, lw=0.8, axis="y")
     ax.set_ylabel("gypsum dissolved when the\nfront reaches the outlet", fontsize=9, color=INK2)
     ax.legend(frameon=False, fontsize=8, loc="upper left")

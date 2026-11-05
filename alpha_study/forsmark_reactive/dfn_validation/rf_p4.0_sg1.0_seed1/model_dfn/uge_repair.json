@@ -1,0 +1,48 @@
+[
+ {
+  "file": "full_mesh_vol_area.uge",
+  "cells": [
+   {
+    "id": 114427,
+    "new_volume": 0.000185183191058,
+    "n_neighbours": 11
+   },
+   {
+    "id": 114467,
+    "new_volume": 0.0001406789520738,
+    "n_neighbours": 7
+   }
+  ],
+  "connections": [
+   {
+    "i": 114427,
+    "j": 114467,
+    "new_area": 0.0
+   }
+  ],
+  "total_volume": 524.2921193499615
+ },
+ {
+  "file": "full_mesh.uge",
+  "cells": [
+   {
+    "id": 114427,
+    "new_volume": 0.93816151036595,
+    "n_neighbours": 11
+   },
+   {
+    "id": 114467,
+    "new_volume": 0.6850196018894,
+    "n_neighbours": 7
+   }
+  ],
+  "connections": [
+   {
+    "i": 114427,
+    "j": 114467,
+    "new_area": 0.0
+   }
+  ],
+  "total_volume": 4327558.966896683
+ }
+]

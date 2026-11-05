@@ -62,7 +62,7 @@
 <line x1="306" y1="140" x2="324" y2="140" stroke="currentColor" stroke-width="1.4" marker-end="url(#precipitation_reroute-k)"/>
 <line x1="626" y1="140" x2="644" y2="140" stroke="currentColor" stroke-width="1.4" marker-end="url(#precipitation_reroute-k)"/>
 <line x1="10" y1="236" x2="950" y2="236" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.3"/>
-<text x="10" y="256" font-size="12" fill="currentColor">test: 2 mM CO₃ at φ₀ = 0.1 (precipitation on, gypsum capacity ≈ gypsum only), σ = 1, seeds 1–3, P32 ×4/×6/×8</text>
+<text x="10" y="256" font-size="12" fill="currentColor">test: 2 mM CO₃ at φ₀ = 0.1 (precipitation on, gypsum capacity ≈ gypsum only), σ = 1, seeds 1–3, P32 ×4/×6/×8/×16</text>
 <text x="10" y="276" font-size="12" font-weight="600" fill="currentColor">so far: no rerouting. Channel depth matches gypsum only; inheritance 0.97–0.99</text>
 <text x="10" y="294" font-size="12" fill-opacity="0.85" fill="currentColor">Phase 2 runs continue to t<tspan dy="3" font-size="11">cap</tspan><tspan dy="-3"> = 2; step 3 has not been seen in any of them yet</tspan></text>
 </svg>
