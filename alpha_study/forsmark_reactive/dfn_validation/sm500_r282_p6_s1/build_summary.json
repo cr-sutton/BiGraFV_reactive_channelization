@@ -19,5 +19,13 @@
   "n_fractures": 381,
   "graph_nodes": 1824,
   "graph_edges": 2621,
-  "graph_seconds": 3.8863823330029845
+  "graph_seconds": 3.8863823330029845,
+  "same_dfnGen_as_graph": true,
+  "mesh_min_dist": 0.5,
+  "mesh_max_dist": 10.0,
+  "mesh_seconds": 247.06669412500923,
+  "dfn_flow_seconds": 267.7776784999878,
+  "Q_dfn": 2.179223833129212e-05,
+  "dfn_cells": 196864,
+  "dfn_seconds": 521.2156382919638
 }

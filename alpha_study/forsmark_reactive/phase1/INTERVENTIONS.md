@@ -190,3 +190,6 @@ One entry per stopped or re-run job: time, run, symptom, fix, retry list.
   default decks unchanged): n = 0.5 phi_c 0.0909 (concave), n = 2 phi_c -0.316, n = 8 phi_c -2.598 (near-exponential).
   Gyponly P32 x6 sigma 1 seed 1 to capacity time 2; tags kphiC10n05 / kphiC10n2 / kphiC10n8; run_list_kphi_e0.txt, run_kphi_e0.sh,
   3 at a time (NP 2) alongside the 2 km queue.
+- Fri 6 Nov 11:35: E0 done (kphi_e0_report.py -> phase1/kphi_e0/; report artifact NE8o5SQzGxDbL8b99ttEtV). Same x10 ceiling:
+  depth 0.722 / 0.678 / 0.659 / 0.643 (n 0.5/1/2/8), breakthrough 0.477/0.462/0.417/0.414, inheritance 1.0, k_eff x9.7-9.8; realized
+  k/k0 matches the law to 0.2 %. n = 3 (x1000) depth 0.213. Shape effect +-0.04, between the pre-set thresholds (one network).

@@ -1,4 +1,4 @@
-# Forsmark reactive channels: status (Fri 6 Nov 2026, 11:00 CST)
+# Forsmark reactive channels: status (Fri 6 Nov 2026, 11:45 CST)
 
 Report (private artifact): https://claude.ai/artifact/Bt4SbtGrkNoqHrYB2TW5pj. Local copy: `report_phase1/index.html`.
 Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report sections 8.9–8.12 yet.
@@ -28,20 +28,38 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
 | Job | What | Progress | Expected |
 |---|---|---|---|
 | 2 km scale test, σ = 0 | `scale2km/run_queue_scale2km.py`, 6 slots. ×8 gypsum-only seeds 1–5 and ×6 seed 1 running; ×6 and ×4 σ0 queued | 65 of 90 runs done | ×8 σ0 about Fri night; all about Sat (est.) |
-| E0 k–φ shape pilot | P32 ×6 σ1 seed 1, gypsum-only, same ×10 ceiling, n = 0.5 / 2 / 8 (φc set so k(φ=1)/k0 = 10). `phase1/run_kphi_e0.sh`, `KPHI_WORKPLAN.md` | about 10,400 of about 25,700 steps | Fri about 12:00, then probes |
-| Small-network trial | 500 × 125 × 125 m, FFM01 P32 ×6 σ1 seed 1, r_max 282 m (family P32 kept), relaxed FRAM h = 1 m, 381 fractures. BiGraFV both chemistries (`dfn_validation/run_sm.sh`) | coupled done; gypsum-only running | Fri midday |
-| Small-network DFN build | Same network meshed (`build_rfram_network.py --domain 500 125 125 --rmax 282 --stage dfn`) | mesh done; steady flow running | Fri midday |
+| (done 11:35) E0 k–φ shape pilot | see results below | complete | — |
+| (done 11:06) Small-network trial, BiGraFV + DFN mesh | see results below | complete | — |
+
+## New results (Fri 6 Nov, late morning)
+
+- **E0 k–φ shape pilot.** Report: https://claude.ai/artifact/NE8o5SQzGxDbL8b99ttEtV. Local: `phase1/kphi_e0/report/index.html`;
+  data in `phase1/kphi_e0/kphi_e0_summary.csv`.
+  - Same ×10 ceiling, four shapes. Depth 0.72 / 0.68 / 0.66 / 0.64 for n = 0.5 / 1 / 2 / 8: the later the law delivers its
+    gain, the deeper the channel. Breakthrough 0.48 / 0.46 / 0.42 / 0.41.
+  - Stage order, inheritance (1.0) and the final network k gain (×9.7–9.8) are unchanged.
+  - n = 3 (×1000): depth 0.21. So the ceiling dominates and the shape gives about ±0.04 on this network.
+  - That is between the "ceiling is enough" (±0.03) and "path matters" (> 0.05) thresholds. E1 is needed to decide.
+  - **Apertures:**
+    - Under any ×10 law, open aperture splits in two: about half the fractures open fully, about a third are untouched.
+    - Hydraulic aperture grows at most ×2.15 (median 75 → 106–122 µm).
+    - n = 3: 13 % of fractures open, to about 1 mm hydraulic aperture.
+- **Small-network trial** (500 × 125 × 125 m, r_max 282 m, 381 fractures; `dfn_validation/sm500_r282_p6_s1/stage_check.csv`).
+  - **Gypsum-only:** all four stages appear.
+    - PR_pore falls while PR_V holds (d 0.01–0.1);
+    - PR_V falls to 0.73 of its start just before breakthrough at d 0.60;
+    - flow re-spreads to 0.97 of start.
+    - Depth 0.68, same as the 1 km median (0.68); breakthrough 0.60 (1 km 0.57); inheritance 0.92 (1 km 0.97).
+    - Difference: PR_pore keeps falling until breakthrough, so its minimum (d 0.51) ties with the PR_V minimum.
+  - **Coupled:** depth 0.81. The PR_V curve is flat from d 0.41 to 0.71, so its minimum falls just after breakthrough
+    (0.69 vs 0.65), a near-tie.
+  - **DFN:** meshed with 196,864 cells. Steady flow Q_dfn/Q_graph = 1.69. Estimated reactive cost: gypsum-only to
+    capacity time 2, 50–90 core-h; coupled, 2–3 core-h. **Waiting for Collin's go.**
 
 ## Waiting on those (next steps, in order)
 
-1. **E0 result:** a short plain-language report with two figures, `kphi_e0_report.py` → `phase1/kphi_e0/`:
-   - law shapes with PR_V and k_eff against the dissolved fraction;
-   - histograms of open and hydraulic aperture across all fractures, before reaction and at capacity time 2, for each law.
-   Then decide whether to run E1.
-2. **Small-network trial:** check that stages 1–4 appear in BiGraFV. If they do, it becomes the weekend DFN candidate:
-   - reactive DFN, gypsum-only to capacity time 2, est. 50–90 core-h;
-   - reactive DFN, coupled, est. 2–3 core-h.
-   **DFN reactive runs start only when Collin says go.**
+1. **Weekend DFN on the small network, both chemistries, when Collin says go.**
+2. **E1:** start with the ×10 shapes on the 9 networks (27 runs, about one night), if approved.
 3. **2 km σ0 results:** finish the scale comparison, update report 8.10 to 90 runs, rebuild the deck.
 
 ## Planned (not started)

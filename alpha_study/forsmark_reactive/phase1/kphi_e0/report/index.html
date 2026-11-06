@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>k–φ Shape Pilot</title>
+<style>
+:root{--bg:#f7f7f4;--surface:#fff;--ink:#16181a;--ink-2:#4c5157;--rule:#dcdcd6;--accent:#1f5f8b;--hl:#eaf2f8;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15171a;--surface:#1d2024;--ink:#ebebe6;--ink-2:#b2b6ba;--rule:#34383d;--accent:#7db4dc;--hl:#1f2a33;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15171a;--surface:#1d2024;--ink:#ebebe6;--ink-2:#b2b6ba;--rule:#34383d;--accent:#7db4dc;--hl:#1f2a33;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+main{max-width:1000px;margin:0 auto;padding:32px 16px 64px}
+.col{max-width:70ch}
+h1{font:600 2rem/1.2 Georgia,serif;margin:0 0 6px}
+h2{font:600 1.25rem/1.3 Georgia,serif;margin:32px 0 8px;padding-top:12px;border-top:1px solid var(--rule)}
+.meta{color:var(--ink-2);font-size:.9rem}
+.box{background:var(--hl);border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:10px 16px;margin:14px 0;max-width:70ch}
+.box p{margin:4px 0}
+figure{margin:14px 0;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:10px}
+figure img{display:block;max-width:100%;height:auto;margin:0 auto;background:#fff;border-radius:3px}
+figcaption{color:var(--ink-2);font-size:.9rem;margin-top:8px}
+.tw{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;font-size:.92rem;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+th,td{padding:5px 11px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+tr:last-child td{border-bottom:0}
+li{margin:4px 0}
+code{font-size:.86em}
+</style>
+</head>
+<body>
+<main>
+<h1>k–φ Shape Pilot (E0)</h1>
+<p class="meta">6 November 2026 · one network (P32 ×6, σ = 1, seed 1, the network in the stage figures) · gypsum-only · to capacity time 2</p>
+
+<div class="box"><p><strong>Question.</strong> Our channel depth follows the permeability ceiling, the most a fully dissolved fracture can gain (×10 with the current law). Does the <em>path</em> to that ceiling matter too?</p>
+<p><strong>Answer on this network.</strong> A little, and in a consistent direction. Four laws with the same ×10 ceiling give depths 0.72 / 0.68 / 0.66 / 0.64. The later in dissolution a law delivers its gain, the deeper the channel. Raising the ceiling to ×1000 moves depth from 0.68 to 0.21, about six times as much. So the ceiling is the main control and the shape is a smaller, systematic one. One network cannot settle it; E1 (9 networks) can.</p></div>
+
+<h2>What we ran</h2>
+<div class="col"><p>PFLOTRAN's law is k/k<sub>0</sub> = [(φ − φ<sub>c</sub>)/(0.1 − φ<sub>c</sub>)]<sup>n</sup>. For each n we chose φ<sub>c</sub> so that a fully dissolved fracture gains exactly ×10, as now:</p>
+<ul>
+<li><strong>n = 0.5, concave:</strong> most of the gain comes early, ×7.1 by half dissolved.</li>
+<li><strong>n = 1, current:</strong> ×5.5 by half dissolved.</li>
+<li><strong>n = 2, convex:</strong> ×4.3.</li>
+<li><strong>n = 8, near-exponential:</strong> most of the gain comes late, ×3.4.</li>
+</ul>
+<p>The earlier n = 3 run (ceiling ×1000) is shown for scale. Everything else is as in Phase 1.</p>
+<p>PFLOTRAN reproduces each law exactly: every fracture cell's permeability matches the formula to within 0.2 %.</p></div>
+
+<h2>Result 1: same ceiling, slightly different channel</h2>
+<figure><img src="kphi_e0_curves.png" alt="Law shapes, flow focusing and network permeability for the four same-ceiling laws and n = 3."><figcaption>A: each law (lines) and the fracture cells at the end of the run (dots). B: flow focusing, where lower means more channelized. C: network permeability. Look at panel B: the four ×10 curves have the same shape and stay close together, ordered by how late the law delivers its gain. The purple n = 3 curve is in a different league.</figcaption></figure>
+<div class="tw"><table>
+<thead><tr><th>Law</th><th>Depth (min PR<sub>V</sub>/start)</th><th>Breakthrough (fraction dissolved)</th><th>Fewest fractures carrying 90 % of flow (vs start)</th><th>Network k gain</th><th>Gypsum dissolved by capacity time 2</th></tr></thead>
+<tbody>
+<tr><td>n = 0.5, concave</td><td>0.72</td><td>0.48</td><td>0.53</td><td>×9.8</td><td>78 %</td></tr>
+<tr><td>n = 1, current</td><td>0.68</td><td>0.46</td><td>0.50</td><td>×9.8</td><td>75 %</td></tr>
+<tr><td>n = 2, convex</td><td>0.66</td><td>0.42</td><td>0.48</td><td>×9.7</td><td>73 %</td></tr>
+<tr><td>n = 8, near-exponential</td><td>0.64</td><td>0.41</td><td>0.47</td><td>×9.7</td><td>71 %</td></tr>
+<tr><td>n = 3, ceiling ×1000</td><td>0.21</td><td>0.27</td><td>0.09</td><td>×727</td><td>36 %</td></tr>
+</tbody></table></div>
+<div class="col"><ul>
+<li><strong>The same in all four ×10 laws:</strong> the stage order; the channel forming in fractures that already carried the most flow (inheritance 1.0); the final network permeability gain (×9.7–9.8).</li>
+<li><strong>Different, and in order:</strong> a late-gain law focuses flow a little more and breaks through a little earlier. Why: an early-gain law makes every partly dissolved fracture more permeable, which spreads the flow. A late-gain law keeps that gain for fractures that are almost fully dissolved, which are the channel.</li>
+<li><strong>Against the rule we fixed beforehand:</strong> n = 0.5 and n = 8 differ from n = 1 by +0.044 and −0.035. That is outside the ±0.03 band for "the ceiling is enough" and below the 0.05 for "the path matters". It is in between, on one network.</li>
+</ul></div>
+
+<h2>Result 2: apertures before and after</h2>
+<figure><img src="kphi_e0_apertures.png" alt="Histograms of open and hydraulic aperture of every fracture before reaction and at capacity time 2, one column per law."><figcaption>Grey: before reaction. Coloured: at capacity time 2. Top row: open (physical) aperture, the open part of each fracture = porosity × slab thickness b<sub>h</sub>. Bottom row: hydraulic aperture, the aperture that would carry the fracture's flow by the cubic law = b<sub>h</sub>(k/k<sub>0</sub>)<sup>1/3</sup>.</figcaption></figure>
+<div class="col"><ul>
+<li><strong>Open aperture splits in two</strong> for every ×10 law. About half the fractures open fully (7 µm → about 100 µm, the whole slab), and about a third are still untouched. The laws differ only in how many have opened by capacity time 2: 54 % (concave) down to 47 % (late-gain).</li>
+<li><strong>Hydraulic aperture moves much less.</strong> Under any ×10 law a fracture's hydraulic aperture can grow at most ×2.15 (the cube root of 10). The median goes 75 → 106–122 µm and the top 5 % reach about 270 µm, nearly the same for all four laws.</li>
+<li><strong>With n = 3 (×1000) the picture is different.</strong> Only 13 % of fractures open. Their hydraulic aperture jumps ×10 to about 1 mm (top 5 % at 0.93 mm), while three quarters of the network is untouched (median 82 µm). That is what a deep channel looks like.</li>
+</ul></div>
+
+<h2>What next</h2>
+<div class="col"><ul>
+<li><strong>E1 decides it.</strong> The same four shapes on the 9 Phase 2/3 networks at ceilings ×5.5, ×10 and ×30: 99 gypsum-only runs, about 70 min each on this machine.</li>
+<li><strong>A cheaper first step:</strong> the ×10 shapes alone on the 9 networks, 27 runs, about one night alongside the 2 km queue.</li>
+<li><strong>What we can say now:</strong> the ceiling dominates, the shape adds about ±0.04 in depth on this network, and nothing qualitative changes.</li>
+</ul>
+<p class="meta">Source: <code>forsmark_reactive/phase1/kphi_e0/kphi_e0_summary.csv</code> (<code>kphi_e0_report.py</code>). Stage measures cover capacity time ≤ 2; the outlet window is the last 100 m. Runs tagged <code>kphiC10n05</code>, <code>kphiC10n2</code>, <code>kphiC10n8</code> and <code>kphi_n3</code>; the n = 1 baseline is the Phase 1 run, cut at capacity time 2.</p></div>
+</main>
+</body>
+</html>

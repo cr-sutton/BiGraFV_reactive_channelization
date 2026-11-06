@@ -7,3 +7,8 @@ gypsum__uncorrected_graph__kphiC10n8: Dirichlet outflow at 200000 Pa, gravity of
 gypsum__uncorrected_graph__kphiC10n2: steady start, dynamic pressure at manifold 1940 Pa
 gypsum__uncorrected_graph__kphiC10n05: steady start, dynamic pressure at manifold 1940 Pa
 gypsum__uncorrected_graph__kphiC10n8: steady start, dynamic pressure at manifold 1940 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__kphiC10n05 seconds=4173 rate=83.09417705149357 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__kphiC10n2 seconds=4203 rate=83.09417705149357 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__kphiC10n8 seconds=4202 rate=83.09417705149357 dt=0.57
+Fri 11:40 queue done
+KPHI_E0_DONE
