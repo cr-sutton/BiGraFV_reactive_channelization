@@ -1,0 +1,3 @@
+Fri 16:03 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 6833 Pa

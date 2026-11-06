@@ -54,14 +54,21 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   ×4/×8, σ1, seeds 11–16, both chemistries, 72 runs, about 10 h on 4 slots). Early peak defined by the front
   (PR_V minimum before the front reaches the last 100 m), tests fixed. Launch with `zsh lenseries/run_lenseries.sh 4`.
 
-### Proposed weekend order (waiting for Collin's go)
+### Weekend plan, revised 16:05 after review: one campaign aimed at one figure
 
-| When | What | Cores |
-|---|---|---|
-| Now | Coupled DFN on sm500 (pipeline check, 2–3 core-h) | 2 |
-| Tonight, when the 2 km σ0 queue drains | Gypsum-only DFN on sm500 to capacity time 2 (50–90 core-h) | 8 |
-| Saturday | E1 first step: ×10 ceiling, 4 shapes, 9 networks (27 runs) | 4 |
-| Saturday night → Sunday | Length series (72 runs) | 4 |
+Collin asked whether each item gives a result that advances the story rather than more data. Verdict: the DFN is a
+model-vs-model check (parked), E1 as planned measures a nuisance (shape, already ±0.04), and the length series tests the
+timing of a summary statistic whose mechanism already failed (parked). Both parked items stay ready to launch.
+
+**Running instead: the ceiling sweep** (`ceilsweep/CEILING_SWEEP.md`, locked before running). k = k0 (φ/φ0)^n with
+n = 1.48 / 2 / 3, so gypsum-only ceilings ×30 / ×100 / ×1000 (coupled ×12.6 / ×30.8 / ×171), both chemistries, the 9
+Phase 3 networks; 52 runs plus existing ×5.5 / ×10 / ×3.3 / ×1000 points. Goal: the figure "channel depth against the
+attainable permeability gain, chemistries on one curve". Launched Fri 16:03 (`ceilsweep/run_ceilsweep.sh`), 1 slot
+while the 2 km queue runs, 7 after; expected done Saturday afternoon. Analysis: `ceilsweep/analyze_ceilsweep.py`.
+
+Draft figure list for the story: (1) the four stages across 120 runs; (2) the moving focus that relaxes behind the
+front; (3) depth against the attainable gain, chemistries collapsed; (4) the initial state predicts breakthrough.
+2 km goes in the supplement.
 
 ## Running now
 

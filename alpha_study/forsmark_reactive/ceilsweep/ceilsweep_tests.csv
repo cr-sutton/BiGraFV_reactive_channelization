@@ -1,0 +1,12 @@
+,value
+R1_networks,1
+R1_rho_minus1,1
+R1_pass,False
+R2_n,10
+R2_median_abs,0.016113341715383644
+R2_median,0.012748646836970023
+R2_pass_005,True
+R2_pass_003,True
+R3_slope_median_per_decade,
+R3_quadratic_median,
+R3_quadratic_positive,0
