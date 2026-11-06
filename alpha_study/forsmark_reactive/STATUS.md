@@ -41,6 +41,28 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   fails unless run with `DYLD_LIBRARY_PATH=/opt/homebrew/Cellar/freetype/2.14.1_1/lib`. The 2 km queue chain does not
   import vtk and is unaffected.
 
+## Late afternoon (Fri 6 Nov, ~16:00): checks for the story and the weekend set-up
+
+- **Relaxation behind the front is robust to binning** (report 8.9). Counting each fracture in every 100 m bin it spans:
+  every bin ends within 2.3 % (gyponly) / 1.3 % (gypcal) of its start; bin minima still move inlet → outlet (ρ 0.94/0.95).
+- **What sets the network PR_V minimum** (report 8.13, `prv_decomposition.py`): not the ~21 long fractures (ρ ≤ 0.23) and
+  not the outlet stretch (unchanged at the network minimum; its own minimum comes later). It is redistribution inside the
+  initial channel upstream of the outlet (which holds 95 % of Σq²/V, so that part is close to a restatement).
+- **Weekend DFN comparison locked:** `dfn_validation/sm500_compare.py` (criteria C1–C7 in its header, dry run on the graph
+  side reproduces stage_check.csv). Notes appended to `dfn_validation/TARGETED_DFN_WEEKEND.md`.
+- **Length series locked and built, not launched:** `lenseries/LENGTH_SERIES.md` (L = 500/1000/2000 × 250 × 250 m,
+  ×4/×8, σ1, seeds 11–16, both chemistries, 72 runs, about 10 h on 4 slots). Early peak defined by the front
+  (PR_V minimum before the front reaches the last 100 m), tests fixed. Launch with `zsh lenseries/run_lenseries.sh 4`.
+
+### Proposed weekend order (waiting for Collin's go)
+
+| When | What | Cores |
+|---|---|---|
+| Now | Coupled DFN on sm500 (pipeline check, 2–3 core-h) | 2 |
+| Tonight, when the 2 km σ0 queue drains | Gypsum-only DFN on sm500 to capacity time 2 (50–90 core-h) | 8 |
+| Saturday | E1 first step: ×10 ceiling, 4 shapes, 9 networks (27 runs) | 4 |
+| Saturday night → Sunday | Length series (72 runs) | 4 |
+
 ## Running now
 
 | Job | What | Progress | Expected |

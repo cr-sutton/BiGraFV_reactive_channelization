@@ -1,0 +1,37 @@
+192 runs
+   mode  bin  min_rel  d_at_min  end_rel  n_runs
+ gypcal    0    0.802     0.109    1.006      60
+ gypcal    1    0.763     0.201    0.998      60
+ gypcal    2    0.807     0.266    0.997      60
+ gypcal    3    0.722     0.235    0.998      60
+ gypcal    4    0.771     0.271    0.995      60
+ gypcal    5    0.764     0.412    0.992      60
+ gypcal    6    0.759     0.502    0.987      60
+ gypcal    7    0.783     0.585    0.993      60
+ gypcal    8    0.783     0.558    0.990      60
+ gypcal    9    0.680     0.577    0.992      60
+gyponly    0    0.711     0.109    0.997      60
+gyponly    1    0.682     0.173    0.990      60
+gyponly    2    0.687     0.219    0.996      60
+gyponly    3    0.611     0.203    0.989      60
+gyponly    4    0.697     0.236    0.987      60
+gyponly    5    0.680     0.374    0.982      60
+gyponly    6    0.685     0.435    0.981      60
+gyponly    7    0.709     0.503    0.978      60
+gyponly    8    0.677     0.501    0.977      60
+gyponly    9    0.559     0.499    0.983      60
+gypcal A pass: True | rho(bin, d_at_min) = 0.952 | max |end-1| = 0.013
+gyponly A pass: True | rho(bin, d_at_min) = 0.939 | max |end-1| = 0.023
+scale    mode  group  n    rho  share_within_005  median_diff  dS_share_median  S0_share_median  n_frac_median  group_depth_median
+  1km  gypcal  chan0 60  0.858             0.900        0.000            1.121            0.956          821.5               0.814
+  1km  gypcal   long 60  0.091             0.417        0.000            0.299            0.169           21.0               0.857
+  1km  gypcal outlet 60 -0.114             0.450        0.051           -0.000            0.124          339.0               0.518
+  1km gyponly  chan0 60  0.901             0.917        0.000            1.062            0.956          821.5               0.687
+  1km gyponly   long 60  0.200             0.533        0.000            0.302            0.169           21.0               0.785
+  1km gyponly outlet 60 -0.008             0.483        0.040           -0.000            0.124          339.0               0.356
+  2km  gypcal  chan0 38  0.759             0.868        0.000            1.102            0.953         2422.0               0.867
+  2km  gypcal   long 38  0.231             0.553        0.000            0.386            0.223           70.5               0.876
+  2km  gypcal outlet 38  0.327             0.263        0.378            0.000            0.055          563.0               0.630
+  2km gyponly  chan0 34  1.000             1.000        0.000            1.047            0.954         2301.0               0.739
+  2km gyponly   long 34  0.191             0.559        0.000            0.271            0.215           70.5               0.801
+  2km gyponly outlet 34 -0.222             0.235        0.305            0.000            0.050          544.0               0.513

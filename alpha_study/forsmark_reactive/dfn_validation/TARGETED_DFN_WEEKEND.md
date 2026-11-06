@@ -72,3 +72,18 @@ the weekend, either:
   userPolygonByCoord. A workaround is in the script.
 - **The 150 rejected fractures include 21 peak-channel fractures.** Form A must show on BiGraFV that this does not change
   the channel. If it does, the DFN comparison is on a different channel and we say so.
+
+## Update 6 Nov 2026, afternoon: the weekend DFN is the 500 m trial network, criteria locked
+
+- Network: `sm500_r282_p6_s1` (500 × 125 × 125 m, r_max 282 m, P32 ×6, σ 1, seed 1, 381 fractures; DFN 196,864 cells;
+  steady Q_dfn / Q_graph = 1.69). The graph runs on the same dfnGen output are done (`gyp*__uncorrected_graph__sm`).
+- Comparison script, written before any reactive DFN state exists: `sm500_compare.py`. Its header holds the pass
+  criteria C1–C7 (stage order, event timing within 0.10, depth within 0.10, inheritance ≥ 0.8 with channel-set Jaccard
+  ≥ 0.5, the front moving inlet to outlet, relaxation behind it, per-fracture dissolved fraction ρ ≥ 0.6) and the
+  verdict rule. Gypsum-only is primary.
+- Dry run on the graph side reproduces `stage_check.csv` (gypsum-only PRpore_min 0.511, PRV_min 0.513, breakthrough
+  0.595, depth 0.684, inheritance 0.919). The graph passes C5 (ρ 0.95) and C6 (lowest bin end value 0.95) itself.
+  The coupled graph run fails C1 (PR_V minimum 0.686 just after breakthrough 0.647, the known near-tie), so the coupled
+  DFN verdict is descriptive only.
+- The DFN branch was tested on the existing rf_p4.0 seed 1 smoke state (materialid mapping, flow re-solve): about 2 min
+  per state on that larger mesh.

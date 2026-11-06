@@ -20,6 +20,11 @@ rsync -a --prune-empty-dirs \
   --include 'scale2km/L2_*/*/channelization.csv' --include 'scale2km/L2_*/*/patterns.csv' --include 'scale2km/L2_*/*/scale_mechanism_run.csv' \
   --include 'scale2km/L2_*/*/single_stage.in.schedule.json' --include 'scale2km/L2_*/*/damkohler.json' \
   --exclude 'scale2km/L2_*/**' --exclude 'scale2km/*.log' \
+  --include 'lenseries/L*_seed*/network_stats.json' --include 'lenseries/L*_seed*/flow_summary.json' \
+  --include 'lenseries/L*_seed*/*/channelization.csv' --include 'lenseries/L*_seed*/*/patterns.csv' --include 'lenseries/L*_seed*/*/scale_mechanism_run.csv' \
+  --exclude 'lenseries/L*_seed*/**' --exclude 'lenseries/*.log' \
+  --exclude 'phase1/xbin_spanning.csv' \
+  --include 'dfn_validation/sm*/compare/*' \
   --include 'dfn_validation/ex_*/build_summary.json' --include 'dfn_validation/ex_*/missing_phase1_fractures.txt' \
   --include 'dfn_validation/ex_*/model_graph_raw/phase1_fracture_id.txt' \
   --include 'dfn_validation/sm*/build_summary.json' --include 'dfn_validation/sm*/network_stats.json' \
@@ -32,7 +37,7 @@ rsync -a --prune-empty-dirs \
   --include 'explore_olivine/L2_*/*/single_stage.in' --include 'explore_olivine/L2_*/*/single_stage.in.schedule.json' --exclude 'explore_olivine/L2_*/**' \
   --exclude '*.vtk' --exclude '*.vtu' --exclude '*.h5' --exclude '*.stdout' --exclude 'single_stage.out' --exclude '*-mas.dat' \
   $SRC/forsmark_reactive/ $DST/alpha_study/forsmark_reactive/
-for big in wormhole_regime channel_turnover f50_profile; do gzip -9 -c $SRC/forsmark_reactive/phase1/$big.csv > $DST/alpha_study/forsmark_reactive/phase1/$big.csv.gz; done
+for big in wormhole_regime channel_turnover f50_profile xbin_spanning; do gzip -9 -c $SRC/forsmark_reactive/phase1/$big.csv > $DST/alpha_study/forsmark_reactive/phase1/$big.csv.gz; done
 for f in analyze_channelization.py analyze_km_dissolution_patterns.py probe_frozen_state_tracer.py deck_gypsum_calcite.py run_names.py build_km_graph_network.py build_network_dfn_and_graphs.py add_inlet_manifold.py exfix_outflow.py init_steady_pressure.py stabilize_graph_run.py; do cp $SRC/$f $DST/alpha_study/; done
 cp $SRC/run_scripts/run_km_graph_case_hyman.sh $SRC/run_scripts/run_km_queue.py $DST/alpha_study/run_scripts/
 if [ "$1" = "--push" ]; then
