@@ -16,7 +16,18 @@ rsync -a --prune-empty-dirs \
   --include 'dfn_validation/rf_*/build_summary.json' --include 'dfn_validation/rf_*/network_stats.json' --include 'dfn_validation/rf_*/model_dfn/uge_repair.json' \
   --include 'dfn_validation/rf_*/*/smoke.json' --include 'dfn_validation/rf_*/*/smoke_trace.txt' --include 'dfn_validation/rf_*/*/patterns.csv' \
   --include 'dfn_validation/rf_*/*/channelization.csv' --include 'dfn_validation/rf_*/*/channel_fractures.csv' --include 'dfn_validation/rf_*/*/single_stage.in' \
-  --exclude 'dfn_validation/rf_*/**' --exclude 'dfn_validation/*.log' --exclude 'report_phase1/index_pre_x16.html' --exclude 'deck/numbers_x4x8.json' \
+  --include 'scale2km/L2_*/network_stats.json' --include 'scale2km/L2_*/flow_summary.json' \
+  --include 'scale2km/L2_*/*/channelization.csv' --include 'scale2km/L2_*/*/patterns.csv' --include 'scale2km/L2_*/*/scale_mechanism_run.csv' \
+  --include 'scale2km/L2_*/*/single_stage.in.schedule.json' --include 'scale2km/L2_*/*/damkohler.json' \
+  --exclude 'scale2km/L2_*/**' --exclude 'scale2km/*.log' \
+  --include 'dfn_validation/ex_*/build_summary.json' --include 'dfn_validation/ex_*/missing_phase1_fractures.txt' \
+  --include 'dfn_validation/ex_*/model_graph_raw/phase1_fracture_id.txt' \
+  --include 'dfn_validation/sm*/build_summary.json' --include 'dfn_validation/sm*/network_stats.json' \
+  --include 'dfn_validation/ex_*/*/channelization.csv' --include 'dfn_validation/ex_*/*/patterns.csv' \
+  --include 'dfn_validation/sm*/*/channelization.csv' --include 'dfn_validation/sm*/*/patterns.csv' \
+  --include 'dfn_validation/sm*/*/single_stage.in.schedule.json' \
+  --exclude 'dfn_validation/ex_*/**' --exclude 'dfn_validation/sm*/**' \
+  --exclude 'dfn_validation/rf_*/**' --exclude 'dfn_validation/*.log' --exclude 'report_phase1/index_pre_x16.html' --exclude 'report_phase1/index_pre_scale2km.html' --exclude 'deck/numbers_x4x8.json' \
   --include 'explore_olivine/L2_*/*/clogging.csv' --include 'explore_olivine/L2_*/*/patterns.csv' --include 'explore_olivine/L2_*/*/channelization.csv' \
   --include 'explore_olivine/L2_*/*/single_stage.in' --include 'explore_olivine/L2_*/*/single_stage.in.schedule.json' --exclude 'explore_olivine/L2_*/**' \
   --exclude '*.vtk' --exclude '*.vtu' --exclude '*.h5' --exclude '*.stdout' --exclude 'single_stage.out' --exclude '*-mas.dat' \

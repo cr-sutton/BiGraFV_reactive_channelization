@@ -173,3 +173,20 @@ One entry per stopped or re-run job: time, run, symptom, fix, retry list.
 - Thu 5 Nov 12:16-12:40: x16 fine probes done (30 runs x 10 states). analyze_phase1_tracer.py and transport_channel_link.py now include
   x16 (1,020 states). Report In brief, 5e (table + new "denser networks move less"), 6.2, 8.2 and deck re-quoted. dgamma vs PR_V
   rho -0.80 -> -0.75 pooled; within-run gyponly -0.88 -> -0.79; t50 models do not transfer to x16 (held-out R2 -0.9 to -3.2).
+
+## 5 Nov 2026 15:26 - k-phi exponent test (user request)
+- After the literature reviews (lit/lit_kphi_relations.md, lit_channel_depth.md) pointed to the x10 ceiling of n = 1 as the
+  control on channel depth: P32 x6 sigma 1 seed 1, gyponly + gypcal, PERMEABILITY_POWER 3 (ceiling x1000), everything else
+  as Phase 1, ends at capacity time 2. Tag kphi_n3, run_list_kphi_n3.txt, run_kphi_n3.sh; comparison kphi_n3_compare.py
+  (n = 1 baseline on the same network, capacity time <= 2: depth 0.678 gyponly, 0.760 coupled).
+- Thu 5 Nov 16:13: n = 3 pair done (no timestep cuts; gyponly 25,703 steps, gypcal 926). phase1/kphi_n3_compare.csv, capacity time <= 2,
+  n = 1 -> n = 3: depth 0.678 -> 0.213 (gyponly), 0.760 -> 0.353 (gypcal); n90 min/start 0.50 -> 0.09, 0.61 -> 0.15; k_eff max x9.8 -> x727,
+  x5.4 -> x135; breakthrough at dissolved 0.46 -> 0.27, 0.48 -> 0.31; inheritance 1.0 in all four. Stage 1 still present (PR_pore falls first);
+  PR_V has two dips before breakthrough (channel competition: 0.21 at d 0.11, back to 0.45, 0.25 at d 0.20); after breakthrough PR_V
+  recovers to 0.51 / 0.71 of start by capacity time 2 (n = 1: 0.95 / 0.98). One network only.
+
+## 6 Nov 2026 ~10:30 - k-phi shape pilot E0 (user request; KPHI_WORKPLAN.md)
+- Same ceiling x10, different k(phi) shape via PERMEABILITY_CRITICAL_POROSITY (new opt-in --perm-crit-por in deck_gypsum_calcite.py;
+  default decks unchanged): n = 0.5 phi_c 0.0909 (concave), n = 2 phi_c -0.316, n = 8 phi_c -2.598 (near-exponential).
+  Gyponly P32 x6 sigma 1 seed 1 to capacity time 2; tags kphiC10n05 / kphiC10n2 / kphiC10n8; run_list_kphi_e0.txt, run_kphi_e0.sh,
+  3 at a time (NP 2) alongside the 2 km queue.

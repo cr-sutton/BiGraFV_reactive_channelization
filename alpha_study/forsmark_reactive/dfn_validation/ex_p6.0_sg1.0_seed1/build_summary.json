@@ -1,0 +1,15 @@
+{
+  "source_network": "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1",
+  "n_input_polygons": 2714,
+  "h": 1.0,
+  "rFram": true,
+  "gen_seconds": 9.673104999994393,
+  "n_output_polygons": 2521,
+  "n_matched_centre_1mm": 1715,
+  "n_identical_polygons": 1712,
+  "n_missing": 999,
+  "Q_graph_raw": 0.00010226090255295682,
+  "graph_nodes": 10870,
+  "graph_edges": 15879,
+  "graph_seconds": 15.743719167017844
+}

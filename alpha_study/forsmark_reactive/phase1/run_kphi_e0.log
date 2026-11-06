@@ -1,0 +1,9 @@
+Fri 10:27 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly kphiC10n05 0.57 - --k-gypsum-mult 21.95 --perm-power 0.5 --perm-crit-por 0.09090909091 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5
+Fri 10:27 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly kphiC10n2 0.57 - --k-gypsum-mult 21.95 --perm-power 2 --perm-crit-por -0.316227766 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5
+Fri 10:27 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly kphiC10n8 0.57 - --k-gypsum-mult 21.95 --perm-power 8 --perm-crit-por -2.598477259 --log-vtk --dissolved-fractions 0.02 0.05 0.1 0.25 0.5 0.75 1.0 1.5 2.0 --gypsum-vf0 0.9 --material-porosity 0.1 --c-cap 16.5
+gypsum__uncorrected_graph__kphiC10n05: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__kphiC10n2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__kphiC10n8: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__kphiC10n2: steady start, dynamic pressure at manifold 1940 Pa
+gypsum__uncorrected_graph__kphiC10n05: steady start, dynamic pressure at manifold 1940 Pa
+gypsum__uncorrected_graph__kphiC10n8: steady start, dynamic pressure at manifold 1940 Pa

@@ -213,6 +213,8 @@ def main():
     ap.add_argument("--material-porosity", type=float, default=None,
                     help="reference porosity of the permeability update (default: template 0.9; use 1 - vf0 to start at the h5 k)")
     ap.add_argument("--perm-power", type=float, default=1.0, help="PERMEABILITY_POWER n, k ~ phi^n (3 = cubic law)")
+    ap.add_argument("--perm-crit-por", type=float, default=None,
+                    help="PERMEABILITY_CRITICAL_POROSITY phi_c (opt-in; may be negative): k/k0 = ((phi-phi_c)/(phi0-phi_c))^n")
     ap.add_argument("--fill-sigma", type=float, default=0.0, help="ln-std of per-fracture initial porosity (0 = uniform fill)")
     ap.add_argument("--fill-seed", type=int, default=1)
     ap.add_argument("--out", type=Path, required=True)
@@ -289,6 +291,10 @@ def main():
     if a.fill_sigma > 0:
         deck = use_fill_dataset(deck, "Gypsum", "mineral_vf0.h5")
     deck = set_material(deck, a.material_porosity, a.perm_power)
+    if a.perm_crit_por is not None:   # opt-in (6 Nov 2026, k-phi shape test); default decks unchanged
+        deck, n = re.subn(r"^(MATERIAL_PROPERTY .*?\n  ID \d+\n)",
+                          lambda m: f"{m.group(1)}  PERMEABILITY_CRITICAL_POROSITY {a.perm_crit_por:.10g}\n", deck, count=1, flags=re.S | re.M)
+        assert n == 1, "MATERIAL_PROPERTY ID line not found"
     a.out.write_text(deck)
     pv0 = float((cells[:, 4] * (1 - vf_cells)).sum())
     sched = dict(mode=a.mode, rate_m3y=a.rate, gypsum_inventory_mol=inv, c_cap=c_cap, pore_volume0_m3=pv0,
@@ -297,6 +303,8 @@ def main():
                  checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
                               for f, t in zip(a.dissolved_fractions, t_chk)],
                  vtk_times_y=vtk_times)
+    if a.perm_crit_por is not None:
+        sched["perm_crit_por"] = a.perm_crit_por
     if a.k_calcite_mult != 1.0 or a.inj_co3 is not None:   # keys only when used, so default schedules stay unchanged
         sched.update(k_calcite_mult=a.k_calcite_mult, inj_co3_M=a.inj_co3 if a.inj_co3 is not None else 0.1)
     if a.inj_charge_balance:

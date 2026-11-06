@@ -44,21 +44,32 @@ def main():
     ap.add_argument("--stage", choices=("graph", "dfn", "both"), default="both")
     ap.add_argument("--mesh-min-dist", type=float, default=0.5, help="mesh_network min_dist (x h); mesh gradation only")
     ap.add_argument("--mesh-max-dist", type=float, default=10.0, help="mesh_network max_dist (x h); mesh gradation only")
+    ap.add_argument("--domain", type=float, nargs=3, default=None, help="domain size x y z (m); default the Phase 1 1000 250 250")
+    ap.add_argument("--rmax", type=float, default=None,
+                    help="largest fracture radius (default the FFM01 table 564 m); each family keeps its 1 km P32 target, "
+                         "so the intensity is unchanged and only the size range is cut")
     ap.add_argument("--out", type=Path, required=True)
     a = ap.parse_args()
-    domain = forsmark.DOMAINS["km250"]
+    domain = list(a.domain) if a.domain else forsmark.DOMAINS["km250"]
     out = a.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
     deck = pressure_deck(out)
     sf = out / "build_summary.json"
     summary = json.loads(sf.read_text()) if sf.exists() else {}
     summary.update(domain=domain, seed=a.seed, network="forsmark_ffm01_rfram", layer=2, rmin=15.0, rmax=forsmark.RMAX_TABLE,
-                   p32_scale=a.p32_scale, transmissivity_sigma=a.sigma, h=a.h, framOn=True, rFram=True)
+                   p32_scale=a.p32_scale, transmissivity_sigma=a.sigma, h=a.h, framOn=True, rFram=True,
+                   rmax_used=a.rmax or forsmark.RMAX_TABLE)
 
     def new(name, ncpu):
         os.chdir(ROOT)
         D = DFNWORKS(str(out / name), dfnFlow_file=str(deck), ncpu=ncpu)
-        forsmark.configure(D, a.seed, domain, a.p32_scale, a.sigma, 15.0, forsmark.RMAX_TABLE, 2)
+        rmax = a.rmax if a.rmax else forsmark.RMAX_TABLE
+        if a.rmax:   # keep each family's P32 target of the full size range (restricted to r >= 15 m only)
+            full = forsmark.restricted_p32
+            forsmark.restricted_p32 = lambda p, kr, rmin, _rmax: full(p, kr, rmin, forsmark.RMAX_TABLE)
+        forsmark.configure(D, a.seed, domain, a.p32_scale, a.sigma, 15.0, rmax, 2)
+        if a.rmax:
+            forsmark.restricted_p32 = full
         D.params["h"]["value"] = a.h
         D.params["disableFram"]["value"] = False
         D.params["framOn"]["value"] = True
