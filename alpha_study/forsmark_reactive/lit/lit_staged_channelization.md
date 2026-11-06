@@ -421,3 +421,20 @@ Stage 4 contradictions: Hyman 2026 (channelization stops changing after breakthr
 **Suggested framing:** "Each stage has precedent in a different system. The sequence, measured by volume-weighted flow participation, and
 its finite-inventory mechanism for spreading after breakthrough are, to our knowledge, not previously reported for 3D fracture networks."
 Hedge "to our knowledge". Not every full text was read (see the [abs]/[U] tags).
+
+## Addendum 6 Nov 2026: Hyman et al. 2026 (JGR SE) Fig. 11, read from the PDF (pp. 19–20)
+
+- They plot a **flow focusing profile** along x: per cross-section f50% = (n_f/2 − n50%)/(n_f/2), where n50% is the fewest
+  connections carrying 50 % of the flow (Jang et al. 2011; profile introduced by Szawełło et al. 2024). 30 DFNs, τ = 0–1.
+- Da = 2e-2 (wormholing): "a clear transition zone develops and progresses downstream". Behind the zone f50% rises from about
+  0.8 to about 0.97–1.0 and **stays there**. "After breakthrough, further channelization ceases" (p. 22).
+- Da = 2e-4: profiles decline almost uniformly (to about 0.7). Da = 2e-3: they rise slightly, with an inlet–outlet asymmetry.
+- **For us:** a downstream-moving focusing front is published, so we cannot claim it. What is not in their work is the
+  **relaxation behind the front**: in our runs each 100 m bin focuses as the front passes, then returns to about its start
+  (end_rel ≈ 1.00, xbin_bin_minima.csv). Theirs is a step that holds, because the wall rock never runs out. Our moving
+  zone is a peak, not a step.
+- The metrics differ (f50% per cross-section against PR_V per 100 m bin with fractures binned by centre). Computing their
+  f50% profile on our runs would make the contrast direct.
+- Separate paper, same group: Hyman, Dell'Oca, Navarre-Sitchler & Viswanathan 2026, Transp. Porous Media 153:100,
+  doi:10.1007/s11242-026-02352-y. 2D fracture-matrix CO2 mineralization sensitivity; Kozeny–Carman k–φ assumed, not tested.
+  Not about focusing fronts.

@@ -16,12 +16,30 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   - **Binned along the flow (8.9).** Each 100 m stretch focuses once as the dissolution front passes, then relaxes. The
     outlet stretch focuses most.
   - **2 km scale test (8.10).** Stage order, inheritance and depth hold. Breakthrough needs a little more of the gypsum
-    dissolved. On sparse (×4) 2 km networks the deepest network-wide focusing comes mid-transit (15 of 20 runs, against
-    5 of 20 at ×8).
+    dissolved. On sparse (×4) 2 km networks the deepest network-wide focusing often comes mid-transit (15 of 20 runs,
+    against 5 of 20 at ×8). Corrected 6 Nov pm: counted per geometry this is 4/5 v 0/5 at σ1 (p 0.048) and 3/5 v 1/5 at
+    σ0.5 (p 0.52), so it is a lead, not a result (SCALE_TEST.md).
   - **k–φ exponent (8.11).** n = 3 instead of 1 gives a much deeper channel (depth 0.68 → 0.21) in the same fractures.
   - **Literature check (8.12).** The full four-stage sequence was not found in 3D network studies. n = 1 is conservative.
   - **Active surface area** is Hyman's d_Q/P32 exactly (`dQ_P32`), compared with PR_V in report section 4.
 - **The 2 km results in the published report** cover 40 runs. `scale2km/SCALE_TEST.md` has 60 (σ 0.5 and σ 1 complete).
+
+## Afternoon additions (Fri 6 Nov, 15:40)
+
+- **External assessment reviewed.** Its reframing (a focusing zone that moves and relaxes, and what sets the timing of the
+  network-wide peak) is adopted as the working story. Its two criticisms were right and are now corrected:
+  - **2 km statistics** counted runs, not geometries. Per geometry: σ1 ×4 v ×8 at 2 km 4/5 v 0/5 (p 0.048); σ0.5 3/5 v 1/5
+    (p 0.52). A lead, not a result (report 8.10, SCALE_TEST.md).
+  - **Novelty:** Hyman et al. 2026 Fig. 11 already shows a downstream-moving focusing front, but focusing behind it holds.
+    Our relaxation behind the front is what is new (report 8.12, lit/lit_staged_channelization.md).
+- **Front-occupancy test (report 8.13, `front_occupancy.py`, rules fixed before running):** the share of 100 m bins that
+  are focused does not predict when the network PR_V minimum comes (ρ 0.27–0.50, 28–42 % of runs within 0.05, against a
+  pre-set bar of 0.6 and 60 %). Hyman's f50 profile, computed with fractures crossing each plane, is saturated at
+  0.94–0.97 and cannot resolve our front.
+- **E0 added to the main report (8.11).**
+- **Machine note:** the poppler install upgraded Homebrew freetype to 2.15.0, which needs a newer macOS; `import vtk` now
+  fails unless run with `DYLD_LIBRARY_PATH=/opt/homebrew/Cellar/freetype/2.14.1_1/lib`. The 2 km queue chain does not
+  import vtk and is unaffected.
 
 ## Running now
 

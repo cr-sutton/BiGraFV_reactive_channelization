@@ -71,3 +71,13 @@ Comparison, fixed before the results (same measures as dfn_validation/gate_check
   gyponly (p 0.056), 0.664 v 0.638 gypcal; depth 0.755 v 0.678, 0.846 v 0.784 (both p >= 0.15). Order 10/10; coupled shallower
   and later 5/5. Early dip deeper 7/10 (1 km 4/10). Pooled σ0.5+σ1: 2 km ×4 15/20 v ×8 5/20 (Fisher p 0.004); ×4 2 km v 1 km
   15/20 v 8/20 (p 0.054). σ0 running.
+- Fri 6 Nov 15:20, **correction to the early-dip statistics above** (prompted by an external assessment). The Fisher tests
+  on 20 runs (p 0.004, 0.054) and on 10 runs (p 0.023, 0.17) count runs as independent, but each cell has only 5
+  geometries: σ0.5 and σ1 share them and both chemistries run on them. Counted per geometry, each σ as its own ensemble
+  (geometry "early" when both chemistries have the network PR_V minimum at d < 0.35):
+  - σ1: 2 km ×4 4/5 v ×8 0/5 (Fisher p 0.048); ×4 2 km v 1 km 4/5 v 1/5 (p 0.21).
+  - σ0.5: 2 km ×4 3/5 v ×8 1/5 (p 0.52); ×4 2 km v 1 km 3/5 v 1/5 (p 0.52).
+  - With "either chemistry" instead of "both", σ1 gives 4/5 v 2/5 (p 0.52).
+  - The direction is the same in every count, but only one definition at one σ reaches p < 0.05, and the 0.35 split was
+    chosen after looking. Treat the sparse-network early peak as a lead, not a result.
+  - The signal clusters by geometry: 2 km seed 5 is never early; 1 km seed 3 is early at every density and both σ.
