@@ -171,6 +171,17 @@ bt = N["breakthrough_dissolved_by_mode"]
 gap = N["stage_gaps"]
 dq = N["dq_baseline"]
 
+# 7 Nov additions: read straight from the report's CSVs (same sources as report 8.9, 8.10, 8.14)
+import pandas as pd  # noqa: E402
+FRD = HERE.parent
+XB = pd.read_csv(FRD / "phase1" / "xbin_bin_minima.csv")
+XB = XB[XB.metric == "prv"]
+XS = pd.read_csv(FRD / "phase1" / "xbin_spanning_minima.csv")
+SR = pd.read_csv(FRD / "scale2km" / "scale_runs.csv")
+CS = pd.read_csv(FRD / "ceilsweep" / "ceilsweep_runs.csv")
+CST = pd.to_numeric(pd.read_csv(FRD / "ceilsweep" / "ceilsweep_tests.csv", index_col=0)["value"], errors="coerce")
+cs_med = CS[CS.tag != "kphi_n3"].groupby(["mode", "tag"]).depth.median()
+
 # 1 ----------------------------------------------------------------------------------------------------------------
 s = new_slide(dark=True, notes=(
     "Opening. The question of the talk: when water dissolves minerals in a fractured rock mass, do the channels that "
@@ -332,6 +343,23 @@ stat(s, f2(N["depth_phase1"]["gyponly"]["median"]), f"PR_V minimum over its star
 stat(s, f2(N["depth_phase1"]["gypcal"]["median"]), "same for the coupled brine: a shallower channel", 9.3, 3.6, 3.4, color=ACCENT)
 source(s, "PR_V = (ΣQ)² / Σ(Q²/w), w = fracture volume share. Rows: chemistries; columns: P32 ×4, ×6, ×8, ×16 (×16 ends at capacity time 2).")
 
+xg = XB[XB["mode"] == "gyponly"].sort_values("bin")
+xc = XB[XB["mode"] == "gypcal"].sort_values("bin")
+s = new_slide(notes=(
+    f"Where along the flow does the focusing happen? Fractures binned in 100 m stretches from the inlet. Each stretch focuses once, "
+    f"when the dissolution front passes it, then returns to where it started. The dissolved fraction at each stretch's strongest focusing "
+    f"rises from {xg.d_at_min.iloc[0]:.2f} at the inlet to {xg.d_at_min.iloc[-1]:.2f} at the outlet (gypsum-only). The outlet stretch "
+    f"focuses most ({xg.min_rel.iloc[-1]:.2f} of its start, against {xg.min_rel.iloc[:7].min():.2f}-{xg.min_rel.iloc[:7].max():.2f} upstream). "
+    f"Every stretch ends within {100 * (1 - xg.end_rel.min()):.1f} % of its start. A moving focusing front is published (Hyman et al. 2026, Fig. 11), but there "
+    "focusing behind the front holds; here it relaxes because the soluble fill runs out. The result holds when fractures are counted in every "
+    "stretch they span."))
+title(s, "A focus that moves, and relaxes behind the front")
+picture(s, IMG / "xbin_prv_sg1.png", M, 1.45, 8.0, 5.4, alt="PR_V per 100 m stretch against dissolved fraction")
+stat(s, f"{xg.d_at_min.iloc[0]:.2f} → {xg.d_at_min.iloc[-1]:.2f}", "dissolved fraction when each stretch is most focused, inlet → outlet (gypsum-only)", 8.9, 1.6, 3.8, big_size=34)
+stat(s, f"{xg.min_rel.iloc[-1]:.2f}", "outlet stretch at its most focused (PR_V / start); the strongest local focusing", 8.9, 3.15, 3.8, color=ACCENT, big_size=34)
+stat(s, f"±{100 * max(abs(1 - XB.end_rel)):.0f} %", "every stretch returns to its start: the new part, not in Hyman et al. (2026)", 8.9, 4.7, 3.8, color=FLOW, big_size=34)
+source(s, "Medians over 60 runs per chemistry; σ = 1 panels shown. Report 8.9 (xbin_bin_minima.csv; spanning-bin check xbin_spanning_minima.csv).")
+
 s = new_slide(notes=(
     f"Inheritance: of the fractures carrying 90 % of the flow when the channel is strongest, a median "
     f"{pct(inh['gyponly']['median'])} (gypsum-only) and {pct(inh['gypcal']['median'])} (coupled) were already in the "
@@ -388,6 +416,22 @@ stat(s, pct(x["inheritance"]["gyponly"]["median"]), "inheritance at ×16 (gypsum
 stat(s, f"+{x['depth_gap']:.2f}", "coupled minus gypsum-only depth, same network: all 15 positive", 8.4, 3.55, 4.3, color=ACCENT)
 source(s, "Phase 1 at P32 ×16, 15 networks per chemistry, run to capacity time 2. Phase 2 at ×16 (3 networks per case) gives the same depth law.")
 
+s2, s1 = SR[SR.domain == "2km"], SR[SR.domain == "1km"]
+s = new_slide(notes=(
+    f"Scale test: 45 networks at 2000 x 500 x 250 m, both chemistries, 90 runs, against the 90 matching 1 km runs. The PR_V minimum comes "
+    f"before breakthrough in {int(s2['PRV_min<=breakthrough'].sum())} of 90; inheritance {s2.inheritance.min():.2f}-{s2.inheritance.max():.2f}; "
+    f"breakthrough needs more gypsum dissolved ({s1[s1['mode'] == 'gyponly'].breakthrough.median():.2f} to "
+    f"{s2[s2['mode'] == 'gyponly'].breakthrough.median():.2f} gypsum-only). An apparent early peak on sparse networks at sigma 1 is absent at "
+    "sigma 0 on the same geometries, so it is not a length-density law."))
+title(s, "At 2 km the stages hold")
+picture(s, IMG / "scale2km_prv.png", M, 1.45, 8.0, 5.3, alt="PR_V against dissolved fraction at 1 and 2 km")
+stat(s, f"{int(s2['PRV_min<=breakthrough'].sum())} / 90", "2 km runs whose strongest focusing comes before breakthrough (1 km: "
+     f"{int(s1['PRV_min<=breakthrough'].sum())} / 90)", 8.9, 1.6, 3.8, big_size=34)
+stat(s, f"{s2.inheritance.min():.2f}–{s2.inheritance.max():.2f}", "inheritance in every 2 km run", 8.9, 3.15, 3.8, color=ACCENT, big_size=34)
+stat(s, f"{s1[s1['mode'] == 'gyponly'].breakthrough.median():.2f} → {s2[s2['mode'] == 'gyponly'].breakthrough.median():.2f}",
+     "dissolved at breakthrough, 1 → 2 km (gypsum-only medians)", 8.9, 4.7, 3.8, color=FLOW, big_size=34)
+source(s, "45 networks per scale (P32 ×4/×6/×8, σ 0/0.5/1, seeds 1–5; σ variants share geometry). Report 8.10.")
+
 pg, pc = N["pulse"]["gyponly"], N["pulse"]["gypcal"]
 s = new_slide(notes=(
     "The paused-pulse movie: the reaction freezes at each stage and a conservative tracer pulse runs through the frozen network. "
@@ -438,6 +482,23 @@ picture(s, IMG / "depth_law.png", M, 1.45, 6.9, 4.4, alt="Depth law from x3.3 to
 stat(s, f"{abs(cl['gyp55_minus_cal55']):.3f}", f"depth difference at equal ×5.5 ceiling, two chemistries and porosities (median, {cl['n']} networks)", 7.9, 1.55, 4.8, big_size=36)
 stat(s, f"+{cl['gyp55_minus_gyp10']:.2f}", "depth change from ×10 to ×5.5 with the same chemistry", 7.9, 3.1, 4.8, color=ACCENT, big_size=36)
 stat(s, f"< {math.ceil(rt['cal_events_max'] * 1000) / 1000:.3f}", "largest shift in the PR_V minimum, outlet and breakthrough between 0.1 and 10 pore volumes per year (3 networks per chemistry)", 7.9, 4.65, 4.8, color=FLOW, big_size=36)
+
+s = new_slide(notes=(
+    f"The ceiling sweep. On 9 networks (P32 x4-x8, sigma 1, seeds 1-3) the law k = k0 (phi/phi0)^n with n = 1.48, 2, 3 gives gypsum-only "
+    f"ceilings x30, x100, x1000 and coupled x12.6, x30.8, x171 (52 runs, rules fixed before running). Depth falls with the ceiling on "
+    f"{int(CST['R1_rho_minus1'])} of 9 networks: median {cs_med['gyponly', 'phase3_phi0182']:.2f} at x5.5, {cs_med['gyponly', 'phase1']:.2f} at x10, "
+    f"{cs_med['gyponly', 'ceilN2']:.2f} at x100, {cs_med['gyponly', 'ceilN3']:.2f} at x1000, about {abs(CST['R3_slope_median_per_decade']):.2f} per decade, flattening at high gain. "
+    f"Coupled runs sit a median {CST['R2_median_abs']:.3f} from the gypsum-only curve at the same gain ({int(CST['R2_n'])} points), slightly shallower. "
+    "Caveat: at x1000 only half the gypsum has dissolved by capacity time 2, so stage 4 is not tested there."))
+title(s, "Depth follows the attainable permeability gain")
+picture(s, IMG / "ceilsweep_depth.png", M, 1.45, 8.3, 3.9, alt="Depth against attainable gain, 9 networks, both chemistries")
+stat(s, f"{cs_med['gyponly', 'phase3_phi0182']:.2f} → {cs_med['gyponly', 'ceilN3']:.2f}", "median channel depth from ×5.5 to ×1000 (gypsum-only); falls on 9 of 9 networks",
+     9.2, 1.6, 3.5, big_size=34)
+stat(s, f"{CST['R2_median_abs']:.3f}", f"median gap between chemistries at the same gain ({int(CST['R2_n'])} points)", 9.2, 3.15, 3.5, color=ACCENT, big_size=34)
+text(s, [[("What it means. ", {"bold": True}), ("The chemistry acts through the gain a reacted fracture can reach. The uncertain k–φ law moves a network along "
+          "its curve: n = 1 (×10) gives the shallowest channels, Kozeny–Carman-like laws (×100–×1000) much deeper ones in the same fractures.", {})]],
+     M, 5.55, W - 2 * M, 1.0, size=16)
+source(s, "k = k₀(φ/φ₀)ⁿ, n = 1, 1.48, 2, 3 (plus φ₀ = 0.182 at n = 1); depth within capacity time 2. Report 8.14 (ceilsweep_runs.csv).")
 
 s = new_slide(notes=(
     f"Breakthrough is expensive: when the outlet passes 50 % dissolved, the network has used "
@@ -556,21 +617,23 @@ card(s, M + 8.4, 4.9, 3.7, 1.6, fill="FBE9E2")
 text(s, [[("Exploratory. ", {"bold": True, "color": FLOW}), ("One olivine run at 185 °C on one network; not part of the Forsmark result.", {})]], M + 8.65, 5.1, 3.25, 1.3, size=14)
 
 s = new_slide(notes=(
-    "What is new and what is not. Channels following the initial structure, and calcite replacement limiting the "
-    "permeability gain, are known from smaller systems; we show them at 1 km on site statistics. The candidates that may "
-    "be new: the stage-1 decoupling of flow and open space, the depth law, and the compact front."))
+    "What is new and what is not. Channels following the initial structure, a downstream-moving focusing front (Hyman et al. 2026, "
+    "Fig. 11) and calcite replacement limiting the permeability gain are known from smaller systems; we show them at 1 km on site "
+    "statistics. The candidates that may be new: focusing that relaxes behind the front, depth as one function of the attainable gain "
+    "for both chemistries, the stage-1 decoupling, and the compact front."))
 title(s, "What is new, and what is not")
 card(s, M, 1.7, 5.8, 4.6)
 text(s, "Known, now shown at 1 km", M + 0.3, 1.95, 5.2, 0.5, size=21, bold=True, font=HEAD, color=INK2)
 bullets(s, ["channels follow the initial structure (Hyman et al. 2026)",
+            "a focusing front moves downstream (Hyman et al. 2026, Fig. 11)",
             "replacement by calcite limits the permeability gain (Szawełło et al. 2026; Budek et al. 2026)",
             "transport narrows while a channel forms"], M + 0.3, 2.65, 5.2, 3.4, size=16, space=12)
 card(s, M + 6.3, 1.7, 5.8, 4.6, fill="FBE9E2")
 text(s, "Candidate findings", M + 6.6, 1.95, 5.2, 0.5, size=21, bold=True, font=HEAD, color=FLOW)
-bullets(s, ["flow and open pore space decouple in stage 1, then realign",
-            "channel depth set by the permeability ceiling, not the chemistry",
-            "a compact front: breakthrough after more than half the inventory (model-dependent)",
-            "stages timed by the fraction dissolved, not by open-volume gain"], M + 6.6, 2.65, 5.2, 3.4, size=16, space=12)
+bullets(s, ["focusing relaxes behind the front once the soluble fill runs out",
+            "channel depth follows the attainable permeability gain, one curve for both chemistries (×3.3 to ×1000)",
+            "flow and open pore space decouple in stage 1, then realign",
+            "a compact front: breakthrough after more than half the inventory (model-dependent)"], M + 6.6, 2.65, 5.2, 3.4, size=16, space=12)
 
 # Outlook ----------------------------------------------------------------------------------------------------------
 section("Limits and next steps", "What the model cannot see, and what is running", notes="Section divider.")
@@ -594,14 +657,13 @@ for i, (h, b) in enumerate(lims):
     text(s, [[(h + ".  ", {"bold": True}), (b, {})]], M + 0.75, y + 0.08, W - 2 * M - 0.8, 0.9, size=17)
 
 s = new_slide(notes=(
-    "Next steps proposed, not yet started: resolve in-fracture fronts on a few channel fractures to pin down how much of a fracture "
-    "a real front dissolves (the f of the wormhole bound); understand why the stage-1 mismatch peaks later at x16; extend the "
-    "olivine exploration; and draft the paper."))
+    "Next steps (7 November): write the paper around four figures; test whether the flow spreads again at high gain by running the "
+    "x100-x1000 cases past capacity time 2; the DFN check and the length series are built and parked; olivine stays exploratory."))
 title(s, "Proposed next steps")
-steps = [("Test", "Resolve in-fracture fronts on a few channel fractures (DFN or multi-cell) to pin down f in the wormhole bound"),
-         ("Test", "Why the flow/open-space mismatch peaks later at ×16"),
-         ("Test", "Olivine: more networks, surface-area range, pressure-dependent CO₂"),
-         ("Write", "Draft the paper around inheritance, the depth law and the clock")]
+steps = [("Write", "Draft around four figures: the stages, the moving focus that relaxes, depth against attainable gain, the initial-state predictor"),
+         ("Test", "Run the high-gain cases past capacity time 2: does the flow spread again (stage 4) at ×100–×1000?"),
+         ("Ready", "Parked: DFN check on a 500 m network and a length series, both built, run only if the story needs them"),
+         ("Test", "Olivine: a chemistry that adds volume and re-routes the flow")]
 for i, (when, what) in enumerate(steps):
     x = M + i * 3.07
     badge(s, str(i + 1), x, 2.0, d=0.6, fill=FLOW if i < 3 else ACCENT)
@@ -615,7 +677,7 @@ s = new_slide(dark=True, notes="Closing: three take-home messages, one per quest
 text(s, "Take-home", M, 0.7, W - 2 * M, 0.9, size=36, bold=True, font=HEAD, color=WHITE)
 takes = [(pct(inh["gyponly"]["median"]), "of the peak channel was there before any reaction: channels are inherited"),
          ("4", "stages in every run, timed by the fraction of gypsum dissolved"),
-         ("×10 = ×10.6", "equal permeability ceilings give equal channel depth, whatever the chemistry")]
+         (f"{cs_med['gyponly', 'phase3_phi0182']:.2f} → {cs_med['gyponly', 'ceilN3']:.2f}", "channel depth from ×5.5 to ×1000 attainable gain, one curve for both chemistries")]
 for i, (b, l) in enumerate(takes):
     x = M + i * 4.1
     text(s, b, x, 2.3, 3.8, 1.0, size=44, bold=True, font=HEAD, color=OPEN if i != 1 else CALCITE)

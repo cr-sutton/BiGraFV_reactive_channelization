@@ -91,7 +91,7 @@ def early_late(m):
 
 
 def fig_events():
-    cells = [(p, sg) for p, sg in ((4.0, 1.0), (6.0, 1.0), (8.0, 1.0), (8.0, 0.5))
+    cells = [(p, sg) for p, sg in ((4.0, 1.0), (6.0, 1.0), (8.0, 1.0))
              if ((runs.domain == "2km") & (runs.p32 == p) & (runs.sigma == sg)).sum() >= 10]
     fig, axs = plt.subplots(1, 3, figsize=(13, 4.2), constrained_layout=True)
     rng = np.random.default_rng(0)
@@ -114,24 +114,24 @@ def fig_events():
         ax.set_ylabel(lab)
         if a == 0:
             ax.legend(frameon=False, loc="upper left")
-    el = pd.concat([early_late(p1).assign(domain="1km"), early_late(p2).assign(domain="2km")])
+    # 7 Nov: one count per GEOMETRY (early = network PR_V minimum before d 0.35 in both chemistries), each sigma separately
     ax = axs[2]
+    r = runs.copy()
+    r["early"] = r.PRV_min < 0.35
+    geo = r.groupby(["domain", "sigma", "p32", "seed"]).early.all().reset_index()
+    groups = [(sg, p) for sg in (0.0, 0.5, 1.0) for p in (4.0, 6.0, 8.0)]
     for di, (dom, col) in enumerate((("1km", C1), ("2km", C2))):
-        sh, ns = [], []
-        for p, sg in cells:
-            g = el[(el.domain == dom) & (el.p32 == p) & (el.sigma == sg)]
-            sh.append(g.early_deeper.mean())
-            ns.append(len(g))
-        xs = np.arange(len(cells)) + (di - 0.5) * 0.38
-        ax.bar(xs, sh, width=0.36, color=col, label=dom.replace("km", " km"))
-        for x, s_, n in zip(xs, sh, ns):
-            ax.text(x, s_ + 0.02, f"{round(s_ * n)}/{n}", ha="center", fontsize=8)
-    ax.set_xticks(range(len(cells)), [f"×{p:g} σ{sg:g}" for p, sg in cells])
-    ax.set_ylim(0, 1)
-    ax.set_ylabel("share of runs whose early dip (d < 0.35) is deepest")
-    ax.legend(frameon=False, loc="upper right")
-    fig.suptitle("Per-run stage measures at 1 km and 2 km (both chemistries; bar = median), and how often the "
-                 "network PR$_V$ minimum comes mid-transit", fontsize=10.5)
+        k = [int(geo[(geo.domain == dom) & (geo.sigma == sg) & (geo.p32 == p)].early.sum()) for sg, p in groups]
+        n = [int(((geo.domain == dom) & (geo.sigma == sg) & (geo.p32 == p)).sum()) for sg, p in groups]
+        xs = np.arange(len(groups)) + (di - 0.5) * 0.38 + np.repeat([0, 0.6, 1.2], 3)
+        ax.bar(xs, k, width=0.36, color=col, label=dom.replace("km", " km"))
+    ax.set_xticks(np.arange(len(groups)) + np.repeat([0, 0.6, 1.2], 3), [f"×{p:g}\nσ{sg:g}" for sg, p in groups], fontsize=8)
+    ax.set_ylim(0, 5.4)
+    ax.set_yticks(range(6))
+    ax.set_ylabel("networks (of 5) whose PR$_V$ minimum comes\nbefore 35 % dissolved in both chemistries")
+    ax.legend(frameon=False, loc="upper left")
+    fig.suptitle("Left, centre: per-run stage measures at 1 km and 2 km, σ = 1 (bar = median). Right: networks with an early "
+                 "network PR$_V$ minimum, counted once per geometry, every σ", fontsize=10.5)
     fig.savefig(OUT / "scale2km_events.png", dpi=150)
     plt.close(fig)
 
