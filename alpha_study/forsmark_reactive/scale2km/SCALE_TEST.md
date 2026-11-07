@@ -81,3 +81,13 @@ Comparison, fixed before the results (same measures as dfn_validation/gate_check
   - The direction is the same in every count, but only one definition at one σ reaches p < 0.05, and the 0.35 split was
     chosen after looking. Treat the sparse-network early peak as a lead, not a result.
   - The signal clusters by geometry: 2 km seed 5 is never early; 1 km seed 3 is early at every density and both σ.
+- **Sat 7 Nov 07:50, complete (90 of 90; compare_scale.py rerun).**
+  - Stage order holds at 2 km: PR_V minimum before breakthrough in 100 % of runs, pore-volume minimum before PR_V
+    minimum in 89 % (gyponly) / 96 % (gypcal). Inheritance 0.988 / 0.990 (medians).
+  - Breakthrough needs more gypsum dissolved at 2 km: 0.563 → 0.642 (gyponly), 0.628 → 0.676 (gypcal), medians over 45
+    runs each (σ variants share geometry, so these runs are not independent).
+  - Depth slightly shallower at 2 km: 0.654 → 0.698 (gyponly), 0.780 → 0.832 (gypcal).
+  - **The sparse early peak does not replicate at σ0.** Geometries early in both chemistries, 2 km ×4 v ×8:
+    σ1 4/5 v 0/5 (d < 0.35; p 0.048) or 5/5 v 0/5 (PR_V min before outlet5; p 0.008); σ0.5 3/5 v 1/5 or 4/5 v 2/5
+    (p 0.52); **σ0 2/5 v 2/5 or 3/5 v 3/5 (p 1.0)**. The same geometries with no transmissivity spread show no density
+    contrast, so the effect needs aperture variability and is not a length–density law. The length series stays parked.

@@ -56,3 +56,31 @@ network, gypsum-only lines and coupled points, with residuals).
 To capacity time 2, the ×6 seed 1 n = 3 pair took 0.7 h (gypsum-only) and 3 min (coupled); full Phase 1 gypsum-only runs
 take 0.5–2 h from ×4 to ×8. About 25 run-hours in all. The runner shares the machine with the 2 km queue (7 chains in total): 1 slot until that queue drains
 (about midnight), then 7. Expected to finish Saturday afternoon.
+
+## Results (Sat 7 Nov, 07:45): all 52 runs finished cleanly; analysis `analyze_ceilsweep.py`
+
+Median channel depth over the 9 networks (capacity time ≤ 2):
+
+| Gypsum-only C | ×5.5 | ×10 | ×30 | ×100 | ×1000 |
+|---|---|---|---|---|---|
+| depth | 0.777 | 0.678 | 0.547 | 0.341 | 0.132 (8 + kphi_n3 0.213) |
+| breakthrough (dissolved) | 0.649 | 0.581 | 0.490 | 0.401 | 0.276 |
+
+| Coupled C | ×3.3 | ×5.6 | ×12.6 | ×30.8 | ×171 |
+|---|---|---|---|---|---|
+| depth | 0.882 | 0.794 | 0.650 | 0.554 | 0.339 |
+
+- **R1 passes:** depth falls with C on 9 of 9 networks (Spearman −1 on all nine).
+- **R2 passes at both levels:** 36 coupled points, median |residual| 0.021, median residual +0.021. Coupled is
+  systematically a little shallower than gypsum-only at the same nominal C, more so at high C (median +0.018 / +0.022 /
+  +0.027 at n = 1.48 / 2 / 3; 5 of 36 points beyond 0.05, the largest 0.11). Part of this is that the coupled runs reach
+  less of their nominal ceiling by capacity time 2; against the realized network k_eff gain the gap is +0.014 (median
+  |residual| 0.017, 28 points inside the range).
+- **R3:** depth falls about 0.25 per decade of C (median slope) and the curve flattens at high C (positive quadratic
+  term on 9 of 9 networks).
+- **Networks reorder.** The rank of a network's depth at ×5.5 does not predict its rank at ×1000 (Spearman 0.08);
+  neighbouring ceilings agree (0.72–0.90). How strongly a network responds to the ceiling is itself a network property.
+- **Realized gain falls short at high C:** the network k_eff gain at the last state is 0.56 (gypsum-only) and 0.70
+  (coupled) of nominal at n = 3. The strong channel bypasses the rest of the network, so dissolution slows: by capacity
+  time 2 the gypsum-only runs have dissolved a median 0.49 of the gypsum at n = 3 against 0.85 at n = 1 (8 and 9
+  networks). Whether the post-breakthrough relaxation (stage 4) is reached at high C is therefore not tested here.

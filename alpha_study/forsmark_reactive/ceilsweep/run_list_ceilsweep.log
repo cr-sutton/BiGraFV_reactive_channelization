@@ -1,3 +1,210 @@
 Fri 16:03 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gyponly ceilN3
 gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
 gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 6833 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN3 seconds=1441 rate=52.6265681403231 dt=0.57
+Fri 16:28 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN3 seconds=1651 rate=49.04272863481657 dt=0.57
+Fri 16:56 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 1.366e+04 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN3 seconds=1861 rate=50.481634718473416 dt=0.57
+Fri 17:28 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 3267 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN3 seconds=3122 rate=78.95179204966506 dt=0.57
+Fri 18:21 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 7575 Pa
+Fri 18:58 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 2366 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN3 seconds=3933 rate=75.19239515593758 dt=0.57
+Fri 19:42 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 2156 Pa
+Fri 20:29 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gyponly ceilN3
+gypsum__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 4655 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN3 seconds=5524 rate=95.95531236860548 dt=0.57
+Fri 20:31 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 6833 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN3 seconds=90 rate=52.6265681403231 dt=0.57
+Fri 20:33 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN3 seconds=90 rate=49.04272863481657 dt=0.57
+Fri 20:35 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 1.366e+04 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN3 seconds=120 rate=50.481634718473416 dt=0.57
+Fri 20:38 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 3267 Pa
+Fri 20:40 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 7575 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN3 seconds=181 rate=78.95179204966506 dt=0.57
+Fri 20:42 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 2366 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN3 seconds=211 rate=75.19239515593758 dt=0.57
+Fri 20:44 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 2156 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN3 seconds=330 rate=95.95531236860548 dt=0.57
+Fri 20:48 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gypcal ceilN3
+gypsum_calcite__uncorrected_graph__ceilN3: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN3: steady start, dynamic pressure at manifold 4655 Pa
+L2_r15_p8.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN3 seconds=330 rate=101.00470786626644 dt=0.57
+Fri 20:50 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 6833 Pa
+L2_r15_p8.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN3 seconds=361 rate=95.56586002447789 dt=0.57
+Fri 20:55 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p8.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN3 seconds=5133 rate=101.00470786626644 dt=0.57
+Fri 21:08 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 1.366e+04 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN2 seconds=1471 rate=52.6265681403231 dt=0.57
+Fri 21:15 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 1940 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN2 seconds=1531 rate=49.04272863481657 dt=0.57
+Fri 21:21 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 3267 Pa
+Fri 21:34 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 7575 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN2 seconds=1831 rate=50.481634718473416 dt=0.57
+Fri 21:39 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 2366 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN2 seconds=2582 rate=83.09417705149357 dt=0.57
+Fri 21:59 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gyponly ceilN2
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 2156 Pa
+Fri 22:01 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gyponly ceilN2
+Fri 22:01 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 6833 Pa
+gypsum__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 4655 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN2 seconds=60 rate=52.6265681403231 dt=0.57
+Fri 22:03 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p8.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN3 seconds=5703 rate=95.56586002447789 dt=0.57
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN2 seconds=2582 rate=78.95179204966506 dt=0.57
+L2_r15_p4.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN2 seconds=60 rate=49.04272863481657 dt=0.57
+Fri 22:05 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gypcal ceilN2
+Fri 22:05 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gypcal ceilN2
+Fri 22:05 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 1.366e+04 Pa
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 1940 Pa
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 3267 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN2 seconds=91 rate=50.481634718473416 dt=0.57
+Fri 22:07 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 7575 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN2 seconds=121 rate=78.95179204966506 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN2 seconds=121 rate=83.09417705149357 dt=0.57
+Fri 22:08 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gypcal ceilN2
+Fri 22:08 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 2366 Pa
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 2156 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN2 seconds=120 rate=75.19239515593758 dt=0.57
+Fri 22:10 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gypcal ceilN2
+gypsum_calcite__uncorrected_graph__ceilN2: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN2: steady start, dynamic pressure at manifold 4655 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN2 seconds=211 rate=95.95531236860548 dt=0.57
+L2_r15_p8.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN2 seconds=211 rate=101.00470786626644 dt=0.57
+Fri 22:12 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gyponly ceilN148
+Fri 22:12 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 4305 Pa
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 6833 Pa
+L2_r15_p8.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN2 seconds=210 rate=95.56586002447789 dt=0.57
+Fri 22:14 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 1.366e+04 Pa
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN2 seconds=2672 rate=75.19239515593758 dt=0.57
+Fri 22:19 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 1940 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN148 seconds=991 rate=52.6265681403231 dt=0.57
+Fri 22:29 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN148 seconds=1021 rate=49.04272863481657 dt=0.57
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 3267 Pa
+Fri 22:30 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 7575 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN148 seconds=1230 rate=50.481634718473416 dt=0.57
+Fri 22:35 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 2366 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN2 seconds=3783 rate=95.95531236860548 dt=0.57
+Fri 22:43 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 2156 Pa
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN148 seconds=1891 rate=83.09417705149357 dt=0.57
+Fri 22:51 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gyponly ceilN148
+gypsum__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 4655 Pa
+L2_r15_p8.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN2 seconds=3302 rate=101.00470786626644 dt=0.57
+Fri 22:55 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 6833 Pa
+L2_r15_p4.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN148 seconds=60 rate=52.6265681403231 dt=0.57
+Fri 22:57 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN148 seconds=60 rate=49.04272863481657 dt=0.57
+Fri 22:59 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 1.366e+04 Pa
+L2_r15_p4.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN148 seconds=90 rate=50.481634718473416 dt=0.57
+Fri 23:01 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 1940 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN148 seconds=2042 rate=78.95179204966506 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN148 seconds=120 rate=83.09417705149357 dt=0.57
+L2_r15_p8.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN2 seconds=3752 rate=95.56586002447789 dt=0.57
+Fri 23:04 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gypcal ceilN148
+Fri 23:04 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gypcal ceilN148
+Fri 23:04 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 7575 Pa
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 3267 Pa
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 2366 Pa
+L2_r15_p6.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN148 seconds=120 rate=78.95179204966506 dt=0.57
+L2_r15_p6.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN148 seconds=150 rate=75.19239515593758 dt=0.57
+Fri 23:07 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gypcal ceilN148
+Fri 23:07 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gypcal ceilN148
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: Dirichlet outflow at 200000 Pa, gravity off
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 4655 Pa
+gypsum_calcite__uncorrected_graph__ceilN148: steady start, dynamic pressure at manifold 2156 Pa
+L2_r15_p8.0_sg1.0_seed1 gypsum_calcite__uncorrected_graph__ceilN148 seconds=210 rate=95.95531236860548 dt=0.57
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN148 seconds=2401 rate=75.19239515593758 dt=0.57
+L2_r15_p8.0_sg1.0_seed3 gypsum_calcite__uncorrected_graph__ceilN148 seconds=210 rate=95.56586002447789 dt=0.57
+L2_r15_p8.0_sg1.0_seed2 gypsum_calcite__uncorrected_graph__ceilN148 seconds=210 rate=101.00470786626644 dt=0.57
+L2_r15_p8.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN148 seconds=3182 rate=95.95531236860548 dt=0.57
+L2_r15_p8.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN148 seconds=2972 rate=101.00470786626644 dt=0.57
+L2_r15_p8.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN148 seconds=2911 rate=95.56586002447789 dt=0.57
+Fri 23:41 queue done
+CEILSWEEP_DONE

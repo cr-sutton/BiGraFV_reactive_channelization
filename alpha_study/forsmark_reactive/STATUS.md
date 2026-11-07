@@ -41,6 +41,18 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   fails unless run with `DYLD_LIBRARY_PATH=/opt/homebrew/Cellar/freetype/2.14.1_1/lib`. The 2 km queue chain does not
   import vtk and is unaffected.
 
+## Saturday 7 Nov, 07:50: weekend results
+
+- **Ceiling sweep complete** (52 runs, all clean; `ceilsweep/CEILING_SWEEP.md`, figure `ceilsweep/ceilsweep_depth.png`).
+  Depth falls with the attainable gain on 9 of 9 networks (R1 pass): median 0.78 at ×5.5, 0.68 at ×10, 0.55 at ×30,
+  0.34 at ×100, 0.13 at ×1000, about −0.25 per decade, flattening at high C. Chemistries collapse (R2 pass): coupled
+  sits a median 0.021 above gypsum-only at the same ceiling (36 points; 0.014 against the realized network gain).
+  Networks reorder across ceilings (rank at ×5.5 v ×1000: ρ 0.08). At n = 3 only 0.49 of the gypsum is dissolved by
+  capacity time 2 (0.85 at n = 1).
+- **2 km test complete** (90 runs). Stages, inheritance and depth hold; breakthrough later (0.56 → 0.64 gyponly). The
+  sparse-network early peak is gone at σ0 (2/5 v 2/5), so it is not a length–density effect (SCALE_TEST.md).
+- Not yet in the report or deck.
+
 ## Late afternoon (Fri 6 Nov, ~16:00): checks for the story and the weekend set-up
 
 - **Relaxation behind the front is robust to binning** (report 8.9). Counting each fracture in every 100 m bin it spans:
