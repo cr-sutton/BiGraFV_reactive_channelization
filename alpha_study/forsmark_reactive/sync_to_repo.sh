@@ -4,7 +4,7 @@
 set -e
 SRC=${0:A:h}/..; DST=/Users/collin/Projects/BiGraFV_reactive_channelization
 rsync -a --prune-empty-dirs \
-  --exclude '.venv/' --exclude 'deck/qa/' --exclude '_abandoned/' --exclude 'explore_olivine/test_short/' --exclude '__pycache__/' \
+  --exclude '.venv/' --exclude 'deck/qa/' --exclude 'story/deck/qa/' --exclude '_abandoned/' --exclude 'explore_olivine/test_short/' --exclude '__pycache__/' \
   --exclude 'phase1/figures/anim/' --exclude 'phase1/figures/anim2/*/' --exclude 'phase1/figures/anim3/*/' --exclude 'phase1/figures/anim3/*.mp4' --exclude 'phase1/figures/slices/' \
   --exclude 'report_phase1/index_v1.html' --exclude 'report_phase1/index_v2_tcap.html' --exclude 'report_phase1/index_pre_final*.html' \
   --exclude 'phase1/wormhole_regime.csv' --exclude 'phase1/channel_turnover.csv' --exclude 'phase1/f50_profile.csv' --exclude 'report_phase1/index_pre_6nov_pm.html' --exclude 'report_phase1/index_pre_7nov.html' --exclude 'deck/build_deck_pre_7nov.py' \

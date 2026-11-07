@@ -41,6 +41,20 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   fails unless run with `DYLD_LIBRARY_PATH=/opt/homebrew/Cellar/freetype/2.14.1_1/lib`. The 2 km queue chain does not
   import vtk and is unaffected.
 
+## Saturday 7 Nov, ~12:00: the story, new report and deck, gap-filling runs
+
+- **New story report (separate from the working report):** https://claude.ai/artifact/6LdBs696iNSuw5MGYzsyCT, local
+  `story/report/index.html` (figures, movies, plain + technical text per part, sources).
+- **New story deck:** `story/deck/Reactive_Channels_Story.pptx` (23 slides, two embedded movies), rebuild with
+  `zsh story/deck/rebuild.sh`.
+- **Technical text with every number's source:** `story/STORY.md` (v2, reviewed by Karen; corrections listed at its end).
+  Figures `story/fig1-4`, `story/make_story_figures.py`; animation `story/make_story_animation.py`.
+- **Predictor upgraded:** early tracer arrival t10/τ (held-out R² 0.77 / 0.75 at 1 km, against 0.62 / 0.55 for the
+  largest-fracture share); transfers to 2 km in size, weakly in ranking (`early_arrival_predictor.py`). The fastest single
+  path fails (`fastpath_predictor.py`).
+- **Gap-filling runs running** (`gapfill/GAPFILL.md`, rules fixed first; launched 11:18, ~16 h): A late-time high gain
+  (36), B blind predictor test on 12 new 1 km networks (24), C σ-0 depth law (54).
+
 ## Saturday 7 Nov, 07:50: weekend results
 
 - **Ceiling sweep complete** (52 runs, all clean; `ceilsweep/CEILING_SWEEP.md`, figure `ceilsweep/ceilsweep_depth.png`).
