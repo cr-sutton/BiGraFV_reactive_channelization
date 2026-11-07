@@ -84,3 +84,7 @@ Median channel depth over the 9 networks (capacity time ≤ 2):
   (coupled) of nominal at n = 3. The strong channel bypasses the rest of the network, so dissolution slows: by capacity
   time 2 the gypsum-only runs have dissolved a median 0.49 of the gypsum at n = 3 against 0.85 at n = 1 (8 and 9
   networks). Whether the post-breakthrough relaxation (stage 4) is reached at high C is therefore not tested here.
+
+**Correction (7 Nov, after Karen's review):** the ×1000 / ×171 medians above use 8 networks. With the ×6 seed 1 n = 3 run
+(kphi_n3) as the ninth: gypsum-only depth 0.152, breakthrough 0.270; coupled depth 0.352. Points beyond 0.05 in R2: 6 of
+36 (all positive), not 5. Channel-overlap numbers: `channel_overlap.py`.

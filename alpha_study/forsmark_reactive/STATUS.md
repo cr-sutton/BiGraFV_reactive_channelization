@@ -45,7 +45,7 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
 
 - **Ceiling sweep complete** (52 runs, all clean; `ceilsweep/CEILING_SWEEP.md`, figure `ceilsweep/ceilsweep_depth.png`).
   Depth falls with the attainable gain on 9 of 9 networks (R1 pass): median 0.78 at ×5.5, 0.68 at ×10, 0.55 at ×30,
-  0.34 at ×100, 0.13 at ×1000, about −0.25 per decade, flattening at high C. Chemistries collapse (R2 pass): coupled
+  0.34 at ×100, 0.15 at ×1000 (9 networks), about −0.25 per decade, flattening at high C. Chemistries collapse (R2 pass): coupled
   sits a median 0.021 above gypsum-only at the same ceiling (36 points; 0.014 against the realized network gain).
   Networks reorder across ceilings (rank at ×5.5 v ×1000: ρ 0.08). At n = 3 only 0.49 of the gypsum is dissolved by
   capacity time 2 (0.85 at n = 1).

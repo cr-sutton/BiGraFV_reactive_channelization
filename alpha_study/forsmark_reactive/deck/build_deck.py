@@ -180,7 +180,7 @@ XS = pd.read_csv(FRD / "phase1" / "xbin_spanning_minima.csv")
 SR = pd.read_csv(FRD / "scale2km" / "scale_runs.csv")
 CS = pd.read_csv(FRD / "ceilsweep" / "ceilsweep_runs.csv")
 CST = pd.to_numeric(pd.read_csv(FRD / "ceilsweep" / "ceilsweep_tests.csv", index_col=0)["value"], errors="coerce")
-cs_med = CS[CS.tag != "kphi_n3"].groupby(["mode", "tag"]).depth.median()
+cs_med = CS.assign(tag=CS.tag.replace({"kphi_n3": "ceilN3"})).groupby(["mode", "tag"]).depth.median()   # 9 networks at n = 3 (kphi_n3 is x6 seed 1)
 
 # 1 ----------------------------------------------------------------------------------------------------------------
 s = new_slide(dark=True, notes=(
