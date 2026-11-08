@@ -1,0 +1,37 @@
+                         C  depth     bt  prv_min  n_runs
+mode    tag                                              
+gypcal  ceilN148    12.585  0.622  0.507    0.237       9
+        ceilN2      30.847  0.491  0.425    0.237       9
+        ceilN3     171.324  0.291  0.366    0.162       9
+        phase1       5.554  0.787  0.628    0.435       9
+gyponly ceilN148    29.999  0.427  0.433    0.204       9
+        ceilN2     100.000  0.248  0.377    0.128       9
+        ceilN3    1000.000  0.158  0.274    0.174       9
+        phase1      10.000  0.646  0.541    0.374       9
+                                            0            1        2                  3         4         5         6         7
+test                                        B            B        C                  C         A         A         A         A
+mode                                   gypcal      gyponly  gyponly  gypcal_vs_gyponly    gypcal    gypcal   gyponly   gyponly
+n_runs                                   12.0         12.0      NaN                NaN       NaN       NaN       NaN       NaN
+n_breakthrough                           12.0         12.0      NaN                NaN       NaN       NaN       NaN       NaN
+r2                                   0.452975     -0.17299      NaN                NaN       NaN       NaN       NaN       NaN
+rho                                   0.72028      0.51049      NaN                NaN       NaN       NaN       NaN       NaN
+median_bias                         -0.033604    -0.042637      NaN                NaN       NaN       NaN       NaN       NaN
+median_abs_err                       0.059068       0.0737      NaN                NaN       NaN       NaN       NaN       NaN
+d_bt_range                        0.401-0.699  0.360-0.604      NaN                NaN       NaN       NaN       NaN       NaN
+t10_range                         0.249-0.438  0.268-0.473      NaN                NaN       NaN       NaN       NaN       NaN
+pass_                                   False        False     True               True      True      True      True     False
+networks                                  NaN          NaN      9.0                NaN       NaN       NaN       NaN       NaN
+networks_falling                          NaN          NaN      9.0                NaN       NaN       NaN       NaN       NaN
+rho_minus1                                NaN          NaN      9.0                NaN       NaN       NaN       NaN       NaN
+n_points                                  NaN          NaN      NaN               27.0       NaN       NaN       NaN       NaN
+median_abs_residual                       NaN          NaN      NaN           0.029194       NaN       NaN       NaN       NaN
+median_residual                           NaN          NaN      NaN           0.027008       NaN       NaN       NaN       NaN
+n                                         NaN          NaN      NaN                NaN       2.0       3.0       2.0       3.0
+stretch_recovered_min_of_medians          NaN          NaN      NaN                NaN   0.99583   0.96059  0.971515  0.738723
+stretches_ge_09                           NaN          NaN      NaN                NaN      10.0      10.0      10.0       0.0
+stretches                                 NaN          NaN      NaN                NaN      10.0      10.0      10.0      10.0
+network_prv_end_median                    NaN          NaN      NaN                NaN  1.024485  1.017636  0.985577  0.844851
+networks_prv_ge_09                        NaN          NaN      NaN                NaN       9.0       9.0       9.0       1.0
+network_recovered_median                  NaN          NaN      NaN                NaN  1.049152  1.023822  0.978266  0.798727
+d_end_median                              NaN          NaN      NaN                NaN  0.926744  0.861376  0.894493  0.743927
+t_cap_end_median                          NaN          NaN      NaN                NaN  8.001549  8.001549  8.048485  8.048485

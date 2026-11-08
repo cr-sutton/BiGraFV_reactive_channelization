@@ -3,6 +3,17 @@
 Report (private artifact): https://claude.ai/artifact/Bt4SbtGrkNoqHrYB2TW5pj. Local copy: `report_phase1/index.html`.
 Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report sections 8.9–8.12 yet.
 
+## Latest (Sun 8 Nov 2026): gap-filling runs A–C done and folded into the story report and deck
+
+- Story report (separate from the working report): https://claude.ai/artifact/6LdBs696iNSuw5MGYzsyCT, local
+  `story/report/index.html`; deck `story/deck/Reactive_Channels_Story.pptx`; text `story/STORY.md` (v3).
+- 114 runs, Sat 7 Nov 11:18–22:39, all clean. Rules and results: `gapfill/GAPFILL.md`; analysis `gapfill/analyze_gapfill.py`.
+  - **A (late-time high gain):** ×100 relaxation completes (network PR_V 0.99); ×1000 not yet by capacity time 8 (0.84,
+    still rising). At the same dissolved fraction the two coincide: recovery is paced by the gypsum left.
+  - **B (blind t10 predictor): failed.** R² −0.17 / 0.45, ρ 0.51 / 0.72. Pooled 27 σ-1 networks, one left out: R² 0.51 / 0.62.
+    The predictor becomes a supporting result.
+  - **C (σ 0 depth law): passed.** 9 of 9 falling; coupled within 0.029 of gypsum-only.
+
 ## Where we are
 
 - **Phase 1–3 (1 km, 60 networks × 2 chemistries) are complete.** Flow channelizes in four stages:

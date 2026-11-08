@@ -66,28 +66,28 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 
 <main>
 <header class="col">
-<p class="meta">BiGraFV · Forsmark FFM01 networks · 333 reactive runs · draft 7 November 2026</p>
+<p class="meta">BiGraFV · Forsmark FFM01 networks · 447 reactive runs · draft 8 November 2026</p>
 <h1>Reactive Channels at Kilometre Scale</h1>
-<p class="lede">What happens to flow when water dissolves the mineral filling a kilometre of fractured rock? We ran 333 reactive simulations on 105 networks of 1,587 to 14,658 fractures and found one sequence, one moving focus that relaxes behind it, one depth law and one predictor.</p>
+<p class="lede">What happens to flow when water dissolves the mineral filling a kilometre of fractured rock? We ran 447 reactive simulations on 117 networks of 1,587 to 14,658 fractures and found one sequence, one moving focus that relaxes behind it, one depth law, and a pre-run number that ranks breakthrough only roughly.</p>
 <nav class="toc" aria-label="Sections"><a href="#short">In short</a><a href="#why">Why BiGraFV</a><a href="#setup">What we ran</a><a href="#stages">1 Stages</a><a href="#front">2 Moving focus</a><a href="#gain">3 Depth law</a><a href="#predict">4 Predictor</a><a href="#robust">Robustness</a><a href="#newness">New or known</a><a href="#limits">Limits</a><a href="#papers">Manuscripts</a><a href="#gaps">Gaps and runs</a><a href="#methods">Methods</a></nav>
 </header>
 
 <section id="short">
 <h2>In short</h2>
 <div class="plain"><span class="tag">In plain words</span>
-<p>Water that dissolves gypsum out of fractures makes the fractures more open, so more water goes through them, and they dissolve faster. That feedback makes flow pile into a few paths. We found that in a kilometre-scale network it happens in a fixed order, that the pile-up travels with the dissolution front and then undoes itself once the gypsum runs out, that how strongly it piles up is set by one number (how much more open a fracture can become), and that a cheap measurement of the network before any reaction tells you how much gypsum must dissolve before the front reaches the far side.</p></div>
+<p>Water that dissolves gypsum out of fractures makes the fractures more open, so more water goes through them, and they dissolve faster. That feedback makes flow pile into a few paths. We found that in a kilometre-scale network it happens in a fixed order, that the pile-up travels with the dissolution front and then undoes itself once the gypsum runs out, that how strongly it piles up is set by one number (how much more open a fracture can become), and that a cheap measurement of the network before any reaction gives a rough, not precise, idea of how much gypsum must dissolve before the front reaches the far side.</p></div>
 <div class="grid4">
 <div class="find"><span class="k">1 · Stages</span><div class="big">87 / 90</div><p>runs follow the same order: open space decouples from flow, recouples, focuses and breaks through, then relaxes.</p></div>
-<div class="find"><span class="k">2 · Moving focus</span><div class="big">0.03 → 0.50</div><p>dissolved fraction at which each 100 m stretch focuses, inlet to outlet; every stretch then returns to within 1–2 % of its start.</p></div>
-<div class="find"><span class="k">3 · Depth law</span><div class="big">0.78 → 0.15</div><p>channel depth from ×5.5 to ×1000 attainable permeability gain; coupled chemistry sits on the same curve (median gap 0.021).</p></div>
-<div class="find"><span class="k">4 · Predictor</span><div class="big">R² 0.77</div><p>held-out prediction of the gypsum dissolved at breakthrough from one pre-run number, early tracer arrival.</p></div>
+<div class="find"><span class="k">2 · Moving focus</span><div class="big">0.03 → 0.50</div><p>dissolved fraction at which each 100 m stretch focuses, inlet to outlet; every stretch then returns to within 1–2 % of its start (at ×100 gain too; at ×1000 still recovering when the runs stop).</p></div>
+<div class="find"><span class="k">3 · Depth law</span><div class="big">0.78 → 0.15</div><p>channel depth from ×5.5 to ×1000 attainable permeability gain; coupled chemistry sits on the same curve (median gap 0.021); holds at σ 0.</p></div>
+<div class="find"><span class="k">4 · Predictor</span><div class="big">ρ 0.76–0.83</div><p>early tracer arrival ranks the gypsum dissolved at breakthrough; out of sample R² 0.51–0.62. The blind test failed, so it is a rough guide, not a predictor.</p></div>
 </div>
 </section>
 
 <section id="why">
 <h2>Why BiGraFV</h2>
 <div class="col">
-<p>Resolving every fracture of a kilometre-scale network as a mesh costs millions of cells per run; published reactive network studies stop at 10 m (meshed DFN) to 25 m and about 526 fractures (graph models; Hyman et al. 2026). BiGraFV represents each fracture as one control volume and each intersection as a connection, so PFLOTRAN solves full reactive transport (real gypsum and calcite kinetics, mineral volume, porosity and permeability feedback) on 1,587–14,658 fractures in hours. That is what makes the comparisons below possible: the same network run with different chemistries, permeability laws, rates, lengths and densities, 333 times, with the flow re-solved at every saved state.</p>
+<p>Resolving every fracture of a kilometre-scale network as a mesh costs millions of cells per run; published reactive network studies stop at 10 m (meshed DFN) to 25 m and about 526 fractures (graph models; Hyman et al. 2026). BiGraFV represents each fracture as one control volume and each intersection as a connection, so PFLOTRAN solves full reactive transport (real gypsum and calcite kinetics, mineral volume, porosity and permeability feedback) on 1,587–14,658 fractures in hours. That is what makes the comparisons below possible: the same network run with different chemistries, permeability laws, rates, lengths and densities, 447 times, with the flow re-solved at every saved state.</p>
 <p>Every result here is a comparison of BiGraFV against BiGraFV: we change one thing and keep the rest fixed. A meshed DFN would be another model with its own assumptions; it is a check we have built and parked, not the reference.</p>
 </div>
 </section>
@@ -146,11 +146,13 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <li>The dissolved fraction at each stretch's minimum rises from 0.03 at the inlet to 0.50 (gypsum-only) and 0.58 (coupled) at the outlet.</li>
 <li>Outlet stretch minimum 0.36 / 0.52 of its start, against 0.54–0.66 and 0.67–0.76 upstream.</li>
 <li>Every stretch ends within 0.8 % (gypsum-only) and 1.7 % (coupled) of its start; counting fractures in every stretch they span, within 2.3 % / 1.3 %, and the minimum still moves inlet to outlet (rank correlation 0.94 / 0.95).</li>
-<li>At high gain (n = 2 and 3, 9 networks) the front still moves and each stretch focuses much harder (outlet stretch 0.01 of its start at n = 3). Behind the front the stretches are already 17–95 % recovered when those runs stop with a quarter to half of the gypsum left (run A below tests whether it completes).</li>
+<li>At high gain (n = 2 and 3, 9 networks) the front still moves and each stretch focuses much harder (outlet stretch 0.01 of its start at n = 3). Run A continued these runs to capacity time 8 (Figure 5): at n = 2 (×100) relaxation completes (every stretch 97–99 % recovered, network PR<sub>V</sub> 0.99 of its start, 9 of 9 networks); at n = 3 (×1000) it has not completed (stretches 74–89 % recovered, network PR<sub>V</sub> 0.84, a quarter of the gypsum left) but is still rising, 0.56 → 0.85 between capacity time 2 and 8; “not completed” means not by capacity time 8.</li>
+<li>Recovery tracks how much gypsum is gone, not the gain: at the same dissolved fraction n = 2 and n = 3 sit within 0.03 (0.54 / 0.53 at d 0.5, 0.80 / 0.78 at d 0.7). Why a ×1000 channel takes longer in time is not yet tested (one hypothesis: it bypasses the gypsum that is left). Coupled runs relax fully at both n, ending slightly above their start (up to 1.07).</li>
 <li>The width of the focused zone does not predict when the whole network is most focused (pre-set test failed, rank correlation 0.27–0.50). The network minimum comes from flow shifting inside the initial channel upstream of the outlet, before the outlet stretch focuses.</li>
 </ul>
 </div>
-<p class="src">Backing: phase1/xbin_channelization.csv, xbin_bin_minima.csv, xbin_spanning_minima.csv, front_occupancy_tests.csv, prv_decomposition_tests.csv, ceilsweep/xbin_highgain.csv; animation story/make_story_animation.py.</p>
+<figure><img src="img/fig5_latetime.png" alt="Network PR_V against capacity time and dissolved fraction for n = 1, 2, 3 to capacity time 8, and per-stretch recovered share" loading="lazy"><figcaption><strong>Figure 5.</strong> Late-time relaxation at high gain (run A; 9 networks, σ 1). A: network PR<sub>V</sub> over its start against capacity time; n = 1 runs from Phase 1 (to capacity time 5), n = 2 and 3 continued to capacity time 8. B: the same against the dissolved fraction; at the same d the n = 2 and n = 3 curves nearly coincide (n = 3 medians beyond d 0.6 over 6–7 networks). C: per 100 m stretch, the share of its lowest value recovered by capacity time 8 (median of 9); dotted: the pre-set 0.9 line.</figcaption></figure>
+<p class="src">Backing: phase1/xbin_channelization.csv, xbin_bin_minima.csv, xbin_spanning_minima.csv, front_occupancy_tests.csv, prv_decomposition_tests.csv, ceilsweep/xbin_highgain.csv, gapfill/gapA_stretch.csv, gapA_network.csv (analyze_gapfill.py, rule gapfill/GAPFILL.md A); animation story/make_story_animation.py.</p>
 <div class="new">A downstream-moving focusing front is published (Hyman et al. 2026, Fig. 11), but there focusing behind the front holds at its maximum, because the wall rock never runs out. The relaxation behind the front, set by the finite soluble fill, is what we did not find reported.</div>
 </section>
 
@@ -159,11 +161,12 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <p class="claim">How deep the channel gets follows C, the permeability gain of a fully reacted fracture. The chemistry acts through C. A higher C narrows the channel within the paths that were already there.</p>
 <div class="plain"><span class="tag">In plain words</span>
 <p>A dissolved fracture can only get so much more permeable. If it can gain ten times, the flow crowds a little; if it can gain a thousand times, the flow crowds hard into a few fractures. Calcite matters only because it refills part of the space and so lowers that maximum. Put both chemistries on the same scale of "how much more permeable can a fracture get" and they line up on one curve. The uncertain physics of how permeability grows with porosity does not leave the answer open: it just tells you where on the curve you are.</p></div>
-<figure><img src="img/fig3_gain.png" alt="Depth against attainable gain for 9 networks and both chemistries; coupled minus gypsum-only depth; channel nesting across exponents" loading="lazy"><figcaption><strong>Figure 3.</strong> A: depth against C, one line per network (gypsum-only), coupled runs as squares at their own C (9 networks, P32 ×4–×8, σ 1). B: coupled minus gypsum-only depth at the same C, same network; grey band ±0.05. C: for n = 1.48, 2, 3, the share of the channel that is inside the n = 1 channel (circles) and the channel size relative to n = 1 (triangles).</figcaption></figure>
+<figure><img src="img/fig3_gain.png" alt="Depth against attainable gain for 9 networks and both chemistries; coupled minus gypsum-only depth; channel nesting across exponents" loading="lazy"><figcaption><strong>Figure 3.</strong> A: depth against C, one line per network (gypsum-only), coupled runs as squares at their own C (9 networks, P32 ×4–×8, σ 1). B: coupled minus gypsum-only depth at the same C, same network; grey band ±0.05. C: for n = 1.48, 2, 3, the share of the channel that is inside the n = 1 channel (circles) and the channel size relative to n = 1 (triangles). D: the same sweep on the same 9 geometries without transmissivity spread (σ 0, run C), with the σ 1 median dashed.</figcaption></figure>
 <div class="tablewrap"><table>
 <thead><tr><th class="l">Gypsum-only C</th><th>×5.5</th><th>×10</th><th>×30</th><th>×100</th><th>×1000</th></tr></thead>
 <tbody><tr><td class="l">depth</td><td>0.78</td><td>0.68</td><td>0.55</td><td>0.34</td><td>0.15</td></tr>
-<tr><td class="l">breakthrough (d)</td><td>0.65</td><td>0.58</td><td>0.49</td><td>0.40</td><td>0.27</td></tr></tbody></table></div>
+<tr><td class="l">breakthrough (d)</td><td>0.65</td><td>0.58</td><td>0.49</td><td>0.40</td><td>0.27</td></tr>
+<tr><td class="l">depth at σ 0 (run C)</td><td>—</td><td>0.65</td><td>0.43</td><td>0.25</td><td>0.16</td></tr></tbody></table></div>
 <div class="tablewrap"><table>
 <thead><tr><th class="l">Coupled C</th><th>×3.3</th><th>×5.6</th><th>×12.6</th><th>×30.8</th><th>×171</th></tr></thead>
 <tbody><tr><td class="l">depth</td><td>0.88</td><td>0.79</td><td>0.65</td><td>0.55</td><td>0.35</td></tr></tbody></table></div>
@@ -174,6 +177,7 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <li>Coupled against the same network's gypsum-only curve at the same C: median |difference| 0.021 over 36 points (rule R2 passed at 0.03); coupled slightly shallower (6 of 36 beyond 0.05, all positive). Against the permeability gain actually reached, 0.014.</li>
 <li>C, not n: matched points compare different exponents at the same C (coupled n = 2 at ×30.8 against gypsum-only n = 1.48 at ×30) and agree. At a fixed ×10, the law's shape (n = 0.5 to 8) moves depth by ±0.04 (one network, below).</li>
 <li>91–100 % of the high-n channel lies inside the n = 1 channel; it holds 0.71 / 0.47 / 0.16 (gypsum-only) of the n = 1 fractures at n = 1.48 / 2 / 3. Inheritance stays 0.95–0.99.</li>
+<li>σ 0 (run C: the same 9 geometries without transmissivity spread; pre-set rule passed): depth falls with C on 9 of 9; coupled within a median 0.029 of the gypsum-only curve (27 points; σ 1 on the same laws: 0.022), again slightly shallower (median +0.027; 7 of 27 beyond +0.05, none below −0.05). The coupled n = 1 points fall below the σ 0 gypsum-only range and are not compared. Without transmissivity spread the channel is deeper at intermediate gain (×30: 0.43 against 0.55) and the same at ×10 and ×1000.</li>
 <li>The gain also makes events earlier: breakthrough 0.65 → 0.27, PR<sub>V</sub> minimum 0.43 → 0.22 (×5.5 → ×1000). At n = 3 stages 1 and 2 merge in 5 of 8 gypsum-only networks.</li>
 </ul>
 </div>
@@ -181,30 +185,32 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <figure><img src="img/kphi_e0_curves.png" alt="Four laws with the same x10 ceiling: law shape, PR_V and k_eff against dissolved fraction" loading="lazy"><figcaption>Same ×10 gain, four shapes (n = 0.5, 1, 2, 8; one network): depth 0.72, 0.68, 0.66, 0.64. Purple: n = 3, ×1000.</figcaption></figure>
 <figure><img src="img/kphi_e0_apertures.png" alt="Open and hydraulic aperture histograms before and after, for each law" loading="lazy"><figcaption>Apertures before and after. With any ×10 law the hydraulic aperture can at most double (median 75 → 106–122 µm); with n = 3, 13 % of fractures open to about 1 mm.</figcaption></figure>
 </div>
-<p class="src">Backing: ceilsweep/ceilsweep_runs.csv, ceilsweep_residuals.csv, ceilsweep_tests.csv (analyze_ceilsweep.py, rules ceilsweep/CEILING_SWEEP.md), ceilsweep/channel_overlap.csv (channel_overlap.py), phase1/kphi_e0/kphi_e0_summary.csv.</p>
-<div class="caveat">At high C the channel bypasses the rest of the network: by capacity time 2 only 0.49 of the gypsum is dissolved at n = 3 (0.85 at n = 1). C is nominal (realized 0.56–0.70 of it at n = 3). σ 1 only so far (run C tests σ 0). With inheritance near 1, any smaller channel would sit inside the n = 1 channel, so the nesting has no null model.</div>
+<p class="src">Backing: ceilsweep/ceilsweep_runs.csv, ceilsweep_residuals.csv, ceilsweep_tests.csv (analyze_ceilsweep.py, rules ceilsweep/CEILING_SWEEP.md), ceilsweep/channel_overlap.csv (channel_overlap.py), phase1/kphi_e0/kphi_e0_summary.csv, gapfill/gapC_runs.csv, gapC_residuals.csv (analyze_gapfill.py, rule gapfill/GAPFILL.md C).</p>
+<div class="caveat">At high C the channel bypasses the rest of the network: by capacity time 2 only 0.49 of the gypsum is dissolved at n = 3 (0.85 at n = 1). C is nominal (realized 0.56–0.70 of it at n = 3). The coupled chemistry sits slightly shallower than gypsum-only at both σ (median +0.02 to +0.03), on the edge of the pre-set 0.03. With inheritance near 1, any smaller channel would sit inside the n = 1 channel, so the nesting has no null model.</div>
 </section>
 
 <section id="predict">
-<h2><span class="n">4</span>One number known before the run predicts breakthrough</h2>
-<p class="claim">The time for the first 10 % of a tracer pulse to cross the unreacted network, in mean residence times, predicts how much gypsum must dissolve before breakthrough.</p>
+<h2><span class="n">4</span>One number known before the run ranks breakthrough, roughly</h2>
+<p class="claim">The time for the first 10 % of a tracer pulse to cross the unreacted network, in mean residence times, ranks how much gypsum must dissolve before breakthrough. On networks it has not seen it explains about half the variation; the pre-set blind test failed.</p>
 <div class="plain"><span class="tag">In plain words</span>
-<p>Before any reaction, push a pulse of dye through the network and time how fast the first tenth comes out. Networks where water races through a few fast paths break through early (little gypsum dissolved); networks where the fast water is slow break through late. The relation is nearly a straight line: gypsum dissolved at breakthrough ≈ 1.45 × that early arrival time.</p></div>
-<figure><img src="img/fig4_predictor.png" alt="Dissolved fraction at breakthrough against early tracer arrival for both chemistries with 2 km points, and held-out R2 for each predictor" loading="lazy"><figcaption><strong>Figure 4.</strong> A–B: dissolved fraction at breakthrough against t<sub>10</sub>/τ<sub>res</sub> of the unreacted network, 1 km (P32 ×4–×8, 45 networks per chemistry) with the 1 km fit; grey crosses are 45 new 2 km networks not used in the fit. C: R² with each P32 level held out in turn, for the largest-fracture flow share and four arrival percentiles.</figcaption></figure>
+<p>Before any reaction, push a pulse of dye through the network and time how fast the first tenth comes out. Networks where water races through a few fast paths break through early (little gypsum dissolved); networks where the fast water is slow break through late. On the networks we fitted it on, this looked like a tight straight line. On 12 new networks it was much looser: it gets the order roughly right but cannot pin the amount down better than to about 0.06–0.07 of the gypsum (median error).</p></div>
+<figure><img src="img/fig4_predictor.png" alt="Dissolved fraction at breakthrough against early tracer arrival for both chemistries with 2 km points, and held-out R2 for each predictor" loading="lazy"><figcaption><strong>Figure 4.</strong> A–B: dissolved fraction at breakthrough against t<sub>10</sub>/τ<sub>res</sub> of the unreacted network, 1 km (P32 ×4–×8, 45 networks per chemistry) with the 1 km fit; grey crosses are 45 new 2 km networks not used in the fit; open diamonds are 12 new 1 km networks run after the line was frozen (blind, run B). C: R² of t<sub>10</sub> predictions: training with each P32 level held out, the blind networks and the 2 km networks against the frozen line, and all 27 σ 1 1 km networks with one network left out at a time.</figcaption></figure>
 <div class="col">
 <span class="tag" style="font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--flow)">Technical</span>
 <ul>
-<li>d<sub>bt</sub> = 0.03 + 1.45 t<sub>10</sub>/τ<sub>res</sub> (gypsum-only), 0.11 + 1.49 t<sub>10</sub>/τ<sub>res</sub> (coupled). Held-out R² 0.77 / 0.75, rank correlation 0.92 / 0.92. The largest fracture's flow share gives 0.62 / 0.55 on the same runs.</li>
+<li>d<sub>bt</sub> = 0.03 + 1.45 t<sub>10</sub>/τ<sub>res</sub> (gypsum-only), 0.11 + 1.49 t<sub>10</sub>/τ<sub>res</sub> (coupled), fitted on 45 networks per chemistry (15 geometries × 3 σ). In training, with each P32 level held out: R² 0.77 / 0.75, rank correlation 0.92 / 0.92. The largest fracture's flow share gives 0.62 / 0.55 on the same runs.</li>
 <li>The single fastest inventory path (min Σ V/q) does not predict it (rank correlation 0.17–0.25): breakthrough follows the flow-weighted fast part of the network, not one path.</li>
-<li>2 km (not used in the fit): the relation carries over in size (median bias −0.023 / −0.030; median error 0.045 / 0.076), but ranks the 2 km networks only weakly (rank correlation 0.60 / 0.43; R² 0.39 / 0.01), where breakthroughs span a narrower range (SD 0.07 against 0.11). Run B tests new 1 km networks blind.</li>
+<li>2 km (not used in the fit): the relation carries over in size (median bias −0.023 / −0.030; median error 0.045 / 0.076), but ranks the 2 km networks only weakly (rank correlation 0.60 / 0.43; R² 0.39 / 0.01), where breakthroughs span a narrower range (SD 0.07 against 0.11).</li>
+<li><strong>Blind test (run B), failed.</strong> 12 new 1 km networks (P32 ×4/×8, σ 1), frozen line: R² −0.17 / 0.45, rank correlation 0.51 / 0.72, median bias −0.043 / −0.034 (pre-set pass: R² ≥ 0.5, ρ ≥ 0.7, |bias| ≤ 0.03). Not the σ mix: on the σ 1 training networks alone the line gives R² 0.80 / 0.76, but in-sample. Same builder and domain; the blind set has P32 ×4 and ×8 only. The new networks break through earlier than predicted at the same t<sub>10</sub>; the likeliest reading is an optimistic training fit plus network-to-network variance.</li>
+<li>Honest estimate, all 27 σ 1 1 km networks with one left out at a time: R² 0.51 / 0.62, rank correlation 0.76 / 0.83. Other arrival percentiles do no better (t<sub>16</sub> 0.52 / 0.64). The training R² of 0.77 was optimistic: the percentile was chosen on those 15 geometries.</li>
 </ul>
 </div>
 <div class="pair">
 <figure><video controls muted playsinline preload="none" poster="img/pulse_btc_only_gyponly.png" src="img/pulse_gyponly.mp4"></video><figcaption>Movie: the reaction is paused at each stage and a tracer pulse runs through the frozen network (example network, gypsum-only). The same kind of pulse on the unreacted network gives t<sub>10</sub>.</figcaption></figure>
 <figure><img src="img/tracer_btc_annotated_gyponly.png" alt="Tracer breakthrough curves at the start, at the channel peak and at the end" loading="lazy"><figcaption>Transport narrows while the channel forms and recovers after: median arrival 0.81 → 0.91 → 0.86 of the residence time, tail exponent 3.4 → 4.2 → 3.4 (gypsum-only, 60 networks).</figcaption></figure>
 </div>
-<p class="src">Backing: phase1/early_arrival_predictor.csv, early_arrival_predictor_fit.csv (early_arrival_predictor.py), phase1/fastpath_predictor_fit.csv, phase1/breakthrough_predictor_summary.csv.</p>
-<div class="caveat">t<sub>10</sub> needs a tracer pulse on the unreacted network (cheap, but a simulation). The tracer is an Eulerian pulse with numerical dispersion. The percentile was picked on the 1 km runs.</div>
+<p class="src">Backing: phase1/early_arrival_predictor.csv, early_arrival_predictor_fit.csv (early_arrival_predictor.py), phase1/fastpath_predictor_fit.csv, phase1/breakthrough_predictor_summary.csv, gapfill/gapB_predictor.csv, gapfill_tests.csv (analyze_gapfill.py, rule gapfill/GAPFILL.md B).</p>
+<div class="caveat">With R² about 0.5–0.6 out of sample, this is a supporting result (fast flow paths set when the front arrives), not a headline predictor. t<sub>10</sub> needs a tracer pulse on the unreacted network (cheap, but a simulation). The tracer is an Eulerian pulse with numerical dispersion.</div>
 </section>
 
 <section id="robust">
@@ -230,11 +236,11 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <tbody>
 <tr><td class="w">Channels follow the initial flow paths</td><td class="l">known, now at 1–2 km</td><td class="w">Hyman et al. 2026; Szawełło et al. 2026</td></tr>
 <tr><td class="w">A focusing front moves downstream</td><td class="l">known</td><td class="w">Hyman et al. 2026, Fig. 11</td></tr>
-<tr><td class="w">Focus relaxes behind the front (finite fill)</td><td class="l">not found</td><td class="w">Hyman 2026: focusing holds behind the front; Budek et al. 2026: freezes when walls armour</td></tr>
+<tr><td class="w">Focus relaxes behind the front (finite fill), at a pace set by the gypsum left, not by the gain</td><td class="l">not found</td><td class="w">Hyman 2026: focusing holds behind the front; Budek et al. 2026: freezes when walls armour</td></tr>
 <tr><td class="w">Full four-stage sequence with decoupling–recoupling of flow and open space</td><td class="l">not found in 3D networks</td><td class="w">re-spreading after breakthrough in 2D karst nets (Perne et al. 2014)</td></tr>
 <tr><td class="w">Calcite replacement limits the gain</td><td class="l">known</td><td class="w">Budek et al. 2026 (Γ)</td></tr>
-<tr><td class="w">One depth(C) curve for both chemistries; narrowing within the initial channel</td><td class="l">not found</td><td class="w">—</td></tr>
-<tr><td class="w">Early tracer arrival predicts the inventory dissolved at breakthrough</td><td class="l">not found</td><td class="w">—</td></tr>
+<tr><td class="w">One depth(C) curve for both chemistries, at σ 0 and σ 1; narrowing within the initial channel</td><td class="l">not found</td><td class="w">—</td></tr>
+<tr><td class="w">Early tracer arrival ranks the inventory dissolved at breakthrough (moderate: out-of-sample R² 0.5–0.6)</td><td class="l">not found</td><td class="w">—</td></tr>
 <tr><td class="w">Reactive network simulations at km scale with thousands of fractures</td><td class="l">not found</td><td class="w">largest found: 25 m, ~526 fractures (Hyman et al. 2026)</td></tr>
 </tbody></table></div>
 <p class="src">Literature notes: lit/lit_staged_channelization.md (with the Hyman 2026 Fig. 11 addendum), lit/lit_channel_depth.md, lit/lit_kphi_relations.md. A final literature check before submission is still to do.</p>
@@ -255,30 +261,37 @@ a:focus-visible{outline:2px solid var(--flow);outline-offset:2px}
 <h2>Toward manuscripts</h2>
 <div class="col">
 <h3>Paper 1: Transient reactive channels in finite-fill fracture networks</h3>
-<p>The dynamics. Figures: (1) the four stages and the decoupling–recoupling of flow and open space; (2) the focus that moves with the front and relaxes behind it (with the animation as supplementary video); (3) depth against attainable gain, chemistries on one curve; (4) early tracer arrival predicts breakthrough. Supplement: 2 km, ×16, rate, binning, the failed tests (front occupancy, fastest path, sparse early peak).</p>
+<p>The dynamics. Figures: (1) the four stages and the decoupling–recoupling of flow and open space; (2) the focus that moves with the front and relaxes behind it (with the animation as supplementary video); (3) depth against attainable gain, chemistries on one curve; (4) late-time relaxation at high gain (Figure 5). Early tracer arrival goes in as a supporting result with its blind test. Supplement: 2 km, ×16, rate, binning, σ 0, the failed tests (front occupancy, fastest path, sparse early peak, the blind predictor test).</p>
 <h3>Paper 2 (optional): Channel depth is set by the attainable permeability gain</h3>
-<p>If part 3 grows (σ 0 sweep, run C; the late-time high-gain runs, run A), it can stand alone: the depth(C) curve, the C-versus-n separation, nested narrowing, and what it means for choosing a permeability law. Otherwise it is Figure 3 of paper 1.</p>
+<p>With σ 0 (run C) and the late-time runs (run A) in, part 3 can stand alone: the depth(C) curve at two transmissivity spreads, the C-versus-n separation, nested narrowing, recovery paced by the gypsum left, and what it means for choosing a permeability law. Otherwise it is Figure 3 of paper 1.</p>
 <h3>Paper 3 (later): BiGraFV at kilometre scale</h3>
 <p>The method and its checks (multiport correction, outflow-face fix, cost against meshed DFN), with the parked DFN comparison on the 500 m network if a reviewer asks for it.</p>
 </div>
 </section>
 
 <section id="gaps">
-<h2>Gaps and the runs filling them <span class="status run">running</span></h2>
-<p class="col">114 runs launched Saturday 7 November 11:18, about 16 hours on 7 slots. Every rule below was fixed before the runs started (gapfill/GAPFILL.md).</p>
+<h2>Gap-filling runs: results <span class="status">done 7 Nov 22:39</span></h2>
+<p class="col">114 runs, Saturday 7 November 11:18–22:39 on 7 slots, all finished cleanly. Every rule was fixed before the runs started (gapfill/GAPFILL.md); the verdicts below follow the rules as written.</p>
 <div class="tablewrap"><table>
-<thead><tr><th class="l">Run</th><th class="l">Gap</th><th class="l">What</th><th class="l">Rule</th></tr></thead>
+<thead><tr><th class="l">Run</th><th class="l">Question</th><th class="l">Rule</th><th class="l">Result</th><th class="l">Verdict</th></tr></thead>
 <tbody>
-<tr><td class="l">A</td><td class="w">Does relaxation complete at high gain?</td><td class="w">n = 2 and 3 on the 9 sweep networks, both chemistries, to capacity time 8 (36 runs)</td><td class="w">median per-stretch recovered share ≥ 0.9 in every stretch and network PR<sub>V</sub> ≥ 0.9 of start (gypsum-only, n = 2 and 3)</td></tr>
-<tr><td class="l">B</td><td class="w">Does the predictor hold on networks it has never seen?</td><td class="w">12 new 1 km networks (P32 ×4/×8, seeds 11–16), both chemistries, start-of-run tracer (24 runs)</td><td class="w">against the frozen 1 km line: R² ≥ 0.5, rank correlation ≥ 0.7, |median bias| ≤ 0.03</td></tr>
-<tr><td class="l">C</td><td class="w">Is the depth law specific to σ 1?</td><td class="w">n = 1.48 / 2 / 3 on the 9 σ-0 networks, both chemistries (54 runs)</td><td class="w">depth falls with C on ≥ 7 of 9; coupled within a median |0.03| of the gypsum-only curve</td></tr>
+<tr><td class="l">A</td><td class="w">Does relaxation complete at high gain? (n = 2, 3; 9 networks; to capacity time 8; 36 runs)</td><td class="w">every stretch median recovered ≥ 0.9 and network PR<sub>V</sub> ≥ 0.9 of start (gypsum-only, n = 2 and 3)</td><td class="w">n = 2: stretches 0.97–0.99, network 0.99. n = 3: stretches 0.74–0.89, network 0.84 and rising, d = 0.74</td><td class="w">n = 2 met; n = 3 not met by capacity time 8 (still recovering)</td></tr>
+<tr><td class="l">B</td><td class="w">Does the t<sub>10</sub> line hold on 12 new 1 km networks? (24 runs)</td><td class="w">frozen line: R² ≥ 0.5, ρ ≥ 0.7, |median bias| ≤ 0.03</td><td class="w">gypsum-only R² −0.17, ρ 0.51, bias −0.043; coupled R² 0.45, ρ 0.72, bias −0.034</td><td class="w">failed (both chemistries)</td></tr>
+<tr><td class="l">C</td><td class="w">Is the depth law specific to σ 1? (σ 0, n = 1.48 / 2 / 3; 54 runs)</td><td class="w">depth falls with C on ≥ 7 of 9; coupled within a median |0.03|</td><td class="w">9 of 9 falling; coupled median |gap| 0.029 (median +0.027)</td><td class="w">passed (the chemistry match narrowly)</td></tr>
 </tbody></table></div>
 <div class="col">
-<h3>Gaps without runs</h3>
+<h3>What changed in the story</h3>
 <ul>
-<li>Why t<sub>10</sub> ranks 2 km networks only weakly (narrower spread, or a length effect): an analysis of the existing 2 km runs.</li>
-<li>A final literature check of the four "not found" claims.</li>
-<li>Parked, ready if needed: DFN comparison on the 500 m network (criteria locked in dfn_validation/sm500_compare.py) and the fixed-width length series (lenseries/).</li>
+<li>Part 2 is stronger: the relaxation completes at ×100 gain too, and its pace is set by the gypsum left, not by the gain (Figure 5).</li>
+<li>Part 3 is stronger: the depth law and the single chemistry curve hold without transmissivity spread.</li>
+<li>Part 4 is weaker: early arrival ranks breakthrough (pooled ρ 0.76 / 0.83), but explains only about half the variation out of sample (R² 0.51 / 0.62). It moves from a headline to a supporting result.</li>
+</ul>
+<h3>Remaining gaps (no runs planned)</h3>
+<ul>
+<li>Why the blind networks break through earlier than their t<sub>10</sub> says (and why 2 km ranks weakly): an analysis of the existing runs, not new runs. A better one-number predictor would need a new pre-registered blind set.</li>
+<li>n = 3 relaxation past capacity time 8: optional (about 9 runs × 6 h); Figure 5B already shows it follows the n = 2 path against d.</li>
+<li>A final literature check of the "not found" claims.</li>
+<li>Parked, ready if needed: DFN comparison on the 500 m network (criteria locked in dfn_validation/sm500_compare.py) and the fixed-width length series (lenseries/; its 1 km cells are now run as run B).</li>
 </ul>
 </div>
 </section>

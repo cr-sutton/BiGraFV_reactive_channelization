@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Story deck (7 Nov 2026): mirrors the new report "Reactive Channels at Kilometre Scale" (story/report/index.html) 1:1,
+Story deck (7 Nov 2026; gap-filling runs A-C folded in 8 Nov): mirrors the new report "Reactive Channels at Kilometre Scale" (story/report/index.html) 1:1,
 separate from the older colloquium deck.  Numbers are those of story/STORY.md (reviewed by Karen, 7 Nov) and its CSVs;
 figures and movies from story/report/img/.
   cd forsmark_reactive/story/deck && ../../deck/.venv/bin/python build_story_deck.py  -> Reactive_Channels_Story.pptx
@@ -27,23 +27,24 @@ def movie(s, mp4, poster, x, y, w, h):
 
 
 # 1 title ------------------------------------------------------------------------------------------------------------
-s = new_slide(dark=True, notes="Title. 333 BiGraFV reactive runs on 105 Forsmark FFM01 networks of 1,587 to 14,658 fractures.")
+s = new_slide(dark=True, notes="Title. 447 BiGraFV reactive runs on 117 Forsmark FFM01 networks of 1,587 to 14,658 fractures.")
 text(s, "Reactive Channels at Kilometre Scale", M, 2.2, W - 2 * M, 1.2, size=44, bold=True, font=HEAD, color=WHITE)
-text(s, "A focus that moves and relaxes, a depth law, and a pre-run predictor, from 333 BiGraFV simulations of mineral-filled "
+text(s, "A focus that moves and relaxes, and a depth law, from 447 BiGraFV simulations of mineral-filled "
         "fracture networks", M, 3.5, W - 2 * M - 1, 1.0, size=20, color="C9D4DC", italic=True)
-text(s, "BiGraFV · Forsmark FFM01 · draft 7 November 2026", M, 6.4, W - 2 * M, 0.4, size=13, color="8FA3B3")
+text(s, "BiGraFV · Forsmark FFM01 · draft 8 November 2026", M, 6.4, W - 2 * M, 0.4, size=13, color="8FA3B3")
 
 # 2 four findings ----------------------------------------------------------------------------------------------------
 s = new_slide(notes=(
     "The four findings in one slide. 1: the order holds in 87 of 90 runs at 1 km. 2: each 100 m stretch focuses as the front passes "
     "(dissolved fraction 0.03 at the inlet to 0.50 at the outlet, gypsum-only) and returns to within 0.8-1.7 % of its start. 3: depth "
-    "0.78 at x5.5 to 0.15 at x1000 attainable gain, 9 networks; coupled within a median 0.021 at the same gain. 4: early tracer arrival "
-    "predicts the dissolved fraction at breakthrough, held-out R2 0.77 (gypsum-only), 0.75 (coupled)."))
+    "0.78 at x5.5 to 0.15 at x1000 attainable gain, 9 networks; coupled within a median 0.021 at the same gain; holds at sigma 0 (run C). "
+    "4: early tracer arrival ranks the dissolved fraction at breakthrough (pooled rank correlation 0.76 / 0.83) but explains only half "
+    "the variation out of sample (R2 0.51 / 0.62); the pre-set blind test failed, so it is a supporting result."))
 title(s, "Four findings")
 items = [("1 · Stages", "87 / 90", "runs follow one order: open space decouples from flow, recouples, focuses and breaks through, relaxes"),
-         ("2 · Moving focus", "0.03 → 0.50", "dissolved fraction when each 100 m stretch focuses, inlet → outlet; each then returns to its start"),
-         ("3 · Depth law", "0.78 → 0.15", "channel depth from ×5.5 to ×1000 attainable gain; coupled on the same curve (gap 0.021)"),
-         ("4 · Predictor", "R² 0.77", "one pre-run number, early tracer arrival, predicts the gypsum dissolved at breakthrough")]
+         ("2 · Moving focus", "0.03 → 0.50", "dissolved fraction when each 100 m stretch focuses, inlet → outlet; each then returns to its start, at ×100 too"),
+         ("3 · Depth law", "0.78 → 0.15", "channel depth from ×5.5 to ×1000 attainable gain; coupled on the same curve; holds at σ 0"),
+         ("4 · Early arrival", "ρ 0.76", "ranks the gypsum dissolved at breakthrough; out of sample R² 0.5–0.6, blind test failed")]
 for i, (k, big, lab) in enumerate(items):
     x = M + i * 3.07
     card(s, x, 1.7, 2.85, 4.6)
@@ -55,12 +56,12 @@ for i, (k, big, lab) in enumerate(items):
 s = new_slide(notes=(
     "Why this needs BiGraFV. Published reactive network studies stop at 10 m (meshed DFN) to 25 m and about 526 fractures (graph, "
     "Hyman et al. 2026). One control volume per fracture lets PFLOTRAN run full reactive transport with mineral volume and "
-    "permeability feedback on 1,587-14,658 fractures in hours, so the same network can be run 333 ways. Every comparison here is "
+    "permeability feedback on 1,587-14,658 fractures in hours, so the same network can be run hundreds of ways (447 runs). Every comparison here is "
     "BiGraFV against BiGraFV."))
 title(s, "What BiGraFV makes possible")
 stat(s, "25 m · 526", "largest published reactive network study found: domain size and fractures (Hyman et al. 2026)", M, 1.9, 3.8, color=INK2)
 stat(s, "14,658", "this study: fractures in the largest network; domains 1–2 km long", M + 4.2, 1.9, 3.8)
-stat(s, "333", "reactive runs, flow re-solved at every saved state (114 more running)", M + 8.4, 1.9, 3.6, color=RUST)
+stat(s, "447", "reactive runs, flow re-solved at every saved state", M + 8.4, 1.9, 3.6, color=RUST)
 text(s, [[("How. ", {"bold": True}), ("Each fracture is one control volume and each intersection a connection; PFLOTRAN solves "
           "gypsum and calcite kinetics, mineral volume and the porosity–permeability feedback on that graph.", {})],
          [("Why it matters. ", {"bold": True}), ("We can run the same network with different chemistries, permeability laws, rates, "
@@ -108,13 +109,24 @@ movie(s, IMG / "focus_front.mp4", IMG / "focus_front_mid.png", M, 1.35, W - 2 * 
 s = new_slide(notes=(
     "Figure 2. The dissolved fraction at each stretch's minimum rises from 0.03 at the inlet to 0.50 (gypsum-only) and 0.58 (coupled). "
     "Outlet stretch minimum 0.36 / 0.52 against 0.54-0.66 and 0.67-0.76 upstream. Every stretch ends within 0.8 % / 1.7 % of its start; "
-    "with fractures counted in every stretch they span, within 2.3 % / 1.3 %. At high gain the front still moves and stretches behind it "
-    "are already 17-95 % recovered when those runs stop."))
+    "with fractures counted in every stretch they span, within 2.3 % / 1.3 %. At high gain the front still moves; run A follows those "
+    "runs to capacity time 8 (next slide)."))
 title(s, "Focus moves inlet → outlet, then relaxes")
 picture(s, IMG / "fig2_front.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 2")
 stat(s, "0.03 → 0.50", "dissolved fraction at each stretch's minimum, inlet → outlet", M, 5.35, 3.8, big_size=30, label_size=13)
 stat(s, "0.36", "outlet stretch at its minimum: the strongest local focusing", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
 stat(s, "< 2 %", "every stretch ends this close to its start", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
+s = new_slide(notes=(
+    "Figure 5, run A: n = 2 and 3 on the 9 sweep networks continued to capacity time 8. n = 2 (x100): every stretch 97-99 % recovered, "
+    "network PR_V 0.99 of its start, 9 of 9 networks; the pre-set rule is met. n = 3 (x1000): not met by capacity time 8, stretches 74-89 % "
+    "recovered, network 0.84 and still rising (0.56 at capacity time 2, 0.85 at 8) with a quarter of the gypsum left. At the same dissolved "
+    "fraction n = 2 and n = 3 sit within 0.03 (0.54 / 0.53 at d 0.5, 0.80 / 0.78 at d 0.7): recovery is paced by the gypsum left, not by the "
+    "gain. Why x1000 is slower in time is untested (hypothesis: its channel bypasses the gypsum left). Coupled runs relax fully at both n."))
+title(s, "At high gain the relaxation is paced by the gypsum left")
+picture(s, IMG / "fig5_latetime.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 5")
+stat(s, "0.99", "network PR_V / start at ×100 gain, capacity time 8 (9 of 9 networks)", M, 5.35, 3.8, big_size=30, label_size=13)
+stat(s, "0.84 ↑", "at ×1000: not yet complete, still rising, a quarter of the gypsum left", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
+stat(s, "≤ 0.03", "gap between ×100 and ×1000 at the same dissolved fraction", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
     "What is new here. Hyman et al. (2026, Fig. 11) show a focusing front moving downstream in 3D DFN graphs, but there focusing behind "
     "the front holds at its maximum because the wall rock never runs out. Here the soluble fill runs out, so each stretch relaxes behind "
@@ -137,12 +149,14 @@ s = new_slide(notes=(
     "Figure 3. Depth falls with the attainable gain C on 9 of 9 networks: median 0.78 at x5.5, 0.68 at x10, 0.55 at x30, 0.34 at x100, "
     "0.15 at x1000 (gypsum-only); about 0.25 per decade, flattening at high C. Coupled at its own C (x3.3 to x171) sits a median 0.021 from "
     "the gypsum-only curve at the same C (36 points; 6 beyond 0.05, all positive). Matched points compare different n at the same C and "
-    "agree. 91-100 % of the high-n channel lies inside the n = 1 channel, which shrinks to 0.71 / 0.47 / 0.16 of its size at n = 1.48 / 2 / 3."))
-title(s, "One depth law for both chemistries")
-picture(s, IMG / "fig3_gain.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 3")
-stat(s, "0.78 → 0.15", "median depth, ×5.5 → ×1000 (9 networks; 9 of 9 fall)", M, 5.35, 3.8, big_size=30, label_size=13)
-stat(s, "0.021", "median gap, coupled vs gypsum-only at the same gain (36 points)", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
-stat(s, "91–100 %", "of the high-gain channel inside the n = 1 channel", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
+    "agree. 91-100 % of the high-n channel lies inside the n = 1 channel, which shrinks to 0.71 / 0.47 / 0.16 of its size at n = 1.48 / 2 / 3. "
+    "Panel D, run C: the same 9 geometries without transmissivity spread (sigma 0). Depth falls with C on 9 of 9; coupled within a median "
+    "0.029 (27 points, median +0.027, passes the pre-set 0.03 narrowly; sigma 1 on the same laws 0.022); median depth 0.65 / 0.43 / 0.25 / 0.16 at x10 / x30 / x100 / x1000."))
+title(s, "One depth law for both chemistries, at σ 1 and σ 0")
+picture(s, IMG / "fig3_gain.png", M, 1.35, 7.8, 5.6, alt="Figure 3")
+stat(s, "0.78 → 0.15", "median depth, ×5.5 → ×1000; falls on 9 of 9 networks at σ 1 and at σ 0", 8.5, 1.5, 4.2, big_size=30, label_size=13)
+stat(s, "0.021", "median gap, coupled vs gypsum-only at the same gain (σ 1, 36 points; σ 0: 0.029)", 8.5, 3.25, 4.2, color=ACCENT, big_size=30, label_size=13)
+stat(s, "91–100 %", "of the high-gain channel inside the n = 1 channel", 8.5, 5.0, 4.2, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
     "Separating the gain from the shape. At a fixed x10 gain, four law shapes (n = 0.5, 1, 2, 8) give depth 0.72, 0.68, 0.66, 0.64 on one "
     "network; going to x1000 gives 0.21 on that network. Hydraulic aperture can at most double under any x10 law (median 75 to 106-122 um); "
@@ -155,28 +169,30 @@ stat(s, "0.47", "depth change from ×10 to ×1000 on the same network", 8.6, 3.2
 text(s, "A higher gain also makes everything earlier: breakthrough at 0.65 → 0.27 of the gypsum dissolved (×5.5 → ×1000).", 8.6, 4.85, 4.1, 1.3, size=15, color=INK2)
 
 # Part 4 --------------------------------------------------------------------------------------------------------------
-section("4 · One number predicts breakthrough", "Early tracer arrival through the unreacted network")
+section("4 · Early arrival ranks breakthrough, roughly", "Early tracer arrival through the unreacted network: a supporting result")
 s = new_slide(notes=(
     "Figure 4. d_bt = 0.03 + 1.45 t10/tau (gypsum-only), 0.11 + 1.49 t10/tau (coupled). Held-out R2 0.77 / 0.75 with each P32 level left out, "
-    "against 0.62 / 0.55 for the largest fracture's flow share. The single fastest path does not predict it. On 45 new 2 km networks the "
-    "relation carries over in size (median bias -0.02 / -0.03) but ranks them weakly (rho 0.60 / 0.43). Run B tests 12 new 1 km networks blind."))
-title(s, "Early tracer arrival predicts breakthrough")
+    "against 0.62 / 0.55 for the largest fracture's flow share (training). On 45 new 2 km networks it ranks weakly (rho 0.60 / 0.43). "
+    "Run B, blind, 12 new 1 km networks against the frozen line: R2 -0.17 / 0.45, rho 0.51 / 0.72, bias -0.043 / -0.034, so the pre-set test "
+    "failed for both chemistries. Not the sigma mix (sigma-1 in-sample R2 0.80 / 0.76); likely an optimistic training fit. All 27 sigma-1 1 km networks with one left out: R2 0.51 / 0.62, rho 0.76 / 0.83."))
+title(s, "Early arrival ranks breakthrough; the blind test failed")
 picture(s, IMG / "fig4_predictor.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 4")
-stat(s, "R² 0.77", "held-out, gypsum-only (coupled 0.75); largest-fracture share 0.62", M, 5.35, 3.8, big_size=30, label_size=13)
-stat(s, "× 1.45", "gypsum dissolved at breakthrough ≈ 1.45 × t₁₀/τ", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
-stat(s, "ρ 0.60", "on 45 new 2 km networks: right size, weaker ranking", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
+stat(s, "ρ 0.76", "rank correlation, all 27 σ 1 1 km networks (coupled 0.83)", M, 5.35, 3.8, big_size=30, label_size=13)
+stat(s, "R² 0.51", "one network left out at a time (coupled 0.62); training said 0.77", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
+stat(s, "R² −0.17", "blind, 12 new networks, gypsum-only (coupled 0.45); pass was 0.5", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
 
 # Robustness ----------------------------------------------------------------------------------------------------------
 s = new_slide(notes=(
     "Robustness. 2 km (90 runs): same dip and recovery, inheritance 0.96-1.00, breakthrough needs more gypsum dissolved (0.56 to 0.64). "
     "Rate 0.1-10 pore volumes per year: stage timing moves at most 0.003, depth at most 0.014. P32 x16: same order in 26 of 30. Binning: the "
-    "moving focus holds with spanning bins. Dropped: an apparent early peak on sparse 2 km networks vanished at sigma 0."))
+    "moving focus holds with spanning bins. Sigma 0: the depth law holds (run C). Dropped: an apparent early peak on sparse 2 km networks vanished at sigma 0."))
 title(s, "What holds, and what we dropped")
 picture(s, IMG / "scale2km_prv.png", M, 1.45, 7.2, 4.9, alt="1 km vs 2 km")
 bullets(s, ["2 km: same stages, inheritance 0.96–1.00",
             "rate ×100 range: timing ≤ 0.003, depth ≤ 0.014",
             "P32 ×16: same order in 26 of 30",
             "spanning bins: focus still moves and relaxes",
+            "σ 0: depth law and chemistry match hold (run C)",
             "dropped: the sparse 2 km early peak (gone at σ 0)"], 8.1, 1.7, 4.6, 4.8, size=16, space=12)
 
 # New or known --------------------------------------------------------------------------------------------------------
@@ -189,7 +205,7 @@ bullets(s, ["channels follow the initial flow paths (Hyman et al. 2026)", "a foc
 card(s, M + 6.3, 1.7, 5.8, 4.7, fill="E3F1E8")
 text(s, "Not found reported", M + 6.6, 1.95, 5.2, 0.5, size=21, bold=True, font=HEAD, color="2F7A4F")
 bullets(s, ["focus relaxes behind the front (finite fill)", "four-stage sequence with flow–open-space decoupling in 3D networks",
-            "one depth law for both chemistries; narrowing inside the initial channel", "early tracer arrival predicts breakthrough inventory",
+            "one depth law for both chemistries; narrowing inside the initial channel", "early tracer arrival ranks breakthrough inventory (moderately)",
             "reactive network runs at km scale with thousands of fractures"], M + 6.6, 2.65, 5.2, 3.6, size=16, space=10)
 
 # Limits --------------------------------------------------------------------------------------------------------------
@@ -207,11 +223,11 @@ for i, (h, b) in enumerate(lims):
     text(s, [[(h + ".  ", {"bold": True}), (b, {})]], M + 0.75, y + 0.08, W - 2 * M - 0.8, 0.9, size=17)
 
 # Manuscripts and gaps ------------------------------------------------------------------------------------------------
-s = new_slide(notes="Manuscripts. Paper 1: the dynamics, four figures. Paper 2 (optional): the depth law, if runs A and C extend it. Paper 3 "
+s = new_slide(notes="Manuscripts. Paper 1: the dynamics, four figures plus late-time relaxation; early arrival as a supporting result. Paper 2 (optional): the depth law, now extended by runs A and C. Paper 3 "
                     "(later): BiGraFV at kilometre scale, the method and its checks.")
 title(s, "Toward manuscripts")
-papers = [("Paper 1", "Transient reactive channels in finite-fill fracture networks", "stages · moving focus and relaxation · depth law · predictor"),
-          ("Paper 2", "Channel depth is set by the attainable permeability gain", "optional: if the σ 0 sweep and late-time high-gain runs extend Figure 3"),
+papers = [("Paper 1", "Transient reactive channels in finite-fill fracture networks", "stages · moving focus and relaxation · depth law · late-time relaxation"),
+          ("Paper 2", "Channel depth is set by the attainable permeability gain", "optional, now supported: σ 0 and late-time runs extend Figure 3"),
           ("Paper 3", "BiGraFV at kilometre scale", "later: the method, its checks and the parked DFN comparison")]
 for i, (k, t, b) in enumerate(papers):
     x = M + i * 4.1
@@ -219,31 +235,32 @@ for i, (k, t, b) in enumerate(papers):
     text(s, k, x + 0.3, 1.95, 3.2, 0.4, size=15, color=INK2)
     text(s, t, x + 0.3, 2.4, 3.2, 1.6, size=20, bold=True, font=HEAD)
     text(s, b, x + 0.3, 4.1, 3.2, 1.8, size=15, color=INK2)
-s = new_slide(notes="Gap-filling runs launched 7 Nov 11:18, 114 runs, about 16 h; rules fixed before the runs (gapfill/GAPFILL.md).")
-title(s, "Filling the gaps: 114 runs running")
+s = new_slide(notes="Gap-filling runs, 7 Nov 11:18-22:39, 114 runs, rules fixed before the runs (gapfill/GAPFILL.md). A: n = 2 met, n = 3 not "
+                    "met by capacity time 8 (still recovering). B: failed for both chemistries. C: passed (chemistry match narrowly, 0.029).")
+title(s, "Gap-filling runs: what passed and what did not")
 gaps = [("A", "Does relaxation complete at high gain?", "n = 2, 3 · 9 networks · to capacity time 8 · 36 runs",
-         "pass: every stretch ≥ 90 % recovered, network PR_V ≥ 0.9"),
+         "×100: complete (0.99). ×1000: not yet, 0.84 and rising", "2F7A4F"),
         ("B", "Does the predictor hold on unseen networks?", "12 new 1 km networks · start-of-run tracer · 24 runs",
-         "pass: R² ≥ 0.5, ρ ≥ 0.7, |bias| ≤ 0.03 vs the frozen line"),
+         "failed: R² −0.17 / 0.45, ρ 0.51 / 0.72 (pass 0.5 / 0.7)", RUST),
         ("C", "Is the depth law specific to σ 1?", "n = 1.48, 2, 3 · 9 σ-0 networks · 54 runs",
-         "pass: depth falls on ≥ 7 of 9; chemistry gap ≤ 0.03")]
-for i, (k, q, what, rule) in enumerate(gaps):
+         "passed: falls on 9 of 9; chemistry gap 0.029", "2F7A4F")]
+for i, (k, q, what, res, col) in enumerate(gaps):
     y = 1.7 + i * 1.6
-    badge(s, k, M, y + 0.1, d=0.65, fill=RUST)
+    badge(s, k, M, y + 0.1, d=0.65, fill=col)
     text(s, q, M + 0.95, y, 5.6, 0.5, size=19, bold=True, font=HEAD)
     text(s, what, M + 0.95, y + 0.55, 5.6, 0.8, size=15, color=INK2)
-    text(s, rule, M + 6.9, y + 0.15, 5.2, 1.0, size=15)
+    text(s, res, M + 6.9, y + 0.15, 5.2, 1.0, size=16, bold=True, color=col)
 
 # Take-home -----------------------------------------------------------------------------------------------------------
-s = new_slide(dark=True, notes="Take-home: the focus travels and relaxes because the fill runs out; depth is set by the attainable gain; the "
-                               "unreacted network tells you how much must dissolve before breakthrough.")
+s = new_slide(dark=True, notes="Take-home: one order of stages; the focus travels and relaxes because the fill runs out, at a pace set by the gypsum left; "
+                               "depth is set by the attainable gain. Early tracer arrival only ranks breakthrough roughly (blind test failed).")
 text(s, "Take-home", M, 0.7, W - 2 * M, 0.9, size=36, bold=True, font=HEAD, color=WHITE)
-takes = [("travels", "the focus moves with the front and relaxes behind it, because the soluble fill runs out"),
-         ("0.78 → 0.15", "channel depth set by the attainable permeability gain, one curve for both chemistries"),
-         ("t₁₀", "early tracer arrival through the unreacted network predicts how much must dissolve before breakthrough")]
+takes = [("4 stages", "one order in 87 of 90 runs: decouple, recouple, focus and break through, relax"),
+         ("travels", "the focus moves with the front and relaxes behind it, because the soluble fill runs out"),
+         ("0.78 → 0.15", "channel depth set by the attainable permeability gain, one curve for both chemistries and both σ")]
 for i, (b, l) in enumerate(takes):
     x = M + i * 4.1
-    text(s, b, x, 2.3, 3.8, 1.0, size=40, bold=True, font=HEAD, color=OPEN if i != 1 else CALCITE)
+    text(s, b, x, 2.3, 3.8, 1.0, size=40, bold=True, font=HEAD, color=OPEN if i != 2 else CALCITE)
     text(s, l, x, 3.45, 3.6, 1.8, size=18, color="C9D4DC")
 text(s, "Report: Reactive Channels at Kilometre Scale (claude.ai artifact) · code and data: github.com/cr-sutton/BiGraFV_reactive_channelization",
      M, 6.5, W - 2 * M, 0.4, size=13, color="8FA3B3")

@@ -1,4 +1,4 @@
-# Reactive channels in kilometre-scale mineral-filled fracture networks: the story (draft v2, 7 Nov 2026)
+# Reactive channels in kilometre-scale mineral-filled fracture networks: the story (draft v3, 8 Nov 2026: gap-filling runs A–C folded in; v2 kept as STORY_v2.md)
 
 All results are BiGraFV (one control volume per fracture, PFLOTRAN) on synthetic Forsmark FFM01 networks
 (1000 × 250 × 250 m unless stated; P32 ×4/×6/×8; transmissivity spread σ 0/0.5/1; 5 seeds; one network pore volume per
@@ -79,6 +79,15 @@ channel upstream of the outlet, before the outlet stretch focuses.
 the front holds at its maximum because the wall rock never runs out. Relaxation behind the front, driven by the finite
 soluble fill, is what we did not find reported.
 
+**Update 8 Nov, run A (gapfill/GAPFILL.md; gapA_stretch.csv, gapA_network.csv; Figure 5).** n = 2 and 3 continued to
+capacity time 8 on the 9 sweep networks. n = 2 (×100) meets the pre-set rule: every stretch median recovered 0.97–0.99,
+network PR_V 0.99 of start (9 of 9 ≥ 0.9). n = 3 (×1000) does not by capacity time 8: stretches 0.74–0.89, network 0.84
+(1 of 9 ≥ 0.9), d 0.74, still rising (median 0.40, 0.56, 0.62, 0.69, 0.74, 0.85 at capacity time 1, 2, 3, 4, 6, 8). At
+the same dissolved fraction n = 2 and n = 3 sit within 0.03 (0.54 / 0.53 at d 0.5, 0.70 / 0.67 at 0.6, 0.80 / 0.78 at 0.7;
+n = 3 over 9, 7, 6 networks): recovery is paced by the gypsum left. Why a ×1000 channel is slower in time is not tested
+(hypothesis: it bypasses that gypsum); "not met" means not by capacity time 8. Coupled runs relax fully at both n. The L runs reproduce the capacity-time-2 runs at the 9 matching states (gypsum-only
+depth within 0.011, dissolved fraction within 0.0006; coupled looser: depth up to 0.088, dissolved fraction 0.025).
+
 ---
 
 ## 3. Channel depth follows the attainable permeability gain; the chemistry acts through that gain
@@ -122,6 +131,12 @@ smaller channel would sit inside the n = 1 channel.
 depth(C) curve on which coupled runs sit at their own gain, with the channel narrowing inside the initial channel, was not
 found.
 
+**Update 8 Nov, run C (gapC_runs.csv, gapC_residuals.csv; Figure 3D).** The same 9 geometries at σ 0, n = 1 / 1.48 /
+2 / 3: depth falls with C on 9 of 9 (pre-set rule passed). Coupled against gypsum-only at the same C: median |residual|
+0.029, median +0.027 (27 points; passes the 0.03 rule narrowly; σ 1 on the same 27 laws 0.022), 7 of 27 beyond +0.05, none below −0.05. Gypsum-only median
+depth 0.65 / 0.43 / 0.25 / 0.16 at ×10 / ×30 / ×100 / ×1000 (σ 1: 0.68 / 0.55 / 0.34 / 0.15): deeper at intermediate gain
+without transmissivity spread, the same at the ends. Coupled is slightly shallower than gypsum-only at both σ.
+
 ---
 
 ## 4. One number known before the run ranks how much gypsum must dissolve before breakthrough
@@ -156,15 +171,25 @@ alone). The tracer is an Eulerian pulse with numerical dispersion. The percentil
 held-out set (2 km) differs in length as well as geometry, and the relation transfers in size, not in ranking. The
 coupled intercept (0.11) differs from gypsum-only (0.03).
 
+**Update 8 Nov, run B: the blind test failed (gapB_predictor.csv, gapfill_tests.csv; Figure 4).** 12 new 1 km networks
+(P32 ×4/×8, σ 1, seeds 11–16), frozen line: R² −0.17 (gypsum-only) / 0.45 (coupled), rank correlation 0.51 / 0.72,
+median bias −0.043 / −0.034 (pass: R² ≥ 0.5, ρ ≥ 0.7, |bias| ≤ 0.03). Same builder as Phase 1; on the σ-1 training
+networks alone the line gives R² 0.80 / 0.76 in-sample, so it is not the σ mix; the likeliest reading is an optimistic
+training fit plus network-to-network variance (the blind set has P32 ×4/×8 only). The new networks
+break through earlier than predicted (median d_bt 0.49 against 0.57 in σ-1 training, gypsum-only). Honest estimate, all
+27 σ-1 1 km networks with one left out: R² 0.51 / 0.62, rank correlation 0.76 / 0.83 (t16 0.52 / 0.64). Item 4 is a
+supporting result: early arrival ranks breakthrough moderately; it does not predict it to R² 0.75.
+
 ---
 
-## Open questions that decide the next runs
+## Open questions after the gap-filling runs
 
-1. Does relaxation complete at high gain (×100, ×1000)? Behind the front the stretches are already 17–95 % recovered when
-   the sweep runs stop at capacity time 2, with a quarter to half of the gypsum left.
-2. Does t10 rank a blind set of new 1 km networks as well as it ranks the training set (R² ≈ 0.75), and why does it rank
-   2 km networks only weakly?
-3. Is the depth(C) curve the same at other σ (the sweep used σ 1 only)?
+1. Answered (run A): relaxation completes at ×100; at ×1000 it is still under way at capacity time 8 and follows the
+   ×100 path against the dissolved fraction.
+2. Answered (run B): no. Out of sample t10 explains about half the variation. Why the blind networks break through
+   earlier at the same t10, and why 2 km ranks weakly, is an analysis of existing runs; a better predictor would need a
+   new pre-registered blind set.
+3. Answered (run C): yes, the depth(C) curve and the chemistry match hold at σ 0.
 
 ---
 

@@ -4,7 +4,9 @@ Story figures (7 Nov 2026): four figures, one per story item, all BiGraFV-agains
   fig1_stages.png      the stages the front moves through (network PR_V, PR_pore and their ratio against dissolved fraction)
   fig2_front.png       the focus moves with the front and relaxes behind it (100 m bins)
   fig3_gain.png        depth against attainable permeability gain; chemistries on one curve; same (nested) channel
-  fig4_predictor.png   one pre-run number predicts the gypsum dissolved at breakthrough
+  fig4_predictor.png   one pre-run number predicts the gypsum dissolved at breakthrough (with the blind run B networks)
+  fig5_latetime.png    late-time relaxation at high gain (run A, n = 2 and 3 to capacity time 8)
+Gap-filling inputs (8 Nov): gapfill/gapB_predictor.csv, gapC_runs.csv, gapA_stretch.csv, gapfill_tests.csv.
 Inputs (no new runs): phase1/phase1_mechanism.csv, stage_events_clocks.csv, xbin_channelization.csv, xbin_bin_minima.csv,
 xbin_spanning_minima.csv, ceilsweep/ceilsweep_runs.csv, ceilsweep_residuals.csv, channel_overlap.csv,
 phase1/early_arrival_predictor.csv, early_arrival_predictor_fit.csv.
@@ -152,7 +154,8 @@ def fig3():
     R = pd.read_csv(FR / "ceilsweep" / "ceilsweep_runs.csv")
     Res = pd.read_csv(FR / "ceilsweep" / "ceilsweep_residuals.csv")
     J = pd.read_csv(FR / "ceilsweep" / "channel_overlap.csv")
-    fig, axs = plt.subplots(1, 3, figsize=(14, 4.3), constrained_layout=True)
+    fig, axs = plt.subplots(2, 2, figsize=(12.5, 8.8), constrained_layout=True)
+    axs = axs.ravel()
     ax = axs[0]
     for (p, s), h in R.groupby(["p32", "seed"]):
         g = h[h["mode"] == "gyponly"].sort_values("C")
@@ -164,7 +167,7 @@ def fig3():
     ax.set_xscale("log")
     ax.set_xlabel("attainable permeability gain C = k(fully reacted) / k$_0$")
     ax.set_ylabel("channel depth: PR$_V$ minimum / start")
-    ax.set_title("A. Depth follows the attainable gain (9 networks)", fontsize=10)
+    ax.set_title("A. Depth follows the attainable gain (9 networks, σ 1)", fontsize=10)
     ax.legend(loc="lower left", fontsize=8.5)
     ax = axs[1]
     ax.axhspan(-0.05, 0.05, color="0.93")
@@ -186,8 +189,44 @@ def fig3():
     ax.set_ylabel("fraction")
     ax.set_title("C. A higher gain keeps fewer of the same fractures", fontsize=10)
     ax.legend(loc="lower left", fontsize=7)
+    ax = axs[3]
+    G = pd.read_csv(FR / "gapfill" / "gapC_runs.csv")
+    for (p, s), h in G.groupby(["p32", "seed"]):
+        g = h[h["mode"] == "gyponly"].sort_values("C")
+        ax.plot(g.C, g.depth, "-o", color=COL["gyponly"], lw=1, ms=3.5, alpha=0.65)
+        c = h[h["mode"] == "gypcal"]
+        ax.plot(c.C, c.depth, "s", color=COL["gypcal"], ms=4.5, mfc="white", mew=1.3, alpha=0.85)
+    m1 = R[(R["mode"] == "gyponly") & R.tag.isin(["phase1", "ceilN148", "ceilN2", "ceilN3", "kphi_n3"])].replace({"tag": {"kphi_n3": "ceilN3"}})
+    m1 = m1.groupby("tag").agg(C=("C", "first"), depth=("depth", "median")).sort_values("C")
+    ax.plot(m1.C, m1.depth, "--", color="k", lw=1.6, label="σ 1 median (panel A)")
+    ax.plot([], [], "-o", color=COL["gyponly"], label="σ 0 gypsum-only (one line per network)")
+    ax.plot([], [], "s", color=COL["gypcal"], mfc="white", mew=1.3, label="σ 0 coupled, at its own gain")
+    ax.set_xscale("log")
+    ax.set_xlabel("attainable permeability gain C")
+    ax.set_ylabel("channel depth: PR$_V$ minimum / start")
+    ax.set_title("D. Same law without transmissivity spread (9 σ 0 networks, run C)", fontsize=10)
+    ax.legend(loc="lower left", fontsize=8.5)
+    for a in (axs[0], axs[3]):
+        a.set_ylim(0, 1.0)
     fig.savefig(H / "fig3_gain.png", dpi=170)
     plt.close(fig)
+
+
+def pool_sigma1(D, BL, x="t10"):
+    """All sigma-1 1 km networks (15 training + 12 blind): leave-one-network-out R^2 and rank correlation."""
+    out = {}
+    for mo in ("gyponly", "gypcal"):
+        a = D[(D["mode"] == mo) & (D.scale == "1km") & (D.sigma == 1.0)][[x, "d_bt"]]
+        b = BL[BL["mode"] == mo][[x, "breakthrough"]].rename(columns={"breakthrough": "d_bt"})
+        P = pd.concat([a, b], ignore_index=True)
+        pr = np.empty(len(P))
+        for i in range(len(P)):
+            m = np.arange(len(P)) != i
+            sl, ic = np.polyfit(P[x].values[m], P.d_bt.values[m], 1)
+            pr[i] = ic + sl * P[x].values[i]
+        out[mo] = dict(n=len(P), loo=float(1 - ((P.d_bt - pr) ** 2).sum() / ((P.d_bt - P.d_bt.mean()) ** 2).sum()),
+                       rho=float(spearmanr(P[x], P.d_bt).statistic))
+    return out
 
 
 # ---------------------------------------------------------------- Figure 4: predictor
@@ -195,6 +234,9 @@ def fig4():
     D = pd.read_csv(P1 / "early_arrival_predictor.csv")
     F = pd.read_csv(P1 / "early_arrival_predictor_fit.csv").set_index("mode")
     x = "t10"
+    BL = pd.read_csv(FR / "gapfill" / "gapB_predictor.csv")
+    TB = pd.read_csv(FR / "gapfill" / "gapfill_tests.csv")
+    TB = TB[TB.test == "B"].set_index("mode")
     fig, axs = plt.subplots(1, 3, figsize=(14, 4.5), constrained_layout=True)
     mk = {4.0: "o", 6.0: "s", 8.0: "^"}
     out = {}
@@ -209,24 +251,89 @@ def fig4():
         for p, g in a.groupby("p32"):
             ax.scatter(g[x], g.d_bt, marker=mk[p], color=COL[mo], s=24, label=f"1 km, P32 ×{p:g}")
         ax.scatter(b[x], b.d_bt, marker="x", color="0.35", s=22, label="2 km (not used in the fit)")
-        xx = np.linspace(min(a[x].min(), b[x].min()) * 0.95, max(a[x].max(), b[x].max()) * 1.03, 10)
+        bl = BL[BL["mode"] == mo]
+        ax.scatter(bl[x], bl.breakthrough, marker="D", facecolor="white", edgecolor="k", s=26, lw=1.1, label="12 new 1 km networks (blind, run B)")
+        out[mo].update(r2_blind=float(TB.loc[mo, "r2"]), rho_blind=float(TB.loc[mo, "rho"]), bias_blind=float(TB.loc[mo, "median_bias"]))
+        xx = np.linspace(min(a[x].min(), b[x].min(), bl[x].min()) * 0.95, max(a[x].max(), b[x].max()) * 1.03, 10)
         ax.plot(xx, ic + sl * xx, color=COL[mo], lw=1.5, label=f"1 km fit: {ic:.2f} + {sl:.2f} x")
         ax.set_xlabel("t$_{10}$ / τ$_{res}$ of the unreacted network (tracer)")
         ax.set_ylabel("fraction of gypsum dissolved at breakthrough")
-        ax.set_title(f"{'A' if mo == 'gyponly' else 'B'}. {LAB[mo]}: 1 km held-out R² {out[mo]['loo']:.2f}; 2 km ρ {rb:.2f}", fontsize=10)
+        ax.set_title(f"{'A' if mo == 'gyponly' else 'B'}. {LAB[mo]}: held-out R² {out[mo]['loo']:.2f}, blind R² {out[mo]['r2_blind']:.2f}", fontsize=10)
         ax.legend(loc="upper left", fontsize=7.5)
     ax = axs[2]
-    labels = ["largest-fracture\nflow share", "t$_{01}$", "t$_{05}$", "t$_{10}$", "t$_{16}$"]
-    keys = ["loo_top1", "loo_t01", "loo_t05", "loo_t10", "loo_t16"]
+    P = pool_sigma1(D, BL)
+    groups = ["training\n(P32 held out)", "blind\n(12 new 1 km)", "2 km\n(45 networks)", "pooled σ 1 1 km\n(27, one out)"]
     w = 0.38
     for i, mo in enumerate(("gyponly", "gypcal")):
-        ax.bar(np.arange(5) + (i - 0.5) * w, [F.loc[mo][k] for k in keys], width=w, color=COL[mo], label=LAB[mo])
-    ax.set_xticks(range(5), labels, fontsize=8.5)
-    ax.set_ylim(0, 1)
-    ax.set_ylabel("R², each P32 level held out in turn (1 km)")
-    ax.set_title("C. Early tracer arrival beats the largest-fracture share", fontsize=10)
-    ax.legend(loc="upper left", fontsize=8)
+        vals = [out[mo]["loo"], out[mo]["r2_blind"], out[mo]["r2_2km"], P[mo]["loo"]]
+        ax.bar(np.arange(4) + (i - 0.5) * w, vals, width=w, color=COL[mo], label=LAB[mo])
+        out[mo]["pooled_loo"], out[mo]["pooled_rho"] = P[mo]["loo"], P[mo]["rho"]
+    ax.axhline(0.5, color="0.4", lw=0.9, ls=":")
+    ax.axhline(0, color="0.6", lw=0.8)
+    ax.set_xticks(range(4), groups, fontsize=8)
+    ax.set_ylim(-0.3, 1)
+    ax.set_ylabel("R² of t$_{10}$ predictions")
+    ax.set_title("C. Out of sample it is weaker (dotted: pass line)", fontsize=10)
+    ax.legend(loc="upper right", fontsize=8)
     fig.savefig(H / "fig4_predictor.png", dpi=170)
+    plt.close(fig)
+    return out
+
+
+# ---------------------------------------------------------------- Figure 5: late-time relaxation at high gain (run A)
+def fig5():
+    import sys
+    sys.path[:0] = [str(FR), str(FR.parent)]
+    from time_axes import clocks
+    TG = np.linspace(0, 8, 161)
+    fig, axs = plt.subplots(1, 3, figsize=(14, 4.4), constrained_layout=True)
+    ls = {"phase1": ("-", "n = 1"), "ceilN2L": ("--", "n = 2"), "ceilN3L": (":", "n = 3")}
+    out = {}
+    for mo, md in (("gyponly", "gypsum"), ("gypcal", "gypsum_calcite")):
+        for tag, (st, lab) in ls.items():
+            yt, yd = [], []
+            for p in (4.0, 6.0, 8.0):
+                for s in (1, 2, 3):
+                    r = P1 / f"L2_r15_p{p}_sg1.0_seed{s}" / f"{md}__uncorrected_graph__{tag}"
+                    c = pd.read_csv(r / "channelization.csv").sort_values("k")
+                    cl = clocks(r)
+                    tc = np.array([float(cl.t_cap(t)) for t in c.t_y])
+                    y = (c.pr_fracture_vol / c.pr_fracture_vol.iloc[0]).to_numpy()
+                    v = np.interp(TG, tc, y, right=np.nan)
+                    yt.append(v)
+                    yd.append(on_grid(c.dissolved.to_numpy(), y))
+            mt, md_ = np.nanmedian(yt, 0), np.nanmedian(yd, 0)
+            axs[0].plot(TG, mt, st, color=COL[mo], lw=1.8, label=f"{LAB[mo]}, {lab}")
+            axs[1].plot(GRID, md_, st, color=COL[mo], lw=1.8)
+            out[(mo, tag)] = float(mt[np.isfinite(mt)][-1])
+    for ax in axs[:2]:
+        ax.axhline(1, color="0.6", lw=0.8)
+        ax.axhline(0.9, color="0.4", lw=0.8, ls=":")
+        ax.set_ylim(0, 1.12)
+        ax.set_ylabel("network PR$_V$ / start (median of 9)")
+    axs[0].set_xlabel("capacity time (injected capacity / gypsum inventory)")
+    axs[0].set_title("A. Recovery with time: n = 2 completes, n = 3 is still recovering", fontsize=10)
+    axs[0].legend(loc="lower right", fontsize=7.5)
+    axs[1].set_xlabel("fraction of the gypsum dissolved")
+    axs[1].set_title("B. Recovery follows how much gypsum is gone", fontsize=10)
+    S = pd.read_csv(FR / "gapfill" / "gapA_stretch.csv")
+    ax = axs[2]
+    w = 0.2
+    k = 0
+    for mo in ("gyponly", "gypcal"):
+        for n in (2, 3):
+            m = S[(S["mode"] == mo) & (S.n == n)].groupby("bin").recovered.median()
+            ax.bar(np.arange(10) * 100 + 50 + (k - 1.5) * w * 100, m.values, width=w * 100, color=COL[mo],
+                   alpha=1.0 if n == 2 else 0.5, label=f"{LAB[mo]}, n = {n}")
+            k += 1
+    ax.axhline(0.9, color="0.4", lw=0.9, ls=":")
+    ax.set_ylim(0, 1.4)
+    ax.set_yticks([0, 0.2, 0.4, 0.6, 0.8, 1.0])
+    ax.set_xlabel("distance from inlet (m)")
+    ax.set_ylabel("recovered share of each stretch at capacity time 8")
+    ax.set_title("C. Per stretch: (last − lowest) / (1 − lowest), median of 9", fontsize=10)
+    ax.legend(loc="upper left", fontsize=7.5, ncol=2)
+    fig.savefig(H / "fig5_latetime.png", dpi=170)
     plt.close(fig)
     return out
 
@@ -236,4 +343,5 @@ if __name__ == "__main__":
     print(s)
     fig2(); fig3()
     print(fig4())
+    print(fig5())
     print("wrote", H)
