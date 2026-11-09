@@ -84,9 +84,24 @@ capacity time 8 on the 9 sweep networks. n = 2 (×100) meets the pre-set rule: e
 network PR_V 0.99 of start (9 of 9 ≥ 0.9). n = 3 (×1000) does not by capacity time 8: stretches 0.74–0.89, network 0.84
 (1 of 9 ≥ 0.9), d 0.74, still rising (median 0.40, 0.56, 0.62, 0.69, 0.74, 0.85 at capacity time 1, 2, 3, 4, 6, 8). At
 the same dissolved fraction n = 2 and n = 3 sit within 0.03 (0.54 / 0.53 at d 0.5, 0.70 / 0.67 at 0.6, 0.80 / 0.78 at 0.7;
-n = 3 over 9, 7, 6 networks): recovery is paced by the gypsum left. Why a ×1000 channel is slower in time is not tested
-(hypothesis: it bypasses that gypsum); "not met" means not by capacity time 8. Coupled runs relax fully at both n. The L runs reproduce the capacity-time-2 runs at the 9 matching states (gypsum-only
+n = 3 over 9, 7, 6 networks): recovery is paced by the gypsum left. "Not met" means not by capacity time 8. Bypass (GAPFILL.md A2
+rule 3): the locked test at matched capacity time failed (lower efficiency on 3 of 9; confounded by the larger gypsum
+inventory left at n = 3). Exploratory, at matched d: n = 3 dissolves 3–4× more slowly (E 0.11 against 0.38 at d 0.5)
+and its flow sees ~5× less of the remaining gypsum, on 9 of 9 (7 of 7 at d 0.6, 5 of 5 at 0.7); the lag opens after
+capacity time 0.25. Coupled runs relax fully at both n. The L runs reproduce the capacity-time-2 runs at the 9 matching states (gypsum-only
 depth within 0.011, dissolved fraction within 0.0006; coupled looser: depth up to 0.088, dissolved fraction 0.025).
+
+**Update 8 Nov evening, run A2 (GAPFILL.md A2; gapA2_*.csv; Figure 5).** The 9 gypsum-only n = 3 runs continued to
+capacity time 20 (they reproduce the capacity-time-8 runs: d within 0.002; PR_V within 0.7 % on 8 networks, 6.8 % on
+p4 seed 3, at one state only). Rule 1, completion: passed on the medians. Every stretch median recovered ≥ 0.935,
+network PR_V 0.949 of start (8 of 9 ≥ 0.9; only 3 of 9 with every stretch ≥ 0.9; p4 seed 2 at 0.874, last three
+stretches 0.39–0.54), d 0.85; the median curve crosses 0.9 at capacity time 10.25 (per network 6.9 to 20.1, one
+never); k_eff gain 937–985 of the attainable 1000. Rule 2, paced by the gypsum left: passed, n = 3 within 0.028 of n = 2
+at every d from 0.50 to 0.81 (median gap −0.011, thin margin); below d 0.5 n = 3 dips much deeper (0.21 / 0.44 at d 0.2). Bypass at matched d, now to d 0.8 with the long runs (exploratory):
+n = 3 lower E and lower I on every network (9 / 9 at d 0.5 and 0.6, 7 / 7 at 0.7 and 0.8); E 0.38 / 0.11 at d 0.5,
+0.088 / 0.011 at d 0.8 (3.4–7.7× slower on matched networks, coarse late states; 3–4× in the all-network medians of
+Figure 5D); reaching d 0.8 takes capacity time 8.5 against 2.1. In the median the ×1000 relaxation completes; it needs
+about five times the water, consistent with its flow bypassing the gypsum left (correlational).
 
 ---
 
@@ -180,15 +195,23 @@ break through earlier than predicted (median d_bt 0.49 against 0.57 in σ-1 trai
 27 σ-1 1 km networks with one left out: R² 0.51 / 0.62, rank correlation 0.76 / 0.83 (t16 0.52 / 0.64). Item 4 is a
 supporting result: early arrival ranks breakthrough moderately; it does not predict it to R² 0.75.
 
+**Diagnosis 8 Nov (exploratory; gapfill/diag_*.csv, diag_summary.json; Figure S4).** Not the measurement (state
+spacing at breakthrough 0.05–0.06 in every set; interpolated breakthrough gives blind R² 0.04 / 0.45), not the probe
+(recovery 0.998–0.999, same t10 spread), not structure (8 pre-run statistics, |ρ| ≤ 0.16, all p > 0.4; blind and
+training indistinguishable). Blind residual shift not significant (p 0.37 / 0.32). Random 15 / 12 splits of the 27 σ-1
+networks: median test R² 0.49 / 0.60, 52 % / 30 % below 0.5; the actual split at the 6th / 26th percentile. 2 km: the
+narrower spread alone would give R² ≈ 0.65; the 2 km relation is shallower (1.23 / 0.90 against 1.45 / 1.49) and
+noisier (residual SD 0.052 / 0.064 against 0.043 / 0.045).
+
 ---
 
 ## Open questions after the gap-filling runs
 
-1. Answered (run A): relaxation completes at ×100; at ×1000 it is still under way at capacity time 8 and follows the
-   ×100 path against the dissolved fraction.
-2. Answered (run B): no. Out of sample t10 explains about half the variation. Why the blind networks break through
-   earlier at the same t10, and why 2 km ranks weakly, is an analysis of existing runs; a better predictor would need a
-   new pre-registered blind set.
+1. Answered (runs A and A2): relaxation completes at ×100 by capacity time 8 and, in the median, at ×1000 by about 10
+   (gypsum-only; one network of nine not done by 20); from d 0.5 the two follow one path (pre-set, within 0.03).
+2. Answered (run B and its diagnosis): no. Out of sample t10 explains about half the variation; the blind miss is
+   sampling variability (no measurement, probe or structural cause), and at 2 km the relation is shallower and noisier.
+   A better predictor would need many more networks and a new pre-registered blind set.
 3. Answered (run C): yes, the depth(C) curve and the chemistry match hold at σ 0.
 
 ---

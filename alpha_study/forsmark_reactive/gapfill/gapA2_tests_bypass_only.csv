@@ -1,0 +1,2 @@
+test,n2_E_median,n3_E_median,n2_I_median,n3_I_median,networks_lower_E,networks_lower_I,max_t_cap_err,pass_
+A2_bypass,0.025415672575599367,0.045989171067893936,0.010717957276745424,0.005755078810784878,3,8,0.0484848484848559,False

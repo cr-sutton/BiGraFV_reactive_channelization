@@ -27,9 +27,9 @@ def movie(s, mp4, poster, x, y, w, h):
 
 
 # 1 title ------------------------------------------------------------------------------------------------------------
-s = new_slide(dark=True, notes="Title. 447 BiGraFV reactive runs on 117 Forsmark FFM01 networks of 1,587 to 14,658 fractures.")
+s = new_slide(dark=True, notes="Title. 456 BiGraFV reactive runs on 117 Forsmark FFM01 networks of 1,587 to 14,658 fractures.")
 text(s, "Reactive Channels at Kilometre Scale", M, 2.2, W - 2 * M, 1.2, size=44, bold=True, font=HEAD, color=WHITE)
-text(s, "A focus that moves and relaxes, and a depth law, from 447 BiGraFV simulations of mineral-filled "
+text(s, "A focus that moves and relaxes, and a depth law, from 456 BiGraFV simulations of mineral-filled "
         "fracture networks", M, 3.5, W - 2 * M - 1, 1.0, size=20, color="C9D4DC", italic=True)
 text(s, "BiGraFV · Forsmark FFM01 · draft 8 November 2026", M, 6.4, W - 2 * M, 0.4, size=13, color="8FA3B3")
 
@@ -56,12 +56,12 @@ for i, (k, big, lab) in enumerate(items):
 s = new_slide(notes=(
     "Why this needs BiGraFV. Published reactive network studies stop at 10 m (meshed DFN) to 25 m and about 526 fractures (graph, "
     "Hyman et al. 2026). One control volume per fracture lets PFLOTRAN run full reactive transport with mineral volume and "
-    "permeability feedback on 1,587-14,658 fractures in hours, so the same network can be run hundreds of ways (447 runs). Every comparison here is "
+    "permeability feedback on 1,587-14,658 fractures in hours, so the same network can be run hundreds of ways (456 runs). Every comparison here is "
     "BiGraFV against BiGraFV."))
 title(s, "What BiGraFV makes possible")
 stat(s, "25 m · 526", "largest published reactive network study found: domain size and fractures (Hyman et al. 2026)", M, 1.9, 3.8, color=INK2)
 stat(s, "14,658", "this study: fractures in the largest network; domains 1–2 km long", M + 4.2, 1.9, 3.8)
-stat(s, "447", "reactive runs, flow re-solved at every saved state", M + 8.4, 1.9, 3.6, color=RUST)
+stat(s, "456", "reactive runs, flow re-solved at every saved state", M + 8.4, 1.9, 3.6, color=RUST)
 text(s, [[("How. ", {"bold": True}), ("Each fracture is one control volume and each intersection a connection; PFLOTRAN solves "
           "gypsum and calcite kinetics, mineral volume and the porosity–permeability feedback on that graph.", {})],
          [("Why it matters. ", {"bold": True}), ("We can run the same network with different chemistries, permeability laws, rates, "
@@ -117,16 +117,21 @@ stat(s, "0.03 → 0.50", "dissolved fraction at each stretch's minimum, inlet �
 stat(s, "0.36", "outlet stretch at its minimum: the strongest local focusing", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
 stat(s, "< 2 %", "every stretch ends this close to its start", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
-    "Figure 5, run A: n = 2 and 3 on the 9 sweep networks continued to capacity time 8. n = 2 (x100): every stretch 97-99 % recovered, "
-    "network PR_V 0.99 of its start, 9 of 9 networks; the pre-set rule is met. n = 3 (x1000): not met by capacity time 8, stretches 74-89 % "
-    "recovered, network 0.84 and still rising (0.56 at capacity time 2, 0.85 at 8) with a quarter of the gypsum left. At the same dissolved "
-    "fraction n = 2 and n = 3 sit within 0.03 (0.54 / 0.53 at d 0.5, 0.80 / 0.78 at d 0.7): recovery is paced by the gypsum left, not by the "
-    "gain. Why x1000 is slower in time is untested (hypothesis: its channel bypasses the gypsum left). Coupled runs relax fully at both n."))
-title(s, "At high gain the relaxation is paced by the gypsum left")
-picture(s, IMG / "fig5_latetime.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 5")
-stat(s, "0.99", "network PR_V / start at ×100 gain, capacity time 8 (9 of 9 networks)", M, 5.35, 3.8, big_size=30, label_size=13)
-stat(s, "0.84 ↑", "at ×1000: not yet complete, still rising, a quarter of the gypsum left", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
-stat(s, "≤ 0.03", "gap between ×100 and ×1000 at the same dissolved fraction", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
+    "Figure 5, runs A and A2. Run A continued n = 2 and 3 on the 9 sweep networks to capacity time 8: n = 2 (x100) completes, every "
+    "stretch 97-99 % recovered, network PR_V 0.99 of its start; n = 3 (x1000) was at 0.84 and rising. Run A2 took gypsum-only n = 3 on to "
+    "capacity time 20: in the median relaxation completes (every stretch median at least 0.935 recovered, network 0.95, 85 % of the gypsum "
+    "gone; 8 of 9 networks at or above 0.9 but only 3 of 9 with every stretch, p4 seed 2 clearly not done); the median curve crosses 0.9 at "
+    "capacity time 10.3, about five times later than n = 2. n = 3 dips deeper at the same d below d 0.5 (the depth law); pre-set A2 rule 2: "
+    "from d 0.5 to 0.81 n = 2 and n = 3 stay within 0.028 (thin margin), so from there recovery is paced by the gypsum left. Why "
+    "x1000 needs more water: the locked bypass test at matched capacity time failed (confounded by the larger gypsum left); at matched "
+    "dissolved fraction (exploratory, panel D) x1000 dissolves its remaining gypsum 3-4x more slowly (matched networks 3.4x at d 0.5 to 7.7x "
+    "at d 0.8, coarse states) and its flow sees 5-8x less of it, on every network that reaches each d: consistent with bypass, correlational. "
+    "Coupled runs relax fully at both n by capacity time 8."))
+title(s, "High-gain relaxation: paced by the gypsum left")
+picture(s, IMG / "fig5_latetime.png", M, 1.35, 8.1, 5.6, alt="Figure 5")
+stat(s, "0.95", "median network PR_V / start at ×1000, capacity time 20 (×100: 0.99 by 8); 8 of 9 networks ≥ 0.9", 8.8, 1.5, 3.9, big_size=30, label_size=13)
+stat(s, "≤ 0.03", "gap between ×100 and ×1000 at the same dissolved fraction, d 0.5–0.81 (pre-set); deeper dip at ×1000 before", 8.8, 3.25, 3.9, color=ACCENT, big_size=30, label_size=13)
+stat(s, "3–4×", "slower dissolution at ×1000 with the same gypsum left, consistent with bypass (exploratory)", 8.8, 5.0, 3.9, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
     "What is new here. Hyman et al. (2026, Fig. 11) show a focusing front moving downstream in 3D DFN graphs, but there focusing behind "
     "the front holds at its maximum because the wall rock never runs out. Here the soluble fill runs out, so each stretch relaxes behind "
@@ -174,12 +179,24 @@ s = new_slide(notes=(
     "Figure 4. d_bt = 0.03 + 1.45 t10/tau (gypsum-only), 0.11 + 1.49 t10/tau (coupled). Held-out R2 0.77 / 0.75 with each P32 level left out, "
     "against 0.62 / 0.55 for the largest fracture's flow share (training). On 45 new 2 km networks it ranks weakly (rho 0.60 / 0.43). "
     "Run B, blind, 12 new 1 km networks against the frozen line: R2 -0.17 / 0.45, rho 0.51 / 0.72, bias -0.043 / -0.034, so the pre-set test "
-    "failed for both chemistries. Not the sigma mix (sigma-1 in-sample R2 0.80 / 0.76); likely an optimistic training fit. All 27 sigma-1 1 km networks with one left out: R2 0.51 / 0.62, rho 0.76 / 0.83."))
+    "failed for both chemistries. Not the sigma mix (sigma-1 in-sample R2 0.80 / 0.76); likely an optimistic training fit. All 27 sigma-1 1 km networks with one left out: R2 0.51 / 0.62, rho 0.76 / 0.83. "
+    "Diagnosis (next slide): sampling luck around a moderate relation, not measurement, probe or structure; at 2 km the relation is shallower."))
 title(s, "Early arrival ranks breakthrough; the blind test failed")
 picture(s, IMG / "fig4_predictor.png", M, 1.4, W - 2 * M, 3.9, alt="Figure 4")
 stat(s, "ρ 0.76", "rank correlation, all 27 σ 1 1 km networks (coupled 0.83)", M, 5.35, 3.8, big_size=30, label_size=13)
 stat(s, "R² 0.51", "one network left out at a time (coupled 0.62); training said 0.77", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
 stat(s, "R² −0.17", "blind, 12 new networks, gypsum-only (coupled 0.45); pass was 0.5", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
+s = new_slide(notes=(
+    "Why the blind test missed (diagnosis after the result). Not the measurement: saved states 0.05-0.06 of the gypsum apart at breakthrough "
+    "in every set, and interpolating breakthrough does not help (blind R2 0.04 / 0.45). Not the probe: recovery 0.998-0.999, same t10 spread. "
+    "Not structure: 8 pre-run statistics, none correlates with the miss (|rho| <= 0.16). Random 15 / 12 splits of the 27 sigma-1 networks: "
+    "median test R2 0.49 / 0.60, below 0.5 in 52 % / 30 % of splits; the actual split is at the 6th / 26th percentile. At 2 km the relation is "
+    "shallower (slope 1.23 / 0.90 against 1.45 / 1.49) and noisier, which a narrower spread alone does not explain (expected R2 0.65)."))
+title(s, "Why it missed: luck around a moderate relation")
+picture(s, IMG / "figS4_predictor_diag.png", M, 1.4, W - 2 * M, 3.9, alt="Figure S4")
+stat(s, "0.49", "median test R² over 20,000 random 15 / 12 splits (gypsum-only; coupled 0.60)", M, 5.35, 3.8, big_size=30, label_size=13)
+stat(s, "6th", "percentile of the actual blind split (coupled 26th)", M + 4.2, 5.35, 3.8, color=ACCENT, big_size=30, label_size=13)
+stat(s, "|ρ| ≤ 0.16", "misses against 8 pre-run network statistics: no structural cause", M + 8.4, 5.35, 3.6, color=RUST, big_size=30, label_size=13)
 
 # Robustness ----------------------------------------------------------------------------------------------------------
 s = new_slide(notes=(
@@ -235,11 +252,12 @@ for i, (k, t, b) in enumerate(papers):
     text(s, k, x + 0.3, 1.95, 3.2, 0.4, size=15, color=INK2)
     text(s, t, x + 0.3, 2.4, 3.2, 1.6, size=20, bold=True, font=HEAD)
     text(s, b, x + 0.3, 4.1, 3.2, 1.8, size=15, color=INK2)
-s = new_slide(notes="Gap-filling runs, 7 Nov 11:18-22:39, 114 runs, rules fixed before the runs (gapfill/GAPFILL.md). A: n = 2 met, n = 3 not "
-                    "met by capacity time 8 (still recovering). B: failed for both chemistries. C: passed (chemistry match narrowly, 0.029).")
+s = new_slide(notes="Gap-filling runs, 123 runs (A-C 7 Nov 11:18-22:39; A2 8 Nov 09:30-19:14), rules fixed before the runs (gapfill/GAPFILL.md). "
+                    "A: n = 2 met, n = 3 not met by capacity time 8. A2: n = 3 completes by 20 and is paced by the gypsum left (both passed); the locked "
+                    "bypass test was not supported (confounded), supported at matched d (exploratory). B: failed for both chemistries. C: passed (0.029).")
 title(s, "Gap-filling runs: what passed and what did not")
-gaps = [("A", "Does relaxation complete at high gain?", "n = 2, 3 · 9 networks · to capacity time 8 · 36 runs",
-         "×100: complete (0.99). ×1000: not yet, 0.84 and rising", "2F7A4F"),
+gaps = [("A", "Does relaxation complete at high gain?", "n = 2, 3 · 9 networks · to capacity time 8 (A2: n = 3 to 20) · 45 runs",
+         "×100: complete (0.99). ×1000: 0.84 by 8; A2 to 20: complete in the median (0.95), paced from d 0.5", "2F7A4F"),
         ("B", "Does the predictor hold on unseen networks?", "12 new 1 km networks · start-of-run tracer · 24 runs",
          "failed: R² −0.17 / 0.45, ρ 0.51 / 0.72 (pass 0.5 / 0.7)", RUST),
         ("C", "Is the depth law specific to σ 1?", "n = 1.48, 2, 3 · 9 σ-0 networks · 54 runs",

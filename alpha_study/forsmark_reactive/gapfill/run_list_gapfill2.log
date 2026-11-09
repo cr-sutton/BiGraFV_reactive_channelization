@@ -1,0 +1,63 @@
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed1 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed2 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p8.0_sg1.0_seed3 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed1 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed2 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p6.0_sg1.0_seed3 graph_raw gyponly ceilN3XL
+Sun 09:30 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed1 graph_raw gyponly ceilN3XL
+Traceback (most recent call last):
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 319, in <module>
+    main()
+    ~~~~^^
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 303, in main
+    checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
+                                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+ValueError: list.index(x): x not in list
+Traceback (most recent call last):
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 319, in <module>
+    main()
+    ~~~~^^
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 303, in main
+    checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
+                                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+ValueError: list.index(x): x not in list
+Traceback (most recent call last):
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 319, in <module>
+    main()
+    ~~~~^^
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 303, in main
+    checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
+                                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+ValueError: list.index(x): x not in list
+Traceback (most recent call last):
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 319, in <module>
+    main()
+    ~~~~^^
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 303, in main
+    checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
+                                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+ValueError: list.index(x): x not in list
+gypsum__uncorrected_graph__ceilN3XL: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3XL: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3XL: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3XL: steady start, dynamic pressure at manifold 7575 Pa
+gypsum__uncorrected_graph__ceilN3XL: steady start, dynamic pressure at manifold 1940 Pa
+gypsum__uncorrected_graph__ceilN3XL: steady start, dynamic pressure at manifold 2366 Pa
+Sun 09:31 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed2 graph_raw gyponly ceilN3XL
+Sun 09:31 start ../forsmark_reactive/phase1/L2_r15_p4.0_sg1.0_seed3 graph_raw gyponly ceilN3XL
+Traceback (most recent call last):
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 319, in <module>
+    main()
+    ~~~~^^
+  File "/Users/collin/Projects/bipartite_pflotran/src/alpha_study/run_scripts/../deck_gypsum_calcite.py", line 303, in main
+    checkpoints=[dict(tau_d=f, t_y=t, tau_pv=t * a.rate / pv0, vtk_index=1 + vtk_times.index(round(t, 10)))
+                                                                             ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+ValueError: list.index(x): x not in list
+gypsum__uncorrected_graph__ceilN3XL: Dirichlet outflow at 200000 Pa, gravity off
+gypsum__uncorrected_graph__ceilN3XL: steady start, dynamic pressure at manifold 4305 Pa
+L2_r15_p4.0_sg1.0_seed2 gypsum__uncorrected_graph__ceilN3XL seconds=13298 rate=49.04272863481657 dt=0.57
+L2_r15_p6.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN3XL seconds=21103 rate=83.09417705149357 dt=0.57
+L2_r15_p6.0_sg1.0_seed3 gypsum__uncorrected_graph__ceilN3XL seconds=24165 rate=75.19239515593758 dt=0.57
+L2_r15_p8.0_sg1.0_seed1 gypsum__uncorrected_graph__ceilN3XL seconds=32569 rate=95.95531236860548 dt=0.57
+Sun 18:35 queue done
+GAPFILL2_DONE

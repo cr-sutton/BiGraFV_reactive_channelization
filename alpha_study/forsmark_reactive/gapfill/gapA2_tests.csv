@@ -1,0 +1,4 @@
+test,n2_E_median,n3_E_median,n2_I_median,n3_I_median,networks_lower_E,networks_lower_I,max_t_cap_err,pass_,stretch_recovered_min_of_medians,stretches_ge_09,network_prv_end_median,networks_prv_ge_09,d_end_median,t_cap_end_median,t_cap_median_curve_reaches_09,d_from,d_to,max_abs_gap,median_gap
+A2_bypass,0.025415672575599367,0.045989171067893936,0.010717957276745424,0.005755078810784878,3.0,8.0,0.0484848484848559,False,,,,,,,,,,,
+A2_completion,,,,,,,,True,0.9353281651632943,10.0,0.9490146606150737,8.0,0.8479168090875852,20.121212121212125,10.25,,,,
+A2_paced,,,,,,,,True,,,,,,,,0.5,0.81,0.02750076972036497,-0.010985139210783812

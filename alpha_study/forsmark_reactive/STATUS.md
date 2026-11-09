@@ -3,7 +3,7 @@
 Report (private artifact): https://claude.ai/artifact/Bt4SbtGrkNoqHrYB2TW5pj. Local copy: `report_phase1/index.html`.
 Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report sections 8.9–8.12 yet.
 
-## Latest (Sun 8 Nov 2026): gap-filling runs A–C done and folded into the story report and deck
+## Latest (Sun 8 Nov 2026): gap-filling runs A–C and A2 done and folded into the story report and deck
 
 - Story report (separate from the working report): https://claude.ai/artifact/6LdBs696iNSuw5MGYzsyCT, local
   `story/report/index.html`; deck `story/deck/Reactive_Channels_Story.pptx`; text `story/STORY.md` (v3).
@@ -13,6 +13,11 @@ Deck: `deck/Forsmark_Reactive_Channels.pptx`. It has not been rebuilt for report
   - **B (blind t10 predictor): failed.** R² −0.17 / 0.45, ρ 0.51 / 0.72. Pooled 27 σ-1 networks, one left out: R² 0.51 / 0.62.
     The predictor becomes a supporting result.
   - **C (σ 0 depth law): passed.** 9 of 9 falling; coupled within 0.029 of gypsum-only.
+  - **A2 (×1000 to capacity time 20, 9 runs, Sun 8 Nov 09:30–19:14):** relaxation completes in the median (network PR_V
+    0.95, stretch medians ≥ 0.935; median crosses 0.9 at capacity time 10.3; p4 seed 2 not done) and from d 0.5 is paced
+    by the gypsum left (within 0.028 of ×100, d 0.50–0.81). Locked bypass test not supported (inventory-confounded); at
+    matched d ×1000 dissolves 3–4× more slowly on every network that gets there (exploratory). `gapfill/analyze_gapfill_a2.py`, `gapfill/bypass_matched_d.py`.
+  - **B diagnosis:** sampling luck around a moderate relation; 2 km relation shallower and noisier. `gapfill/diagnose_predictor.py`.
 
 ## Where we are
 
