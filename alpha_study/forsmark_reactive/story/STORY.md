@@ -31,7 +31,7 @@ v2 corrects the points she raised (list at the end).
   (coupled) at d ≈ 0.1, back through 1 at d ≈ 0.3, peak 1.52 / 1.28 near d = 0.5–0.55. Per run: the minimum is below 1 in
   45 of 45 runs per chemistry (median 0.58 at d = 0.13 and 0.72 at d = 0.18).
 - Relaxation: at the last saved state (median d 0.93 gypsum-only, 0.98 coupled) PR_V is 0.995 and 1.01 of its start.
-- The order also holds at P32 ×16 (26 of 30 runs, to capacity time 2) and the PR_V minimum precedes breakthrough at 2 km
+- The order also holds at P32 ×16 (27 of 30 runs, to capacity time 2) and the PR_V minimum precedes breakthrough at 2 km
   (90 of 90).
 
 **Backing.** `phase1/phase1_mechanism.csv` (analyze_phase1_mechanism.py), `phase1/stage_events_clocks.csv`
@@ -76,7 +76,7 @@ advance, failed: rank correlation 0.27–0.50; report 8.13). The network minimum
 channel upstream of the outlet, before the outlet stretch focuses.
 
 **New or known.** A downstream-moving focusing front is published (Hyman et al. 2026, Fig. 11), but there focusing behind
-the front holds at its maximum because the wall rock never runs out. Relaxation behind the front, driven by the finite
+the front persists because the soluble material is the wall rock itself, which keeps dissolving. Relaxation behind the front, driven by the finite
 soluble fill, is what we did not find reported.
 
 **Update 8 Nov, run A (gapfill/GAPFILL.md; gapA_stretch.csv, gapA_network.csv; Figure 5).** n = 2 and 3 continued to
@@ -101,7 +101,7 @@ at every d from 0.50 to 0.81 (median gap −0.011, thin margin); below d 0.5 n =
 n = 3 lower E and lower I on every network (9 / 9 at d 0.5 and 0.6, 7 / 7 at 0.7 and 0.8); E 0.38 / 0.11 at d 0.5,
 0.088 / 0.011 at d 0.8 (3.4–7.7× slower on matched networks, coarse late states; 3–4× in the all-network medians of
 Figure 5D); reaching d 0.8 takes capacity time 8.5 against 2.1. In the median the ×1000 relaxation completes; it needs
-about five times the water, consistent with its flow bypassing the gypsum left (correlational).
+about four times the water, consistent with its flow bypassing the gypsum left (correlational).
 
 ---
 
@@ -196,7 +196,7 @@ break through earlier than predicted (median d_bt 0.49 against 0.57 in σ-1 trai
 supporting result: early arrival ranks breakthrough moderately; it does not predict it to R² 0.75.
 
 **Diagnosis 8 Nov (exploratory; gapfill/diag_*.csv, diag_summary.json; Figure S4).** Not the measurement (state
-spacing at breakthrough 0.05–0.06 in every set; interpolated breakthrough gives blind R² 0.04 / 0.45), not the probe
+spacing at breakthrough 0.059–0.065 in every set (medians); interpolated breakthrough gives blind R² 0.04 / 0.45), not the probe
 (recovery 0.998–0.999, same t10 spread), not structure (8 pre-run statistics, |ρ| ≤ 0.16, all p > 0.4; blind and
 training indistinguishable). Blind residual shift not significant (p 0.37 / 0.32). Random 15 / 12 splits of the 27 σ-1
 networks: median test R² 0.49 / 0.60, 52 % / 30 % below 0.5; the actual split at the 6th / 26th percentile. 2 km: the

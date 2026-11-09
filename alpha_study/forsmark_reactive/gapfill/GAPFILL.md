@@ -110,7 +110,7 @@ itself is unchanged; the shared scripts outside forsmark_reactive were not edite
 `diagnose_predictor.py` → diag_runs.csv, diag_sets.csv, diag_structure.csv, diag_splits.csv, diag_summary.json.
 Candidates were listed before computing; none of this was pre-registered.
 
-1. **Measurement: not the cause.** Breakthrough is read at saved states 0.05–0.06 of the gypsum apart in every set
+1. **Measurement: not the cause.** Breakthrough is read at saved states 0.059–0.065 of the gypsum apart in every set (medians)
    (median Δd at breakthrough 0.062 training, 0.059 blind, 0.065 2 km, gypsum-only). Interpolating breakthrough between
    the bracketing states (and refitting the training line) gives blind R² 0.04 / 0.45 and 2 km 0.32 / 0.09: no better.
 2. **Probe: not the cause.** Tracer recovery 0.998–0.999 in every set; t10 spread the same (SD 0.065 blind, 0.067
@@ -172,6 +172,6 @@ cause not traced (gapA2_consistency.csv).
 
 **Reading.** In the median, the ×1000 relaxation completes (one network of nine clearly does not). The gain sets how
 deep the channel goes (n = 3 dips deeper at the same d below d 0.5); from d 0.5 on, the pace of relaxation is set by the
-gypsum left, and ×1000 takes about five times the water to get there because it removes the same gypsum more slowly.
+gypsum left, and ×1000 takes about four times the water (capacity time 10.3 against 2.5 for the median network PR_V to reach 0.9; 8.5 against 2.1 to reach d 0.8; corrected 9 Nov from 'five') to get there because it removes the same gypsum more slowly.
 Its flow sees less of the gypsum left (lower I) at every matched d, consistent with bypass; this is correlational and was
 shown after the locked test failed, so it is not a pre-registered result.

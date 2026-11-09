@@ -121,7 +121,7 @@ s = new_slide(notes=(
     "stretch 97-99 % recovered, network PR_V 0.99 of its start; n = 3 (x1000) was at 0.84 and rising. Run A2 took gypsum-only n = 3 on to "
     "capacity time 20: in the median relaxation completes (every stretch median at least 0.935 recovered, network 0.95, 85 % of the gypsum "
     "gone; 8 of 9 networks at or above 0.9 but only 3 of 9 with every stretch, p4 seed 2 clearly not done); the median curve crosses 0.9 at "
-    "capacity time 10.3, about five times later than n = 2. n = 3 dips deeper at the same d below d 0.5 (the depth law); pre-set A2 rule 2: "
+    "capacity time 10.3, about four times later than n = 2 (2.5). n = 3 dips deeper at the same d below d 0.5 (the depth law); pre-set A2 rule 2: "
     "from d 0.5 to 0.81 n = 2 and n = 3 stay within 0.028 (thin margin), so from there recovery is paced by the gypsum left. Why "
     "x1000 needs more water: the locked bypass test at matched capacity time failed (confounded by the larger gypsum left); at matched "
     "dissolved fraction (exploratory, panel D) x1000 dissolves its remaining gypsum 3-4x more slowly (matched networks 3.4x at d 0.5 to 7.7x "
@@ -134,12 +134,12 @@ stat(s, "≤ 0.03", "gap between ×100 and ×1000 at the same dissolved fraction
 stat(s, "3–4×", "slower dissolution at ×1000 with the same gypsum left, consistent with bypass (exploratory)", 8.8, 5.0, 3.9, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
     "What is new here. Hyman et al. (2026, Fig. 11) show a focusing front moving downstream in 3D DFN graphs, but there focusing behind "
-    "the front holds at its maximum because the wall rock never runs out. Here the soluble fill runs out, so each stretch relaxes behind "
+    "the front persists because the soluble material is the wall rock itself, which keeps dissolving. Here the soluble fill runs out, so each stretch relaxes behind "
     "the front. The width of the focused zone does not predict when the whole network is most focused (pre-set test failed)."))
 title(s, "What is new: relaxation behind the front")
 card(s, M, 1.7, 5.8, 3.6)
-text(s, "Unlimited wall rock (Hyman et al. 2026)", M + 0.3, 1.95, 5.2, 0.5, size=19, bold=True, font=HEAD, color=INK2)
-bullets(s, ["a focusing front moves downstream", "behind it, focusing holds at its maximum", "after breakthrough, channelization stops changing"],
+text(s, "Dissolving wall rock (Hyman et al. 2026)", M + 0.3, 1.95, 5.2, 0.5, size=19, bold=True, font=HEAD, color=INK2)
+bullets(s, ["a focusing front moves downstream", "behind it, focusing persists", "after breakthrough, channelization stops changing"],
         M + 0.3, 2.6, 5.2, 2.6, size=16, space=10)
 card(s, M + 6.3, 1.7, 5.8, 3.6, fill="E3F1E8")
 text(s, "Finite soluble fill (this study)", M + 6.6, 1.95, 5.2, 0.5, size=19, bold=True, font=HEAD, color="2F7A4F")
@@ -164,8 +164,8 @@ stat(s, "0.021", "median gap, coupled vs gypsum-only at the same gain (σ 1, 36 
 stat(s, "91–100 %", "of the high-gain channel inside the n = 1 channel", 8.5, 5.0, 4.2, color=RUST, big_size=30, label_size=13)
 s = new_slide(notes=(
     "Separating the gain from the shape. At a fixed x10 gain, four law shapes (n = 0.5, 1, 2, 8) give depth 0.72, 0.68, 0.66, 0.64 on one "
-    "network; going to x1000 gives 0.21 on that network. Hydraulic aperture can at most double under any x10 law (median 75 to 106-122 um); "
-    "with n = 3, 13 % of fractures open to about 1 mm. The gain also moves events earlier: breakthrough 0.65 to 0.27 from x5.5 to x1000."))
+    "network; going to x1000 gives 0.21 on that network. Hydraulic aperture can grow at most x2.15 under any x10 law (median 75 to 106-122 um); "
+    "with n = 3, 13 % of fractures open fully, top 5 % at 0.93 mm. The gain also moves events earlier: breakthrough 0.65 to 0.27 from x5.5 to x1000."))
 title(s, "The gain matters, the shape barely")
 picture(s, IMG / "kphi_e0_curves.png", M, 1.45, 7.6, 2.6, alt="E0 curves")
 picture(s, IMG / "kphi_e0_apertures.png", M, 4.15, 7.6, 2.7, alt="E0 apertures")
@@ -201,13 +201,13 @@ stat(s, "|ρ| ≤ 0.16", "misses against 8 pre-run network statistics: no struct
 # Robustness ----------------------------------------------------------------------------------------------------------
 s = new_slide(notes=(
     "Robustness. 2 km (90 runs): same dip and recovery, inheritance 0.96-1.00, breakthrough needs more gypsum dissolved (0.56 to 0.64). "
-    "Rate 0.1-10 pore volumes per year: stage timing moves at most 0.003, depth at most 0.014. P32 x16: same order in 26 of 30. Binning: the "
+    "Rate 0.1-10 pore volumes per year: gypsum-only depth moves at most 0.001, event timing up to 0.046; coupled depth at most 0.019. P32 x16: same order in 27 of 30. Binning: the "
     "moving focus holds with spanning bins. Sigma 0: the depth law holds (run C). Dropped: an apparent early peak on sparse 2 km networks vanished at sigma 0."))
 title(s, "What holds, and what we dropped")
 picture(s, IMG / "scale2km_prv.png", M, 1.45, 7.2, 4.9, alt="1 km vs 2 km")
 bullets(s, ["2 km: same stages, inheritance 0.96–1.00",
             "rate ×100 range: timing ≤ 0.003, depth ≤ 0.014",
-            "P32 ×16: same order in 26 of 30",
+            "P32 ×16: same order in 27 of 30",
             "spanning bins: focus still moves and relaxes",
             "σ 0: depth law and chemistry match hold (run C)",
             "dropped: the sparse 2 km early peak (gone at σ 0)"], 8.1, 1.7, 4.6, 4.8, size=16, space=12)
