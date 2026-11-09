@@ -1,0 +1,14 @@
+campaign,runs,finished,gypsum_only,coupled,networks,varies
+Base sweep,120,120,60,60,60,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr"
+2 km scale test,90,90,45,45,45,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds"
+Blind predictor networks (run B),24,24,12,12,12,"12 new 1 km networks, P32 ×4/×8, σ 1"
+Starting porosity,42,42,21,21,12,φ0 0.05; φ0 0.182 (gain ×5.5 / ×3.3)
+Low carbonate,12,12,0,12,12,coupled at 2 mM carbonate
+Injection rate,12,12,6,6,3,0.1 PV/yr; 10 PV/yr
+Ceiling sweep (+ run C at σ 0),108,108,54,54,18,n = 1.48 (×30); n = 2 (×100); n = 3 (×1000); n = 3 on the example network
+Law shape at fixed ×10,3,3,3,0,1,n = 0.5; n = 2; n = 8
+Late time (run A),36,36,18,18,9,n = 2 to capacity time 8; n = 3 to capacity time 8
+Late time (run A2),9,9,9,0,9,n = 3 to capacity time 20
+Outflow-face check,1,1,1,0,1,one network
+DFN validation: graph runs,10,9,5,5,1,"500 m trial network (sm), 1:1 checks; dfnval; exact"
+DFN validation: meshed DFN,4,2,2,2,1,"500 m trial network (sm), 1:1 checks; smoke"

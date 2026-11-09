@@ -9,6 +9,8 @@ Figures: story/report/img (the report "Reactive Channels at Kilometre Scale") pl
 """
 import json
 import sys
+
+import pandas as pd
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -137,6 +139,59 @@ bullets(s, ["Networks: SKB Forsmark FFM01 fracture statistics; P32 ×4, ×6, ×8
             "Measures: flow re-solved on every saved state; per-fracture throughflow, porosity, gypsum"],
         M, 3.6, W - 2 * M, 3.4, size=16)
 
+
+# ---------------------------------------------------------------------------------------------------- what we ran: inventory
+INV = pd.read_csv(HERE / "run_inventory_summary.csv")
+INVN = json.loads((HERE / "inventory_numbers.json").read_text())
+
+
+def table(s, rows, x, y, w, colw, size=12, header_fill=ACCENT):
+    from pptx.dml.color import RGBColor
+    from pptx.util import Pt
+    t = s.shapes.add_table(len(rows), len(rows[0]), Inches(x), Inches(y), Inches(w), Inches(0.3 * len(rows))).table
+    for j, cw in enumerate(colw):
+        t.columns[j].width = Inches(cw)
+    for i, r in enumerate(rows):
+        for j, v in enumerate(r):
+            c = t.cell(i, j)
+            c.text = str(v)
+            c.margin_left = c.margin_right = Inches(0.06)
+            c.margin_top = c.margin_bottom = Inches(0.02)
+            for para in c.text_frame.paragraphs:
+                for run in para.runs:
+                    run.font.size = Pt(size)
+                    run.font.name = "Calibri"
+                    run.font.bold = i == 0 or r[0].startswith("Total")
+                    run.font.color.rgb = RGBColor.from_string(WHITE if i == 0 else INK)
+            c.fill.solid()
+            c.fill.fore_color.rgb = RGBColor.from_string(header_fill if i == 0 else ("EAF2F8" if r[0].startswith("Total") else ("FFFFFF" if i % 2 else "F5F5F2")))
+    return t
+
+
+rows = [["Campaign", "What it varies", "Runs", "Gypsum-only", "Coupled", "Networks"]]
+for _, r in INV.iterrows():
+    if r.campaign.startswith("DFN") or r.campaign.startswith("Outflow"):
+        continue
+    rows.append([r.campaign, r.varies, int(r.runs), int(r.gypsum_only), int(r.coupled), int(r.networks)])
+nsci = sum(int(r[2]) for r in rows[1:])
+rows.append([f"Total, Forsmark networks", "", nsci, sum(int(r[3]) for r in rows[1:]), sum(int(r[4]) for r in rows[1:]),
+             f"{INVN['inventory']['forsmark_networks']} distinct"])
+rows.append(["DFN validation, graph side", "gate checks on 3 test networks, exact-network check, the 500 m pair", 10, 5, 5, "5"])
+rows.append(["DFN validation, meshed DFN", "2 smoke tests (stopped at 40 steps by design); 500 m pair running now", 4, 2, 2, "2"])
+s = new_slide(notes=(
+    f"Everything that was run, counted from the run folders (run_inventory.csv, make_inventory_figures.py). {nsci} reactive BiGraFV "
+    f"runs on the Forsmark networks, plus one outflow-face check run not counted; {INVN['inventory']['forsmark_networks']} distinct "
+    "networks: 60 at 1 km (P32 ×4, ×6, ×8, ×16; σ 0, 0.5, 1; 5 seeds), 45 at 2 km (P32 ×4, ×6, ×8; σ 0, 0.5, 1; 5 seeds) and 12 new 1 km "
+    "networks for the blind test. Every run exists in both chemistries except where the question is chemistry-specific. The base sweep "
+    "is the backbone: n = 1, starting porosity 0.1, one pore volume per year, to capacity time 5 at 1 km and 2 at 2 km. The other campaigns "
+    "change one thing at a time: starting porosity, carbonate, rate, the permeability law (ceiling sweep, and run C repeats it without "
+    "transmissivity spread), the law's shape at a fixed gain, late time at high gain, and the blind predictor networks. Run counts in "
+    "the ceiling sweep include run C's σ 0 runs; the networks column counts distinct networks per campaign. The DFN rows are the "
+    "validation work on small test networks."))
+title(s, "Everything we ran")
+table(s, rows, M, 1.35, W - 2 * M, [3.3, 4.9, 0.8, 1.2, 0.9, 1.03], size=13)
+
+
 s = new_slide(notes=(
     "Normalized times. Three clocks. PVI, pore volumes injected, is Q t over the initial pore volume. Gypsum dissolved d is the "
     "fraction of the network's gypsum gone; it is Hyman's tau = ΔV/V0 divided by its maximum, tau_max = V_gypsum,0 / V_pore,0 = 9 "
@@ -167,6 +222,60 @@ text(s, [[("d", {"bold": True, "color": ACCENT}), ("  gypsum dissolved = Hyman �
 text(s, "Every stage event is timed on d.", x0, 6.25, W - x0 - M, 0.4, size=15, bold=True)
 
 # ===================================================================================================== confident: stages
+
+# ---------------------------------------------------------------------------------------------------- ensemble overview slides
+EN = INVN["ensembles"]
+
+
+def ens_note(mode, p):
+    e = EN[f"{mode}_p{p:g}"]
+    lab = "gypsum-only" if mode == "gyponly" else "coupled"
+    parts = []
+    for sc in ("1 km", "2 km"):
+        if f"{sc}_sg1_prv" not in e:
+            continue
+        parts.append(f"{sc}: PR_V starts at {e[sc + '_sg0_prv']['start']:.2f} / {e[sc + '_sg0.5_prv']['start']:.2f} / "
+                     f"{e[sc + '_sg1_prv']['start']:.2f} (σ 0 / 0.5 / 1) and dips to {e[sc + '_sg1_prv']['min']:.2f} at σ 1 near d "
+                     f"{e[sc + '_sg1_prv']['d_at_min']:.2f}; active surface starts at {e[sc + '_sg1_dq']['start']:.1f} % and dips to "
+                     f"{e[sc + '_sg1_dq']['min']:.1f} % (σ 1)")
+    return (f"Ensemble overview, {lab}, P32 ×{p:g}, base runs (n = 1, φ0 0.1, 1 PV/yr). Top row: network PR_V, the share of fracture "
+            "volume that effectively carries the flow. Bottom row: Hyman's active surface d_Q/P32, the share of fracture area that "
+            "effectively carries the flow (in %). Left to right the same runs against PVI (log), gypsum dissolved and capacity time; within "
+            "a chemistry PVI and capacity time are the same clock up to a constant, the log axis just shows the early part. Lines are the "
+            "mean of 5 seeds where all 5 have data, bands the seed range; blue solid 1 km, rust dashed 2 km, darker = larger σ. "
+            + "; ".join(parts) + ". Every group dips and recovers on every axis; this is the raw behaviour before any of the results.")
+
+
+def ens_slide(mode, p, head):
+    s = new_slide(notes=ens_note(mode, p))
+    title(s, head)
+    picture(s, HERE / f"fig_ens_{mode}_p{p:g}.png", M, 1.3, W - 2 * M, 5.85, alt=f"ensemble {mode} P32 x{p:g}")
+    return s
+
+
+s = new_slide(notes=(
+    "How the next four slides are built. For each density (P32 ×4, ×6, ×8 and ×16) the base runs are shown as raw ensembles, before "
+    "any derived result: participation ratio PR_V and Hyman's active surface d_Q/P32, each against the three normalized times. 1 km "
+    "and 2 km are on the same axes (×16 was run at 1 km only); σ is a separate line; the line is the mean of 5 seeds and the band the "
+    "seed range. The general pattern: denser networks spread flow over more of their volume (PR_V starts higher: about 0.31–0.39 at ×4, "
+    "0.40–0.47 at ×6, 0.50–0.55 at ×8, 0.58–0.60 at ×16), longer networks carry flow over a smaller share of their fracture area (active "
+    "surface about 11–16 % at 2 km against 16–22 % at 1 km for ×4–×8), more transmissivity spread lowers PR_V a little, and every group "
+    "dips and recovers. Coupled versions are in the backup."))
+title(s, "The raw ensembles: how to read the next four slides")
+three_cards(s, [
+    ("What is plotted", ["PR_V: share of fracture volume carrying the flow",
+                         "d_Q/P32 (Hyman): share of fracture area carrying the flow, %",
+                         "each against PVI (log), gypsum dissolved d and capacity time"], HL),
+    ("How", ["base runs: n = 1, φ0 0.1, 1 PV/yr; gypsum-only here, coupled in backup",
+             "1 km blue solid, 2 km rust dashed, darker = larger σ",
+             "line = mean of 5 seeds, band = seed range"], "E3F1E8"),
+    ("What to look for", ["denser networks spread flow more (PR_V 0.31–0.39 at ×4 → 0.58–0.60 at ×16)",
+                          "2 km uses less of its area (11–16 % against 16–22 %)",
+                          "every group dips, then recovers"], WARM)], size=15)
+for p in (4.0, 6.0, 8.0, 16.0):
+    ens_slide("gyponly", p, f"Gypsum-only ensembles, P32 ×{p:g}" + ("" if p != 16 else " (1 km only)"))
+
+
 section("What I'm confident of · 1", "One sequence: four stages in the same order",
         notes="First of three results I am confident of.")
 
@@ -585,6 +694,11 @@ s = new_slide(notes=(
     "106–122 µm); with n = 3, 13 % of fractures open fully and the top 5 % reach 0.93 mm."))
 title(s, "Backup: apertures before and after")
 picture(s, IMG / "kphi_e0_apertures.png", M, 1.4, W - 2 * M, 5.5, alt="Aperture histograms")
+
+
+for p in (4.0, 6.0, 8.0, 16.0):
+    ens_slide("gypcal", p, f"Backup: coupled ensembles, P32 ×{p:g}" + ("" if p != 16 else " (1 km only)"))
+
 
 out = HERE / "Reactive_Channels_PI.pptx"
 prs.save(out)

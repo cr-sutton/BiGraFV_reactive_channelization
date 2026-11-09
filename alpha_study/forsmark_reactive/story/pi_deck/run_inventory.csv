@@ -1,0 +1,472 @@
+campaign,varies,scale,mode,tag,p32,sigma,seed,finished,path
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.0,1.0,True,phase1/L2_r15_p16.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.0,1.0,True,phase1/L2_r15_p16.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.0,2.0,True,phase1/L2_r15_p16.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.0,2.0,True,phase1/L2_r15_p16.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.0,3.0,True,phase1/L2_r15_p16.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.0,3.0,True,phase1/L2_r15_p16.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.0,4.0,True,phase1/L2_r15_p16.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.0,4.0,True,phase1/L2_r15_p16.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.0,5.0,True,phase1/L2_r15_p16.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.0,5.0,True,phase1/L2_r15_p16.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.5,1.0,True,phase1/L2_r15_p16.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.5,1.0,True,phase1/L2_r15_p16.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.5,2.0,True,phase1/L2_r15_p16.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.5,2.0,True,phase1/L2_r15_p16.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.5,3.0,True,phase1/L2_r15_p16.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.5,3.0,True,phase1/L2_r15_p16.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.5,4.0,True,phase1/L2_r15_p16.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.5,4.0,True,phase1/L2_r15_p16.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,0.5,5.0,True,phase1/L2_r15_p16.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,0.5,5.0,True,phase1/L2_r15_p16.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,1.0,1.0,True,phase1/L2_r15_p16.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,16.0,1.0,1.0,True,phase1/L2_r15_p16.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,1.0,1.0,True,phase1/L2_r15_p16.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,16.0,1.0,1.0,True,phase1/L2_r15_p16.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,16.0,1.0,1.0,True,phase1/L2_r15_p16.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,1.0,2.0,True,phase1/L2_r15_p16.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,16.0,1.0,2.0,True,phase1/L2_r15_p16.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,1.0,2.0,True,phase1/L2_r15_p16.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,16.0,1.0,2.0,True,phase1/L2_r15_p16.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,16.0,1.0,2.0,True,phase1/L2_r15_p16.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,1.0,3.0,True,phase1/L2_r15_p16.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,16.0,1.0,3.0,True,phase1/L2_r15_p16.0_sg1.0_seed3/gypsum__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,1.0,3.0,True,phase1/L2_r15_p16.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,16.0,1.0,3.0,True,phase1/L2_r15_p16.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,16.0,1.0,3.0,True,phase1/L2_r15_p16.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_phi005
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,1.0,4.0,True,phase1/L2_r15_p16.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,1.0,4.0,True,phase1/L2_r15_p16.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,16.0,1.0,5.0,True,phase1/L2_r15_p16.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,16.0,1.0,5.0,True,phase1/L2_r15_p16.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+Outflow-face check,one network,1 km,gypsum-only,phase1exfix,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1exfix
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.0,1.0,True,phase1/L2_r15_p4.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.0,2.0,True,phase1/L2_r15_p4.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.0,3.0,True,phase1/L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.0,4.0,True,phase1/L2_r15_p4.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.0,4.0,True,phase1/L2_r15_p4.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.0,5.0,True,phase1/L2_r15_p4.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.0,5.0,True,phase1/L2_r15_p4.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.5,1.0,True,phase1/L2_r15_p4.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.5,1.0,True,phase1/L2_r15_p4.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.5,2.0,True,phase1/L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.5,2.0,True,phase1/L2_r15_p4.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.5,3.0,True,phase1/L2_r15_p4.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.5,3.0,True,phase1/L2_r15_p4.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.5,4.0,True,phase1/L2_r15_p4.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.5,4.0,True,phase1/L2_r15_p4.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,0.5,5.0,True,phase1/L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,0.5,5.0,True,phase1/L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,4.0,1.0,1.0,True,phase1/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,4.0,1.0,2.0,True,phase1/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,4.0,1.0,3.0,True,phase1/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,1.0,4.0,True,phase1/L2_r15_p4.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,1.0,4.0,True,phase1/L2_r15_p4.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,4.0,1.0,5.0,True,phase1/L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,4.0,1.0,5.0,True,phase1/L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.0,1.0,True,phase1/L2_r15_p6.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.0,2.0,True,phase1/L2_r15_p6.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.0,3.0,True,phase1/L2_r15_p6.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.0,4.0,True,phase1/L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.0,4.0,True,phase1/L2_r15_p6.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.0,5.0,True,phase1/L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.0,5.0,True,phase1/L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.5,1.0,True,phase1/L2_r15_p6.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.5,1.0,True,phase1/L2_r15_p6.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.5,2.0,True,phase1/L2_r15_p6.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.5,2.0,True,phase1/L2_r15_p6.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.5,3.0,True,phase1/L2_r15_p6.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.5,3.0,True,phase1/L2_r15_p6.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.5,4.0,True,phase1/L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.5,4.0,True,phase1/L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,0.5,5.0,True,phase1/L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,0.5,5.0,True,phase1/L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2L
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3XL
+Law shape at fixed ×10,n = 0.5,1 km,gypsum-only,kphiC10n05,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__kphiC10n05
+Law shape at fixed ×10,n = 2,1 km,gypsum-only,kphiC10n2,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__kphiC10n2
+Law shape at fixed ×10,n = 8,1 km,gypsum-only,kphiC10n8,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__kphiC10n8
+Ceiling sweep (+ run C at σ 0),n = 3 on the example network,1 km,gypsum-only,kphi_n3,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__kphi_n3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,gypsum-only,phase3_rate01,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,gypsum-only,phase3_rate10,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase3_rate10
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2L
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3L
+Ceiling sweep (+ run C at σ 0),n = 3 on the example network,1 km,coupled,kphi_n3,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__kphi_n3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,coupled,phase3_rate01,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,coupled,phase3_rate10,6.0,1.0,1.0,True,phase1/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase3_rate10
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,gypsum-only,phase3_rate01,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,gypsum-only,phase3_rate10,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase3_rate10
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,coupled,phase3_rate01,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,coupled,phase3_rate10,6.0,1.0,2.0,True,phase1/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase3_rate10
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,gypsum-only,phase3_rate01,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,gypsum-only,phase3_rate10,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase3_rate10
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Injection rate,0.1 PV/yr,1 km,coupled,phase3_rate01,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase3_rate01
+Injection rate,10 PV/yr,1 km,coupled,phase3_rate10,6.0,1.0,3.0,True,phase1/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase3_rate10
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,1.0,4.0,True,phase1/L2_r15_p6.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,1.0,4.0,True,phase1/L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,6.0,1.0,5.0,True,phase1/L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,6.0,1.0,5.0,True,phase1/L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.0,1.0,True,phase1/L2_r15_p8.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.0,2.0,True,phase1/L2_r15_p8.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.0,3.0,True,phase1/L2_r15_p8.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.0,4.0,True,phase1/L2_r15_p8.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.0,4.0,True,phase1/L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.0,5.0,True,phase1/L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.0,5.0,True,phase1/L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.5,1.0,True,phase1/L2_r15_p8.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.5,1.0,True,phase1/L2_r15_p8.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.5,2.0,True,phase1/L2_r15_p8.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.5,2.0,True,phase1/L2_r15_p8.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.5,3.0,True,phase1/L2_r15_p8.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.5,3.0,True,phase1/L2_r15_p8.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.5,4.0,True,phase1/L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.5,4.0,True,phase1/L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,0.5,5.0,True,phase1/L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,0.5,5.0,True,phase1/L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,8.0,1.0,1.0,True,phase1/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,8.0,1.0,2.0,True,phase1/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,gypsum-only,ceilN148,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,gypsum-only,ceilN2,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,gypsum-only,ceilN2L,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,gypsum-only,ceilN3,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,gypsum-only,ceilN3L,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3L
+Late time (run A2),n = 3 to capacity time 20,1 km,gypsum-only,ceilN3XL,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__ceilN3XL
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+Starting porosity,φ0 0.05,1 km,gypsum-only,phase2_phi005,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,gypsum-only,phase3_phi0182,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__phase3_phi0182
+Ceiling sweep (+ run C at σ 0),n = 1.48 (×30),1 km,coupled,ceilN148,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN148
+Ceiling sweep (+ run C at σ 0),n = 2 (×100),1 km,coupled,ceilN2,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2
+Late time (run A),n = 2 to capacity time 8,1 km,coupled,ceilN2L,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN2L
+Ceiling sweep (+ run C at σ 0),n = 3 (×1000),1 km,coupled,ceilN3,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3
+Late time (run A),n = 3 to capacity time 8,1 km,coupled,ceilN3L,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__ceilN3L
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+Low carbonate,coupled at 2 mM carbonate,1 km,coupled,phase2_co3lo,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_co3lo
+Starting porosity,φ0 0.05,1 km,coupled,phase2_phi005,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase2_phi005
+Starting porosity,φ0 0.182 (gain ×5.5 / ×3.3),1 km,coupled,phase3_phi0182,8.0,1.0,3.0,True,phase1/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase3_phi0182
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,1.0,4.0,True,phase1/L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,1.0,4.0,True,phase1/L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,gypsum-only,phase1,8.0,1.0,5.0,True,phase1/L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+Base sweep,"P32 ×4–×16, σ 0/0.5/1, 5 seeds; n = 1, φ0 0.1, 1 PV/yr",1 km,coupled,phase1,8.0,1.0,5.0,True,phase1/L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.0,1.0,True,scale2km/L2_r15_p4.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.0,1.0,True,scale2km/L2_r15_p4.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.0,2.0,True,scale2km/L2_r15_p4.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.0,2.0,True,scale2km/L2_r15_p4.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.0,3.0,True,scale2km/L2_r15_p4.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.0,3.0,True,scale2km/L2_r15_p4.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.0,4.0,True,scale2km/L2_r15_p4.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.0,4.0,True,scale2km/L2_r15_p4.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.0,5.0,True,scale2km/L2_r15_p4.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.0,5.0,True,scale2km/L2_r15_p4.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.5,1.0,True,scale2km/L2_r15_p4.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.5,1.0,True,scale2km/L2_r15_p4.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.5,2.0,True,scale2km/L2_r15_p4.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.5,2.0,True,scale2km/L2_r15_p4.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.5,3.0,True,scale2km/L2_r15_p4.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.5,3.0,True,scale2km/L2_r15_p4.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.5,4.0,True,scale2km/L2_r15_p4.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.5,4.0,True,scale2km/L2_r15_p4.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,0.5,5.0,True,scale2km/L2_r15_p4.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,0.5,5.0,True,scale2km/L2_r15_p4.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,1.0,1.0,True,scale2km/L2_r15_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,1.0,1.0,True,scale2km/L2_r15_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,1.0,2.0,True,scale2km/L2_r15_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,1.0,2.0,True,scale2km/L2_r15_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,1.0,3.0,True,scale2km/L2_r15_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,1.0,3.0,True,scale2km/L2_r15_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,1.0,4.0,True,scale2km/L2_r15_p4.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,1.0,4.0,True,scale2km/L2_r15_p4.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,4.0,1.0,5.0,True,scale2km/L2_r15_p4.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,4.0,1.0,5.0,True,scale2km/L2_r15_p4.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.0,1.0,True,scale2km/L2_r15_p6.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.0,1.0,True,scale2km/L2_r15_p6.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.0,2.0,True,scale2km/L2_r15_p6.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.0,2.0,True,scale2km/L2_r15_p6.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.0,3.0,True,scale2km/L2_r15_p6.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.0,3.0,True,scale2km/L2_r15_p6.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.0,4.0,True,scale2km/L2_r15_p6.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.0,4.0,True,scale2km/L2_r15_p6.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.0,5.0,True,scale2km/L2_r15_p6.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.0,5.0,True,scale2km/L2_r15_p6.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.5,1.0,True,scale2km/L2_r15_p6.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.5,1.0,True,scale2km/L2_r15_p6.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.5,2.0,True,scale2km/L2_r15_p6.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.5,2.0,True,scale2km/L2_r15_p6.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.5,3.0,True,scale2km/L2_r15_p6.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.5,3.0,True,scale2km/L2_r15_p6.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.5,4.0,True,scale2km/L2_r15_p6.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.5,4.0,True,scale2km/L2_r15_p6.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,0.5,5.0,True,scale2km/L2_r15_p6.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,0.5,5.0,True,scale2km/L2_r15_p6.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,1.0,1.0,True,scale2km/L2_r15_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,1.0,1.0,True,scale2km/L2_r15_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,1.0,2.0,True,scale2km/L2_r15_p6.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,1.0,2.0,True,scale2km/L2_r15_p6.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,1.0,3.0,True,scale2km/L2_r15_p6.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,1.0,3.0,True,scale2km/L2_r15_p6.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,1.0,4.0,True,scale2km/L2_r15_p6.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,1.0,4.0,True,scale2km/L2_r15_p6.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,6.0,1.0,5.0,True,scale2km/L2_r15_p6.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,6.0,1.0,5.0,True,scale2km/L2_r15_p6.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.0,1.0,True,scale2km/L2_r15_p8.0_sg0.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.0,1.0,True,scale2km/L2_r15_p8.0_sg0.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.0,2.0,True,scale2km/L2_r15_p8.0_sg0.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.0,2.0,True,scale2km/L2_r15_p8.0_sg0.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.0,3.0,True,scale2km/L2_r15_p8.0_sg0.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.0,3.0,True,scale2km/L2_r15_p8.0_sg0.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.0,4.0,True,scale2km/L2_r15_p8.0_sg0.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.0,4.0,True,scale2km/L2_r15_p8.0_sg0.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.0,5.0,True,scale2km/L2_r15_p8.0_sg0.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.0,5.0,True,scale2km/L2_r15_p8.0_sg0.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.5,1.0,True,scale2km/L2_r15_p8.0_sg0.5_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.5,1.0,True,scale2km/L2_r15_p8.0_sg0.5_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.5,2.0,True,scale2km/L2_r15_p8.0_sg0.5_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.5,2.0,True,scale2km/L2_r15_p8.0_sg0.5_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.5,3.0,True,scale2km/L2_r15_p8.0_sg0.5_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.5,3.0,True,scale2km/L2_r15_p8.0_sg0.5_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.5,4.0,True,scale2km/L2_r15_p8.0_sg0.5_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.5,4.0,True,scale2km/L2_r15_p8.0_sg0.5_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,0.5,5.0,True,scale2km/L2_r15_p8.0_sg0.5_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,0.5,5.0,True,scale2km/L2_r15_p8.0_sg0.5_seed5/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,1.0,1.0,True,scale2km/L2_r15_p8.0_sg1.0_seed1/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,1.0,1.0,True,scale2km/L2_r15_p8.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,1.0,2.0,True,scale2km/L2_r15_p8.0_sg1.0_seed2/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,1.0,2.0,True,scale2km/L2_r15_p8.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,1.0,3.0,True,scale2km/L2_r15_p8.0_sg1.0_seed3/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,1.0,3.0,True,scale2km/L2_r15_p8.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,1.0,4.0,True,scale2km/L2_r15_p8.0_sg1.0_seed4/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,1.0,4.0,True,scale2km/L2_r15_p8.0_sg1.0_seed4/gypsum_calcite__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,gypsum-only,phase1,8.0,1.0,5.0,True,scale2km/L2_r15_p8.0_sg1.0_seed5/gypsum__uncorrected_graph__phase1
+2 km scale test,"P32 ×4/×6/×8, σ 0/0.5/1, 5 seeds",2 km,coupled,phase1,8.0,1.0,5.0,True,scale2km/L2_r15_p8.0_sg1.0_seed5/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,11.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed11/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,11.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed11/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,12.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed12/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,12.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed12/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,13.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed13/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,13.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed13/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,14.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed14/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,14.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed14/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,15.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed15/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,15.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed15/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,4.0,1.0,16.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed16/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,4.0,1.0,16.0,True,lenseries/L1000_r15_p4.0_sg1.0_seed16/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,11.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed11/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,11.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed11/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,12.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed12/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,12.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed12/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,13.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed13/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,13.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed13/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,14.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed14/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,14.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed14/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,15.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed15/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,15.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed15/gypsum_calcite__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,gypsum-only,phase1,8.0,1.0,16.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed16/gypsum__uncorrected_graph__phase1
+Blind predictor networks (run B),"12 new 1 km networks, P32 ×4/×8, σ 1",1 km,coupled,phase1,8.0,1.0,16.0,True,lenseries/L1000_r15_p8.0_sg1.0_seed16/gypsum_calcite__uncorrected_graph__phase1
+DFN validation: graph runs,exact,0.5–1 km,gypsum-only,exact,,,,False,dfn_validation/ex_p6.0_sg1.0_seed1/gypsum__uncorrected_graph__exact
+DFN validation: graph runs,exact,0.5–1 km,coupled,exact,,,,True,dfn_validation/ex_p6.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__exact
+DFN validation: meshed DFN,smoke,0.5–1 km,gypsum-only,smoke,,,,True,dfn_validation/rf_p4.0_sg1.0_seed1/gypsum__dfn__smoke
+DFN validation: graph runs,dfnval,0.5–1 km,gypsum-only,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed1/gypsum__uncorrected_graph__dfnval
+DFN validation: meshed DFN,smoke,0.5–1 km,coupled,smoke,,,,True,dfn_validation/rf_p4.0_sg1.0_seed1/gypsum_calcite__dfn__smoke
+DFN validation: graph runs,dfnval,0.5–1 km,coupled,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed1/gypsum_calcite__uncorrected_graph__dfnval
+DFN validation: graph runs,dfnval,0.5–1 km,gypsum-only,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed2/gypsum__uncorrected_graph__dfnval
+DFN validation: graph runs,dfnval,0.5–1 km,coupled,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed2/gypsum_calcite__uncorrected_graph__dfnval
+DFN validation: graph runs,dfnval,0.5–1 km,gypsum-only,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed3/gypsum__uncorrected_graph__dfnval
+DFN validation: graph runs,dfnval,0.5–1 km,coupled,dfnval,,,,True,dfn_validation/rf_p4.0_sg1.0_seed3/gypsum_calcite__uncorrected_graph__dfnval
+DFN validation: meshed DFN,"500 m trial network (sm), 1:1 checks",0.5–1 km,gypsum-only,sm,,,,False,dfn_validation/sm500_r282_p6_s1/gypsum__dfn__sm
+DFN validation: graph runs,"500 m trial network (sm), 1:1 checks",0.5–1 km,gypsum-only,sm,,,,True,dfn_validation/sm500_r282_p6_s1/gypsum__uncorrected_graph__sm
+DFN validation: meshed DFN,"500 m trial network (sm), 1:1 checks",0.5–1 km,coupled,sm,,,,False,dfn_validation/sm500_r282_p6_s1/gypsum_calcite__dfn__sm
+DFN validation: graph runs,"500 m trial network (sm), 1:1 checks",0.5–1 km,coupled,sm,,,,True,dfn_validation/sm500_r282_p6_s1/gypsum_calcite__uncorrected_graph__sm
